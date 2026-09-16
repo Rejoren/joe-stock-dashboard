@@ -34,6 +34,7 @@
     --red:#e35b50;
     --red-dim:rgba(227,91,80,.14);
     --shadow:rgba(0,0,0,.4);
+    --flat:#ffffff;
   }
   @media (prefers-color-scheme: light){
     :root:not([data-theme="dark"]){
@@ -53,6 +54,7 @@
       --red:#c43d33;
       --red-dim:rgba(196,61,51,.10);
       --shadow:rgba(20,30,40,.08);
+      --flat:#1b2229;
     }
   }
   :root[data-theme="light"]{
@@ -271,6 +273,33 @@
     border-bottom:1px dashed transparent;
   }
   .name:hover{color:var(--accent);border-bottom-color:var(--accent);}
+  .pick-quote{
+    display:inline-flex;
+    align-items:baseline;
+    gap:6px;
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    font-size:13px;
+    font-variant-numeric:tabular-nums;
+  }
+  .pick-quote .pc{font-size:12px;}
+  .pick-quote.up{color:var(--red);}
+  .pick-quote.down{color:var(--green);}
+  .pick-quote.flat{color:var(--flat);}
+  .kline{
+    display:inline-block;
+    width:14px;
+    height:26px;
+    flex-shrink:0;
+    vertical-align:middle;
+  }
+  .kline svg{display:block;width:100%;height:100%;overflow:visible;}
+  .kline .wick,.kline .body{stroke-width:1;}
+  .kline.up .wick,.kline.up .body{stroke:var(--red);fill:var(--red);}
+  .kline.down .wick,.kline.down .body{stroke:var(--green);fill:var(--green);}
+  .kline.flat .wick,.kline.flat .body{stroke:var(--flat);fill:var(--flat);}
+  .kline.na{opacity:.4;}
+  .kline.na .wick{stroke:var(--text-faint);}
   .sector-tag{
     font-size:11.5px;
     color:var(--text-dim);
@@ -532,8 +561,18 @@
     border-bottom:1px dashed transparent;
   }
   .rank-table .name-cell a:hover{color:var(--accent);border-bottom-color:var(--accent);}
-  .rank-table .chg.up{color:var(--red);}
-  .rank-table .chg.down{color:var(--green);}
+  .rank-table .chg.up,.rank-table .px.up{color:var(--red);}
+  .rank-table .chg.down,.rank-table .px.down{color:var(--green);}
+  .rank-table .chg.flat,.rank-table .px.flat{color:var(--flat);}
+  .hi{
+    display:inline-block;
+    padding:1px 6px;
+    border-radius:4px;
+    font-weight:700;
+    color:#fff;
+  }
+  .hi.up{background:var(--red);}
+  .hi.down{background:var(--green);}
   .rank-table .theme-cell{
     text-align:left;
     color:var(--text-dim);
@@ -729,13 +768,52 @@
     + '</div>';
   }
 
-  function renderPick(p){
+  function num(v){
+    return typeof v === 'number' && !Number.isNaN(v) ? v : null;
+  }
+
+  function dirClass(chg){
+    return chg == null ? '' : (chg > 0 ? 'up' : chg < 0 ? 'down' : 'flat');
+  }
+
+  function chgText(chg){
+    return chg == null ? '—' : (chg > 0 ? '+' : '') + chg.toFixed(2) + '%';
+  }
+
+  // One daily candle, scaled so a ±10% move (Taiwan's daily limit) fills the box.
+  function klineSvg(q){
+    const c = num(q && q.price), o = num(q && q.open), h = num(q && q.high), l = num(q && q.low), chg = num(q && q.change_pct);
+    if (c == null || o == null || h == null || l == null || chg == null || chg <= -100){
+      return '<span class="kline na" title="尚無日K資料"><svg viewBox="0 0 14 26" aria-hidden="true"><line class="wick" x1="3" y1="13" x2="11" y2="13"/></svg></span>';
+    }
+    const prev = c / (1 + chg / 100);
+    const H = 26, mid = H / 2, scale = mid / 0.10;
+    const y = v => Math.max(0, Math.min(H, mid - (v / prev - 1) * scale));
+    const dir = c > o ? 'up' : c < o ? 'down' : 'flat';
+    const top = Math.min(y(o), y(c));
+    const bodyH = Math.max(1, Math.abs(y(o) - y(c)));
+    return '<span class="kline ' + dir + '" title="開 ' + o + '　高 ' + h + '　低 ' + l + '　收 ' + c + '">'
+      + '<svg viewBox="0 0 14 26" aria-hidden="true">'
+      + '<line class="wick" x1="7" y1="' + y(h).toFixed(1) + '" x2="7" y2="' + y(l).toFixed(1) + '"/>'
+      + '<rect class="body" x="3" y="' + top.toFixed(1) + '" width="8" height="' + bodyH.toFixed(1) + '"/>'
+      + '</svg></span>';
+  }
+
+  function renderPick(p, quoteMap){
     const scorePct = Math.max(0, Math.min(100, p.score ?? 0));
+    const q = (quoteMap && quoteMap[String(p.code ?? '').trim()]) || {};
+    const price = num(p.price) ?? num(q.price);
+    const chg = num(p.change_pct) ?? num(q.change_pct);
+    const quote = (price == null && chg == null) ? ''
+      : '<span class="pick-quote ' + dirClass(chg) + '"><b class="px">' + fmt(price) + '</b><span class="pc">' + chgText(chg) + '</span></span>';
+    const candle = { price: price, change_pct: chg, open: num(p.open) ?? num(q.open), high: num(p.high) ?? num(q.high), low: num(p.low) ?? num(q.low) };
     return '<div class="pick">'
       + '<div class="pick-head">'
       +   '<span class="rank">TOP ' + (p.rank ?? '') + '</span>'
+      +   klineSvg(candle)
       +   '<a class="code" href="' + wantgooUrl(p.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + (p.code ?? '') + '</a>'
       +   '<a class="name" href="' + wantgooUrl(p.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + (p.name ?? '') + '</a>'
+      +   quote
       +   '<span class="sector-tag">' + (p.sector ?? '') + '</span>'
       +   '<span class="score"><span class="num">' + scorePct + '</span><span class="bar"><i style="width:' + scorePct + '%"></i></span></span>'
       + '</div>'
@@ -785,9 +863,10 @@
   }
 
   function renderRankRow(r){
-    const chg = typeof r.change_pct === 'number' ? r.change_pct : null;
-    const chgClass = chg == null ? '' : (chg > 0 ? 'up' : chg < 0 ? 'down' : '');
-    const chgText = chg == null ? '—' : (chg > 0 ? '+' : '') + chg.toFixed(2) + '%';
+    const chg = num(r.change_pct);
+    const dir = dirClass(chg);
+    const hi = chg != null && Math.abs(chg) >= 9.5;
+    const wrap = s => hi ? '<span class="hi ' + dir + '">' + s + '</span>' : s;
     let rkBadge = '';
     if (r.is_new){
       rkBadge = '<span class="rk-badge new">New</span>';
@@ -796,10 +875,10 @@
     }
     return '<tr>'
       + '<td class="al rk"><span class="rk-num">' + (r.rank ?? '') + '</span>' + rkBadge + '</td>'
-      + '<td class="al"><a class="code-cell" href="' + wantgooUrl(r.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + esc(r.code || '') + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</a></td>'
+      + '<td class="al"><a class="code-cell" href="' + wantgooUrl(r.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + klineSvg(r) + esc(r.code || '') + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</a></td>'
       + '<td class="al name-cell"><a href="' + wantgooUrl(r.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + esc(r.name || '') + '</a></td>'
-      + '<td>' + fmt(r.price) + '</td>'
-      + '<td class="chg ' + chgClass + '">' + chgText + '</td>'
+      + '<td class="px ' + dir + '">' + wrap(fmt(r.price)) + '</td>'
+      + '<td class="chg ' + dir + '">' + wrap(chgText(chg)) + '</td>'
       + '<td>' + esc(r.turnover || '—') + '</td>'
       + '<td>' + esc(r.market_cap || '—') + '</td>'
       + '<td class="theme-cell">' + esc(r.theme || '—') + '</td>'
@@ -824,14 +903,19 @@
     ma20El.className = 'value' + (typeof data.otc_index === 'number' && typeof data.otc_ma20 === 'number' ? (data.otc_index >= data.otc_ma20 ? ' above' : ' below') : '');
     ma60El.className = 'value' + (typeof data.otc_index === 'number' && typeof data.otc_ma60 === 'number' ? (data.otc_index >= data.otc_ma60 ? ' above' : ' below') : '');
 
+    const top30 = Array.isArray(data.top30) ? data.top30 : (Array.isArray(data.top50) ? data.top50.slice(0, 30) : []);
+    const changeMap = {}, quoteMap = {};
+    top30.forEach(r => {
+      if (!r || r.code == null) return;
+      const code = String(r.code).trim();
+      quoteMap[code] = r;
+      if (typeof r.change_pct === 'number') changeMap[code] = r.change_pct;
+    });
+
     const top5 = Array.isArray(data.top5) ? data.top5 : [];
     $('top5List').innerHTML = top5.length
-      ? top5.map(renderPick).join('')
+      ? top5.map(p => renderPick(p, quoteMap)).join('')
       : '<div class="card empty"><div class="glyph">◎</div><p>今日選股清單尚未產出</p></div>';
-
-    const top30 = Array.isArray(data.top30) ? data.top30 : (Array.isArray(data.top50) ? data.top50.slice(0, 30) : []);
-    const changeMap = {};
-    top30.forEach(r => { if (r && r.code != null && typeof r.change_pct === 'number') changeMap[String(r.code).trim()] = r.change_pct; });
 
     const sectors = Array.isArray(data.top50_sectors) ? data.top50_sectors : [];
     $('radarList').innerHTML = sectors.length
