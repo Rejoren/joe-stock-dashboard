@@ -1,0 +1,754 @@
+{
+ "date": "2026-09-14",
+ "generated_at": "2026-09-14T10:27:32Z",
+ "light": "green",
+ "light_reason": "指數跌破20日均線，近5日連續走跌，20/60均線黏合向下轉弱",
+ "otc_index": 394.67,
+ "otc_ma20": 398.22,
+ "otc_ma60": 399.82,
+ "today_focus": [
+  {
+   "tag": "籌碼",
+   "text": "三大法人9月11日合計賣超台股1,123.73億元，其中外資及陸資賣超892.7億元、自營商賣超302.02億元，僅投信逆勢買超71億元。"
+  },
+  {
+   "tag": "題材",
+   "text": "中東情勢升溫推升布蘭特原油站上每桶102美元，加上美國十年期公債殖利率逼近5%、聯準會升息疑慮升溫，電子權值與記憶體股領跌，櫃買指數當日重挫2.4%。"
+  },
+  {
+   "tag": "評等",
+   "text": "瑞銀證券與摩根士丹利分別於9月6日、11日下調大立光評等至「賣出」與「中立」，示警CPO題材短線過熱，大立光股價當日重挫近一成。"
+  },
+  {
+   "tag": "新聞",
+   "text": "記憶體類股同步重挫，市場憂心三星、SK海力士五年內產能翻倍及中國兆易創新示警報價走跌，加上Meta傳出出售過剩AI算力，南亞科跌4.06%、華邦電跌6.71%。"
+  }
+ ],
+ "top5": [
+  {
+   "buy_strategy": "保守守城，大盤仍處綠燈防禦格局，聯電逆勢收紅且站穩20日線，可作族群指標分批布局",
+   "chips_signal": "外資買超約1.37萬張、投信同步買超3,721張，雙法人同步加碼",
+   "code": "2303",
+   "fundamentals": "8月營收250.45億元，月增5.04%，年增30.71%，連6個月雙增創新高",
+   "name": "聯電",
+   "rank": 1,
+   "score": 88,
+   "sector": "半導體晶圓代工",
+   "theme_reason": "22/28奈米特殊製程放量疊加車用與AI雙軌需求，法人同步進駐，8月營收創近四年單月新高"
+  },
+  {
+   "buy_strategy": "保守守城，技術面雖呈完整多頭排列且出量2.8倍，惟大盤綠燈仍需防禦，分批進場勿追高",
+   "chips_signal": "資料不足（櫃買三大法人個股買賣超資料當日查詢受限）",
+   "code": "8358",
+   "fundamentals": "8月營收10.56億元，月增4.72%，年增59.71%，累計前8月年增46.82%",
+   "name": "金居",
+   "rank": 2,
+   "score": 85,
+   "sector": "PCB/ABF載板",
+   "theme_reason": "AI伺服器高速傳輸需求推升電解銅箔缺貨漲價，為ABF載板上游關鍵材料指標股"
+  },
+  {
+   "buy_strategy": "保守守城，族群龍頭股價拉回至月線之下，分批承接待止穩訊號",
+   "chips_signal": "外資買超約951張、投信買超328張，籌碼轉為小幅偏多",
+   "code": "3037",
+   "fundamentals": "8月營收177.46億元，月增9.18%，年增56.26%，創歷史新高",
+   "name": "欣興",
+   "rank": 3,
+   "score": 76,
+   "sector": "PCB/ABF載板",
+   "theme_reason": "ABF載板供不應求疊加T-glass玻纖布缺料，漲價循環未歇，AI伺服器營收占比持續提升"
+  },
+  {
+   "buy_strategy": "保守守城，被動元件族群指標股，大盤防禦階段分批布局待轉強訊號",
+   "chips_signal": "外資買超約3,711張、投信買超124張，雙法人同步小幅加碼",
+   "code": "2327",
+   "fundamentals": "8月營收163.32億元，月增1.2%，年增51.8%，創單月新高",
+   "name": "國巨",
+   "rank": 4,
+   "score": 74,
+   "sector": "高壓MLCC",
+   "theme_reason": "MLCC供需吃緊，車用與AI伺服器高壓規格漲價循環延續，連6個月創單月新高"
+  },
+  {
+   "buy_strategy": "保守守城，大盤綠燈防禦格局下以大盤龍頭股分批布局，控制部位風險",
+   "chips_signal": "外資今日賣超約1.12萬張，投信小幅買超52萬股，籌碼分歧",
+   "code": "2330",
+   "fundamentals": "8月營收5,148億元，年增53.3%，連4個月創新高",
+   "name": "台積電",
+   "rank": 5,
+   "score": 71,
+   "sector": "半導體晶圓代工",
+   "theme_reason": "全球晶圓代工絕對龍頭，AI晶片需求持續強勁，為大盤與半導體族群指標"
+  }
+ ],
+ "top50": [
+  {
+   "change_pct": -1.24,
+   "code": "2330",
+   "market": "市",
+   "market_cap": "61.72兆",
+   "name": "台積電",
+   "price": 2380,
+   "rank": 1,
+   "theme": "AI晶片代工",
+   "turnover": "513.5億"
+  },
+  {
+   "change_pct": -0.55,
+   "code": "2454",
+   "market": "市",
+   "market_cap": "7.32兆",
+   "name": "聯發科",
+   "price": 4560,
+   "rank": 2,
+   "theme": "AI 晶片",
+   "turnover": "278.7億"
+  },
+  {
+   "change_pct": -4.06,
+   "code": "2408",
+   "market": "市",
+   "market_cap": "1.63兆",
+   "name": "南亞科",
+   "price": 473,
+   "rank": 3,
+   "theme": "記憶體",
+   "turnover": "233.9億"
+  },
+  {
+   "change_pct": -6.71,
+   "code": "2344",
+   "market": "市",
+   "market_cap": "7200.0億",
+   "name": "華邦電",
+   "price": 160,
+   "rank": 4,
+   "theme": "記憶體",
+   "turnover": "200.1億"
+  },
+  {
+   "change_pct": 1.42,
+   "code": "2303",
+   "market": "市",
+   "market_cap": "1.79兆",
+   "name": "聯電",
+   "price": 142.5,
+   "rank": 5,
+   "theme": "晶圓代工",
+   "turnover": "185.3億"
+  },
+  {
+   "change_pct": 6.8,
+   "code": "8358",
+   "market": "櫃",
+   "market_cap": "1308.4億",
+   "name": "金居",
+   "price": 518,
+   "rank": 6,
+   "theme": "PCB/ABF載板",
+   "turnover": "173.1億"
+  },
+  {
+   "change_pct": 4.58,
+   "code": "3443",
+   "market": "市",
+   "market_cap": "8576.8億",
+   "name": "創意",
+   "price": 6400,
+   "rank": 7,
+   "theme": "AI ASIC設計",
+   "turnover": "166.7億"
+  },
+  {
+   "change_pct": -9.98,
+   "code": "3008",
+   "market": "市",
+   "market_cap": "7841.4億",
+   "name": "大立光",
+   "price": 5995,
+   "rank": 8,
+   "theme": "光學鏡頭",
+   "turnover": "161.7億"
+  },
+  {
+   "change_pct": 0,
+   "code": "2308",
+   "market": "市",
+   "market_cap": "4.21兆",
+   "name": "台達電",
+   "price": 1620,
+   "rank": 9,
+   "theme": "AI伺服器電源",
+   "turnover": "152.3億"
+  },
+  {
+   "change_pct": -0.21,
+   "code": "1303",
+   "market": "市",
+   "market_cap": "1.86兆",
+   "name": "南亞",
+   "price": 234,
+   "rank": 10,
+   "theme": "AI電子材料",
+   "turnover": "125.7億"
+  },
+  {
+   "change_pct": -0.72,
+   "code": "3037",
+   "market": "市",
+   "market_cap": "1.59兆",
+   "name": "欣興",
+   "price": 970,
+   "rank": 11,
+   "theme": "PCB/ABF載板",
+   "turnover": "125.1億"
+  },
+  {
+   "change_pct": 0.18,
+   "code": "2327",
+   "market": "市",
+   "market_cap": "1.12兆",
+   "name": "國巨*",
+   "price": 545,
+   "rank": 12,
+   "theme": "高壓MLCC",
+   "turnover": "120.5億"
+  },
+  {
+   "change_pct": 3.3,
+   "code": "6274",
+   "market": "櫃",
+   "market_cap": "4222.4億",
+   "name": "台燿",
+   "price": 1410,
+   "rank": 13,
+   "theme": "PCB/ABF載板",
+   "turnover": "104.0億"
+  },
+  {
+   "change_pct": 6,
+   "code": "2481",
+   "market": "市",
+   "market_cap": "607.6億",
+   "name": "強茂",
+   "price": 159,
+   "rank": 14,
+   "theme": "功率半導體",
+   "turnover": "96.6億"
+  },
+  {
+   "change_pct": -1.11,
+   "code": "4958",
+   "market": "市",
+   "market_cap": "5470.3億",
+   "name": "臻鼎-KY",
+   "price": 489.5,
+   "rank": 15,
+   "theme": "PCB/軟板",
+   "turnover": "92.3億"
+  },
+  {
+   "change_pct": -4.97,
+   "code": "2409",
+   "market": "市",
+   "market_cap": "2166.0億",
+   "name": "友達",
+   "price": 28.7,
+   "rank": 16,
+   "theme": "面板",
+   "turnover": "90.9億"
+  },
+  {
+   "change_pct": -2.92,
+   "code": "3189",
+   "market": "市",
+   "market_cap": "4204.7億",
+   "name": "景碩",
+   "price": 798,
+   "rank": 17,
+   "theme": "PCB/ABF載板",
+   "turnover": "89.4億"
+  },
+  {
+   "change_pct": -1.93,
+   "code": "2492",
+   "market": "市",
+   "market_cap": "1482.3億",
+   "name": "華新科",
+   "price": 305.5,
+   "rank": 18,
+   "theme": "高壓MLCC",
+   "turnover": "85.3億"
+  },
+  {
+   "change_pct": -7.14,
+   "code": "8996",
+   "market": "市",
+   "market_cap": "1154.7億",
+   "name": "高力",
+   "price": 1235,
+   "rank": 19,
+   "theme": "AI伺服器散熱",
+   "turnover": "77.1億"
+  },
+  {
+   "change_pct": 4.42,
+   "code": "6147",
+   "market": "櫃",
+   "market_cap": "1407.3億",
+   "name": "頎邦",
+   "price": 189,
+   "rank": 20,
+   "theme": "CPO/先進封裝",
+   "turnover": "76.6億"
+  },
+  {
+   "change_pct": -7.34,
+   "code": "3374",
+   "market": "櫃",
+   "market_cap": "1165.5億",
+   "name": "精材",
+   "price": 429.5,
+   "rank": 21,
+   "theme": "先進封裝",
+   "turnover": "76.1億"
+  },
+  {
+   "change_pct": -2.31,
+   "code": "3081",
+   "market": "櫃",
+   "market_cap": "2793.6億",
+   "name": "聯亞",
+   "price": 2745,
+   "rank": 22,
+   "theme": "CPO光通訊",
+   "turnover": "75.4億"
+  },
+  {
+   "change_pct": -1.64,
+   "code": "3661",
+   "market": "市",
+   "market_cap": "3098.4億",
+   "name": "世芯-KY",
+   "price": 3590,
+   "rank": 23,
+   "theme": "AI ASIC設計",
+   "turnover": "75.0億"
+  },
+  {
+   "change_pct": 1.21,
+   "code": "6173",
+   "market": "櫃",
+   "market_cap": "502.5億",
+   "name": "信昌電",
+   "price": 293.5,
+   "rank": 24,
+   "theme": "高壓MLCC",
+   "turnover": "74.2億"
+  },
+  {
+   "change_pct": -1.78,
+   "code": "3017",
+   "market": "市",
+   "market_cap": "1.30兆",
+   "name": "奇鋐",
+   "price": 3310,
+   "rank": 25,
+   "theme": "AI伺服器散熱",
+   "turnover": "72.8億"
+  },
+  {
+   "change_pct": -7.03,
+   "code": "6446",
+   "market": "市",
+   "market_cap": "5027.0億",
+   "name": "藥華藥",
+   "price": 1190,
+   "rank": 26,
+   "theme": "生技",
+   "turnover": "65.6億"
+  },
+  {
+   "change_pct": -2.43,
+   "code": "3231",
+   "market": "市",
+   "market_cap": "5755.9億",
+   "name": "緯創",
+   "price": 181,
+   "rank": 27,
+   "theme": "AI伺服器",
+   "turnover": "65.6億"
+  },
+  {
+   "change_pct": -0.37,
+   "code": "2383",
+   "market": "市",
+   "market_cap": "1.92兆",
+   "name": "台光電",
+   "price": 5345,
+   "rank": 28,
+   "theme": "PCB/ABF載板",
+   "turnover": "65.2億"
+  },
+  {
+   "change_pct": -5.88,
+   "code": "1815",
+   "market": "櫃",
+   "market_cap": "737.6億",
+   "name": "富喬",
+   "price": 120,
+   "rank": 29,
+   "theme": "AI伺服器玻纖",
+   "turnover": "64.5億"
+  },
+  {
+   "change_pct": -2.31,
+   "code": "8046",
+   "market": "市",
+   "market_cap": "6817.0億",
+   "name": "南電",
+   "price": 1055,
+   "rank": 30,
+   "theme": "PCB/ABF載板",
+   "turnover": "64.5億"
+  },
+  {
+   "change_pct": 0,
+   "code": "6770",
+   "market": "市",
+   "market_cap": "3331.4億",
+   "name": "力積電",
+   "price": 70.7,
+   "rank": 31,
+   "theme": "晶圓代工",
+   "turnover": "63.2億"
+  },
+  {
+   "change_pct": 0.2,
+   "code": "2317",
+   "market": "市",
+   "market_cap": "3.50兆",
+   "name": "鴻海",
+   "price": 248.5,
+   "rank": 32,
+   "theme": "AI伺服器",
+   "turnover": "62.3億"
+  },
+  {
+   "change_pct": -0.59,
+   "code": "3450",
+   "market": "市",
+   "market_cap": "741.5億",
+   "name": "聯鈞",
+   "price": 509,
+   "rank": 33,
+   "theme": "CPO光通訊",
+   "turnover": "61.2億"
+  },
+  {
+   "change_pct": -1.75,
+   "code": "3026",
+   "market": "市",
+   "market_cap": "1212.7億",
+   "name": "禾伸堂",
+   "price": 731,
+   "rank": 34,
+   "theme": "高壓MLCC",
+   "turnover": "61.1億"
+  },
+  {
+   "change_pct": 1.49,
+   "code": "3105",
+   "market": "櫃",
+   "market_cap": "1882.3億",
+   "name": "穩懋",
+   "price": 444,
+   "rank": 35,
+   "theme": "化合物半導體",
+   "turnover": "59.4億"
+  },
+  {
+   "change_pct": -3.31,
+   "code": "3441",
+   "market": "櫃",
+   "market_cap": "64.3億",
+   "name": "聯一光",
+   "price": 160.5,
+   "rank": 36,
+   "theme": "—",
+   "turnover": "59.1億"
+  },
+  {
+   "change_pct": -0.97,
+   "code": "3711",
+   "market": "市",
+   "market_cap": "2.74兆",
+   "name": "日月光投控",
+   "price": 612,
+   "rank": 37,
+   "theme": "先進封裝",
+   "turnover": "57.9億"
+  },
+  {
+   "change_pct": -0.53,
+   "code": "2345",
+   "market": "市",
+   "market_cap": "1.05兆",
+   "name": "智邦",
+   "price": 1875,
+   "rank": 38,
+   "theme": "AI網通",
+   "turnover": "57.5億"
+  },
+  {
+   "change_pct": 0.95,
+   "code": "3653",
+   "market": "市",
+   "market_cap": "8567.3億",
+   "name": "健策",
+   "price": 5820,
+   "rank": 39,
+   "theme": "散熱均熱片",
+   "turnover": "57.4億"
+  },
+  {
+   "change_pct": -0.4,
+   "code": "3624",
+   "market": "櫃",
+   "market_cap": "145.5億",
+   "name": "光頡",
+   "price": 124,
+   "rank": 40,
+   "theme": "被動元件",
+   "turnover": "54.8億"
+  },
+  {
+   "change_pct": -0.1,
+   "code": "3481",
+   "market": "市",
+   "market_cap": "3806.9億",
+   "name": "群創",
+   "price": 47.65,
+   "rank": 41,
+   "theme": "面板",
+   "turnover": "51.8億"
+  },
+  {
+   "change_pct": 1.18,
+   "code": "6213",
+   "market": "市",
+   "market_cap": "1872.5億",
+   "name": "聯茂",
+   "price": 515,
+   "rank": 42,
+   "theme": "PCB/ABF載板",
+   "turnover": "51.4億"
+  },
+  {
+   "change_pct": 0.84,
+   "code": "8227",
+   "market": "櫃",
+   "market_cap": "95.3億",
+   "name": "巨有科技",
+   "price": 241,
+   "rank": 43,
+   "theme": "—",
+   "turnover": "48.8億"
+  },
+  {
+   "change_pct": -0.97,
+   "code": "2368",
+   "market": "市",
+   "market_cap": "5333.9億",
+   "name": "金像電",
+   "price": 1020,
+   "rank": 44,
+   "theme": "PCB/ABF載板",
+   "turnover": "47.7億"
+  },
+  {
+   "change_pct": -10,
+   "code": "3406",
+   "market": "市",
+   "market_cap": "1075.6億",
+   "name": "玉晶光",
+   "price": 954,
+   "rank": 45,
+   "theme": "光學鏡頭",
+   "turnover": "47.1億"
+  },
+  {
+   "change_pct": -1.73,
+   "code": "6669",
+   "market": "市",
+   "market_cap": "4218.6億",
+   "name": "緯穎",
+   "price": 2270,
+   "rank": 46,
+   "theme": "AI伺服器",
+   "turnover": "45.2億"
+  },
+  {
+   "change_pct": -2.76,
+   "code": "8299",
+   "market": "櫃",
+   "market_cap": "4282.9億",
+   "name": "群聯",
+   "price": 1935,
+   "rank": 47,
+   "theme": "記憶體控制IC",
+   "turnover": "44.4億"
+  },
+  {
+   "change_pct": 4.27,
+   "code": "3665",
+   "market": "市",
+   "market_cap": "3901.8億",
+   "name": "貿聯-KY",
+   "price": 1955,
+   "rank": 48,
+   "theme": "AI伺服器線纜",
+   "turnover": "42.9億"
+  },
+  {
+   "change_pct": 0.74,
+   "code": "8039",
+   "market": "市",
+   "market_cap": "722.8億",
+   "name": "台虹",
+   "price": 274,
+   "rank": 49,
+   "theme": "PCB/ABF載板",
+   "turnover": "40.2億"
+  },
+  {
+   "change_pct": 0.53,
+   "code": "5274",
+   "market": "櫃",
+   "market_cap": "7476.6億",
+   "name": "信驊",
+   "price": 17980,
+   "rank": 50,
+   "theme": "AI伺服器BMC晶片",
+   "turnover": "39.4億"
+  }
+ ],
+ "top50_sectors": [
+  {
+   "count": 5,
+   "sector": "PCB/ABF載板",
+   "stocks": [
+    {
+     "code": "8358",
+     "name": "金居"
+    },
+    {
+     "code": "3037",
+     "name": "欣興"
+    },
+    {
+     "code": "6274",
+     "name": "台燿"
+    },
+    {
+     "code": "4958",
+     "name": "臻鼎-KY"
+    },
+    {
+     "code": "3189",
+     "name": "景碩"
+    }
+   ]
+  },
+  {
+   "count": 2,
+   "sector": "半導體晶圓代工",
+   "stocks": [
+    {
+     "code": "2330",
+     "name": "台積電"
+    },
+    {
+     "code": "2303",
+     "name": "聯電"
+    }
+   ]
+  },
+  {
+   "count": 2,
+   "sector": "記憶體(DRAM)",
+   "stocks": [
+    {
+     "code": "2408",
+     "name": "南亞科"
+    },
+    {
+     "code": "2344",
+     "name": "華邦電"
+    }
+   ]
+  },
+  {
+   "count": 2,
+   "sector": "高壓MLCC",
+   "stocks": [
+    {
+     "code": "2327",
+     "name": "國巨"
+    },
+    {
+     "code": "2492",
+     "name": "華新科"
+    }
+   ]
+  },
+  {
+   "count": 2,
+   "sector": "AI ASIC設計",
+   "stocks": [
+    {
+     "code": "2454",
+     "name": "聯發科"
+    },
+    {
+     "code": "3443",
+     "name": "創意"
+    }
+   ]
+  }
+ ],
+ "upcoming_events": [
+  {
+   "date": "09/17",
+   "event": "聯準會FOMC公布利率決議（9/15-16會議，台北時間9/17凌晨公布）"
+  },
+  {
+   "date": "09/17",
+   "event": "台灣創新技術博覽會（Taiwan Innotech Expo）登場，台北世貿一館展至9/19"
+  },
+  {
+   "date": "10月中旬",
+   "event": "台積電第3季法說會，日期未正式公布，參考近年慣例預估10月中旬週四召開"
+  },
+  {
+   "date": "10/21",
+   "event": "台指選擇權/期貨10月合約結算日（每月第三個星期三）"
+  },
+  {
+   "date": "10/29",
+   "event": "聯準會FOMC公布利率決議（10/27-28會議，台北時間10/29凌晨公布）"
+  },
+  {
+   "date": "11月上旬",
+   "event": "聯發科第3季法說會，日期未正式公布，預估落於11月上旬"
+  },
+  {
+   "date": "11月中旬",
+   "event": "NVIDIA 2027財年第3季財報公布，日期尚未正式公布，市場預估11月中下旬"
+  },
+  {
+   "date": "12/10",
+   "event": "聯準會FOMC公布利率決議（12/8-9會議，台北時間12/10凌晨公布）"
+  }
+ ]
+}

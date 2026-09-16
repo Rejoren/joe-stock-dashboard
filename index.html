@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Joe菜的選妃台</title>
+<meta name="theme-color" content="#0e1217">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Joe菜的選妃台">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+  :root{
+    /* dark-first token set (bare :root = dark, default) */
+    --bg:#0e1217;
+    --surface:#161b21;
+    --surface-2:#1e262e;
+    --border:#2a333d;
+    --text:#e9edf0;
+    --text-dim:#9aa6b2;
+    --text-faint:#64707c;
+    --accent:#52c1cc;
+    --accent-dim:rgba(82,193,204,.14);
+    --green:#3fb474;
+    --green-dim:rgba(63,180,116,.14);
+    --yellow:#e6ac3f;
+    --yellow-dim:rgba(230,172,63,.14);
+    --red:#e35b50;
+    --red-dim:rgba(227,91,80,.14);
+    --shadow:rgba(0,0,0,.4);
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg:#eef1f4;
+      --surface:#ffffff;
+      --surface-2:#f4f6f8;
+      --border:#d7dee4;
+      --text:#1b2229;
+      --text-dim:#4d5a66;
+      --text-faint:#7c8894;
+      --accent:#147a86;
+      --accent-dim:rgba(20,122,134,.10);
+      --green:#1f8a53;
+      --green-dim:rgba(31,138,83,.10);
+      --yellow:#b9781b;
+      --yellow-dim:rgba(185,120,27,.10);
+      --red:#c43d33;
+      --red-dim:rgba(196,61,51,.10);
+      --shadow:rgba(20,30,40,.08);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#eef1f4;
+    --surface:#ffffff;
+    --surface-2:#f4f6f8;
+    --border:#d7dee4;
+    --text:#1b2229;
+    --text-dim:#4d5a66;
+    --text-faint:#7c8894;
+    --accent:#147a86;
+    --accent-dim:rgba(20,122,134,.10);
+    --green:#1f8a53;
+    --green-dim:rgba(31,138,83,.10);
+    --yellow:#b9781b;
+    --yellow-dim:rgba(185,120,27,.10);
+    --red:#c43d33;
+    --red-dim:rgba(196,61,51,.10);
+    --shadow:rgba(20,30,40,.08);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Noto Sans TC','Noto Sans',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:1040px;
+    margin:0 auto;
+    padding:28px 18px 64px;
+  }
+
+  /* header */
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:12px;
+    margin-bottom:22px;
+    flex-wrap:wrap;
+  }
+  .brand-eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 6px;
+  }
+  h1{
+    font-family:'Noto Serif TC',serif;
+    font-weight:900;
+    font-size:clamp(22px,4vw,30px);
+    margin:0;
+    text-wrap:balance;
+  }
+  .updated{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--text-faint);
+    text-align:right;
+  }
+
+  section{margin-bottom:20px;}
+  .two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:start;
+  }
+  .col-left, .col-right{min-width:0;}
+  @media (max-width:760px){
+    .two-col{grid-template-columns:1fr;}
+  }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px;
+  }
+  .section-title{
+    font-family:'Noto Serif TC',serif;
+    font-weight:700;
+    font-size:16px;
+    margin:0 0 14px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .section-title .idx{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    color:var(--text-faint);
+    border:1px solid var(--border);
+    border-radius:5px;
+    padding:1px 6px;
+  }
+
+  /* ---- traffic light hero ---- */
+  .signal-card{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:22px;
+    align-items:center;
+  }
+  .housing{
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:14px 12px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width:56px;
+  }
+  .lamp{
+    width:32px;height:32px;border-radius:50%;
+    margin:0 auto;
+    background:currentColor;
+    opacity:.16;
+    transition:opacity .2s;
+  }
+  .lamp.on{
+    opacity:1;
+    box-shadow:0 0 18px 3px currentColor;
+  }
+  .lamp.red{color:var(--red);}
+  .lamp.yellow{color:var(--yellow);}
+  .lamp.green{color:var(--green);}
+
+  .signal-readout .status-line{
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+    margin-bottom:8px;
+  }
+  .status-word{
+    font-family:'Noto Serif TC',serif;
+    font-weight:900;
+    font-size:26px;
+  }
+  .status-word.red{color:var(--red);}
+  .status-word.yellow{color:var(--yellow);}
+  .status-word.green{color:var(--green);}
+  .status-sub{
+    font-size:13px;color:var(--text-dim);
+  }
+  .reason{
+    font-size:13.5px;
+    color:var(--text-dim);
+    line-height:1.6;
+    margin:0 0 14px;
+  }
+  .metrics{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+  }
+  .metric{
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:8px 10px;
+  }
+  .metric .label{font-size:11px;color:var(--text-faint);margin-bottom:3px;}
+  .metric .value{
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    font-size:16px;
+    font-variant-numeric:tabular-nums;
+  }
+  .metric .value.above{color:var(--green);}
+  .metric .value.below{color:var(--red);}
+
+  /* ---- top5 ---- */
+  .pick{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:16px;
+    background:var(--surface);
+  }
+  .pick + .pick{margin-top:12px;}
+  .pick-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    flex-wrap:wrap;
+  }
+  .rank{
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    font-size:12px;
+    color:var(--bg);
+    background:var(--accent);
+    border-radius:6px;
+    padding:2px 7px;
+    flex-shrink:0;
+  }
+  .code{
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    font-size:14px;
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px dashed var(--accent-dim);
+  }
+  .code:hover{border-bottom-color:var(--accent);}
+  .name{
+    font-family:'Noto Serif TC',serif;
+    font-weight:700;
+    font-size:17px;
+    color:var(--text);
+    text-decoration:none;
+    border-bottom:1px dashed transparent;
+  }
+  .name:hover{color:var(--accent);border-bottom-color:var(--accent);}
+  .sector-tag{
+    font-size:11.5px;
+    color:var(--text-dim);
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:999px;
+    padding:2px 10px;
+  }
+  .score{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-family:'JetBrains Mono',monospace;
+  }
+  .score .num{font-weight:700;font-size:15px;}
+  .score .bar{
+    width:52px;height:5px;border-radius:99px;
+    background:var(--surface-2);
+    overflow:hidden;
+    border:1px solid var(--border);
+  }
+  .score .bar > i{display:block;height:100%;background:var(--accent);}
+
+  .pick-details{margin-top:2px;}
+  .pick-details summary{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:12px;
+    font-weight:700;
+    color:var(--accent);
+    letter-spacing:.02em;
+    padding:2px 0;
+  }
+  .pick-details summary::-webkit-details-marker{display:none;}
+  .pick-details summary .chev{
+    font-family:'JetBrains Mono',monospace;
+    font-size:10px;
+    transition:transform .15s;
+  }
+  .pick-details[open] summary .chev{transform:rotate(90deg);}
+  .pick-details .pick-body{margin-top:10px;}
+
+  .pick-body{
+    display:grid;
+    gap:9px;
+  }
+  .row{
+    display:grid;
+    grid-template-columns:78px 1fr;
+    gap:10px;
+    font-size:13.5px;
+    line-height:1.55;
+  }
+  .row .k{color:var(--text-faint);font-size:12px;padding-top:1px;}
+  .row .v{color:var(--text);}
+  .row.strategy .v{color:var(--accent);}
+
+  /* ---- sector radar ---- */
+  .radar-list{
+    display:grid;
+    gap:8px;
+  }
+  .sector-group{
+    border:1px solid var(--border);
+    border-radius:12px;
+    background:var(--surface-2);
+    overflow:hidden;
+  }
+  .sector-group summary{
+    list-style:none;
+    cursor:pointer;
+    padding:11px 14px;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:6px 8px;
+  }
+  .sector-group summary::-webkit-details-marker{display:none;}
+  .sector-group summary .count{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--accent);
+    font-size:11.5px;
+    font-weight:700;
+  }
+  .sector-group summary .sector-name{
+    font-size:13.5px;
+    font-weight:700;
+  }
+  .flow-badge{
+    font-size:11.5px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  .flow-badge.in{color:var(--red);}
+  .flow-badge.out{color:var(--green);}
+  .sector-group summary .chev{
+    margin-left:auto;
+    font-family:'JetBrains Mono',monospace;
+    color:var(--text-faint);
+    font-size:11px;
+    transition:transform .15s;
+  }
+  .sector-group[open] summary .chev{transform:rotate(90deg);}
+  .sector-stocks{
+    display:flex;flex-wrap:wrap;gap:6px;
+    padding:0 14px 12px;
+  }
+  .stock-chip{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:3px 8px;
+    color:var(--text-dim);
+    text-decoration:none;
+    display:inline-block;
+  }
+  .stock-chip:hover{border-color:var(--accent);color:var(--text);}
+  .stock-chip b{color:var(--text);font-weight:700;}
+  .sector-stocks .none{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:12px;
+    color:var(--text-faint);
+    padding:2px 0;
+  }
+
+  /* ---- 今日焦點 ---- */
+  .focus-list{display:grid;gap:8px;}
+  .focus-item{
+    display:flex;gap:10px;align-items:flex-start;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:10px 12px;
+  }
+  .focus-tag{
+    flex-shrink:0;
+    font-size:10.5px;
+    font-weight:700;
+    padding:3px 9px;
+    border-radius:999px;
+    background:var(--accent-dim);
+    color:var(--accent);
+    white-space:nowrap;
+  }
+  .focus-tag[data-cat="theme"]{background:var(--red-dim);color:var(--red);}
+  .focus-tag[data-cat="rating"]{background:var(--yellow-dim);color:var(--yellow);}
+  .focus-tag[data-cat="news"]{background:var(--surface);color:var(--text-dim);border:1px solid var(--border);}
+  .focus-text{font-size:12.5px;line-height:1.55;color:var(--text-dim);}
+
+  /* ---- 近期重要事件 ---- */
+  .events-list{
+    display:grid;
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    background:var(--surface-2);
+  }
+  .event-item{
+    display:flex;gap:10px;align-items:baseline;
+    padding:9px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .event-item:last-child{border-bottom:0;}
+  .event-date{
+    flex-shrink:0;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    font-weight:700;
+    color:var(--accent);
+    min-width:58px;
+  }
+  .event-text{font-size:12.5px;color:var(--text-dim);line-height:1.5;}
+
+  /* ---- top30 ranking table ---- */
+  .rank-card{
+    padding:0;
+    overflow:hidden;
+  }
+  .rank-scroll{
+    overflow:auto;
+    max-height:640px;
+  }
+  table.rank-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:13px;
+    white-space:nowrap;
+  }
+  .rank-table thead th{
+    position:sticky;
+    top:0;
+    z-index:1;
+    background:var(--surface-2);
+    color:var(--text-faint);
+    font-weight:700;
+    font-size:11px;
+    letter-spacing:.03em;
+    text-align:right;
+    padding:11px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .rank-table th.al, .rank-table td.al{text-align:left;}
+  .rank-table tbody td{
+    padding:10px 12px;
+    border-bottom:1px solid var(--border);
+    text-align:right;
+    font-variant-numeric:tabular-nums;
+  }
+  .rank-table tbody tr:last-child td{border-bottom:0;}
+  .rank-table tbody tr:hover{background:var(--surface-2);}
+  .rank-table .rk{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--text-faint);
+    text-align:left;
+  }
+  .rk-num{font-size:13px;}
+  .rk-badge{
+    display:block;
+    font-size:10px;
+    font-weight:700;
+    white-space:nowrap;
+    margin-top:2px;
+    letter-spacing:.02em;
+  }
+  .rk-badge.new{color:var(--yellow);}
+  .rk-badge.up{color:var(--red);}
+  .rk-badge.up .tri{font-size:8px;}
+  .rank-table .code-cell{
+    display:flex;align-items:center;gap:6px;
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    color:var(--text);
+    text-decoration:none;
+    border-bottom:1px dashed transparent;
+  }
+  .rank-table .code-cell:hover{color:var(--accent);border-bottom-color:var(--accent);}
+  .market-badge{
+    font-size:10px;
+    font-weight:700;
+    border-radius:4px;
+    padding:1px 4px;
+    background:var(--accent-dim);
+    color:var(--accent);
+  }
+  .rank-table .name-cell{
+    font-family:'Noto Serif TC',serif;
+    font-weight:700;
+    font-size:13.5px;
+  }
+  .rank-table .name-cell a{
+    color:var(--text);
+    text-decoration:none;
+    border-bottom:1px dashed transparent;
+  }
+  .rank-table .name-cell a:hover{color:var(--accent);border-bottom-color:var(--accent);}
+  .rank-table .chg.up{color:var(--red);}
+  .rank-table .chg.down{color:var(--green);}
+  .rank-table .theme-cell{
+    text-align:left;
+    color:var(--text-dim);
+    font-size:12.5px;
+  }
+
+  .empty{
+    text-align:center;
+    padding:40px 20px;
+    color:var(--text-dim);
+  }
+  .empty .glyph{font-size:30px;margin-bottom:10px;opacity:.5;}
+  .empty p{margin:4px 0;font-size:13.5px;line-height:1.6;}
+  .empty .small{font-size:11.5px;color:var(--text-faint);font-family:'JetBrains Mono',monospace;}
+
+  footer{
+    margin-top:28px;
+    padding-top:18px;
+    border-top:1px solid var(--border);
+    font-size:12px;
+    color:var(--text-faint);
+    line-height:1.7;
+  }
+  footer b{color:var(--text-dim);}
+
+  [hidden]{display:none!important;}
+
+  :focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+    border-radius:4px;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none!important;animation:none!important;}
+  }
+
+  @media (max-width:480px){
+    .signal-card{grid-template-columns:1fr;}
+    .housing{flex-direction:row;width:auto;justify-content:center;}
+    .metrics{grid-template-columns:1fr 1fr;}
+    .row{grid-template-columns:66px 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <p class="brand-eyebrow">OTC · 主流順勢・活著為王</p>
+      <h1>Joe菜的選妃台</h1>
+    </div>
+    <div class="updated" id="updated">尚未更新</div>
+  </header>
+
+  <section>
+    <div class="card signal-card" id="signalCard">
+      <div class="housing">
+        <div class="lamp red" id="lampRed"></div>
+        <div class="lamp yellow" id="lampYellow"></div>
+        <div class="lamp green" id="lampGreen"></div>
+      </div>
+      <div class="signal-readout">
+        <div class="status-line">
+          <span class="status-word" id="statusWord">—</span>
+          <span class="status-sub" id="statusSub">等待資料</span>
+        </div>
+        <p class="reason" id="reason">尚無今日大盤位階判斷。</p>
+        <div class="metrics">
+          <div class="metric"><div class="label">櫃買指數</div><div class="value" id="mIndex">—</div></div>
+          <div class="metric"><div class="label">月線 20MA</div><div class="value" id="mMa20">—</div></div>
+          <div class="metric"><div class="label">季線 60MA</div><div class="value" id="mMa60">—</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="two-col">
+      <div class="col-left">
+        <p class="section-title">今日選股 TOP 5 <span class="idx">題材50%・技術30%・基本10%・籌碼10%</span></p>
+        <div id="top5List"></div>
+      </div>
+      <div class="col-right">
+        <p class="section-title">今日焦點</p>
+        <div class="focus-list" id="focusList">
+          <span class="status-sub">尚無資料</span>
+        </div>
+
+        <p class="section-title" style="margin-top:20px">資金流向族群</p>
+        <div class="radar-list" id="radarList">
+          <span class="status-sub">尚無資料</span>
+        </div>
+
+        <p class="section-title" style="margin-top:20px">近期重要事件</p>
+        <div class="events-list" id="eventsList">
+          <span class="status-sub">尚無資料</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-title">成交值排行 TOP 30</p>
+    <div class="card rank-card">
+      <div class="rank-scroll">
+        <table class="rank-table" id="rankTable" hidden>
+          <thead>
+            <tr>
+              <th class="al">#</th>
+              <th class="al">股號</th>
+              <th class="al">股名</th>
+              <th>價格</th>
+              <th>漲跌幅</th>
+              <th>成交金額</th>
+              <th>市值</th>
+              <th class="al">題材/族群</th>
+            </tr>
+          </thead>
+          <tbody id="rankTableBody"></tbody>
+        </table>
+        <div class="empty" id="rankEmpty"><div class="glyph">◎</div><p>尚無成交值排行資料</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <b>紅綠燈規則：</b>紅燈＝櫃買指數在月線之上，可積極操作；黃燈＝月季線糾結且指數在季線之上，需謹慎；綠燈＝跌破月線且趨勢向下，防禦，僅買大盤龍頭或ETF，無營收小型股應立即降部位。<br>
+    <b>進場策略：</b>回檔承接（紅/黃燈，回測月線接刀）・動能突破（紅燈，量增突破頸線）・保守守城（綠燈，大盤重挫分批布局龍頭）。
+    本頁僅為個人交易紀律輔助工具，資料由使用者於每個交易日盤後請 Claude 彙整更新，不構成投資建議。
+  </footer>
+</div>
+
+<script>
+(function(){
+  const $ = (id) => document.getElementById(id);
+
+  function fmt(n, digits){
+    if (typeof n !== 'number' || Number.isNaN(n)) return '—';
+    return n.toLocaleString('zh-TW', {minimumFractionDigits: digits ?? 2, maximumFractionDigits: digits ?? 2});
+  }
+
+  const LIGHT_META = {
+    red:    { word: '紅燈', sub: '可積極操作' },
+    yellow: { word: '黃燈', sub: '謹慎操作' },
+    green:  { word: '綠燈', sub: '防禦' },
+  };
+
+  function esc(s){
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : String(s);
+    return d.innerHTML;
+  }
+
+  function wantgooUrl(code){
+    return 'https://www.wantgoo.com/stock/' + encodeURIComponent(String(code || '').trim()) + '/technical-chart';
+  }
+
+  function renderEmpty(message){
+    $('statusWord').textContent = '—';
+    $('statusWord').className = 'status-word';
+    $('statusSub').textContent = '等待資料';
+    $('reason').textContent = message || '尚未有今日收盤資料，請於交易日盤後請 Claude 更新。';
+    ['lampRed','lampYellow','lampGreen'].forEach(id => $(id).classList.remove('on'));
+    $('mIndex').textContent = '—';
+    $('mMa20').textContent = '—';
+    $('mMa60').textContent = '—';
+    $('top5List').innerHTML = '<div class="card empty"><div class="glyph">◎</div>'
+      + '<p>今日選股清單尚未產出</p>'
+      + '<p class="small">更新方式：交易日盤後請 Claude 執行更新</p></div>';
+    $('radarList').innerHTML = '<span class="status-sub">尚無資料</span>';
+    $('focusList').innerHTML = '<span class="status-sub">尚無資料</span>';
+    $('eventsList').innerHTML = '<span class="status-sub">尚無資料</span>';
+    $('updated').textContent = '尚未更新';
+    $('rankTable').hidden = true;
+    $('rankEmpty').hidden = false;
+  }
+
+  const FOCUS_CAT = { '籌碼': 'chips', '題材': 'theme', '評等': 'rating', '新聞': 'news' };
+
+  function renderFocusItem(f){
+    const tag = (f && f.tag) || '焦點';
+    const cat = FOCUS_CAT[tag] || 'chips';
+    return '<div class="focus-item">'
+      + '<span class="focus-tag" data-cat="' + cat + '">' + esc(tag) + '</span>'
+      + '<span class="focus-text">' + esc((f && f.text) || '') + '</span>'
+    + '</div>';
+  }
+
+  function renderEventItem(e){
+    return '<div class="event-item">'
+      + '<span class="event-date">' + esc((e && e.date) || '') + '</span>'
+      + '<span class="event-text">' + esc((e && e.event) || '') + '</span>'
+    + '</div>';
+  }
+
+  function renderPick(p){
+    const scorePct = Math.max(0, Math.min(100, p.score ?? 0));
+    return '<div class="pick">'
+      + '<div class="pick-head">'
+      +   '<span class="rank">TOP ' + (p.rank ?? '') + '</span>'
+      +   '<a class="code" href="' + wantgooUrl(p.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + (p.code ?? '') + '</a>'
+      +   '<a class="name" href="' + wantgooUrl(p.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + (p.name ?? '') + '</a>'
+      +   '<span class="sector-tag">' + (p.sector ?? '') + '</span>'
+      +   '<span class="score"><span class="num">' + scorePct + '</span><span class="bar"><i style="width:' + scorePct + '%"></i></span></span>'
+      + '</div>'
+      + '<details class="pick-details">'
+      +   '<summary>詳細分析<span class="chev">▸</span></summary>'
+      +   '<div class="pick-body">'
+      +     row('題材', p.theme_reason)
+      +     row('基本面', p.fundamentals)
+      +     row('籌碼', p.chips_signal)
+      +     row('策略', p.buy_strategy, true)
+      +   '</div>'
+      + '</details>'
+    + '</div>';
+
+    function row(k, v, isStrategy){
+      return '<div class="row' + (isStrategy ? ' strategy' : '') + '"><span class="k">' + k + '</span><span class="v">' + (v ?? '—') + '</span></div>';
+    }
+  }
+
+  function renderSectorGroup(s, changeMap){
+    const stocks = Array.isArray(s.stocks) ? s.stocks : [];
+    const chips = stocks.length
+      ? stocks.map(st => '<a class="stock-chip" href="' + wantgooUrl(st.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖"><b>' + esc(st.code || '') + '</b> ' + esc(st.name || '') + '</a>').join('')
+      : '<span class="none">個股明細尚未提供（需重新整理資料）</span>';
+
+    let flowBadge = '';
+    const changes = stocks
+      .map(st => changeMap[String(st.code || '').trim()])
+      .filter(v => typeof v === 'number');
+    if (changes.length){
+      const avg = changes.reduce((a, b) => a + b, 0) / changes.length;
+      const inflow = avg >= 0;
+      flowBadge = '<span class="flow-badge ' + (inflow ? 'in' : 'out') + '">'
+        + (inflow ? '🔥 資金流入' : '🌿 資金流出')
+      + '</span>';
+    }
+
+    return '<details class="sector-group">'
+      + '<summary>'
+      +   '<span class="count">' + (s.count ?? '') + '×</span>'
+      +   '<span class="sector-name">' + esc(s.sector ?? '') + '</span>'
+      +   flowBadge
+      +   '<span class="chev">▸</span>'
+      + '</summary>'
+      + '<div class="sector-stocks">' + chips + '</div>'
+    + '</details>';
+  }
+
+  function renderRankRow(r){
+    const chg = typeof r.change_pct === 'number' ? r.change_pct : null;
+    const chgClass = chg == null ? '' : (chg > 0 ? 'up' : chg < 0 ? 'down' : '');
+    const chgText = chg == null ? '—' : (chg > 0 ? '+' : '') + chg.toFixed(2) + '%';
+    let rkBadge = '';
+    if (r.is_new){
+      rkBadge = '<span class="rk-badge new">New</span>';
+    } else if (typeof r.rank_up === 'number' && r.rank_up > 0){
+      rkBadge = '<span class="rk-badge up"><span class="tri">▲</span> ' + r.rank_up + '</span>';
+    }
+    return '<tr>'
+      + '<td class="al rk"><span class="rk-num">' + (r.rank ?? '') + '</span>' + rkBadge + '</td>'
+      + '<td class="al"><a class="code-cell" href="' + wantgooUrl(r.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + esc(r.code || '') + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</a></td>'
+      + '<td class="al name-cell"><a href="' + wantgooUrl(r.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + esc(r.name || '') + '</a></td>'
+      + '<td>' + fmt(r.price) + '</td>'
+      + '<td class="chg ' + chgClass + '">' + chgText + '</td>'
+      + '<td>' + esc(r.turnover || '—') + '</td>'
+      + '<td>' + esc(r.market_cap || '—') + '</td>'
+      + '<td class="theme-cell">' + esc(r.theme || '—') + '</td>'
+    + '</tr>';
+  }
+
+  function render(data){
+    const light = data.light in LIGHT_META ? data.light : null;
+    ['red','yellow','green'].forEach(c => $('lamp' + c[0].toUpperCase() + c.slice(1)).classList.toggle('on', c === light));
+
+    if (light){
+      $('statusWord').textContent = LIGHT_META[light].word;
+      $('statusWord').className = 'status-word ' + light;
+      $('statusSub').textContent = LIGHT_META[light].sub;
+    }
+    $('reason').textContent = data.light_reason || '—';
+
+    $('mIndex').textContent = fmt(data.otc_index);
+    const ma20El = $('mMa20'), ma60El = $('mMa60');
+    ma20El.textContent = fmt(data.otc_ma20);
+    ma60El.textContent = fmt(data.otc_ma60);
+    ma20El.className = 'value' + (typeof data.otc_index === 'number' && typeof data.otc_ma20 === 'number' ? (data.otc_index >= data.otc_ma20 ? ' above' : ' below') : '');
+    ma60El.className = 'value' + (typeof data.otc_index === 'number' && typeof data.otc_ma60 === 'number' ? (data.otc_index >= data.otc_ma60 ? ' above' : ' below') : '');
+
+    const top5 = Array.isArray(data.top5) ? data.top5 : [];
+    $('top5List').innerHTML = top5.length
+      ? top5.map(renderPick).join('')
+      : '<div class="card empty"><div class="glyph">◎</div><p>今日選股清單尚未產出</p></div>';
+
+    const top30 = Array.isArray(data.top30) ? data.top30 : (Array.isArray(data.top50) ? data.top50.slice(0, 30) : []);
+    const changeMap = {};
+    top30.forEach(r => { if (r && r.code != null && typeof r.change_pct === 'number') changeMap[String(r.code).trim()] = r.change_pct; });
+
+    const sectors = Array.isArray(data.top50_sectors) ? data.top50_sectors : [];
+    $('radarList').innerHTML = sectors.length
+      ? sectors.map(s => renderSectorGroup(s, changeMap)).join('')
+      : '<span class="status-sub">尚無資料</span>';
+
+    const focus = Array.isArray(data.today_focus) ? data.today_focus : [];
+    $('focusList').innerHTML = focus.length
+      ? focus.map(renderFocusItem).join('')
+      : '<span class="status-sub">尚無資料</span>';
+
+    const events = Array.isArray(data.upcoming_events) ? data.upcoming_events : [];
+    $('eventsList').innerHTML = events.length
+      ? events.map(renderEventItem).join('')
+      : '<span class="status-sub">尚無資料</span>';
+
+    $('rankTable').hidden = !top30.length;
+    $('rankEmpty').hidden = !!top30.length;
+    if (top30.length){
+      $('rankTableBody').innerHTML = top30.map(renderRankRow).join('');
+    }
+
+    if (data.date){
+      $('updated').textContent = data.date + ' 盤後資料';
+    }
+  }
+
+  renderEmpty();
+
+  function loadData(){
+    fetch('data/latest.json?t=' + Date.now(), {cache: 'no-store'})
+      .then(function(r){ if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+      .then(function(data){
+        try { render(data); }
+        catch(e){ renderEmpty('資料格式異常。'); }
+      })
+      .catch(function(){ renderEmpty('尚無資料，或資料載入失敗。'); });
+  }
+  loadData();
+  setInterval(loadData, 10 * 60 * 1000);
+})();
+</script>
+</body>
+</html>

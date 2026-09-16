@@ -1,0 +1,16 @@
+{
+  "name": "Joe菜的選妃台",
+  "short_name": "選妃台",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e1217",
+  "theme_color": "#0e1217",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
