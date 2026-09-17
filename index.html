@@ -919,7 +919,7 @@
       ? top5.map(p => renderPick(p, quoteMap)).join('')
       : '<div class="card empty"><div class="glyph">◎</div><p>今日選股清單尚未產出</p></div>';
 
-    const sectors = Array.isArray(data.top50_sectors) ? data.top50_sectors : [];
+    const sectors = [data.top50_sectors, data.top30_sectors, data.sectors].find(Array.isArray) || [];
     $('radarList').innerHTML = sectors.length
       ? sectors.map(s => renderSectorGroup(s, changeMap)).join('')
       : '<span class="status-sub">尚無資料</span>';
