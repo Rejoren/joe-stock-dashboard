@@ -211,7 +211,7 @@
   }
   .metrics{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:10px;
   }
   .metric{
@@ -642,6 +642,7 @@
         <p class="reason" id="reason">尚無今日大盤位階判斷。</p>
         <div class="metrics">
           <div class="metric"><div class="label">櫃買指數</div><div class="value" id="mIndex">—</div></div>
+          <div class="metric"><div class="label">5日線 5MA</div><div class="value" id="mMa5">—</div></div>
           <div class="metric"><div class="label">月線 20MA</div><div class="value" id="mMa20">—</div></div>
           <div class="metric"><div class="label">季線 60MA</div><div class="value" id="mMa60">—</div></div>
         </div>
@@ -699,8 +700,8 @@
   </section>
 
   <footer>
-    <b>紅綠燈規則：</b>紅燈＝櫃買指數在月線之上，可積極操作；黃燈＝月季線糾結且指數在季線之上，需謹慎；綠燈＝跌破月線且趨勢向下，防禦，僅買大盤龍頭或ETF，無營收小型股應立即降部位。<br>
-    <b>進場策略：</b>回檔承接（紅/黃燈，回測月線接刀）・動能突破（紅燈，量增突破頸線）・保守守城（綠燈，大盤重挫分批布局龍頭）。
+    <b>紅綠燈規則：</b>紅燈＝櫃買指數站上5日線且在月線之上、均線多頭排列，可積極操作；黃燈＝跌破5日線、月季線糾結但仍在季線之上，需謹慎；綠燈＝跌破季線且趨勢向下，防禦，只買大盤龍頭或ETF，無營收小型股立刻降部位。<br>
+    <b>進場策略：</b>回檔承接（紅/黃燈、櫃買在月季線上，創高拉回10%以上回測月線不破、MACD綠柱縮短或翻紅）・動能突破（紅燈、MACD翻紅突破頸線或區間高、量達5日均量1.5–2倍、外資或投信連3日買超）・保守守城（綠燈、大盤重挫3%以上、量增、主力站賣方，分3筆布局龍頭後抱緊）。
     本頁僅為個人交易紀律輔助工具，資料由使用者於每個交易日盤後請 Claude 彙整更新，不構成投資建議。
   </footer>
 </div>
@@ -737,6 +738,7 @@
     $('reason').textContent = message || '尚未有今日收盤資料，請於交易日盤後請 Claude 更新。';
     ['lampRed','lampYellow','lampGreen'].forEach(id => $(id).classList.remove('on'));
     $('mIndex').textContent = '—';
+    $('mMa5').textContent = '—';
     $('mMa20').textContent = '—';
     $('mMa60').textContent = '—';
     $('top5List').innerHTML = '<div class="card empty"><div class="glyph">◎</div>'
@@ -897,11 +899,11 @@
     $('reason').textContent = data.light_reason || '—';
 
     $('mIndex').textContent = fmt(data.otc_index);
-    const ma20El = $('mMa20'), ma60El = $('mMa60');
-    ma20El.textContent = fmt(data.otc_ma20);
-    ma60El.textContent = fmt(data.otc_ma60);
-    ma20El.className = 'value' + (typeof data.otc_index === 'number' && typeof data.otc_ma20 === 'number' ? (data.otc_index >= data.otc_ma20 ? ' above' : ' below') : '');
-    ma60El.className = 'value' + (typeof data.otc_index === 'number' && typeof data.otc_ma60 === 'number' ? (data.otc_index >= data.otc_ma60 ? ' above' : ' below') : '');
+    [['mMa5', data.otc_ma5], ['mMa20', data.otc_ma20], ['mMa60', data.otc_ma60]].forEach(([id, ma]) => {
+      const el = $(id);
+      el.textContent = fmt(ma);
+      el.className = 'value' + (typeof data.otc_index === 'number' && typeof ma === 'number' ? (data.otc_index >= ma ? ' above' : ' below') : '');
+    });
 
     const top30 = Array.isArray(data.top30) ? data.top30 : (Array.isArray(data.top50) ? data.top50.slice(0, 30) : []);
     const changeMap = {}, quoteMap = {};
