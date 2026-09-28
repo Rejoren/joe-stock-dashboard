@@ -282,6 +282,17 @@
     border-bottom:1px dashed transparent;
   }
   .name:hover{color:var(--accent);border-bottom-color:var(--accent);}
+  .pick-badge{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    font-weight:700;
+    border-radius:5px;
+    padding:2px 7px;
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .pick-badge.new{color:var(--yellow);background:var(--yellow-dim);}
+  .pick-badge.days{color:var(--red);background:var(--red-dim);}
   .pick-quote{
     display:inline-flex;
     align-items:baseline;
@@ -820,9 +831,14 @@
     const quote = (price == null && chg == null) ? ''
       : '<span class="pick-quote ' + dirClass(chg) + '"><b class="px">' + fmt(price) + '</b><span class="pc">' + chgText(chg) + '</span></span>';
     const candle = { price: price, change_pct: chg, open: num(p.open) ?? num(q.open), high: num(p.high) ?? num(q.high), low: num(p.low) ?? num(q.low) };
+    const streak = num(p.streak);
+    const streakBadge = streak == null || streak < 1 ? ''
+      : streak === 1 ? '<span class="pick-badge new" title="今日新上榜">New</span>'
+      : '<span class="pick-badge days" title="連續上榜天數">' + streak + ' 天</span>';
     return '<div class="pick">'
       + '<div class="pick-head">'
       +   '<span class="rank">TOP ' + (p.rank ?? '') + '</span>'
+      +   streakBadge
       +   klineSvg(candle)
       +   '<a class="code" href="' + wantgooUrl(p.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + (p.code ?? '') + '</a>'
       +   '<a class="name" href="' + wantgooUrl(p.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖">' + (p.name ?? '') + '</a>'
