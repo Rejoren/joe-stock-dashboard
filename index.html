@@ -74,6 +74,7 @@
     --red:#c43d33;
     --red-dim:rgba(196,61,51,.10);
     --shadow:rgba(20,30,40,.08);
+    --flat:#1b2229;
   }
 
   *{box-sizing:border-box;}
@@ -227,8 +228,16 @@
     font-size:16px;
     font-variant-numeric:tabular-nums;
   }
-  .metric .value.above{color:var(--green);}
-  .metric .value.below{color:var(--red);}
+  .metric .value.above{color:var(--red);}
+  .metric .value.below{color:var(--green);}
+  .metric .value.up{color:var(--red);}
+  .metric .value.down{color:var(--green);}
+  .metric .value.flat{color:var(--yellow);}
+  .idx-chg{
+    font-size:12px;
+    font-weight:700;
+    margin-left:5px;
+  }
 
   /* ---- top5 ---- */
   .pick{
@@ -641,7 +650,7 @@
         </div>
         <p class="reason" id="reason">尚無今日大盤位階判斷。</p>
         <div class="metrics">
-          <div class="metric"><div class="label">櫃買指數</div><div class="value" id="mIndex">—</div></div>
+          <div class="metric"><div class="label">櫃買指數</div><div class="value" id="mIndexBox"><span id="mIndex">—</span><span class="idx-chg" id="mIndexChg"></span></div></div>
           <div class="metric"><div class="label">5日線 5MA</div><div class="value" id="mMa5">—</div></div>
           <div class="metric"><div class="label">月線 20MA</div><div class="value" id="mMa20">—</div></div>
           <div class="metric"><div class="label">季線 60MA</div><div class="value" id="mMa60">—</div></div>
@@ -738,6 +747,8 @@
     $('reason').textContent = message || '尚未有今日收盤資料，請於交易日盤後請 Claude 更新。';
     ['lampRed','lampYellow','lampGreen'].forEach(id => $(id).classList.remove('on'));
     $('mIndex').textContent = '—';
+    $('mIndexChg').textContent = '';
+    $('mIndexBox').className = 'value';
     $('mMa5').textContent = '—';
     $('mMa20').textContent = '—';
     $('mMa60').textContent = '—';
@@ -898,7 +909,10 @@
     }
     $('reason').textContent = data.light_reason || '—';
 
+    const otcChg = num(data.otc_change_pct);
     $('mIndex').textContent = fmt(data.otc_index);
+    $('mIndexChg').textContent = otcChg == null ? '' : chgText(otcChg);
+    $('mIndexBox').className = 'value ' + dirClass(otcChg);
     [['mMa5', data.otc_ma5], ['mMa20', data.otc_ma20], ['mMa60', data.otc_ma60]].forEach(([id, ma]) => {
       const el = $(id);
       el.textContent = fmt(ma);
