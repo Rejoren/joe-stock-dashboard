@@ -386,6 +386,46 @@
     display:grid;
     gap:8px;
   }
+  .flow-tabs{
+    display:inline-flex;
+    gap:2px;
+    padding:2px;
+    margin-bottom:10px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:8px;
+  }
+  .flow-tabs button{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:12px;
+    font-weight:700;
+    color:var(--text-dim);
+    background:none;
+    border:0;
+    border-radius:6px;
+    padding:5px 12px;
+    cursor:pointer;
+  }
+  .flow-tabs button:hover{color:var(--text);}
+  .flow-tabs button[aria-selected="true"]{
+    background:var(--accent);
+    color:var(--bg);
+  }
+  .chip-pct{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    margin-left:4px;
+  }
+  .chip-pct.up{color:var(--red);}
+  .chip-pct.down{color:var(--green);}
+  .chip-pct.flat{color:var(--text-faint);}
+  .flow-avg{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11.5px;
+    font-weight:700;
+  }
+  .flow-avg.up{color:var(--red);}
+  .flow-avg.down{color:var(--green);}
   .sector-group{
     border:1px solid var(--border);
     border-radius:12px;
@@ -677,6 +717,11 @@
         <div id="top5List"></div>
 
         <p class="section-title" style="margin-top:20px">資金流向族群</p>
+        <div class="flow-tabs" id="flowTabs" role="tablist" hidden>
+          <button type="button" role="tab" data-period="today" aria-selected="true">本日</button>
+          <button type="button" role="tab" data-period="this_week" aria-selected="false">本週</button>
+          <button type="button" role="tab" data-period="last_week" aria-selected="false">上週</button>
+        </div>
         <div class="radar-list" id="radarList">
           <span class="status-sub">尚無資料</span>
         </div>
@@ -767,6 +812,7 @@
       + '<p>今日選股清單尚未產出</p>'
       + '<p class="small">更新方式：交易日盤後請 Claude 執行更新</p></div>';
     $('radarList').innerHTML = '<span class="status-sub">尚無資料</span>';
+    $('flowTabs').hidden = true;
     $('focusList').innerHTML = '<span class="status-sub">尚無資料</span>';
     $('eventsList').innerHTML = '<span class="status-sub">尚無資料</span>';
     $('updated').textContent = '尚未更新';
@@ -862,34 +908,69 @@
     }
   }
 
-  function renderSectorGroup(s, changeMap){
-    const stocks = Array.isArray(s.stocks) ? s.stocks : [];
-    const chips = stocks.length
-      ? stocks.map(st => '<a class="stock-chip" href="' + wantgooUrl(st.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖"><b>' + esc(st.code || '') + '</b> ' + esc(st.name || '') + '</a>').join('')
+  // Groups arrive either as the new {group, avg_pct, stocks:[{code,name,pct}]} shape
+  // or the legacy {sector, stocks:[{code,name}]} one, whose pct comes from changeMap.
+  function normalizeGroup(g, changeMap){
+    const raw = Array.isArray(g.stocks) ? g.stocks : [];
+    const isNew = g.group !== undefined || g.avg_pct !== undefined;
+    const stocks = raw.map(st => ({
+      code: st.code,
+      name: st.name,
+      pct: isNew ? num(st.pct) : num(changeMap[String(st.code || '').trim()]),
+    }));
+    let avg = isNew ? num(g.avg_pct) : null;
+    if (avg == null){
+      const vals = stocks.map(st => st.pct).filter(v => v != null);
+      avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+    }
+    return { name: g.group ?? g.sector ?? '', count: g.count ?? stocks.length, avg: avg, stocks: stocks };
+  }
+
+  function renderSectorGroup(g){
+    const chips = g.stocks.length
+      ? g.stocks.map(st => '<a class="stock-chip" href="' + wantgooUrl(st.code) + '" target="_blank" rel="noopener noreferrer" title="在 wantgoo 查看技術圖"><b>' + esc(st.code || '') + '</b> ' + esc(st.name || '')
+          + (st.pct == null ? '' : '<span class="chip-pct ' + dirClass(st.pct) + '">' + chgText(st.pct) + '</span>')
+        + '</a>').join('')
       : '<span class="none">個股明細尚未提供（需重新整理資料）</span>';
 
-    let flowBadge = '';
-    const changes = stocks
-      .map(st => changeMap[String(st.code || '').trim()])
-      .filter(v => typeof v === 'number');
-    if (changes.length){
-      const avg = changes.reduce((a, b) => a + b, 0) / changes.length;
-      const inflow = avg >= 0;
-      flowBadge = '<span class="flow-badge ' + (inflow ? 'in' : 'out') + '">'
-        + (inflow ? '🔥 資金流入' : '🌿 資金流出')
-      + '</span>';
+    let flowBadge = '', avgText = '';
+    if (g.avg != null){
+      const inflow = g.avg >= 0;
+      flowBadge = '<span class="flow-badge ' + (inflow ? 'in' : 'out') + '">' + (inflow ? '🔥 資金流入' : '🌿 資金流出') + '</span>';
+      avgText = '<span class="flow-avg ' + dirClass(g.avg) + '">' + chgText(g.avg) + '</span>';
     }
 
     return '<details class="sector-group">'
       + '<summary>'
-      +   '<span class="count">' + (s.count ?? '') + '×</span>'
-      +   '<span class="sector-name">' + esc(s.sector ?? '') + '</span>'
+      +   '<span class="count">' + g.count + '×</span>'
+      +   '<span class="sector-name">' + esc(g.name) + '</span>'
       +   flowBadge
+      +   avgText
       +   '<span class="chev">▸</span>'
       + '</summary>'
       + '<div class="sector-stocks">' + chips + '</div>'
     + '</details>';
   }
+
+  const FLOW_PERIODS = ['today', 'this_week', 'last_week'];
+  let flowData = null, flowPeriod = 'today';
+
+  function paintFlows(){
+    const groups = (flowData && flowData[flowPeriod]) || [];
+    $('radarList').innerHTML = groups.length
+      ? groups.map(renderSectorGroup).join('')
+      : '<span class="status-sub">尚無資料</span>';
+    Array.from($('flowTabs').querySelectorAll('button')).forEach(b => {
+      b.setAttribute('aria-selected', String(b.dataset.period === flowPeriod));
+    });
+  }
+
+  $('flowTabs').addEventListener('click', function(e){
+    const b = e.target.closest('button[data-period]');
+    if (!b || !FLOW_PERIODS.includes(b.dataset.period)) return;
+    flowPeriod = b.dataset.period;
+    paintFlows();
+  });
 
   function renderRankRow(r){
     const chg = num(r.change_pct);
@@ -949,10 +1030,22 @@
       ? top5.map(p => renderPick(p, quoteMap)).join('')
       : '<div class="card empty"><div class="glyph">◎</div><p>今日選股清單尚未產出</p></div>';
 
-    const sectors = [data.top50_sectors, data.top30_sectors, data.sectors].find(Array.isArray) || [];
-    $('radarList').innerHTML = sectors.length
-      ? sectors.map(s => renderSectorGroup(s, changeMap)).join('')
-      : '<span class="status-sub">尚無資料</span>';
+    const flows = data.sector_flows && typeof data.sector_flows === 'object' ? data.sector_flows : null;
+    const hasPeriods = flows && FLOW_PERIODS.some(k => Array.isArray(flows[k]) && flows[k].length);
+    if (hasPeriods){
+      flowData = {};
+      FLOW_PERIODS.forEach(k => {
+        flowData[k] = (Array.isArray(flows[k]) ? flows[k] : []).map(g => normalizeGroup(g, changeMap));
+      });
+      if (!flowData[flowPeriod].length) flowPeriod = FLOW_PERIODS.find(k => flowData[k].length) || 'today';
+      $('flowTabs').hidden = false;
+    } else {
+      const legacy = [data.top50_sectors, data.top30_sectors, data.sectors].find(Array.isArray) || [];
+      flowData = { today: legacy.map(g => normalizeGroup(g, changeMap)), this_week: [], last_week: [] };
+      flowPeriod = 'today';
+      $('flowTabs').hidden = true;
+    }
+    paintFlows();
 
     const focus = Array.isArray(data.today_focus) ? data.today_focus : [];
     $('focusList').innerHTML = focus.length
