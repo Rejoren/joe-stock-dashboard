@@ -15,6 +15,15 @@
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
 <style>
+  .mast-side{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px;}
+  .offline-tag{padding:4px 10px;font-family:var(--font-data);font-size:11px;color:var(--yellow);background:var(--yellow-dim);border-radius:999px;}
+  .install-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;font:600 12px/1.4 var(--font-body);color:var(--accent-ink);background:var(--accent);border:0;border-radius:999px;cursor:pointer;}
+  .install-btn:hover{filter:brightness(1.08);}
+  .ios-tip{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:flex-start;gap:10px;max-width:420px;margin:0 auto;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--text);background:var(--surface-2);border:1px solid var(--line-strong);border-radius:14px;box-shadow:var(--shadow);}
+  .ios-tip p{margin:0;flex:1;}
+  .ios-tip button{flex:none;padding:2px 8px;font-size:16px;line-height:1;color:var(--text-dim);background:none;border:0;cursor:pointer;}
+</style>
+<style>
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap');
 
   /* Dark-first: bare :root is the night-session palette; the light blocks below swap the tokens. */
@@ -729,7 +738,11 @@
       <p class="eyebrow">櫃買 OTC ・ 主流順勢 ・ 活著為王</p>
       <h1>Joe菜的選妃台</h1>
     </div>
-    <div class="stamp" id="updated">尚未更新</div>
+    <div class="mast-side">
+      <div class="stamp" id="updated">尚未更新</div>
+      <span class="offline-tag" id="offlineTag" hidden>離線・顯示上次資料</span>
+      <button type="button" class="install-btn" id="installBtn" hidden>📲 安裝 App</button>
+    </div>
   </header>
 
   <section class="signal" id="signalCard" aria-label="大盤燈號">
@@ -1399,15 +1412,68 @@
 
   function loadData(){
     fetch('data/latest.json?t=' + Date.now(), {cache: 'no-store'})
-      .then(function(r){ if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+      .then(function(r){
+        if (!r.ok) throw new Error(String(r.status));
+        var tag = document.getElementById('offlineTag');
+        if (tag) tag.hidden = r.headers.get('X-From-Cache') !== '1';
+        return r.json();
+      })
       .then(function(data){
         try { render(data); }
         catch(e){ renderEmpty('資料格式異常。'); }
       })
       .catch(function(){ renderEmpty('尚無資料，或資料載入失敗。'); });
   }
+  window.loadData = loadData;
   loadData();
   setInterval(loadData, 10 * 60 * 1000);
+})();
+</script>
+<div class="ios-tip" id="iosTip" hidden>
+  <p>把選妃台裝成 App：點 Safari 的<b>分享</b>按鈕 → 選<b>「加入主畫面」</b>。</p>
+  <button type="button" id="iosTipClose" aria-label="關閉">×</button>
+</div>
+<script>
+(function(){
+  if ('serviceWorker' in navigator) {
+    var hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+    navigator.serviceWorker.addEventListener('controllerchange', function(){
+      if (hadController) location.reload();
+      hadController = true;
+    });
+  }
+
+  var btn = document.getElementById('installBtn');
+  var deferred = null;
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferred = e;
+    btn.hidden = false;
+  });
+  btn.addEventListener('click', function(){
+    if (!deferred) return;
+    deferred.prompt();
+    deferred.userChoice.finally(function(){ deferred = null; btn.hidden = true; });
+  });
+  window.addEventListener('appinstalled', function(){ btn.hidden = true; });
+
+  var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var dismissed = false;
+  try { dismissed = localStorage.getItem('joe.iosTipDismissed') === '1'; } catch (e) {}
+  var tip = document.getElementById('iosTip');
+  if (ios && !standalone && !dismissed) tip.hidden = false;
+  document.getElementById('iosTipClose').addEventListener('click', function(){
+    tip.hidden = true;
+    try { localStorage.setItem('joe.iosTipDismissed', '1'); } catch (e) {}
+  });
+
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'visible' && window.loadData) window.loadData();
+  });
+  window.addEventListener('online', function(){ if (window.loadData) window.loadData(); });
 })();
 </script>
 </body>

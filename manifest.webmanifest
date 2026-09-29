@@ -3,24 +3,31 @@
   "short_name": "選妃台",
   "start_url": "./",
   "scope": "./",
+  "id": "./",
+  "description": "櫃買大盤紅綠燈、每日 TOP5 選股與資金流向族群",
+  "lang": "zh-Hant",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0a0f15",
   "theme_color": "#0a0f15",
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
