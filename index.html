@@ -586,16 +586,6 @@
   .events{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
   .events:has(.empty-note){background:none;border:0;}
   .rumors{display:grid;gap:10px;}
-  .rumor-note{
-    margin:0;
-    padding:9px 12px;
-    font-size:11.5px;
-    line-height:1.6;
-    color:var(--yellow);
-    background:var(--yellow-dim);
-    border-radius:10px;
-  }
-  .rumor-note a{color:inherit;font-weight:700;}
   .rumor-group{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
   .rumor-industry{
     display:flex;
@@ -1020,7 +1010,6 @@
     $('eventsList').innerHTML = emptyNote('尚無資料');
     $('rumorList').innerHTML = emptyNote('尚無市場傳聞資料');
     eventsMetaText = '未來約一個月';
-    rumorsMetaText = '@QQ_Timmy 近 3 日貼文';
     paintEventView();
     $('updated').textContent = '尚未更新';
     $('rankTable').hidden = true;
@@ -1079,13 +1068,10 @@
 
   function renderRumors(r){
     if (!r || typeof r !== 'object') return emptyNote('尚無市場傳聞資料');
-    const range = Array.isArray(r.window) && r.window[0] ? shortRange(r.window) : '';
-    const note = '<p class="rumor-note">來自 <a href="https://x.com/QQ_Timmy" target="_blank" rel="noopener noreferrer">@QQ_Timmy</a> 近 3 日貼文'
-      + (range ? '（' + range + '）' : '') + '，屬未經證實的市場消息，僅供參考。</p>';
-    if (r.status === 'unavailable') return note + emptyNote('今天無法讀取 X（Chrome 未開啟、擴充功能未連線或未登入）');
+    if (r.status === 'unavailable') return emptyNote('今天無法讀取 X（Chrome 未開啟、擴充功能未連線或未登入）');
     const groups = (Array.isArray(r.groups) ? r.groups : []).filter(g => Array.isArray(g.items) && g.items.length);
-    if (!groups.length) return note + emptyNote('近 3 日沒有與成交值排行相關的貼文');
-    return note + groups.map(g => '<div class="rumor-group">'
+    if (!groups.length) return emptyNote('近 3 日沒有與成交值排行相關的貼文');
+    return groups.map(g => '<div class="rumor-group">'
       + '<h3 class="rumor-industry">' + esc(g.industry || '其他') + '<span class="fg-count">' + g.items.length + ' 則</span></h3>'
       + g.items.map(renderRumorItem).join('')
     + '</div>').join('');
@@ -1093,7 +1079,7 @@
 
   const EVENT_VIEWS = ['events', 'rumors'];
   const EVENT_TITLES = { events: '近期重要事件', rumors: '市場傳聞' };
-  let eventView = 'events', eventsMetaText = '未來約一個月', rumorsMetaText = '@QQ_Timmy 近 3 日貼文';
+  let eventView = 'events', eventsMetaText = '未來約一個月';
   try {
     const savedView = localStorage.getItem('joe.eventView');
     if (EVENT_VIEWS.includes(savedView)) eventView = savedView;
@@ -1103,7 +1089,8 @@
     $('eventsList').hidden = eventView !== 'events';
     $('rumorList').hidden = eventView !== 'rumors';
     $('hEvents').textContent = EVENT_TITLES[eventView];
-    $('eventsMeta').textContent = eventView === 'events' ? eventsMetaText : rumorsMetaText;
+    $('eventsMeta').hidden = eventView !== 'events';
+    $('eventsMeta').textContent = eventsMetaText;
     Array.from($('eventTabs').querySelectorAll('button')).forEach(b => {
       b.setAttribute('aria-selected', String(b.dataset.view === eventView));
     });
@@ -1383,9 +1370,6 @@
     eventsMetaText = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
     const rumors = data.rumors && typeof data.rumors === 'object' ? data.rumors : null;
     $('rumorList').innerHTML = renderRumors(rumors);
-    const rumorCount = rumors && Array.isArray(rumors.groups)
-      ? rumors.groups.reduce((n, g) => n + (Array.isArray(g.items) ? g.items.length : 0), 0) : 0;
-    rumorsMetaText = '@QQ_Timmy 近 3 日貼文' + (rumorCount ? '・' + rumorCount + ' 則' : '');
     paintEventView();
 
     $('rankTable').hidden = !top30.length;
