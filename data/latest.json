@@ -11,74 +11,89 @@
  "light_reason": "櫃買指數收412.25跌破5日線(413.35)，仍站上20日(405.14)與60日均線(395.87)，謹慎操作",
  "today_focus": [
   {
+   "tag": "籌碼",
+   "text": "連假後法人續賣：三大法人合計賣超784.06億元（證交所統計），外資賣超625.83億元、投信買超5.79億元、自營商賣超164.03億元。",
+   "source": "經濟日報",
+   "url": "https://money.udn.com/money/story/5607/9783593"
+  },
+  {
    "tag": "新聞",
-   "text": "中秋連假後補跌，加權指數跌392.64點收47,631.96點；聯發科傳Google TPU訓練晶片進度延後，重挫7.1%失守5,000元"
+   "text": "加權指數跌392.64點（-0.81%）收47,631.96點，成交7,850億元；台積電平盤2,475元撐盤，聯發科跌7.09%、台達電跌3.92%，塑膠類股逆勢漲2.68%。",
+   "source": "經濟日報",
+   "url": "https://money.udn.com/money/story/12509/9783734"
   },
   {
    "tag": "籌碼",
-   "text": "三大法人合計賣超625.93億元，外資賣超632.01億元、連2賣，投信由賣轉買14.16億元；南亞獲三大法人買超33,822張居冠"
+   "text": "南亞獲外資大買約3萬張、股價漲近4%；外資預估南亞CCL今明年平均售價分別成長90%與85%，高階M10材料已入列輝達與CSP認證名單。",
+   "source": "經濟日報",
+   "url": "https://money.udn.com/money/story/5607/9783941",
+   "related": "TOP5"
   },
   {
    "tag": "題材",
-   "text": "CCL/玻纖布缺貨漲價題材發酵：聯茂盤中漲停、收漲4.2%，南亞、臻鼎、貿聯同步走強，資金轉進PCB材料鏈"
+   "text": "Amazon以每股856元認購金像電私募現增約1,856張、金額約15.89億元，持股約0.3%，為亞馬遜首度入股金像電，雙方合作更緊密。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6617868",
+   "related": "最強族群"
+  },
+  {
+   "tag": "籌碼",
+   "text": "嘉晶獲外資連五買，股價漲7.81%再創波段高點、成交7.54萬張；同在TOP5的聯茂漲4.20%。",
+   "source": "工商時報",
+   "url": "https://www.ctee.com.tw/news/20260929701737-430204",
+   "related": "TOP5"
+  },
+  {
+   "tag": "評等",
+   "text": "摩根大通指台積電明年N2、N3先進製程將漲價8%–10%、優於市場預期，並預估2027年晶圓平均售價年增23%。",
+   "source": "經濟日報",
+   "url": "https://money.udn.com/money/story/5607/9783752"
+  },
+  {
+   "tag": "評等",
+   "text": "摩根士丹利重申聯發科為半導體首選、目標價6,188元，指台積電CoWoS產能支援化解2028年TPU生產疑慮，並可望迎來第二家CSP大客戶；聯發科今日收4,910元。",
+   "source": "工商時報",
+   "url": "https://www.ctee.com.tw/news/20260929701585-430201"
   },
   {
    "tag": "題材",
-   "text": "嘉晶矽光子磊晶需求看到2028年，盤中漲停收漲7.81%，帶動矽晶圓族群合晶走揚"
+   "text": "美光將於9/30美股盤後公布財報，高盛預估營收季增10%–15%；台系記憶體股提前卡位，旺宏收118.5元、力積電收72.3元同步收紅。",
+   "source": "經濟日報",
+   "url": "https://money.udn.com/money/story/5607/9783729"
   }
  ],
  "upcoming_events": [
   {
-   "date": "10月上旬",
-   "event": "台積電9月營收公布（每月10日前後，10/9-10國慶連假，日期未正式公布）"
+   "date": "10/01",
+   "event": "美光（Micron）財報：美國9/30盤後公布、台北10/1清晨，AI記憶體需求指標，牽動南亞科、華邦電等台系記憶體股"
   },
   {
-   "date": "10月中旬",
-   "event": "台積電第3季法說會，日期未正式公布，依慣例預估10月中旬星期四"
+   "date": "10月上旬",
+   "event": "台積電9月營收公布（每月10日前後，10/9國慶補假，日期未正式公布）"
+  },
+  {
+   "date": "10/12",
+   "event": "OCP全球高峰會（10/12–15，美國聖荷西）：AI伺服器、液冷與高壓直流供電規格發表，台灣伺服器與散熱供應鏈參展"
+  },
+  {
+   "date": "10/15",
+   "event": "台積電第3季法說會（台北時間14:00，官方已公告）"
   },
   {
    "date": "10/21",
-   "event": "台指期貨/選擇權10月合約結算日（每月第三個星期三）"
+   "event": "台指期貨／選擇權10月合約結算日（每月第三個星期三）"
+  },
+  {
+   "date": "10月下旬",
+   "event": "美股科技巨頭第3季財報（Microsoft、Alphabet、Meta、Apple、Amazon，日期未正式公布），AI資本支出展望牽動台灣AI供應鏈"
   },
   {
    "date": "10/29",
-   "event": "聯準會FOMC公布利率決議（10/27-28會議，台北時間凌晨公布）；Microsoft、Meta、Alphabet第3季財報季（日期未正式公布）"
+   "event": "聯準會FOMC公布利率決議（10/27–28會議，台北時間10/29凌晨公布）"
   },
   {
    "date": "10月底",
-   "event": "Apple、Amazon第3季財報，AI資本支出展望牽動台灣AI供應鏈（日期未正式公布）"
-  },
-  {
-   "date": "11月上旬",
-   "event": "聯發科第3季法說會，日期未正式公布"
-  },
-  {
-   "date": "11/11",
-   "event": "MSCI 11月指數調整成分股公布（台股權重增減牽動被動資金）"
-  },
-  {
-   "date": "11/18",
-   "event": "台指期貨/選擇權11月合約結算日（每月第三個星期三）"
-  },
-  {
-   "date": "11月下旬",
-   "event": "NVIDIA第3季財報（日期未正式公布），台灣AI供應鏈最重要單一事件"
-  },
-  {
-   "date": "12/01",
-   "event": "MSCI 11月指數調整正式生效（生效前後成交量放大）"
-  },
-  {
-   "date": "12/10",
-   "event": "聯準會FOMC公布利率決議（12/8-9會議，含點陣圖，台北時間凌晨公布）"
-  },
-  {
-   "date": "12/16",
-   "event": "台指期貨/選擇權12月合約結算日（每月第三個星期三）"
-  },
-  {
-   "date": "12/18",
-   "event": "美股四巫日（12月第三個星期五，年度最後一次四巫，量能特別大）"
+   "event": "聯發科第3季法說會（日期未正式公布，往年約在10月底）"
   }
  ],
  "top50_sectors": [
@@ -1519,5 +1534,402 @@
    "2026-09-24"
   ]
  },
- "inst_lookback": 10
+ "inst_lookback": 10,
+ "rumors": {
+  "source": "@QQ_Timmy",
+  "window": [
+   "2026-09-27",
+   "2026-09-29"
+  ],
+  "status": "ok",
+  "groups": [
+   {
+    "industry": "PCB/載板",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "Toppan與Broadcom合資的AST新加坡FC-BGA基板廠開幕，比原訂提早約三個月，瞄準大型、高層數AI載板的供給瓶頸，目標2026年底前進入量產。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104867243662172253",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Toppan",
+        "ticker": "7911.T"
+       },
+       {
+        "name": "Broadcom",
+        "ticker": "AVGO"
+       }
+      ],
+      "tw_note": "欣興、景碩、南電同為FC-BGA（ABF）載板廠，新產能加入代表競爭增加，但也印證高階載板供不應求"
+     },
+     {
+      "date": "09/29",
+      "summary": "三星電機投資4.27兆韓元擴建韓國世宗FC-BGA產能、2028年量產，越南子公司再投2.51兆韓元設基板廠；另簽下2027年MLCC與電感供應長約約2,850億韓元。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104834993872855226",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       },
+       {
+        "code": "2327",
+        "name": "國巨"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Samsung Electro-Mechanics",
+        "ticker": "009150.KS"
+       }
+      ],
+      "tw_note": "三星電機同時是ABF載板與MLCC大廠，分別對應欣興、景碩、南電與國巨的直接競爭者"
+     },
+     {
+      "date": "09/29",
+      "summary": "Meritz整理AI伺服器關鍵元件交期：ABF載板與DRAM、硬碟同列供給「非常緊」。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104825796066148542",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       },
+       {
+        "code": "2408",
+        "name": "南亞科"
+       }
+      ],
+      "foreign": []
+     },
+     {
+      "date": "09/29",
+      "summary": "金像電公告私募定價與應募人：Amazon認購1,856,308股、原持股0%，定位為策略性投資人。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104842971598532640",
+      "tw_stocks": [
+       {
+        "code": "2368",
+        "name": "金像電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Amazon",
+        "ticker": "AMZN"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "industry": "銅箔基板/PCB材料",
+    "items": [
+     {
+      "date": "09/28",
+      "summary": "聯茂營運重點：2Q26營收115.3億、EPS 3.52，8月營收50.4億、年增98%；下半年仍逐季雙位數漲價，M9材料已過美系AI GPU大廠認證、明年上半年放量；公司轉述某美系CSP 2028年單家CCL需求至少500萬張／月。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104462859883495764",
+      "tw_stocks": [
+       {
+        "code": "6213",
+        "name": "聯茂"
+       }
+      ],
+      "foreign": []
+     },
+     {
+      "date": "09/29",
+      "summary": "外電：歐系券商升評、升目標價南亞，估CCL今明年平均售價提升90%／85%，CCL營業利益率可望達23–30%，2026–28年EPS估13.7／20／23元。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104724791039303834",
+      "tw_stocks": [
+       {
+        "code": "1303",
+        "name": "南亞"
+       }
+      ],
+      "foreign": []
+     }
+    ]
+   },
+   {
+    "industry": "IC設計",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "聯發科TPU供應鏈辯論：市場擔心Intel EMIB-T基板成為2028年TPU v9瓶頸，台積電願以CoWoS-L支援；以CoWoS-L 50萬顆＋EMIB-T 250萬顆估算，300萬顆目標可達，2028年TPU營收上修至515億美元；第二家CSP客戶可能透過NVLink Fusion取得。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104860460231389519",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       },
+       {
+        "name": "Alphabet",
+        "ticker": "GOOGL"
+       }
+      ],
+      "tw_note": "Intel EMIB-T與台積電CoWoS-L互為封裝備援，Google TPU由聯發科設計"
+     },
+     {
+      "date": "09/29",
+      "summary": "外電：美系大行升聯發科目標價，因台積電CoWoS-L也將支援Google TPU v9，上修後年TPU營收至515億美元、EPS至342.4元，以明年42倍本益比評價。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104724791039303834",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       }
+      ],
+      "foreign": []
+     }
+    ]
+   },
+   {
+    "industry": "晶圓代工",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "傳台積電評估在德州（達拉斯呼聲高）建美國第二園區、再蓋六座先進晶圓廠，總投資額估超過亞利桑那的2,650億美元；台積電尚未回應，董事會也還沒拍板。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104829917909373120",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": []
+     },
+     {
+      "date": "09/29",
+      "summary": "晶片廠縮減成熟製程產能、轉進先進製程，新無塵室陸續完工；五大設備廠指引2026年第3季合計營收季增約18%，高於第2季的9.7%。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104880559113793989",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       },
+       {
+        "code": "2303",
+        "name": "聯電"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "成熟製程產能收斂有利聯電這類成熟製程代工廠的供需，先進製程擴產則對應台積電"
+     }
+    ]
+   },
+   {
+    "industry": "記憶體",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "TrendForce上修2027年HBM價格展望，混合平均售價估年增121%；HBM與傳統DRAM搶奪有限產能，2027年記憶體供應持續吃緊、價格上行。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104894047844495526",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "HBM排擠傳統DRAM產能，有利南亞科、華邦電等DRAM廠報價"
+     },
+     {
+      "date": "09/29",
+      "summary": "長鑫科技（CXMT）擬動用180億人民幣超募資金投入次世代DRAM研發與後段測試基地；第2季DRAM營收145.45億美元、季增99%，市佔率逼近10%。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104871052753129722",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "長鑫科技 CXMT",
+        "ticker": "688825.SS"
+       }
+      ],
+      "tw_note": "長鑫是南亞科、華邦電在DRAM的直接競爭者，持續擴充研發與測試產能"
+     }
+    ]
+   },
+   {
+    "industry": "被動元件",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "太陽誘電與TDK簽業務合作基本協議，聚焦AI資料中心與實體AI所需的高階MLCC、電感器共同開發，並研議製造、採購與資本合作。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104866219237290371",
+      "tw_stocks": [
+       {
+        "code": "2327",
+        "name": "國巨"
+       },
+       {
+        "code": "2492",
+        "name": "華新科"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "太陽誘電",
+        "ticker": "6976.T"
+       },
+       {
+        "name": "TDK",
+        "ticker": "6762.T"
+       }
+      ],
+      "tw_note": "日系MLCC大廠聯手搶AI高階規格，與國巨、華新科直接競爭"
+     }
+    ]
+   },
+   {
+    "industry": "CPO/光通訊",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "券商報告：Nvidia CPO scale-out進度快於預期，Spectrum-X CPO交換器已量產；看好貿聯-KY受惠CPO含量較高，不看好大立光，估其2027／2028年EPS貢獻僅約20／97元。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104825327998693690",
+      "tw_stocks": [
+       {
+        "code": "3665",
+        "name": "貿聯-KY"
+       },
+       {
+        "code": "3008",
+        "name": "大立光"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Nvidia",
+        "ticker": "NVDA"
+       },
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       }
+      ]
+     },
+     {
+      "date": "09/28",
+      "summary": "AI機櫃規模變大後，成本結構轉向光纖互連：網路占比由GB300的8.6%升至NVL576的22.4%，GPU占比降至約44–46%，記憶體占比回落至約19%。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104464989386142020",
+      "tw_stocks": [
+       {
+        "code": "3665",
+        "name": "貿聯-KY"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "高速互連價值提升，對應貿聯-KY的機櫃線纜與互連業務"
+     }
+    ]
+   },
+   {
+    "industry": "連接器/線材",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "外電：美系升貿聯目標價，Interplex收購案已於9/23完成，上調2026–2028年EPS至69.8／134.6／176.2元，以明年28倍本益比評價，強化AI資料中心電力線纜與互連市佔。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104724791039303834",
+      "tw_stocks": [
+       {
+        "code": "3665",
+        "name": "貿聯-KY"
+       }
+      ],
+      "foreign": []
+     }
+    ]
+   },
+   {
+    "industry": "散熱",
+    "items": [
+     {
+      "date": "09/29",
+      "summary": "外電：美系升奇鋐目標價，液冷滲透率持續提升，預估第3、4季營收季增18%／27%，上修2026–28年EPS至101／149／195元，以明年30.3倍本益比評價。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104724791039303834",
+      "tw_stocks": [
+       {
+        "code": "3017",
+        "name": "奇鋐"
+       }
+      ],
+      "foreign": []
+     }
+    ]
+   },
+   {
+    "industry": "伺服器電源",
+    "items": [
+     {
+      "date": "09/27",
+      "summary": "高盛：AI資料中心機架備援電池（BBU）商機2030年上看500億美元，搭載率由2025年約38%升至2030年約95%，NVIDIA Feynman／800VDC世代幾乎可望標配。",
+      "post_url": "https://x.com/QQ_Timmy/status/2104072321208320174",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Panasonic",
+        "ticker": "6752.T"
+       }
+      ],
+      "tw_note": "經Google交叉比對：台達電整合伺服器電源與BBU，是800V架構BBU的主要供應商"
+     }
+    ]
+   }
+  ]
+ }
 }

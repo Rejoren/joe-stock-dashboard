@@ -559,10 +559,54 @@
   .focus-tag[data-cat="theme"]{color:var(--red);background:var(--red-dim);}
   .focus-tag[data-cat="rating"]{color:var(--yellow);background:var(--yellow-dim);}
   .focus-tag[data-cat="news"]{color:var(--text-dim);background:var(--surface-3);}
+  .focus-body{display:grid;gap:4px;min-width:0;}
   .focus-text{margin:0;font-size:13.5px;line-height:1.75;color:var(--text-dim);}
+  .src-link{justify-self:end;margin-left:auto;font-size:11.5px;font-weight:700;color:var(--accent);text-decoration:none;white-space:nowrap;}
+  .focus-foot{display:flex;align-items:center;gap:8px;}
+  .focus-rel{
+    padding:0 7px;
+    font-size:10.5px;
+    font-weight:700;
+    line-height:18px;
+    color:var(--accent);
+    border:1px solid var(--accent-dim);
+    border-radius:999px;
+  }
+  .src-link:hover{text-decoration:underline;}
 
   .events{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
   .events:has(.empty-note){background:none;border:0;}
+  .rumors{display:grid;gap:10px;}
+  .rumor-note{
+    margin:0;
+    padding:9px 12px;
+    font-size:11.5px;
+    line-height:1.6;
+    color:var(--yellow);
+    background:var(--yellow-dim);
+    border-radius:10px;
+  }
+  .rumor-note a{color:inherit;font-weight:700;}
+  .rumor-group{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .rumor-industry{
+    display:flex;
+    align-items:baseline;
+    gap:6px;
+    margin:0;
+    padding:9px 14px;
+    font-size:13.5px;
+    font-weight:700;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--line);
+  }
+  .rumor{display:grid;gap:6px;padding:11px 14px;}
+  .rumor + .rumor{border-top:1px solid var(--line);}
+  .rumor-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;}
+  .rumor-text{margin:0;font-size:13px;line-height:1.7;color:var(--text-dim);}
+  .rumor-tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .foreign{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:4px 6px;}
+  .tw-link{font-size:11.5px;color:var(--text-faint);}
+  .tw-note{margin:0;font-size:11.5px;line-height:1.6;color:var(--text-faint);}
   .event{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:11px 14px;border-top:1px solid var(--line);}
   .event:first-child{border-top:0;}
   .ev-when{display:grid;align-content:start;gap:2px;}
@@ -749,9 +793,14 @@
       <section class="section" aria-labelledby="hEvents">
         <div class="section-head">
           <h2 id="hEvents">近期重要事件</h2>
-          <span class="section-meta" id="eventsMeta">未來約三個月</span>
+          <div class="flow-tabs" id="eventTabs" role="tablist" aria-label="重要事件與市場傳聞">
+            <button type="button" role="tab" id="tabEvents" data-view="events" aria-selected="true">重要事件</button>
+            <button type="button" role="tab" id="tabRumors" data-view="rumors" aria-selected="false">市場傳聞</button>
+          </div>
         </div>
+        <p class="section-note" id="eventsMeta">未來約一個月</p>
         <div class="events" id="eventsList"><p class="empty-note">尚無資料</p></div>
+        <div class="rumors" id="rumorList" hidden><p class="empty-note">尚無市場傳聞資料</p></div>
       </section>
     </div>
   </div>
@@ -963,19 +1012,104 @@
     $('focusList').innerHTML = emptyNote('尚無資料');
     $('focusMeta').textContent = '';
     $('eventsList').innerHTML = emptyNote('尚無資料');
-    $('eventsMeta').textContent = '未來約三個月';
+    $('rumorList').innerHTML = emptyNote('尚無市場傳聞資料');
+    eventsMetaText = '未來約一個月';
+    rumorsMetaText = '@QQ_Timmy 近 3 日貼文';
+    paintEventView();
     $('updated').textContent = '尚未更新';
     $('rankTable').hidden = true;
     $('rankEmpty').hidden = false;
   }
 
+  function attr(s){
+    return esc(s).replace(/"/g, '&quot;');
+  }
+
+  function safeUrl(u, hosts){
+    try {
+      const x = new URL(String(u || ''));
+      return x.protocol === 'https:' && hosts.some(h => x.hostname === h || x.hostname.endsWith('.' + h)) ? x.href : '';
+    } catch (e) { return ''; }
+  }
+
+  const NEWS_HOSTS = ['cnyes.com', 'udn.com', 'ctee.com.tw'];
+
   function renderFocusItem(f){
     const tag = (f && f.tag) || '焦點';
+    const url = safeUrl(f && f.url, NEWS_HOSTS);
+    const src = (f && f.source) || '';
+    const link = url
+      ? '<a class="src-link" href="' + attr(url) + '" target="_blank" rel="noopener noreferrer">' + esc(src || '原文') + ' ↗</a>'
+      : '';
+    const rel = f && f.related ? '<span class="focus-rel">' + esc(f.related) + '</span>' : '';
     return '<div class="focus-item">'
       + '<span class="focus-tag" data-cat="' + (FOCUS_CAT[tag] || 'chips') + '">' + esc(tag) + '</span>'
-      + '<p class="focus-text">' + esc((f && f.text) || '') + '</p>'
+      + '<div class="focus-body"><p class="focus-text">' + esc((f && f.text) || '') + '</p>'
+      +   (rel || link ? '<div class="focus-foot">' + rel + link + '</div>' : '')
+      + '</div>'
     + '</div>';
   }
+
+  function renderRumorItem(it){
+    const post = safeUrl(it && it.post_url, ['x.com', 'twitter.com']);
+    const tw = (Array.isArray(it.tw_stocks) ? it.tw_stocks : []).map(st =>
+      stockLink(st.code, 'stock-chip', '<b>' + esc(st.code || '') + '</b>' + esc(st.name || ''))).join('');
+    const fx = (Array.isArray(it.foreign) ? it.foreign : []).map(f => {
+      const href = f.ticker
+        ? 'https://finance.yahoo.com/quote/' + encodeURIComponent(f.ticker)
+        : 'https://www.google.com/search?q=' + encodeURIComponent(f.name || '');
+      return '<span class="foreign"><a class="stock-chip" href="' + attr(href) + '" target="_blank" rel="noopener noreferrer">'
+        + (f.ticker ? '<b>' + esc(f.ticker) + '</b>' : '') + esc(f.name || '') + '</a>'
+        + (f.tw_link ? '<span class="tw-link">台廠關聯：' + esc(f.tw_link) + '</span>' : '') + '</span>';
+    }).join('');
+    return '<div class="rumor">'
+      + '<div class="rumor-top"><span class="ev-date">' + esc(it.date || '') + '</span>'
+      +   (post ? '<a class="src-link" href="' + attr(post) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') + '</div>'
+      + '<p class="rumor-text">' + esc(it.summary || '') + '</p>'
+      + (it.tw_note ? '<p class="tw-note">台廠關聯：' + esc(it.tw_note) + '</p>' : '')
+      + (tw || fx ? '<div class="rumor-tags">' + tw + fx + '</div>' : '')
+    + '</div>';
+  }
+
+  function renderRumors(r){
+    if (!r || typeof r !== 'object') return emptyNote('尚無市場傳聞資料');
+    const range = Array.isArray(r.window) && r.window[0] ? shortRange(r.window) : '';
+    const note = '<p class="rumor-note">來自 <a href="https://x.com/QQ_Timmy" target="_blank" rel="noopener noreferrer">@QQ_Timmy</a> 近 3 日貼文'
+      + (range ? '（' + range + '）' : '') + '，屬未經證實的市場消息，僅供參考。</p>';
+    if (r.status === 'unavailable') return note + emptyNote('今天無法讀取 X（Chrome 未開啟、擴充功能未連線或未登入）');
+    const groups = (Array.isArray(r.groups) ? r.groups : []).filter(g => Array.isArray(g.items) && g.items.length);
+    if (!groups.length) return note + emptyNote('近 3 日沒有與成交值排行相關的貼文');
+    return note + groups.map(g => '<div class="rumor-group">'
+      + '<h3 class="rumor-industry">' + esc(g.industry || '其他') + '<span class="fg-count">' + g.items.length + ' 則</span></h3>'
+      + g.items.map(renderRumorItem).join('')
+    + '</div>').join('');
+  }
+
+  const EVENT_VIEWS = ['events', 'rumors'];
+  const EVENT_TITLES = { events: '近期重要事件', rumors: '市場傳聞' };
+  let eventView = 'events', eventsMetaText = '未來約一個月', rumorsMetaText = '@QQ_Timmy 近 3 日貼文';
+  try {
+    const savedView = localStorage.getItem('joe.eventView');
+    if (EVENT_VIEWS.includes(savedView)) eventView = savedView;
+  } catch (e) {}
+
+  function paintEventView(){
+    $('eventsList').hidden = eventView !== 'events';
+    $('rumorList').hidden = eventView !== 'rumors';
+    $('hEvents').textContent = EVENT_TITLES[eventView];
+    $('eventsMeta').textContent = eventView === 'events' ? eventsMetaText : rumorsMetaText;
+    Array.from($('eventTabs').querySelectorAll('button')).forEach(b => {
+      b.setAttribute('aria-selected', String(b.dataset.view === eventView));
+    });
+  }
+
+  $('eventTabs').addEventListener('click', function(e){
+    const b = e.target.closest('button[data-view]');
+    if (!b || !EVENT_VIEWS.includes(b.dataset.view)) return;
+    eventView = b.dataset.view;
+    try { localStorage.setItem('joe.eventView', eventView); } catch (err) {}
+    paintEventView();
+  });
 
   function renderEventItem(e){
     const label = (e && e.date) || '';
@@ -1240,7 +1374,13 @@
 
     const events = Array.isArray(data.upcoming_events) ? data.upcoming_events : [];
     $('eventsList').innerHTML = events.length ? events.map(renderEventItem).join('') : emptyNote('尚無資料');
-    $('eventsMeta').textContent = '未來約三個月' + (events.length ? '・' + events.length + ' 則' : '');
+    eventsMetaText = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
+    const rumors = data.rumors && typeof data.rumors === 'object' ? data.rumors : null;
+    $('rumorList').innerHTML = renderRumors(rumors);
+    const rumorCount = rumors && Array.isArray(rumors.groups)
+      ? rumors.groups.reduce((n, g) => n + (Array.isArray(g.items) ? g.items.length : 0), 0) : 0;
+    rumorsMetaText = '@QQ_Timmy 近 3 日貼文' + (rumorCount ? '・' + rumorCount + ' 則' : '');
+    paintEventView();
 
     $('rankTable').hidden = !top30.length;
     $('rankEmpty').hidden = !!top30.length;
