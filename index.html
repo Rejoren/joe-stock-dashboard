@@ -1429,8 +1429,8 @@
   setInterval(loadData, 10 * 60 * 1000);
 })();
 </script>
-<div class="ios-tip" id="iosTip" hidden>
-  <p>把選妃台裝成 App：點 Safari 的<b>分享</b>按鈕 → 選<b>「加入主畫面」</b>。</p>
+<div class="ios-tip" id="iosTip" role="status" hidden>
+  <p id="iosTipText"></p>
   <button type="button" id="iosTipClose" aria-label="關閉">×</button>
 </div>
 <script>
@@ -1444,27 +1444,47 @@
     });
   }
 
+  var ua = navigator.userAgent;
+  var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  var ios = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var android = /android/i.test(ua);
+  var inApp = /Line\/|FBAN|FBAV|Instagram|MicroMessenger|; wv\)/i.test(ua);
+  var samsung = /SamsungBrowser/i.test(ua);
+
   var btn = document.getElementById('installBtn');
+  var tip = document.getElementById('iosTip');
+  var tipText = document.getElementById('iosTipText');
   var deferred = null;
+
+  function howTo(){
+    if (inApp) return '目前是在 LINE／FB 等 App 內建的瀏覽器，無法安裝。請點右上角選單 →<b>「用預設瀏覽器開啟」</b>或<b>「以 Chrome 開啟」</b>，再按一次安裝。';
+    if (ios) return '把選妃台裝成 App：點 Safari 的<b>分享</b>按鈕 → 選<b>「加入主畫面」</b>。';
+    if (samsung) return '點右下角<b>選單 ≡</b> → <b>「新增頁面至」</b> → <b>「主畫面」</b>。';
+    return '點 Chrome 右上角<b>⋮ 選單</b> → <b>「安裝應用程式」</b>（或<b>「加到主畫面」</b>→「安裝」）。';
+  }
+  function showTip(){ tipText.innerHTML = howTo(); tip.hidden = false; }
+
+  // Android / iOS always get the button; desktop only once the browser says it is installable.
+  if (!standalone && (android || ios)) btn.hidden = false;
+
   window.addEventListener('beforeinstallprompt', function(e){
     e.preventDefault();
     deferred = e;
-    btn.hidden = false;
+    if (!standalone) btn.hidden = false;
   });
   btn.addEventListener('click', function(){
-    if (!deferred) return;
+    if (!deferred) { showTip(); return; }
     deferred.prompt();
-    deferred.userChoice.finally(function(){ deferred = null; btn.hidden = true; });
+    deferred.userChoice.then(function(c){
+      deferred = null;
+      if (c.outcome === 'accepted') btn.hidden = true;
+    });
   });
-  window.addEventListener('appinstalled', function(){ btn.hidden = true; });
+  window.addEventListener('appinstalled', function(){ btn.hidden = true; tip.hidden = true; });
 
-  var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
-  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) ||
-            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   var dismissed = false;
   try { dismissed = localStorage.getItem('joe.iosTipDismissed') === '1'; } catch (e) {}
-  var tip = document.getElementById('iosTip');
-  if (ios && !standalone && !dismissed) tip.hidden = false;
+  if ((ios || inApp) && !standalone && !dismissed) showTip();
   document.getElementById('iosTipClose').addEventListener('click', function(){
     tip.hidden = true;
     try { localStorage.setItem('joe.iosTipDismissed', '1'); } catch (e) {}
