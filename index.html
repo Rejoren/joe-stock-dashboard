@@ -695,7 +695,7 @@
   .rank-empty{margin:0;padding:32px 16px;text-align:center;color:var(--text-faint);}
 
   /* ---- rules ---- */
-  .rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+  .rules{display:grid;grid-template-columns:1fr;gap:14px;}
   .rule-card{
     display:grid;
     align-content:start;
@@ -775,7 +775,6 @@
       <section class="section" aria-labelledby="hTop5">
         <div class="section-head">
           <h2 id="hTop5">今日選股 TOP 5</h2>
-          <span class="section-meta">題材50・技術30・基本10・籌碼10</span>
         </div>
         <div class="pick-list" id="top5List"></div>
       </section>
@@ -855,12 +854,6 @@
         <div class="rule"><span class="rule-key red"><span class="dot"></span>紅燈</span><span>櫃買指數站上5日線且在月線之上、均線多頭排列，可積極操作。</span></div>
         <div class="rule"><span class="rule-key yellow"><span class="dot"></span>黃燈</span><span>跌破5日線、月季線糾結但仍在季線之上，謹慎操作。</span></div>
         <div class="rule"><span class="rule-key green"><span class="dot"></span>綠燈</span><span>跌破季線且趨勢向下，防禦：只買大盤龍頭或 ETF，無營收小型股立刻降部位。</span></div>
-      </div>
-      <div class="rule-card">
-        <h3>三套進場策略</h3>
-        <div class="rule"><span class="strat pullback">回檔承接</span><span>紅／黃燈、櫃買在月季線上；創高拉回10%以上、回測月線不破、MACD綠柱縮短或翻紅。</span></div>
-        <div class="rule"><span class="strat breakout">動能突破</span><span>僅限紅燈；MACD翻紅並突破頸線或區間高，量達5日均量1.5–2倍，外資或投信連3日買超。</span></div>
-        <div class="rule"><span class="strat defend">保守守城</span><span>綠燈；大盤重挫3%以上、量增、主力站賣方，資金分3筆布局龍頭後抱緊。</span></div>
       </div>
       <p class="disclaimer">本頁為個人交易紀律輔助工具，每個交易日 18:00 盤後自動更新，不構成投資建議。</p>
     </div>
