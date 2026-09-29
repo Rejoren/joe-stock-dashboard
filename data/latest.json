@@ -217,7 +217,13 @@
    "turnover": "410.5億",
    "market_cap": "5068.9億",
    "rank_up": 5,
-   "theme": "ABF載板"
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": 3,
+    "trust_streak": 1,
+    "foreign_turn": false,
+    "trust_turn": true
+   }
   },
   {
    "code": "2454",
@@ -231,7 +237,13 @@
    "rank": 2,
    "turnover": "409.2億",
    "market_cap": "8.48兆",
-   "theme": "IC設計/AI ASIC"
+   "theme": "IC設計/AI ASIC",
+   "inst": {
+    "foreign_streak": 7,
+    "trust_streak": -2,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2330",
@@ -245,7 +257,13 @@
    "rank": 3,
    "turnover": "355.2億",
    "market_cap": "64.18兆",
-   "theme": "晶圓代工(先進製程)"
+   "theme": "晶圓代工(先進製程)",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -3,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2303",
@@ -260,7 +278,13 @@
    "turnover": "241.5億",
    "market_cap": "1.94兆",
    "rank_up": 6,
-   "theme": "成熟製程晶圓代工"
+   "theme": "成熟製程晶圓代工",
+   "inst": {
+    "foreign_streak": -2,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2327",
@@ -275,7 +299,13 @@
    "turnover": "208.3億",
    "market_cap": "1.19兆",
    "rank_up": 3,
-   "theme": "MLCC被動元件"
+   "theme": "MLCC被動元件",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": -2,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   },
   {
    "code": "2408",
@@ -289,7 +319,13 @@
    "rank": 6,
    "turnover": "200.5億",
    "market_cap": "1.74兆",
-   "theme": "記憶體(DRAM)"
+   "theme": "記憶體(DRAM)",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -4,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "3037",
@@ -303,7 +339,13 @@
    "rank": 7,
    "turnover": "194.3億",
    "market_cap": "1.94兆",
-   "theme": "ABF載板"
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": 6,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2409",
@@ -317,7 +359,13 @@
    "rank": 8,
    "turnover": "187.1億",
    "market_cap": "2581.1億",
-   "theme": "玻璃基板(CoPoS)"
+   "theme": "玻璃基板(CoPoS)",
+   "inst": {
+    "foreign_streak": -2,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "3653",
@@ -332,7 +380,13 @@
    "turnover": "181.5億",
    "market_cap": "1.02兆",
    "rank_up": 20,
-   "theme": "均熱片(IHS)"
+   "theme": "均熱片(IHS)",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": 1,
+    "foreign_turn": false,
+    "trust_turn": true
+   }
   },
   {
    "code": "2368",
@@ -347,7 +401,13 @@
    "turnover": "174.3億",
    "market_cap": "5778.4億",
    "rank_up": 5,
-   "theme": "伺服器PCB"
+   "theme": "伺服器PCB",
+   "inst": {
+    "foreign_streak": -4,
+    "trust_streak": 3,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "8046",
@@ -361,7 +421,13 @@
    "rank": 11,
    "turnover": "171.1億",
    "market_cap": "8012.5億",
-   "theme": "ABF載板"
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": 3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2308",
@@ -375,7 +441,13 @@
    "rank": 12,
    "turnover": "169.3億",
    "market_cap": "4.96兆",
-   "theme": "AI伺服器電源"
+   "theme": "AI伺服器電源",
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 4,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "6274",
@@ -390,7 +462,13 @@
    "turnover": "157.6億",
    "market_cap": "4476.9億",
    "rank_up": 15,
-   "theme": "CCL銅箔基板"
+   "theme": "CCL銅箔基板",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "1303",
@@ -405,7 +483,13 @@
    "turnover": "156.3億",
    "market_cap": "1.89兆",
    "rank_up": 5,
-   "theme": "電子材料(CCL/玻纖布)"
+   "theme": "電子材料(CCL/玻纖布)",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": -2,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   },
   {
    "code": "3443",
@@ -419,7 +503,13 @@
    "rank": 15,
    "turnover": "120.5億",
    "market_cap": "1.14兆",
-   "theme": "AI ASIC設計"
+   "theme": "AI ASIC設計",
+   "inst": {
+    "foreign_streak": 4,
+    "trust_streak": -3,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2383",
@@ -434,7 +524,13 @@
    "turnover": "118.5億",
    "market_cap": "1.81兆",
    "rank_up": 6,
-   "theme": "CCL銅箔基板"
+   "theme": "CCL銅箔基板",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": -9,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   },
   {
    "code": "6182",
@@ -448,7 +544,13 @@
    "rank": 17,
    "turnover": "111.8億",
    "market_cap": "765.7億",
-   "theme": "矽晶圓"
+   "theme": "矽晶圓",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 0,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   },
   {
    "code": "3324",
@@ -463,7 +565,13 @@
    "turnover": "109.5億",
    "market_cap": "1591.6億",
    "is_new": true,
-   "theme": "散熱模組(液冷)"
+   "theme": "散熱模組(液冷)",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": 7,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "3105",
@@ -477,7 +585,13 @@
    "rank": 19,
    "turnover": "107.4億",
    "market_cap": "2128.2億",
-   "theme": "砷化鎵晶圓代工"
+   "theme": "砷化鎵晶圓代工",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 10,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   },
   {
    "code": "3026",
@@ -492,7 +606,13 @@
    "turnover": "105.9億",
    "market_cap": "1343.7億",
    "is_new": true,
-   "theme": "MLCC被動元件"
+   "theme": "MLCC被動元件",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 10,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   },
   {
    "code": "3665",
@@ -507,7 +627,13 @@
    "turnover": "105.3億",
    "market_cap": "4670.1億",
    "is_new": true,
-   "theme": "連接器/線束"
+   "theme": "連接器/線束",
+   "inst": {
+    "foreign_streak": -4,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "6213",
@@ -522,7 +648,13 @@
    "turnover": "100.0億",
    "market_cap": "2163.4億",
    "is_new": true,
-   "theme": "CCL銅箔基板"
+   "theme": "CCL銅箔基板",
+   "inst": {
+    "foreign_streak": 5,
+    "trust_streak": 3,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "4958",
@@ -536,7 +668,13 @@
    "rank": 23,
    "turnover": "98.0億",
    "market_cap": "5313.9億",
-   "theme": "軟板FPC"
+   "theme": "軟板FPC",
+   "inst": {
+    "foreign_streak": -2,
+    "trust_streak": -2,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "8150",
@@ -550,7 +688,13 @@
    "rank": 24,
    "turnover": "92.8億",
    "market_cap": "789.1億",
-   "theme": "記憶體封測"
+   "theme": "記憶體封測",
+   "inst": {
+    "foreign_streak": 7,
+    "trust_streak": 1,
+    "foreign_turn": false,
+    "trust_turn": true
+   }
   },
   {
    "code": "8299",
@@ -564,7 +708,13 @@
    "rank": 25,
    "turnover": "91.6億",
    "market_cap": "4703.4億",
-   "theme": "記憶體控制IC"
+   "theme": "記憶體控制IC",
+   "inst": {
+    "foreign_streak": -2,
+    "trust_streak": -2,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "6488",
@@ -578,7 +728,13 @@
    "rank": 26,
    "turnover": "91.2億",
    "market_cap": "4532.5億",
-   "theme": "矽晶圓"
+   "theme": "矽晶圓",
+   "inst": {
+    "foreign_streak": -2,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2344",
@@ -592,7 +748,13 @@
    "rank": 27,
    "turnover": "86.3億",
    "market_cap": "7717.5億",
-   "theme": "記憶體(DRAM/NOR)"
+   "theme": "記憶體(DRAM/NOR)",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -6,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "2317",
@@ -607,7 +769,13 @@
    "turnover": "86.1億",
    "market_cap": "3.53兆",
    "is_new": true,
-   "theme": "AI伺服器ODM"
+   "theme": "AI伺服器ODM",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
   },
   {
    "code": "3042",
@@ -622,7 +790,13 @@
    "turnover": "83.8億",
    "market_cap": "696.3億",
    "is_new": true,
-   "theme": "石英元件"
+   "theme": "石英元件",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": 1,
+    "foreign_turn": false,
+    "trust_turn": true
+   }
   },
   {
    "code": "2449",
@@ -636,7 +810,13 @@
    "rank": 30,
    "turnover": "83.4億",
    "market_cap": "3992.9億",
-   "theme": "半導體測試"
+   "theme": "半導體測試",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": -2,
+    "foreign_turn": true,
+    "trust_turn": false
+   }
   }
  ],
  "otc_change": -0.77,
@@ -1212,5 +1392,6 @@
     ]
    }
   ]
- }
+ },
+ "inst_lookback": 10
 }

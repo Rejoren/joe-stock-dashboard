@@ -605,10 +605,11 @@
   .rk-badge.new{color:var(--yellow);}
   .rk-badge.up{color:var(--red);}
   .rk-badge .tri{font-size:8px;}
-  .code-cell{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-data);font-weight:600;color:var(--text);text-decoration:none;}
-  .code-cell:hover{color:var(--accent);}
-  .name-cell a{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--text);text-decoration:none;}
-  .name-cell a:hover{color:var(--accent);}
+  .stock-link{display:inline-flex;align-items:center;gap:9px;color:var(--text);text-decoration:none;}
+  .stock-id{display:grid;gap:2px;line-height:1.2;}
+  .stock-name{font-family:var(--font-display);font-weight:700;font-size:14px;}
+  .stock-code{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-data);font-size:11.5px;font-weight:500;color:var(--text-faint);}
+  .stock-link:hover .stock-name{color:var(--accent);}
   .rank-table .px,.rank-table .chg{font-family:var(--font-data);font-weight:600;}
   .rank-table .px.up,.rank-table .chg.up{color:var(--red);}
   .rank-table .px.down,.rank-table .chg.down{color:var(--green);}
@@ -619,7 +620,17 @@
   .tv{display:inline-grid;justify-items:end;gap:3px;font-family:var(--font-data);}
   .tv-bar{display:flex;justify-content:flex-end;width:72px;height:3px;border-radius:2px;background:var(--surface-3);overflow:hidden;}
   .tv-bar i{display:block;height:100%;background:var(--accent);opacity:.8;}
-  .cap{font-family:var(--font-data);color:var(--text-dim);}
+  .inst{display:inline-flex;flex-direction:column;align-items:flex-start;gap:3px;}
+  .inst-tag{
+    padding:1px 8px;
+    font-size:11.5px;
+    font-weight:700;
+    color:var(--red);
+    border-radius:999px;
+  }
+  .inst-tag.streak{background:var(--red-dim);}
+  .inst-tag.turn{box-shadow:inset 0 0 0 1px var(--red-dim);}
+  .inst-none{font-size:12px;color:var(--text-faint);}
   .theme-chip{
     padding:1px 8px;
     font-size:11.5px;
@@ -756,13 +767,12 @@
           <thead>
             <tr>
               <th class="al">#</th>
-              <th class="al">股號</th>
-              <th class="al">股名</th>
+              <th class="al">股名／股號</th>
               <th>價格</th>
               <th>漲跌幅</th>
               <th>成交金額</th>
-              <th>市值</th>
               <th class="al">題材/族群</th>
+              <th class="al">法人同買</th>
             </tr>
           </thead>
           <tbody id="rankTableBody"></tbody>
@@ -1096,7 +1106,19 @@
     paintFlows();
   });
 
-  function renderRankRow(r, tvMax){
+  // 外資/投信: 連買N日 (streak ≥ 2), otherwise 賣轉買 (bought today after selling yesterday).
+  function instCell(x, lookback){
+    if (!x || typeof x !== 'object') return '<span class="inst-none">—</span>';
+    const days = n => n + '日' + (lookback && n >= lookback ? '以上' : '');
+    const tags = [];
+    [['外資', x.foreign_streak, x.foreign_turn], ['投信', x.trust_streak, x.trust_turn]].forEach(([who, streak, turn]) => {
+      if (num(streak) != null && streak >= 2) tags.push('<span class="inst-tag streak">' + who + '連買' + days(streak) + '</span>');
+      else if (turn) tags.push('<span class="inst-tag turn">' + who + '賣轉買</span>');
+    });
+    return tags.length ? '<span class="inst">' + tags.join('') + '</span>' : '<span class="inst-none">無</span>';
+  }
+
+  function renderRankRow(r, tvMax, lookback){
     const code = String(r.code ?? '').trim();
     const chg = num(r.change_pct);
     const dir = dirClass(chg);
@@ -1112,14 +1134,15 @@
     const tvW = tv != null && tvMax > 0 ? Math.max(2, tv / tvMax * 100) : 0;
     return '<tr>'
       + '<td class="al"><span class="rk-num">' + esc(r.rank ?? '') + '</span>' + rkBadge + '</td>'
-      + '<td class="al">' + stockLink(code, 'code-cell', klineSvg(r) + '<span>' + esc(code) + '</span>' + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '')) + '</td>'
-      + '<td class="al name-cell">' + stockLink(code, '', esc(r.name ?? '')) + '</td>'
+      + '<td class="al">' + stockLink(code, 'stock-link', klineSvg(r)
+      +   '<span class="stock-id"><span class="stock-name">' + esc(r.name ?? '') + '</span>'
+      +   '<span class="stock-code">' + esc(code) + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</span></span>') + '</td>'
       + '<td class="px ' + dir + '">' + wrap(fmt(num(r.price))) + '</td>'
       + '<td class="chg ' + dir + '">' + wrap(chgText(chg)) + '</td>'
       + '<td><span class="tv"><span>' + esc(r.turnover || '—') + '</span>'
       +   (tvW ? '<span class="tv-bar"><i style="width:' + tvW.toFixed(1) + '%"></i></span>' : '') + '</span></td>'
-      + '<td class="cap">' + esc(r.market_cap || '—') + '</td>'
       + '<td class="al">' + (r.theme ? '<span class="theme-chip">' + esc(r.theme) + '</span>' : '—') + '</td>'
+      + '<td class="al">' + instCell(r.inst, lookback) + '</td>'
     + '</tr>';
   }
 
@@ -1197,7 +1220,7 @@
     $('rankEmpty').hidden = !!top30.length;
     if (top30.length){
       const tvMax = top30.reduce((m, r) => Math.max(m, turnoverYi(r && r.turnover) || 0), 0);
-      $('rankTableBody').innerHTML = top30.map(r => renderRankRow(r, tvMax)).join('');
+      $('rankTableBody').innerHTML = top30.map(r => renderRankRow(r, tvMax, num(data.inst_lookback))).join('');
     }
 
     if (data.date){
