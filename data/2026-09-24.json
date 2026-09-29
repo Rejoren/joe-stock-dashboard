@@ -824,45 +824,117 @@
  "sector_flows": {
   "today": [
    {
-    "group": "散熱",
-    "count": 2,
-    "avg_pct": 7.58,
+    "group": "PCB/載板",
+    "count": 5,
+    "net_yi": 74.09,
+    "avg_pct": 1.66,
     "stocks": [
      {
-      "code": "3653",
-      "name": "健策",
-      "pct": 7.96
+      "code": "3189",
+      "name": "景碩",
+      "net_yi": 80.12,
+      "pct": 6.18
      },
      {
-      "code": "3324",
-      "name": "雙鴻",
-      "pct": 7.21
+      "code": "3037",
+      "name": "欣興",
+      "net_yi": 21.19,
+      "pct": 2.16
+     },
+     {
+      "code": "8046",
+      "name": "南電",
+      "net_yi": 18.76,
+      "pct": 2.48
+     },
+     {
+      "code": "2368",
+      "name": "金像電",
+      "net_yi": -19.68,
+      "pct": -3.07
+     },
+     {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "net_yi": -26.3,
+      "pct": 0.53
+     }
+    ]
+   },
+   {
+    "group": "被動元件",
+    "count": 3,
+    "net_yi": 36.44,
+    "avg_pct": 3.07,
+    "stocks": [
+     {
+      "code": "3026",
+      "name": "禾伸堂",
+      "net_yi": 24.86,
+      "pct": 5.47
+     },
+     {
+      "code": "2327",
+      "name": "國巨*",
+      "net_yi": 13.56,
+      "pct": 1.22
+     },
+     {
+      "code": "3042",
+      "name": "晶技",
+      "net_yi": -1.98,
+      "pct": 2.53
+     }
+    ]
+   },
+   {
+    "group": "IC設計",
+    "count": 2,
+    "net_yi": 31.87,
+    "avg_pct": 1.8,
+    "stocks": [
+     {
+      "code": "2454",
+      "name": "聯發科",
+      "net_yi": 35.33,
+      "pct": 1.93
+     },
+     {
+      "code": "3443",
+      "name": "創意",
+      "net_yi": -3.46,
+      "pct": 1.67
      }
     ]
    },
    {
     "group": "銅箔基板/PCB材料",
     "count": 4,
+    "net_yi": 20.05,
     "avg_pct": 4.4,
     "stocks": [
      {
-      "code": "6213",
-      "name": "聯茂",
-      "pct": 9.98
-     },
-     {
       "code": "1303",
       "name": "南亞",
+      "net_yi": 33.13,
       "pct": 4.62
+     },
+     {
+      "code": "6213",
+      "name": "聯茂",
+      "net_yi": 10.71,
+      "pct": 9.98
      },
      {
       "code": "6274",
       "name": "台燿",
+      "net_yi": -8.63,
       "pct": 2.4
      },
      {
       "code": "2383",
       "name": "台光電",
+      "net_yi": -15.16,
       "pct": 0.6
      }
     ]
@@ -870,496 +942,521 @@
    {
     "group": "半導體封測",
     "count": 2,
+    "net_yi": 17.64,
     "avg_pct": 3.48,
     "stocks": [
      {
       "code": "8150",
       "name": "南茂",
+      "net_yi": 15.36,
       "pct": 4.67
      },
      {
       "code": "2449",
       "name": "京元電子",
+      "net_yi": 2.28,
       "pct": 2.3
-     }
-    ]
-   },
-   {
-    "group": "被動元件",
-    "count": 3,
-    "avg_pct": 3.07,
-    "stocks": [
-     {
-      "code": "3026",
-      "name": "禾伸堂",
-      "pct": 5.47
-     },
-     {
-      "code": "3042",
-      "name": "晶技",
-      "pct": 2.53
-     },
-     {
-      "code": "2327",
-      "name": "國巨*",
-      "pct": 1.22
      }
     ]
    },
    {
     "group": "矽晶圓",
     "count": 2,
+    "net_yi": 0.1,
     "avg_pct": 2.06,
     "stocks": [
      {
       "code": "6182",
       "name": "合晶",
+      "net_yi": 24.7,
       "pct": 4.33
      },
      {
       "code": "6488",
       "name": "環球晶",
+      "net_yi": -24.6,
       "pct": -0.21
      }
     ]
    },
    {
-    "group": "IC設計",
+    "group": "散熱",
     "count": 2,
-    "avg_pct": 1.8,
+    "net_yi": -2.43,
+    "avg_pct": 7.58,
     "stocks": [
      {
-      "code": "2454",
-      "name": "聯發科",
-      "pct": 1.93
+      "code": "3324",
+      "name": "雙鴻",
+      "net_yi": 4.68,
+      "pct": 7.21
      },
      {
-      "code": "3443",
-      "name": "創意",
-      "pct": 1.67
-     }
-    ]
-   },
-   {
-    "group": "PCB/載板",
-    "count": 5,
-    "avg_pct": 1.66,
-    "stocks": [
-     {
-      "code": "3189",
-      "name": "景碩",
-      "pct": 6.18
-     },
-     {
-      "code": "8046",
-      "name": "南電",
-      "pct": 2.48
-     },
-     {
-      "code": "3037",
-      "name": "欣興",
-      "pct": 2.16
-     },
-     {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "pct": 0.53
-     },
-     {
-      "code": "2368",
-      "name": "金像電",
-      "pct": -3.07
+      "code": "3653",
+      "name": "健策",
+      "net_yi": -7.11,
+      "pct": 7.96
      }
     ]
    },
    {
     "group": "記憶體",
     "count": 3,
+    "net_yi": -177.02,
     "avg_pct": -2.32,
     "stocks": [
      {
       "code": "2344",
       "name": "華邦電",
+      "net_yi": -30.32,
       "pct": -0.58
-     },
-     {
-      "code": "2408",
-      "name": "南亞科",
-      "pct": -2.33
      },
      {
       "code": "8299",
       "name": "群聯",
+      "net_yi": -33.7,
       "pct": -4.06
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "net_yi": -113.0,
+      "pct": -2.33
      }
     ]
    },
    {
     "group": "晶圓代工",
     "count": 2,
+    "net_yi": -209.69,
     "avg_pct": -2.38,
     "stocks": [
      {
-      "code": "2330",
-      "name": "台積電",
-      "pct": -1.0
-     },
-     {
       "code": "2303",
       "name": "聯電",
+      "net_yi": -67.99,
       "pct": -3.75
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "net_yi": -141.7,
+      "pct": -1.0
      }
     ]
    }
   ],
   "this_week": [
    {
-    "group": "散熱",
-    "count": 2,
-    "avg_pct": 20.39,
-    "stocks": [
-     {
-      "code": "3653",
-      "name": "健策",
-      "pct": 25.25
-     },
-     {
-      "code": "3324",
-      "name": "雙鴻",
-      "pct": 15.54
-     }
-    ]
-   },
-   {
     "group": "IC設計",
     "count": 2,
+    "net_yi": 399.34,
     "avg_pct": 15.72,
     "stocks": [
      {
-      "code": "3443",
-      "name": "創意",
-      "pct": 19.23
-     },
-     {
       "code": "2454",
       "name": "聯發科",
+      "net_yi": 356.18,
       "pct": 12.21
-     }
-    ]
-   },
-   {
-    "group": "半導體封測",
-    "count": 2,
-    "avg_pct": 12.92,
-    "stocks": [
-     {
-      "code": "8150",
-      "name": "南茂",
-      "pct": 19.15
      },
      {
-      "code": "2449",
-      "name": "京元電子",
-      "pct": 6.69
+      "code": "3443",
+      "name": "創意",
+      "net_yi": 43.16,
+      "pct": 19.23
      }
     ]
    },
    {
     "group": "PCB/載板",
     "count": 5,
+    "net_yi": 338.35,
     "avg_pct": 11.6,
     "stocks": [
      {
-      "code": "3037",
-      "name": "欣興",
-      "pct": 20.8
-     },
-     {
       "code": "3189",
       "name": "景碩",
+      "net_yi": 193.53,
       "pct": 15.62
+     },
+     {
+      "code": "3037",
+      "name": "欣興",
+      "net_yi": 172.72,
+      "pct": 20.8
      },
      {
       "code": "8046",
       "name": "南電",
+      "net_yi": 95.98,
       "pct": 12.73
      },
      {
       "code": "2368",
       "name": "金像電",
+      "net_yi": -52.5,
       "pct": 8.33
      },
      {
       "code": "4958",
       "name": "臻鼎-KY",
+      "net_yi": -71.38,
       "pct": 0.53
+     }
+    ]
+   },
+   {
+    "group": "半導體封測",
+    "count": 2,
+    "net_yi": 127.42,
+    "avg_pct": 12.92,
+    "stocks": [
+     {
+      "code": "2449",
+      "name": "京元電子",
+      "net_yi": 75.0,
+      "pct": 6.69
+     },
+     {
+      "code": "8150",
+      "name": "南茂",
+      "net_yi": 52.42,
+      "pct": 19.15
+     }
+    ]
+   },
+   {
+    "group": "被動元件",
+    "count": 3,
+    "net_yi": 46.13,
+    "avg_pct": 5.7,
+    "stocks": [
+     {
+      "code": "2327",
+      "name": "國巨*",
+      "net_yi": 47.21,
+      "pct": 5.45
+     },
+     {
+      "code": "3042",
+      "name": "晶技",
+      "net_yi": 5.25,
+      "pct": 10.03
+     },
+     {
+      "code": "3026",
+      "name": "禾伸堂",
+      "net_yi": -6.33,
+      "pct": 1.63
+     }
+    ]
+   },
+   {
+    "group": "晶圓代工",
+    "count": 2,
+    "net_yi": 32.68,
+    "avg_pct": -0.34,
+    "stocks": [
+     {
+      "code": "2303",
+      "name": "聯電",
+      "net_yi": 23.34,
+      "pct": -1.28
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "net_yi": 9.34,
+      "pct": 0.61
+     }
+    ]
+   },
+   {
+    "group": "散熱",
+    "count": 2,
+    "net_yi": 9.53,
+    "avg_pct": 20.39,
+    "stocks": [
+     {
+      "code": "3324",
+      "name": "雙鴻",
+      "net_yi": 15.69,
+      "pct": 15.54
+     },
+     {
+      "code": "3653",
+      "name": "健策",
+      "net_yi": -6.16,
+      "pct": 25.25
      }
     ]
    },
    {
     "group": "銅箔基板/PCB材料",
     "count": 4,
+    "net_yi": -60.64,
     "avg_pct": 7.55,
     "stocks": [
      {
       "code": "6213",
       "name": "聯茂",
+      "net_yi": 55.79,
       "pct": 17.82
      },
      {
       "code": "6274",
       "name": "台燿",
+      "net_yi": -30.49,
       "pct": 9.12
-     },
-     {
-      "code": "2383",
-      "name": "台光電",
-      "pct": 3.27
      },
      {
       "code": "1303",
       "name": "南亞",
+      "net_yi": -32.81,
       "pct": 0.0
-     }
-    ]
-   },
-   {
-    "group": "被動元件",
-    "count": 3,
-    "avg_pct": 5.7,
-    "stocks": [
-     {
-      "code": "3042",
-      "name": "晶技",
-      "pct": 10.03
      },
      {
-      "code": "2327",
-      "name": "國巨*",
-      "pct": 5.45
-     },
-     {
-      "code": "3026",
-      "name": "禾伸堂",
-      "pct": 1.63
+      "code": "2383",
+      "name": "台光電",
+      "net_yi": -53.13,
+      "pct": 3.27
      }
     ]
    },
    {
     "group": "矽晶圓",
     "count": 2,
+    "net_yi": -76.22,
     "avg_pct": 2.15,
     "stocks": [
      {
       "code": "6182",
       "name": "合晶",
+      "net_yi": -2.18,
       "pct": 3.88
      },
      {
       "code": "6488",
       "name": "環球晶",
+      "net_yi": -74.04,
       "pct": 0.42
-     }
-    ]
-   },
-   {
-    "group": "晶圓代工",
-    "count": 2,
-    "avg_pct": -0.34,
-    "stocks": [
-     {
-      "code": "2330",
-      "name": "台積電",
-      "pct": 0.61
-     },
-     {
-      "code": "2303",
-      "name": "聯電",
-      "pct": -1.28
      }
     ]
    },
    {
     "group": "記憶體",
     "count": 3,
+    "net_yi": -168.28,
     "avg_pct": -3.12,
     "stocks": [
      {
       "code": "8299",
       "name": "群聯",
+      "net_yi": 10.34,
       "pct": -0.7
-     },
-     {
-      "code": "2408",
-      "name": "南亞科",
-      "pct": -4.19
      },
      {
       "code": "2344",
       "name": "華邦電",
+      "net_yi": -76.75,
       "pct": -4.46
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "net_yi": -101.87,
+      "pct": -4.19
      }
     ]
    }
   ],
   "last_week": [
    {
+    "group": "記憶體",
+    "count": 3,
+    "net_yi": 186.78,
+    "avg_pct": 6.23,
+    "stocks": [
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "net_yi": 136.77,
+      "pct": 6.49
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "net_yi": 49.7,
+      "pct": 7.54
+     },
+     {
+      "code": "2344",
+      "name": "華邦電",
+      "net_yi": 0.31,
+      "pct": 4.66
+     }
+    ]
+   },
+   {
     "group": "IC設計",
     "count": 2,
+    "net_yi": 171.4,
     "avg_pct": 9.78,
     "stocks": [
      {
-      "code": "3443",
-      "name": "創意",
-      "pct": 16.83
-     },
-     {
       "code": "2454",
       "name": "聯發科",
+      "net_yi": 189.55,
       "pct": 2.73
+     },
+     {
+      "code": "3443",
+      "name": "創意",
+      "net_yi": -18.15,
+      "pct": 16.83
      }
     ]
    },
    {
     "group": "半導體封測",
     "count": 2,
+    "net_yi": 100.04,
     "avg_pct": 9.63,
     "stocks": [
      {
       "code": "2449",
       "name": "京元電子",
+      "net_yi": 83.82,
       "pct": 10.84
      },
      {
       "code": "8150",
       "name": "南茂",
+      "net_yi": 16.22,
       "pct": 8.42
-     }
-    ]
-   },
-   {
-    "group": "矽晶圓",
-    "count": 2,
-    "avg_pct": 7.83,
-    "stocks": [
-     {
-      "code": "6182",
-      "name": "合晶",
-      "pct": 11.0
-     },
-     {
-      "code": "6488",
-      "name": "環球晶",
-      "pct": 4.66
-     }
-    ]
-   },
-   {
-    "group": "晶圓代工",
-    "count": 2,
-    "avg_pct": 6.55,
-    "stocks": [
-     {
-      "code": "2303",
-      "name": "聯電",
-      "pct": 11.03
-     },
-     {
-      "code": "2330",
-      "name": "台積電",
-      "pct": 2.07
-     }
-    ]
-   },
-   {
-    "group": "記憶體",
-    "count": 3,
-    "avg_pct": 6.23,
-    "stocks": [
-     {
-      "code": "8299",
-      "name": "群聯",
-      "pct": 7.54
-     },
-     {
-      "code": "2408",
-      "name": "南亞科",
-      "pct": 6.49
-     },
-     {
-      "code": "2344",
-      "name": "華邦電",
-      "pct": 4.66
      }
     ]
    },
    {
     "group": "被動元件",
     "count": 3,
+    "net_yi": 24.9,
     "avg_pct": 4.35,
     "stocks": [
      {
-      "code": "3026",
-      "name": "禾伸堂",
-      "pct": 7.12
-     },
-     {
       "code": "3042",
       "name": "晶技",
+      "net_yi": 18.84,
       "pct": 4.83
+     },
+     {
+      "code": "3026",
+      "name": "禾伸堂",
+      "net_yi": 6.84,
+      "pct": 7.12
      },
      {
       "code": "2327",
       "name": "國巨*",
+      "net_yi": -0.78,
       "pct": 1.1
+     }
+    ]
+   },
+   {
+    "group": "矽晶圓",
+    "count": 2,
+    "net_yi": 19.07,
+    "avg_pct": 7.83,
+    "stocks": [
+     {
+      "code": "6182",
+      "name": "合晶",
+      "net_yi": 37.42,
+      "pct": 11.0
+     },
+     {
+      "code": "6488",
+      "name": "環球晶",
+      "net_yi": -18.35,
+      "pct": 4.66
      }
     ]
    },
    {
     "group": "散熱",
     "count": 2,
+    "net_yi": 8.45,
     "avg_pct": 2.33,
     "stocks": [
      {
-      "code": "3324",
-      "name": "雙鴻",
-      "pct": 8.82
-     },
-     {
       "code": "3653",
       "name": "健策",
+      "net_yi": 19.57,
       "pct": -4.16
+     },
+     {
+      "code": "3324",
+      "name": "雙鴻",
+      "net_yi": -11.12,
+      "pct": 8.82
+     }
+    ]
+   },
+   {
+    "group": "晶圓代工",
+    "count": 2,
+    "net_yi": -55.27,
+    "avg_pct": 6.55,
+    "stocks": [
+     {
+      "code": "2303",
+      "name": "聯電",
+      "net_yi": 152.89,
+      "pct": 11.03
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "net_yi": -208.16,
+      "pct": 2.07
      }
     ]
    },
    {
     "group": "PCB/載板",
     "count": 5,
+    "net_yi": -77.47,
     "avg_pct": -0.39,
     "stocks": [
      {
+      "code": "3037",
+      "name": "欣興",
+      "net_yi": 29.23,
+      "pct": 0.41
+     },
+     {
       "code": "8046",
       "name": "南電",
+      "net_yi": 10.42,
       "pct": 1.85
      },
      {
       "code": "3189",
       "name": "景碩",
+      "net_yi": -0.9,
       "pct": 1.22
-     },
-     {
-      "code": "3037",
-      "name": "欣興",
-      "pct": 0.41
      },
      {
       "code": "2368",
       "name": "金像電",
+      "net_yi": -32.72,
       "pct": -0.97
      },
      {
       "code": "4958",
       "name": "臻鼎-KY",
+      "net_yi": -83.5,
       "pct": -4.44
      }
     ]
@@ -1367,31 +1464,50 @@
    {
     "group": "銅箔基板/PCB材料",
     "count": 4,
+    "net_yi": -133.1,
     "avg_pct": -1.94,
     "stocks": [
      {
-      "code": "1303",
-      "name": "南亞",
-      "pct": 1.49
-     },
-     {
       "code": "6274",
       "name": "台燿",
+      "net_yi": -27.83,
       "pct": 0.37
+     },
+     {
+      "code": "1303",
+      "name": "南亞",
+      "net_yi": -31.04,
+      "pct": 1.49
      },
      {
       "code": "6213",
       "name": "聯茂",
+      "net_yi": -32.88,
       "pct": -0.79
      },
      {
       "code": "2383",
       "name": "台光電",
+      "net_yi": -41.35,
       "pct": -8.85
      }
     ]
    }
   ]
  },
- "inst_lookback": 10
+ "inst_lookback": 10,
+ "sector_flows_range": {
+  "today": [
+   "2026-09-24",
+   "2026-09-24"
+  ],
+  "this_week": [
+   "2026-09-21",
+   "2026-09-24"
+  ],
+  "last_week": [
+   "2026-09-14",
+   "2026-09-18"
+  ]
+ }
 }

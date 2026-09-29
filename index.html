@@ -505,7 +505,7 @@
   .flow-badge{font-size:11.5px;font-weight:700;white-space:nowrap;}
   .flow-badge.in{color:var(--red);}
   .flow-badge.out{color:var(--green);}
-  .flow-avg{min-width:64px;text-align:right;font-family:var(--font-data);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .flow-avg{min-width:78px;text-align:right;font-family:var(--font-data);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;}
   .flow-avg.up{color:var(--red);}
   .flow-avg.down{color:var(--green);}
   .flow-avg.flat{color:var(--text-faint);}
@@ -732,7 +732,7 @@
             <button type="button" role="tab" id="tabLastWeek" data-period="last_week" aria-selected="false">上週</button>
           </div>
         </div>
-        <p class="section-note">依族群平均漲跌排序，點開可看個股</p>
+        <p class="section-note" id="flowNote">依三大法人（外資＋投信＋自營商）買賣超金額排名，單位億元，點開可看個股</p>
         <div class="flow-list" id="radarList"><p class="empty-note">尚無資料</p></div>
       </section>
     </div>
@@ -1039,14 +1039,15 @@
     }
   }
 
-  // Groups arrive either as the new {group, avg_pct, stocks:[{code,name,pct}]} shape
-  // or the legacy {sector, stocks:[{code,name}]} one, whose pct comes from changeMap.
+  // Groups arrive as {group, net_yi, avg_pct, stocks:[{code,name,net_yi,pct}]} (net_yi = 三大法人買賣超金額, 億元);
+  // older docs carry only avg_pct, and the legacy {sector, stocks:[{code,name}]} shape takes pct from changeMap.
   function normalizeGroup(g, changeMap){
     const raw = Array.isArray(g.stocks) ? g.stocks : [];
-    const isNew = g.group !== undefined || g.avg_pct !== undefined;
+    const isNew = g.group !== undefined || g.avg_pct !== undefined || g.net_yi !== undefined;
     const stocks = raw.map(st => ({
       code: st.code,
       name: st.name,
+      net: num(st.net_yi),
       pct: isNew ? num(st.pct) : num(changeMap[String(st.code || '').trim()]),
     }));
     let avg = isNew ? num(g.avg_pct) : null;
@@ -1054,20 +1055,30 @@
       const vals = stocks.map(st => st.pct).filter(v => v != null);
       avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
     }
-    return { name: g.group ?? g.sector ?? '', count: g.count ?? stocks.length, avg: avg, stocks: stocks };
+    return { name: g.group ?? g.sector ?? '', count: g.count ?? stocks.length, net: num(g.net_yi), avg: avg, stocks: stocks };
   }
 
-  function renderFlowGroup(g, maxAbs){
+  function yiText(v){
+    return v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(2) + '億';
+  }
+
+  // mode 'net' ranks and labels by 三大法人買賣超金額; 'pct' (older data) by average price change.
+  function renderFlowGroup(g, maxAbs, mode){
+    const val = mode === 'net' ? g.net : g.avg;
+    const show = v => mode === 'net' ? yiText(v) : chgText(v);
     const chips = g.stocks.length
-      ? g.stocks.map(st => stockLink(st.code, 'stock-chip', '<b>' + esc(st.code || '') + '</b>' + esc(st.name || '')
-          + (st.pct == null ? '' : '<span class="chip-pct ' + dirClass(st.pct) + '">' + chgText(st.pct) + '</span>'))).join('')
+      ? g.stocks.map(st => {
+          const v = mode === 'net' ? st.net : st.pct;
+          return stockLink(st.code, 'stock-chip', '<b>' + esc(st.code || '') + '</b>' + esc(st.name || '')
+            + (v == null ? '' : '<span class="chip-pct ' + dirClass(v) + '">' + show(v) + '</span>'));
+        }).join('')
       : '<span class="section-note">個股明細尚未提供</span>';
     let head, bar;
-    if (g.avg != null){
-      const inflow = g.avg >= 0;
-      const w = maxAbs > 0 ? Math.min(50, Math.abs(g.avg) / maxAbs * 50) : 0;
+    if (val != null){
+      const inflow = val >= 0;
+      const w = maxAbs > 0 ? Math.min(50, Math.abs(val) / maxAbs * 50) : 0;
       head = '<span class="flow-badge ' + (inflow ? 'in' : 'out') + '">' + (inflow ? '🔥 資金流入' : '🌿 資金流出') + '</span>'
-        + '<span class="flow-avg ' + dirClass(g.avg) + '">' + chgText(g.avg) + '</span>';
+        + '<span class="flow-avg ' + dirClass(val) + '">' + show(val) + '</span>';
       bar = '<span class="fg-bar" aria-hidden="true"><i class="' + (inflow ? 'pos' : 'neg') + '" style="width:' + w.toFixed(1) + '%"></i></span>';
     } else {
       head = '<span></span><span class="flow-avg">—</span>';
@@ -1081,18 +1092,31 @@
       + '</summary><div class="sector-stocks">' + chips + '</div></details>';
   }
 
-  let flowData = null, flowPeriod = 'today';
+  let flowData = null, flowRange = null, flowPeriod = 'today';
   try {
     const saved = localStorage.getItem('joe.flowPeriod');
     if (FLOW_PERIODS.includes(saved)) flowPeriod = saved;
   } catch (e) {}
 
+  function shortRange(r){
+    if (!Array.isArray(r) || !r[0]) return '';
+    const md = d => String(d).slice(5).replace('-', '/');
+    return r[0] === r[1] ? md(r[0]) : md(r[0]) + '–' + md(r[1]);
+  }
+
   function paintFlows(){
-    const groups = (flowData && flowData[flowPeriod]) || [];
-    const maxAbs = groups.reduce((m, g) => g.avg == null ? m : Math.max(m, Math.abs(g.avg)), 0);
+    const all = (flowData && flowData[flowPeriod]) || [];
+    const mode = all.some(g => g.net != null) ? 'net' : 'pct';
+    const key = g => mode === 'net' ? g.net : g.avg;
+    const groups = all.slice().sort((a, b) => (key(b) ?? -Infinity) - (key(a) ?? -Infinity));
+    const maxAbs = groups.reduce((m, g) => key(g) == null ? m : Math.max(m, Math.abs(key(g))), 0);
     $('radarList').innerHTML = groups.length
-      ? groups.map(g => renderFlowGroup(g, maxAbs)).join('')
+      ? groups.map(g => renderFlowGroup(g, maxAbs, mode)).join('')
       : emptyNote('這個期間尚無族群資料');
+    const range = shortRange(flowRange && flowRange[flowPeriod]);
+    $('flowNote').textContent = mode === 'net'
+      ? '依三大法人（外資＋投信＋自營商）買賣超金額排名，單位億元' + (range ? '・' + range : '') + '，點開可看個股'
+      : '依族群平均漲跌排序，點開可看個股';
     Array.from($('flowTabs').querySelectorAll('button')).forEach(b => {
       b.setAttribute('aria-selected', String(b.dataset.period === flowPeriod));
     });
@@ -1198,11 +1222,13 @@
         flowData[k] = (Array.isArray(flows[k]) ? flows[k] : []).map(g => normalizeGroup(g, changeMap));
       });
       if (!flowData[flowPeriod].length) flowPeriod = FLOW_PERIODS.find(k => flowData[k].length) || 'today';
+      flowRange = data.sector_flows_range && typeof data.sector_flows_range === 'object' ? data.sector_flows_range : null;
       $('flowTabs').hidden = false;
     } else {
       const legacy = [data.top50_sectors, data.top30_sectors, data.sectors].find(Array.isArray) || [];
       const groups = legacy.map(g => normalizeGroup(g, changeMap)).sort((a, b) => (b.avg ?? -Infinity) - (a.avg ?? -Infinity));
       flowData = { today: groups, this_week: [], last_week: [] };
+      flowRange = null;
       flowPeriod = 'today';
       $('flowTabs').hidden = true;
     }
