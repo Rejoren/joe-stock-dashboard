@@ -8,8 +8,8 @@
   "lang": "zh-Hant",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0a0f15",
-  "theme_color": "#0a0f15",
+  "background_color": "#0b0d11",
+  "theme_color": "#0b0d11",
   "icons": [
     {
       "src": "icon-192.png",
