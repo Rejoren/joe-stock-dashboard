@@ -304,6 +304,7 @@
     letter-spacing:.06em;
     text-wrap:balance;
   }
+  .head-title{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;min-width:0;}
   .section-meta{font-family:var(--font-data);font-size:11.5px;font-stretch:87.5%;color:var(--text-faint);}
   .section-note{margin:0;font-size:12px;line-height:1.7;color:var(--text-faint);}
   .empty-note{
@@ -800,23 +801,25 @@
     <div class="column">
       <section class="section" aria-labelledby="hFocus">
         <div class="section-head">
-          <h2 id="hFocus">今日焦點</h2>
-          <span class="section-meta" id="focusMeta"></span>
+          <div class="head-title">
+            <h2 id="hFocus">今日焦點</h2>
+            <span class="section-meta" id="focusMeta"></span>
+          </div>
+          <div class="flow-tabs" id="focusTabs" role="tablist" aria-label="今日焦點與市場傳聞">
+            <button type="button" role="tab" id="tabFocus" data-view="focus" aria-selected="true">今日焦點</button>
+            <button type="button" role="tab" id="tabRumors" data-view="rumors" aria-selected="false">市場傳聞</button>
+          </div>
         </div>
         <div class="focus-list" id="focusList"><p class="empty-note">尚無資料</p></div>
+        <div class="rumors" id="rumorList" hidden><p class="empty-note">尚無市場傳聞資料</p></div>
       </section>
 
       <section class="section" aria-labelledby="hEvents">
         <div class="section-head">
           <h2 id="hEvents">近期重要事件</h2>
-          <div class="flow-tabs" id="eventTabs" role="tablist" aria-label="重要事件與市場傳聞">
-            <button type="button" role="tab" id="tabEvents" data-view="events" aria-selected="true">重要事件</button>
-            <button type="button" role="tab" id="tabRumors" data-view="rumors" aria-selected="false">市場傳聞</button>
-          </div>
         </div>
         <p class="section-note" id="eventsMeta">未來約一個月</p>
         <div class="events" id="eventsList"><p class="empty-note">尚無資料</p></div>
-        <div class="rumors" id="rumorList" hidden><p class="empty-note">尚無市場傳聞資料</p></div>
       </section>
     </div>
   </div>
@@ -1023,8 +1026,8 @@
     $('focusMeta').textContent = '';
     $('eventsList').innerHTML = emptyNote('尚無資料');
     $('rumorList').innerHTML = emptyNote('尚無市場傳聞資料');
-    eventsMetaText = '未來約一個月';
-    paintEventView();
+    $('eventsMeta').textContent = '未來約一個月';
+    paintFocusView();
     $('updated').textContent = '尚未更新';
     $('rankTable').hidden = true;
     $('rankEmpty').hidden = false;
@@ -1091,31 +1094,30 @@
     + '</div>').join('');
   }
 
-  const EVENT_VIEWS = ['events', 'rumors'];
-  const EVENT_TITLES = { events: '近期重要事件', rumors: '市場傳聞' };
-  let eventView = 'events', eventsMetaText = '未來約一個月';
+  const FOCUS_VIEWS = ['focus', 'rumors'];
+  const FOCUS_TITLES = { focus: '今日焦點', rumors: '市場傳聞' };
+  let focusView = 'focus';
   try {
-    const savedView = localStorage.getItem('joe.eventView');
-    if (EVENT_VIEWS.includes(savedView)) eventView = savedView;
+    const savedView = localStorage.getItem('joe.focusView');
+    if (FOCUS_VIEWS.includes(savedView)) focusView = savedView;
   } catch (e) {}
 
-  function paintEventView(){
-    $('eventsList').hidden = eventView !== 'events';
-    $('rumorList').hidden = eventView !== 'rumors';
-    $('hEvents').textContent = EVENT_TITLES[eventView];
-    $('eventsMeta').hidden = eventView !== 'events';
-    $('eventsMeta').textContent = eventsMetaText;
-    Array.from($('eventTabs').querySelectorAll('button')).forEach(b => {
-      b.setAttribute('aria-selected', String(b.dataset.view === eventView));
+  function paintFocusView(){
+    $('focusList').hidden = focusView !== 'focus';
+    $('rumorList').hidden = focusView !== 'rumors';
+    $('focusMeta').hidden = focusView !== 'focus';
+    $('hFocus').textContent = FOCUS_TITLES[focusView];
+    Array.from($('focusTabs').querySelectorAll('button')).forEach(b => {
+      b.setAttribute('aria-selected', String(b.dataset.view === focusView));
     });
   }
 
-  $('eventTabs').addEventListener('click', function(e){
+  $('focusTabs').addEventListener('click', function(e){
     const b = e.target.closest('button[data-view]');
-    if (!b || !EVENT_VIEWS.includes(b.dataset.view)) return;
-    eventView = b.dataset.view;
-    try { localStorage.setItem('joe.eventView', eventView); } catch (err) {}
-    paintEventView();
+    if (!b || !FOCUS_VIEWS.includes(b.dataset.view)) return;
+    focusView = b.dataset.view;
+    try { localStorage.setItem('joe.focusView', focusView); } catch (err) {}
+    paintFocusView();
   });
 
   function renderEventItem(e){
@@ -1381,10 +1383,10 @@
 
     const events = Array.isArray(data.upcoming_events) ? data.upcoming_events : [];
     $('eventsList').innerHTML = events.length ? events.map(renderEventItem).join('') : emptyNote('尚無資料');
-    eventsMetaText = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
+    $('eventsMeta').textContent = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
     const rumors = data.rumors && typeof data.rumors === 'object' ? data.rumors : null;
     $('rumorList').innerHTML = renderRumors(rumors);
-    paintEventView();
+    paintFocusView();
 
     $('rankTable').hidden = !top30.length;
     $('rankEmpty').hidden = !!top30.length;
