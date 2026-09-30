@@ -648,7 +648,6 @@
   .rk-badge .tri{font-size:8px;}
   .stock-link{display:inline-flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;}
   .stock-id{display:grid;gap:3px;line-height:1.2;}
-  .stock-line{display:flex;align-items:baseline;gap:8px;}
   .stock-name{font-weight:700;font-size:14px;letter-spacing:.02em;}
   .stock-code{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-data);font-size:11px;font-stretch:87.5%;font-weight:500;color:var(--text-faint);}
   .stock-link:hover .stock-name{color:var(--accent);}
@@ -1401,8 +1400,9 @@
     }
     return '<tr>'
       + '<td class="al">' + stockLink(code, 'stock-link', klineSvg(r)
-      +   '<span class="stock-id"><span class="stock-line"><span class="stock-name">' + esc(r.name ?? '') + '</span>' + rkBadge + '</span>'
-      +   '<span class="stock-code">' + esc(code) + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</span></span>') + '</td>'
+      +   '<span class="stock-id"><span class="stock-name">' + esc(r.name ?? '') + '</span>'
+      +   '<span class="stock-code">' + esc(code) + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</span>'
+      +   rkBadge + '</span>') + '</td>'
       + '<td class="px ' + dir + '">' + wrap(fmt(num(r.price))) + '</td>'
       + '<td class="chg ' + dir + '">' + wrap(chgText(chg)) + '</td>'
       + '<td>' + revenueCell(r.revenue) + '</td>'
