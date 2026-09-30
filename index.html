@@ -684,13 +684,7 @@
   .inst-tag.streak{background:var(--red-dim);}
   .inst-tag.turn{box-shadow:inset 0 0 0 1px var(--red);}
   .inst-none{font-size:12px;color:var(--text-faint);}
-  .theme-chip{
-    padding:1px 8px;
-    font-size:11.5px;
-    color:var(--text-dim);
-    border:1px solid var(--line-strong);
-    border-radius:var(--radius-sm);
-  }
+  .stock-theme{min-width:9em;max-width:13em;font-size:11px;line-height:1.4;white-space:normal;color:var(--text-dim);}
   .rank-empty{margin:0;padding:40px 16px;text-align:center;color:var(--text-faint);}
 
   /* ---- rules ---- */
@@ -891,7 +885,6 @@
               <th>價格</th>
               <th>漲跌幅</th>
               <th id="revHead">營收</th>
-              <th class="al">題材/族群</th>
               <th class="al">法人同買</th>
             </tr>
           </thead>
@@ -1402,11 +1395,11 @@
       + '<td class="al">' + stockLink(code, 'stock-link', klineSvg(r)
       +   '<span class="stock-id"><span class="stock-name">' + esc(r.name ?? '') + '</span>'
       +   '<span class="stock-code">' + esc(code) + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</span>'
+      +   (r.theme ? '<span class="stock-theme">' + esc(r.theme) + '</span>' : '')
       +   rkBadge + '</span>') + '</td>'
       + '<td class="px ' + dir + '">' + wrap(fmt(num(r.price))) + '</td>'
       + '<td class="chg ' + dir + '">' + wrap(chgText(chg)) + '</td>'
       + '<td>' + revenueCell(r.revenue) + '</td>'
-      + '<td class="al">' + (r.theme ? '<span class="theme-chip">' + esc(r.theme) + '</span>' : '—') + '</td>'
       + '<td class="al">' + instCell(r.inst, lookback) + '</td>'
     + '</tr>';
   }
