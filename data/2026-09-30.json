@@ -20,6 +20,11 @@
     "trust_streak": 2,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 10.09,
+    "yoy": 53.32
    }
   },
   {
@@ -40,6 +45,11 @@
     "trust_streak": 1,
     "foreign_turn": false,
     "trust_turn": true
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 32.4,
+    "yoy": 44.08
    }
   },
   {
@@ -61,6 +71,11 @@
     "trust_streak": 2,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 0.09,
+    "yoy": 46.74
    }
   },
   {
@@ -82,6 +97,11 @@
     "trust_streak": 0,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -1.02,
+    "yoy": 0.02
    }
   },
   {
@@ -103,6 +123,11 @@
     "trust_streak": 10,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 2.39,
+    "yoy": 30.55
    }
   },
   {
@@ -124,6 +149,11 @@
     "trust_streak": 3,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 5.73,
+    "yoy": 40.57
    }
   },
   {
@@ -145,6 +175,11 @@
     "trust_streak": 5,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 3.68,
+    "yoy": 76.38
    }
   },
   {
@@ -165,6 +200,11 @@
     "trust_streak": 6,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -3.7,
+    "yoy": 34.94
    }
   },
   {
@@ -186,6 +226,11 @@
     "trust_streak": 1,
     "foreign_turn": false,
     "trust_turn": true
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 1.87,
+    "yoy": 560.85
    }
   },
   {
@@ -207,6 +252,11 @@
     "trust_streak": -1,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 1.01,
+    "yoy": 19.96
    }
   },
   {
@@ -228,6 +278,11 @@
     "trust_streak": -3,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -4.28,
+    "yoy": 7.6
    }
   },
   {
@@ -249,6 +304,11 @@
     "trust_streak": 1,
     "foreign_turn": false,
     "trust_turn": true
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -1.6,
+    "yoy": 40.59
    }
   },
   {
@@ -269,6 +329,11 @@
     "trust_streak": 1,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 13.4,
+    "yoy": -5.85
    }
   },
   {
@@ -289,6 +354,11 @@
     "trust_streak": 2,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 5.03,
+    "yoy": 30.71
    }
   },
   {
@@ -310,6 +380,11 @@
     "trust_streak": 4,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -7.66,
+    "yoy": 53.99
    }
   },
   {
@@ -330,6 +405,11 @@
     "trust_streak": -1,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 17.41,
+    "yoy": 41.05
    }
   },
   {
@@ -351,6 +431,11 @@
     "trust_streak": -8,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 2.0,
+    "yoy": 289.42
    }
   },
   {
@@ -371,6 +456,11 @@
     "trust_streak": 5,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 6.2,
+    "yoy": 97.92
    }
   },
   {
@@ -391,6 +481,11 @@
     "trust_streak": -4,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 1.24,
+    "yoy": 51.79
    }
   },
   {
@@ -411,6 +506,11 @@
     "trust_streak": 1,
     "foreign_turn": true,
     "trust_turn": true
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 4.79,
+    "yoy": 54.34
    }
   },
   {
@@ -432,6 +532,11 @@
     "trust_streak": -9,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 3.54,
+    "yoy": 59.42
    }
   },
   {
@@ -452,6 +557,11 @@
     "trust_streak": 4,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 9.17,
+    "yoy": 56.25
    }
   },
   {
@@ -472,6 +582,11 @@
     "trust_streak": -4,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 11.47,
+    "yoy": 45.65
    }
   },
   {
@@ -493,6 +608,11 @@
     "trust_streak": 2,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 5.09,
+    "yoy": 76.19
    }
   },
   {
@@ -513,6 +633,11 @@
     "trust_streak": -1,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 2.76,
+    "yoy": -16.23
    }
   },
   {
@@ -533,6 +658,11 @@
     "trust_streak": -3,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 0.1,
+    "yoy": 132.48
    }
   },
   {
@@ -554,6 +684,11 @@
     "trust_streak": -1,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -4.78,
+    "yoy": -13.82
    }
   },
   {
@@ -575,6 +710,11 @@
     "trust_streak": 10,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -47.18,
+    "yoy": 42.77
    }
   },
   {
@@ -595,6 +735,11 @@
     "trust_streak": 3,
     "foreign_turn": false,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": 0.39,
+    "yoy": 90.9
    }
   },
   {
@@ -616,6 +761,11 @@
     "trust_streak": 0,
     "foreign_turn": true,
     "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-08",
+    "mom": -1.32,
+    "yoy": 33.26
    }
   }
  ],
@@ -1956,5 +2106,6 @@
     ]
    }
   ]
- }
+ },
+ "revenue_month": "2026-08"
 }
