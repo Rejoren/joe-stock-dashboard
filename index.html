@@ -640,16 +640,15 @@
   .rank-table tbody tr:last-child td{border-bottom:0;}
   .rank-table tbody tr:hover td{background:var(--surface-2);}
   .rank-table .al{text-align:left;}
-  .rank-table th:nth-child(1),.rank-table td:nth-child(1){position:sticky;left:0;z-index:1;width:56px;min-width:56px;padding-inline:16px 4px;}
-  .rank-table th:nth-child(2),.rank-table td:nth-child(2){position:sticky;left:56px;z-index:1;box-shadow:inset -1px 0 0 var(--line);}
-  .rank-table thead th:nth-child(1),.rank-table thead th:nth-child(2){z-index:3;}
-  .rk-num{font-family:var(--font-data);font-size:13px;font-stretch:87.5%;color:var(--text-faint);}
-  .rk-badge{display:block;margin-top:2px;font-family:var(--font-data);font-size:10px;font-weight:700;font-stretch:87.5%;letter-spacing:.02em;}
+  .rank-table th:nth-child(1),.rank-table td:nth-child(1){position:sticky;left:0;z-index:1;box-shadow:inset -1px 0 0 var(--line);}
+  .rank-table thead th:nth-child(1){z-index:3;}
+  .rk-badge{font-family:var(--font-data);font-size:10px;font-weight:700;font-stretch:87.5%;letter-spacing:.02em;white-space:nowrap;}
   .rk-badge.new{color:var(--yellow);}
   .rk-badge.up{color:var(--red);}
   .rk-badge .tri{font-size:8px;}
   .stock-link{display:inline-flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;}
   .stock-id{display:grid;gap:3px;line-height:1.2;}
+  .stock-line{display:flex;align-items:baseline;gap:8px;}
   .stock-name{font-weight:700;font-size:14px;letter-spacing:.02em;}
   .stock-code{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-data);font-size:11px;font-stretch:87.5%;font-weight:500;color:var(--text-faint);}
   .stock-link:hover .stock-name{color:var(--accent);}
@@ -889,7 +888,6 @@
         <table class="rank-table" id="rankTable" hidden>
           <thead>
             <tr>
-              <th class="al">#</th>
               <th class="al">股名／股號</th>
               <th>價格</th>
               <th>漲跌幅</th>
@@ -1402,9 +1400,8 @@
       rkBadge = '<span class="rk-badge up"><span class="tri">▲</span> ' + esc(r.rank_up) + '</span>';
     }
     return '<tr>'
-      + '<td class="al"><span class="rk-num">' + esc(r.rank ?? '') + '</span>' + rkBadge + '</td>'
       + '<td class="al">' + stockLink(code, 'stock-link', klineSvg(r)
-      +   '<span class="stock-id"><span class="stock-name">' + esc(r.name ?? '') + '</span>'
+      +   '<span class="stock-id"><span class="stock-line"><span class="stock-name">' + esc(r.name ?? '') + '</span>' + rkBadge + '</span>'
       +   '<span class="stock-code">' + esc(code) + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</span></span>') + '</td>'
       + '<td class="px ' + dir + '">' + wrap(fmt(num(r.price))) + '</td>'
       + '<td class="chg ' + dir + '">' + wrap(chgText(chg)) + '</td>'
