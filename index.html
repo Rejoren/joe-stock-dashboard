@@ -52,6 +52,7 @@
     --green-solid: oklch(0.5 0.13 152);
     --yellow: oklch(0.85 0.15 85);
     --yellow-dim: oklch(0.85 0.15 85 / 0.15);
+    --yellow-fill: oklch(0.85 0.15 85);
     --on-solid: oklch(0.99 0 0);
     --flat: oklch(0.96 0.005 255);
     --housing: oklch(0.12 0.006 255);
@@ -85,6 +86,7 @@
       --green-solid: oklch(0.5 0.13 152);
       --yellow: oklch(0.53 0.12 68);
       --yellow-dim: oklch(0.72 0.14 80 / 0.18);
+      --yellow-fill: oklch(0.8 0.15 82);
       --on-solid: oklch(0.99 0 0);
       --flat: oklch(0.2 0.015 255);
       --housing: oklch(0.22 0.012 255);
@@ -113,6 +115,7 @@
     --green-solid: oklch(0.5 0.13 152);
     --yellow: oklch(0.53 0.12 68);
     --yellow-dim: oklch(0.72 0.14 80 / 0.18);
+    --yellow-fill: oklch(0.8 0.15 82);
     --on-solid: oklch(0.99 0 0);
     --flat: oklch(0.2 0.015 255);
     --housing: oklch(0.22 0.012 255);
@@ -207,7 +210,7 @@
     transition:opacity .3s, box-shadow .3s;
   }
   .lamp.red{color:var(--red);}
-  .lamp.yellow{color:var(--yellow);}
+  .lamp.yellow{color:var(--yellow-fill);}
   .lamp.green{color:var(--green);}
   .lamp.on{opacity:1;box-shadow:0 0 26px 2px currentColor;}
 
@@ -687,6 +690,58 @@
   .stock-theme{min-width:9em;max-width:13em;font-size:11px;line-height:1.4;white-space:normal;color:var(--text-dim);}
   .rank-empty{margin:0;padding:40px 16px;text-align:center;color:var(--text-faint);}
 
+  /* ---- light log & track record ---- */
+  .light-log{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;font-size:12px;color:var(--text-faint);}
+  .light-log-label{letter-spacing:.14em;}
+  .light-log-cells{display:inline-flex;gap:4px;}
+  .light-cell{width:14px;height:14px;border-radius:2px;background:var(--surface-3);}
+  .light-cell.red{background:var(--red);}
+  .light-cell.yellow{background:var(--yellow-fill);}
+  .light-cell.green{background:var(--green);}
+  .light-cell.today{outline:2px solid var(--text-dim);outline-offset:2px;}
+  .light-log-note{font-weight:700;letter-spacing:.06em;color:var(--text-dim);}
+
+  .track-list{display:grid;}
+  .track-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--line);}
+  .track-stat{display:grid;gap:6px;min-width:0;padding:16px 22px 18px;}
+  .track-stat + .track-stat{border-left:1px solid var(--line);}
+  .track-stat .label{font-size:11.5px;letter-spacing:.14em;color:var(--text-faint);}
+  .track-stat .value{font-family:var(--font-data);font-size:24px;font-weight:500;font-stretch:87.5%;line-height:1.1;font-variant-numeric:tabular-nums;}
+  .track-stat .value small{margin-left:2px;font-size:12px;color:var(--text-faint);}
+  .track-row{
+    display:grid;
+    grid-template-columns:52px minmax(0,1fr) auto;
+    align-items:baseline;
+    gap:4px 14px;
+    padding:13px 22px;
+  }
+  .track-row + .track-row,.track-more{border-top:1px solid var(--line);}
+  .tr-date{font-family:var(--font-data);font-size:12.5px;font-weight:600;font-stretch:87.5%;color:var(--text);}
+  .tr-name{min-width:0;font-weight:700;font-size:14px;color:var(--text);text-decoration:none;}
+  .tr-name:hover{color:var(--accent);}
+  .tr-code{margin-left:6px;font-family:var(--font-data);font-size:11px;font-weight:500;font-stretch:87.5%;color:var(--text-faint);}
+  .tr-ret{justify-self:end;font-family:var(--font-data);font-size:14px;font-weight:600;font-stretch:87.5%;font-variant-numeric:tabular-nums;}
+  .tr-days{font-size:11px;color:var(--text-faint);}
+  .tr-px{font-family:var(--font-data);font-size:12px;font-stretch:87.5%;color:var(--text-dim);font-variant-numeric:tabular-nums;}
+  .tr-tag{justify-self:end;padding:0 5px;font-size:10.5px;font-weight:700;line-height:17px;color:var(--text-dim);border:1px solid var(--line-strong);border-radius:var(--radius-sm);}
+  .track-list .up{color:var(--red);}
+  .track-list .down{color:var(--green);}
+  .track-more summary{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:13px 22px;
+    list-style:none;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.1em;
+    color:var(--text-faint);
+  }
+  .track-more summary::-webkit-details-marker{display:none;}
+  .track-more summary:hover,.track-more summary:hover .chev{color:var(--accent);}
+  .track-more[open] summary{border-bottom:1px solid var(--line);}
+
   /* ---- rules ---- */
   .rules{display:grid;gap:18px;}
   .rule-card{
@@ -727,6 +782,13 @@
     .wrap{gap:32px;padding-block-end:calc(96px + env(safe-area-inset-bottom, 0px));}
     .columns,.column{display:contents;}
     [data-pane]:not(.pane-on){display:none;}
+    .market-badge,.rk-badge,.rev-k,.rev-new,.pick-badge,.pick-score .lbl,.focus-rel,.tr-tag{font-size:11px;}
+    .rk-badge .tri{font-size:9px;}
+    .pick-details summary{min-height:44px;margin-block:-8px;}
+    .flow-tabs button{padding-top:12px;}
+    .track-stat{padding:14px 16px 16px;}
+    .track-stat .value{font-size:21px;}
+    .track-row,.track-more summary{padding-inline:16px;}
     .wrap:not([data-current="home"]) .eyebrow{display:none;}
     .wrap:not([data-current="home"]) h1{font-size:26px;}
     .rank-scroll{max-height:max(360px, calc(100vh - 250px));max-height:max(360px, calc(100dvh - 250px));}
@@ -808,6 +870,11 @@
         <span class="status-word" id="statusWord">—</span>
         <span class="status-sub" id="statusSub">等待資料</span>
       </div>
+      <div class="light-log" id="lightLog" hidden>
+        <span class="light-log-label" id="lightLogLabel">近 10 日</span>
+        <span class="light-log-cells" id="lightLogCells"></span>
+        <span class="light-log-note" id="lightLogNote"></span>
+      </div>
       <p class="reason" id="reason">尚無今日大盤位階判斷。</p>
       <div class="ruler" id="maRuler" hidden>
         <div class="ruler-head"><b>均線位階</b><span>紅＝指數站上　綠＝指數跌破</span></div>
@@ -829,6 +896,15 @@
           <h2 id="hTop5">今日選股 TOP 5</h2>
         </div>
         <div class="pick-list" id="top5List"></div>
+      </section>
+
+      <section class="section" aria-labelledby="hTrack" data-pane="picks">
+        <div class="section-head">
+          <h2 id="hTrack">選股成績單</h2>
+          <span class="section-meta" id="trackMeta"></span>
+        </div>
+        <p class="section-note">上榜當天收盤價到今天收盤的漲跌，同一檔連續上榜只算第一天</p>
+        <div class="track-list" id="trackList"><p class="empty-note">尚無成績資料</p></div>
       </section>
 
       <section class="section" aria-labelledby="hFlow" data-pane="flow">
@@ -954,6 +1030,12 @@
     return n.toLocaleString('zh-TW', {minimumFractionDigits: digits ?? 2, maximumFractionDigits: digits ?? 2});
   }
 
+  // Decimals follow Taiwan tick sizes: under 50 trades in 0.01/0.05, 50–500 in 0.1/0.5, 500+ in whole yuan; ETFs keep 2.
+  function fmtPrice(p, code){
+    if (typeof p !== 'number' || Number.isNaN(p)) return '—';
+    return fmt(p, /^00/.test(String(code || '')) || p < 50 ? 2 : p < 500 ? 1 : 0);
+  }
+
   function esc(s){
     const d = document.createElement('div');
     d.textContent = s == null ? '' : String(s);
@@ -1065,6 +1147,46 @@
     $('maRuler').hidden = false;
   }
 
+  // light_history: [{date, light}] oldest -> newest, today last.
+  function renderLightLog(hist){
+    const list = (Array.isArray(hist) ? hist : []).filter(h => h && LIGHT_META[h.light]);
+    $('lightLog').hidden = !list.length;
+    if (!list.length) return;
+    $('lightLogLabel').textContent = '近 ' + list.length + ' 日';
+    $('lightLogCells').innerHTML = list.map((h, i) => '<span class="light-cell ' + h.light + (i === list.length - 1 ? ' today' : '')
+      + '" title="' + attr(String(h.date).slice(5).replace('-', '/') + ' ' + LIGHT_META[h.light].word) + '"></span>').join('');
+    const last = list[list.length - 1].light;
+    let n = 0;
+    for (let i = list.length - 1; i >= 0 && list[i].light === last; i--) n++;
+    $('lightLogNote').textContent = '連續' + LIGHT_META[last].word + '第 ' + n + ' 天' + (n === list.length && n >= 10 ? '以上' : '');
+  }
+
+  // track_record from build_track_record.py: one row per 上榜事件, newest first; first 8 shown, the rest folded.
+  function renderTrack(t){
+    const picks = t && Array.isArray(t.picks) ? t.picks : [];
+    $('trackMeta').textContent = picks.length ? shortRange([t.from, t.to]) : '';
+    if (!picks.length){ $('trackList').innerHTML = emptyNote('尚無成績資料'); return; }
+    const pct = v => v == null ? '—' : '<span class="' + dirClass(v) + '">' + chgText(v) + '</span>';
+    const stat = (label, html) => '<div class="track-stat"><span class="label">' + label + '</span><span class="value">' + html + '</span></div>';
+    const row = p => '<div class="track-row">'
+      + '<span class="tr-date">' + esc(String(p.date || '').slice(5).replace('-', '/')) + '</span>'
+      + stockLink(p.code, 'tr-name', esc(p.name || '') + '<span class="tr-code">' + esc(p.code || '') + '</span>')
+      + '<span class="tr-ret ' + dirClass(num(p.ret)) + '">' + (num(p.ret) == null ? '無資料' : chgText(num(p.ret))) + '</span>'
+      + '<span class="tr-days">持有 ' + esc(p.days ?? '—') + ' 天</span>'
+      + '<span class="tr-px">' + fmtPrice(num(p.entry), p.code) + ' → ' + fmtPrice(num(p.close), p.code) + '</span>'
+      + (p.listed ? '<span class="tr-tag">在榜</span>' : '<span></span>')
+    + '</div>';
+    const rest = picks.slice(8);
+    $('trackList').innerHTML = '<div class="track-summary">'
+        + stat('上榜', esc(t.count ?? picks.length) + '<small>檔</small>')
+        + stat('勝率', num(t.win_rate) == null ? '—' : esc(t.win_rate) + '<small>%</small>')
+        + stat('平均報酬', pct(num(t.avg_return)))
+      + '</div>'
+      + picks.slice(0, 8).map(row).join('')
+      + (rest.length ? '<details class="track-more"><summary><span class="chev">▸</span>顯示全部 ' + picks.length + ' 筆</summary>'
+        + rest.map(row).join('') + '</details>' : '');
+  }
+
   function renderEmpty(message){
     $('signalCard').dataset.light = '';
     $('tabbar').dataset.light = '';
@@ -1083,6 +1205,8 @@
       $('d' + k).className = 'dist';
     });
     $('maRuler').hidden = true;
+    $('lightLog').hidden = true;
+    renderTrack(null);
     $('top5List').innerHTML = '<div class="empty-card"><p>今日選股清單尚未產出</p><p class="small">每個交易日 18:00 盤後自動更新</p></div>';
     $('radarList').innerHTML = emptyNote('尚無資料');
     $('flowTabs').hidden = true;
@@ -1233,7 +1357,7 @@
       : streak === 1 ? '<span class="pick-badge new" title="今日新上榜">New</span>'
       : '<span class="pick-badge days" title="連續上榜天數">' + streak + ' 天</span>';
     const quote = (price == null && chg == null) ? ''
-      : '<span class="pick-quote ' + dirClass(chg) + '"><b class="px">' + fmt(price) + '</b><span class="pc">' + chgText(chg) + '</span></span>';
+      : '<span class="pick-quote ' + dirClass(chg) + '"><b class="px">' + fmtPrice(price, code) + '</b><span class="pc">' + chgText(chg) + '</span></span>';
     const strat = splitStrategy(p.buy_strategy);
     return '<article class="pick">'
       + '<div class="pick-rank">' + esc(p.rank ?? '') + '</div>'
@@ -1397,7 +1521,7 @@
       +   '<span class="stock-code">' + esc(code) + (r.market ? '<span class="market-badge">' + esc(r.market) + '</span>' : '') + '</span>'
       +   (r.theme ? '<span class="stock-theme">' + esc(r.theme) + '</span>' : '')
       +   rkBadge + '</span>') + '</td>'
-      + '<td class="px ' + dir + '">' + wrap(fmt(num(r.price))) + '</td>'
+      + '<td class="px ' + dir + '">' + wrap(fmtPrice(num(r.price), code)) + '</td>'
       + '<td class="chg ' + dir + '">' + wrap(chgText(chg)) + '</td>'
       + '<td>' + revenueCell(r.revenue) + '</td>'
       + '<td class="al">' + instCell(r.inst, lookback) + '</td>'
@@ -1434,6 +1558,8 @@
       $('d' + m.key).className = 'dist ' + side;
     });
     renderRuler(idx, mas);
+    renderLightLog(data.light_history);
+    renderTrack(data.track_record);
 
     const top30 = Array.isArray(data.top30) ? data.top30 : (Array.isArray(data.top50) ? data.top50.slice(0, 30) : []);
     const changeMap = {}, quoteMap = {};
