@@ -723,7 +723,10 @@
   .tr-ret{justify-self:end;font-family:var(--font-data);font-size:14px;font-weight:600;font-stretch:87.5%;font-variant-numeric:tabular-nums;}
   .tr-days{font-size:11px;color:var(--text-faint);}
   .tr-px{font-family:var(--font-data);font-size:12px;font-stretch:87.5%;color:var(--text-dim);font-variant-numeric:tabular-nums;}
-  .tr-tag{justify-self:end;padding:0 5px;font-size:10.5px;font-weight:700;line-height:17px;color:var(--text-dim);border:1px solid var(--line-strong);border-radius:var(--radius-sm);}
+  .track-status{margin-right:8px;font-weight:700;color:var(--text-dim);}
+  .tr-tags{justify-self:end;display:inline-flex;gap:4px;}
+  .tr-note{grid-column:2 / -1;font-size:11.5px;color:var(--text-faint);}
+  .tr-tag{padding:0 5px;font-size:10.5px;font-weight:700;line-height:17px;color:var(--text-dim);border:1px solid var(--line-strong);border-radius:var(--radius-sm);}
   .track-list .up{color:var(--red);}
   .track-list .down{color:var(--green);}
   .track-more summary{
@@ -901,9 +904,9 @@
       <section class="section" aria-labelledby="hTrack" data-pane="picks">
         <div class="section-head">
           <h2 id="hTrack">選股成績單</h2>
-          <span class="section-meta" id="trackMeta"></span>
+          <div class="flow-tabs" id="trackTabs" role="tablist" aria-label="成績單月份" hidden></div>
         </div>
-        <p class="section-note">上榜當天收盤價到今天收盤的漲跌，同一檔連續上榜只算第一天</p>
+        <p class="section-note"><span class="track-status" id="trackMeta"></span>當月上榜一律從上榜日收盤算到月底收盤；連續上榜跨月的在月底先結算，下個月從月底收盤接著算。</p>
         <div class="track-list" id="trackList"><p class="empty-note">尚無成績資料</p></div>
       </section>
 
@@ -1161,31 +1164,77 @@
     $('lightLogNote').textContent = '連續' + LIGHT_META[last].word + '第 ' + n + ' 天' + (n === list.length && n >= 10 ? '以上' : '');
   }
 
-  // track_record from build_track_record.py: one row per 上榜事件, newest first; first 8 shown, the rest folded.
+  // track_record.months from build_track_record.py: one row per stock per month, entered at its first listing
+  // that month and settled at the month's last close (the current month at the latest close); streaks crossing
+  // a month end carry into the next month from that close. Tabs run newest month first.
+  let trackData = [], trackMonth = null, trackLatest = null;
+  try {
+    const saved = String(localStorage.getItem('joe.trackMonth') || '').split('|');
+    trackMonth = saved[0] || null;
+    trackLatest = saved[1] || null;
+  } catch (e) {}
+
   function renderTrack(t){
-    const picks = t && Array.isArray(t.picks) ? t.picks : [];
-    $('trackMeta').textContent = picks.length ? shortRange([t.from, t.to]) : '';
-    if (!picks.length){ $('trackList').innerHTML = emptyNote('尚無成績資料'); return; }
+    trackData = t && Array.isArray(t.months) ? t.months.filter(m => m && m.month) : [];
+    const latest = trackData.length ? trackData[trackData.length - 1].month : null;
+    $('trackTabs').hidden = !trackData.length;
+    $('trackTabs').innerHTML = trackData.slice().reverse().map(m => '<button type="button" role="tab" data-month="' + attr(m.month) + '">'
+      + esc(monthLabel(m.month) || m.month) + '</button>').join('');
+    // A choice made before a new month began falls back to the current month.
+    if (trackLatest !== latest || !trackData.some(m => m.month === trackMonth)) trackMonth = latest;
+    trackLatest = latest;
+    paintTrackMonth();
+  }
+
+  function paintTrackMonth(){
+    Array.from($('trackTabs').querySelectorAll('button')).forEach(b => {
+      b.setAttribute('aria-selected', String(b.dataset.month === trackMonth));
+    });
+    const m = trackData.find(x => x.month === trackMonth);
+    const name = m ? monthLabel(m.month) || m.month : '';
+    const picks = m && Array.isArray(m.picks) ? m.picks : [];
+    if (!picks.length){
+      $('trackMeta').textContent = m ? name + '・尚無紀錄' : '';
+      $('trackList').innerHTML = emptyNote(m ? name + '尚無紀錄' : '尚無成績資料');
+      return;
+    }
+    const md = d => String(d || '').slice(5).replace('-', '/');
+    const skipped = picks.length - (num(m.counted) ?? picks.length);
+    $('trackMeta').textContent = name + (m.status === 'open' ? '・進行中（至 ' + md(m.settle_date) + ' 收盤）' : '・已結算（' + md(m.settle_date) + ' 收盤）')
+      + (skipped > 0 ? '・' + skipped + ' 檔月底上榜不計入' : '');
     const pct = v => v == null ? '—' : '<span class="' + dirClass(v) + '">' + chgText(v) + '</span>';
     const stat = (label, html) => '<div class="track-stat"><span class="label">' + label + '</span><span class="value">' + html + '</span></div>';
-    const row = p => '<div class="track-row">'
-      + '<span class="tr-date">' + esc(String(p.date || '').slice(5).replace('-', '/')) + '</span>'
-      + stockLink(p.code, 'tr-name', esc(p.name || '') + '<span class="tr-code">' + esc(p.code || '') + '</span>')
-      + '<span class="tr-ret ' + dirClass(num(p.ret)) + '">' + (num(p.ret) == null ? '無資料' : chgText(num(p.ret))) + '</span>'
-      + '<span class="tr-days">持有 ' + esc(p.days ?? '—') + ' 天</span>'
-      + '<span class="tr-px">' + fmtPrice(num(p.entry), p.code) + ' → ' + fmtPrice(num(p.close), p.code) + '</span>'
-      + (p.listed ? '<span class="tr-tag">在榜</span>' : '<span></span>')
-    + '</div>';
+    const row = p => {
+      const tags = [p.carried_in && '延續', p.listed && '在榜', p.carried_out && '跨月', p.month_end && '月底上榜'].filter(Boolean);
+      return '<div class="track-row">'
+        + '<span class="tr-date">' + esc(md(p.start)) + '</span>'
+        + stockLink(p.code, 'tr-name', esc(p.name || '') + '<span class="tr-code">' + esc(p.code || '') + '</span>')
+        + '<span class="tr-ret ' + dirClass(num(p.ret)) + '">' + (num(p.ret) == null ? '無資料' : chgText(num(p.ret))) + '</span>'
+        + '<span class="tr-days">上榜 ' + esc(p.days ?? '—') + ' 天</span>'
+        + '<span class="tr-px"' + (p.carried_in ? ' title="' + attr('從 ' + md(p.entry_date) + ' 月底收盤接續計算') + '"' : '') + '>'
+        +   fmtPrice(num(p.entry), p.code) + ' → ' + fmtPrice(num(p.exit), p.code) + '</span>'
+        + '<span class="tr-tags">' + tags.map(x => '<span class="tr-tag">' + x + '</span>').join('') + '</span>'
+        + (Array.isArray(p.relist) && p.relist.length ? '<span class="tr-note">再上榜 ' + p.relist.map(d => esc(md(d))).join('、') + '</span>' : '')
+      + '</div>';
+    };
     const rest = picks.slice(8);
     $('trackList').innerHTML = '<div class="track-summary">'
-        + stat('上榜', esc(t.count ?? picks.length) + '<small>檔</small>')
-        + stat('勝率', num(t.win_rate) == null ? '—' : esc(t.win_rate) + '<small>%</small>')
-        + stat('平均報酬', pct(num(t.avg_return)))
+        + stat('上榜', esc(m.count ?? picks.length) + '<small>檔</small>')
+        + stat('勝率', num(m.win_rate) == null ? '—' : esc(m.win_rate) + '<small>%</small>')
+        + stat('平均報酬', pct(num(m.avg_return)))
       + '</div>'
       + picks.slice(0, 8).map(row).join('')
       + (rest.length ? '<details class="track-more"><summary><span class="chev">▸</span>顯示全部 ' + picks.length + ' 筆</summary>'
         + rest.map(row).join('') + '</details>' : '');
   }
+
+  $('trackTabs').addEventListener('click', function(e){
+    const b = e.target.closest('button[data-month]');
+    if (!b) return;
+    trackMonth = b.dataset.month;
+    try { localStorage.setItem('joe.trackMonth', trackMonth + '|' + (trackLatest || '')); } catch (err) {}
+    paintTrackMonth();
+  });
 
   function renderEmpty(message){
     $('signalCard').dataset.light = '';
