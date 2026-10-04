@@ -2019,5 +2019,447 @@
   ]
  },
  "inst_lookback": 10,
- "revenue_month": "2026-09"
+ "revenue_month": "2026-09",
+ "light_history": [
+  {
+   "date": "2026-09-17",
+   "light": "yellow"
+  },
+  {
+   "date": "2026-09-18",
+   "light": "yellow"
+  },
+  {
+   "date": "2026-09-21",
+   "light": "red"
+  },
+  {
+   "date": "2026-09-22",
+   "light": "red"
+  },
+  {
+   "date": "2026-09-23",
+   "light": "red"
+  },
+  {
+   "date": "2026-09-24",
+   "light": "yellow"
+  },
+  {
+   "date": "2026-09-29",
+   "light": "yellow"
+  },
+  {
+   "date": "2026-09-30",
+   "light": "red"
+  },
+  {
+   "date": "2026-10-01",
+   "light": "red"
+  },
+  {
+   "date": "2026-10-02",
+   "light": "red"
+  }
+ ],
+ "track_record": {
+  "window_days": 20,
+  "from": "2026-09-11",
+  "to": "2026-10-02",
+  "count": 39,
+  "win_rate": 82.1,
+  "avg_return": 8.69,
+  "picks": [
+   {
+    "code": "2492",
+    "name": "華新科",
+    "date": "2026-10-01",
+    "entry": 329.0,
+    "close": 361.5,
+    "ret": 9.88,
+    "days": 1,
+    "listed": true
+   },
+   {
+    "code": "3037",
+    "name": "欣興",
+    "date": "2026-10-01",
+    "entry": 1215.0,
+    "close": 1305.0,
+    "ret": 7.41,
+    "days": 1,
+    "listed": true
+   },
+   {
+    "code": "3026",
+    "name": "禾伸堂",
+    "date": "2026-10-01",
+    "entry": 852.0,
+    "close": 835.0,
+    "ret": -2.0,
+    "days": 1,
+    "listed": false
+   },
+   {
+    "code": "3105",
+    "name": "穩懋",
+    "date": "2026-09-30",
+    "entry": 542.0,
+    "close": 591.0,
+    "ret": 9.04,
+    "days": 2,
+    "listed": true
+   },
+   {
+    "code": "2409",
+    "name": "友達",
+    "date": "2026-09-30",
+    "entry": 38.55,
+    "close": 40.45,
+    "ret": 4.93,
+    "days": 2,
+    "listed": false
+   },
+   {
+    "code": "6213",
+    "name": "聯茂",
+    "date": "2026-09-29",
+    "entry": 620.0,
+    "close": 683.0,
+    "ret": 10.16,
+    "days": 3,
+    "listed": true
+   },
+   {
+    "code": "1303",
+    "name": "南亞",
+    "date": "2026-09-29",
+    "entry": 247.0,
+    "close": 260.0,
+    "ret": 5.26,
+    "days": 3,
+    "listed": false
+   },
+   {
+    "code": "3016",
+    "name": "嘉晶",
+    "date": "2026-09-29",
+    "entry": 172.5,
+    "close": 180.5,
+    "ret": 4.64,
+    "days": 3,
+    "listed": false
+   },
+   {
+    "code": "3189",
+    "name": "景碩",
+    "date": "2026-09-24",
+    "entry": 962.0,
+    "close": 1050.0,
+    "ret": 9.15,
+    "days": 4,
+    "listed": true
+   },
+   {
+    "code": "3653",
+    "name": "健策",
+    "date": "2026-09-24",
+    "entry": 6920.0,
+    "close": 6800.0,
+    "ret": -1.73,
+    "days": 4,
+    "listed": false
+   },
+   {
+    "code": "3037",
+    "name": "欣興",
+    "date": "2026-09-23",
+    "entry": 1160.0,
+    "close": 1305.0,
+    "ret": 12.5,
+    "days": 5,
+    "listed": true
+   },
+   {
+    "code": "2330",
+    "name": "台積電",
+    "date": "2026-09-23",
+    "entry": 2500.0,
+    "close": 2500.0,
+    "ret": 0.0,
+    "days": 5,
+    "listed": false
+   },
+   {
+    "code": "3443",
+    "name": "創意",
+    "date": "2026-09-23",
+    "entry": 8385.0,
+    "close": 7900.0,
+    "ret": -5.78,
+    "days": 5,
+    "listed": false
+   },
+   {
+    "code": "8046",
+    "name": "南電",
+    "date": "2026-09-22",
+    "entry": 1165.0,
+    "close": 1460.0,
+    "ret": 25.32,
+    "days": 6,
+    "listed": false
+   },
+   {
+    "code": "2409",
+    "name": "友達",
+    "date": "2026-09-22",
+    "entry": 36.65,
+    "close": 40.45,
+    "ret": 10.37,
+    "days": 6,
+    "listed": false
+   },
+   {
+    "code": "2449",
+    "name": "京元電子",
+    "date": "2026-09-22",
+    "entry": 317.0,
+    "close": 295.5,
+    "ret": -6.78,
+    "days": 6,
+    "listed": false
+   },
+   {
+    "code": "3443",
+    "name": "創意",
+    "date": "2026-09-21",
+    "entry": 7615.0,
+    "close": 7900.0,
+    "ret": 3.74,
+    "days": 7,
+    "listed": false
+   },
+   {
+    "code": "2308",
+    "name": "台達電",
+    "date": "2026-09-21",
+    "entry": 1875.0,
+    "close": 1885.0,
+    "ret": 0.53,
+    "days": 7,
+    "listed": false
+   },
+   {
+    "code": "2454",
+    "name": "聯發科",
+    "date": "2026-09-21",
+    "entry": 5010.0,
+    "close": 4950.0,
+    "ret": -1.2,
+    "days": 7,
+    "listed": false
+   },
+   {
+    "code": "3711",
+    "name": "日月光投控",
+    "date": "2026-09-18",
+    "entry": 638.0,
+    "close": 713.0,
+    "ret": 11.76,
+    "days": 8,
+    "listed": false
+   },
+   {
+    "code": "2408",
+    "name": "南亞科",
+    "date": "2026-09-18",
+    "entry": 525.0,
+    "close": 526.0,
+    "ret": 0.19,
+    "days": 8,
+    "listed": false
+   },
+   {
+    "code": "2344",
+    "name": "華邦電",
+    "date": "2026-09-18",
+    "entry": 179.5,
+    "close": 179.0,
+    "ret": -0.28,
+    "days": 8,
+    "listed": false
+   },
+   {
+    "code": "3105",
+    "name": "穩懋",
+    "date": "2026-09-17",
+    "entry": 471.0,
+    "close": 591.0,
+    "ret": 25.48,
+    "days": 9,
+    "listed": true
+   },
+   {
+    "code": "2454",
+    "name": "聯發科",
+    "date": "2026-09-17",
+    "entry": 4500.0,
+    "close": 4950.0,
+    "ret": 10.0,
+    "days": 9,
+    "listed": false
+   },
+   {
+    "code": "2455",
+    "name": "全新",
+    "date": "2026-09-17",
+    "entry": 534.0,
+    "close": 580.0,
+    "ret": 8.61,
+    "days": 9,
+    "listed": false
+   },
+   {
+    "code": "6213",
+    "name": "聯茂",
+    "date": "2026-09-16",
+    "entry": 550.0,
+    "close": 683.0,
+    "ret": 24.18,
+    "days": 10,
+    "listed": true
+   },
+   {
+    "code": "2303",
+    "name": "聯電",
+    "date": "2026-09-16",
+    "entry": 142.0,
+    "close": 161.5,
+    "ret": 13.73,
+    "days": 10,
+    "listed": false
+   },
+   {
+    "code": "3081",
+    "name": "聯亞",
+    "date": "2026-09-16",
+    "entry": 2805.0,
+    "close": 2925.0,
+    "ret": 4.28,
+    "days": 10,
+    "listed": false
+   },
+   {
+    "code": "3653",
+    "name": "健策",
+    "date": "2026-09-15",
+    "entry": 5310.0,
+    "close": 6800.0,
+    "ret": 28.06,
+    "days": 11,
+    "listed": false
+   },
+   {
+    "code": "2308",
+    "name": "台達電",
+    "date": "2026-09-15",
+    "entry": 1670.0,
+    "close": 1885.0,
+    "ret": 12.87,
+    "days": 11,
+    "listed": false
+   },
+   {
+    "code": "2454",
+    "name": "聯發科",
+    "date": "2026-09-15",
+    "entry": 4430.0,
+    "close": 4950.0,
+    "ret": 11.74,
+    "days": 11,
+    "listed": false
+   },
+   {
+    "code": "3037",
+    "name": "欣興",
+    "date": "2026-09-14",
+    "entry": 970.0,
+    "close": 1305.0,
+    "ret": 34.54,
+    "days": 12,
+    "listed": true
+   },
+   {
+    "code": "2327",
+    "name": "國巨",
+    "date": "2026-09-14",
+    "entry": 545.0,
+    "close": 626.0,
+    "ret": 14.86,
+    "days": 12,
+    "listed": false
+   },
+   {
+    "code": "8358",
+    "name": "金居",
+    "date": "2026-09-14",
+    "entry": 518.0,
+    "close": 519.0,
+    "ret": 0.19,
+    "days": 12,
+    "listed": false
+   },
+   {
+    "code": "2303",
+    "name": "聯電",
+    "date": "2026-09-11",
+    "entry": 140.5,
+    "close": 161.5,
+    "ret": 14.95,
+    "days": 13,
+    "listed": false
+   },
+   {
+    "code": "3026",
+    "name": "禾伸堂",
+    "date": "2026-09-11",
+    "entry": 744.0,
+    "close": 835.0,
+    "ret": 12.23,
+    "days": 13,
+    "listed": false
+   },
+   {
+    "code": "2454",
+    "name": "聯發科",
+    "date": "2026-09-11",
+    "entry": 4585.0,
+    "close": 4950.0,
+    "ret": 7.96,
+    "days": 13,
+    "listed": false
+   },
+   {
+    "code": "6173",
+    "name": "信昌電",
+    "date": "2026-09-11",
+    "entry": 290.0,
+    "close": 303.0,
+    "ret": 4.48,
+    "days": 13,
+    "listed": false
+   },
+   {
+    "code": "2330",
+    "name": "台積電",
+    "date": "2026-09-11",
+    "entry": 2410.0,
+    "close": 2500.0,
+    "ret": 3.73,
+    "days": 13,
+    "listed": false
+   }
+  ]
+ }
 }
