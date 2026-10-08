@@ -610,6 +610,8 @@
   .foreign{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:4px 6px;}
   .tw-link{font-size:11.5px;color:var(--text-faint);}
   .tw-note{margin:0;font-size:12px;line-height:1.7;color:var(--text-faint);}
+  .rumor-author{font-family:var(--font-data);font-size:11px;font-stretch:87.5%;color:var(--text-faint);}
+  .reply-note{margin:0;padding-left:10px;font-size:12.5px;line-height:1.75;color:var(--text-dim);border-left:2px solid var(--line-strong);}
   .event{display:grid;grid-template-columns:84px minmax(0,1fr);gap:16px;padding:15px 22px;border-top:1px solid var(--line);}
   .event:first-child{border-top:0;}
   .ev-when{display:grid;align-content:start;gap:3px;}
@@ -1311,10 +1313,14 @@
         + (f.ticker ? '<b>' + esc(f.ticker) + '</b>' : '') + esc(f.name || '') + '</a>'
         + (f.tw_link ? '<span class="tw-link">台廠關聯：' + esc(f.tw_link) + '</span>' : '') + '</span>';
     }).join('');
+    // The posting account comes from the post URL (x.com/{account}/status/{id}).
+    const author = (/^https:\/\/(?:[\w-]+\.)?(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status\//.exec(post) || [])[1];
     return '<div class="rumor">'
       + '<div class="rumor-top"><span class="ev-date">' + esc(it.date || '') + '</span>'
+      +   (author ? '<span class="rumor-author">@' + esc(author) + '</span>' : '')
       +   (post ? '<a class="src-link" href="' + attr(post) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') + '</div>'
       + '<p class="rumor-text">' + esc(it.summary || '') + '</p>'
+      + (it.reply_note ? '<p class="reply-note">作者留言：' + esc(it.reply_note) + '</p>' : '')
       + (it.tw_note ? '<p class="tw-note">台廠關聯：' + esc(it.tw_note) + '</p>' : '')
       + (tw || fx ? '<div class="rumor-tags">' + tw + fx + '</div>' : '')
     + '</div>';
