@@ -610,6 +610,9 @@
   .foreign{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:4px 6px;}
   .tw-link{font-size:11.5px;color:var(--text-faint);}
   .tw-note{margin:0;font-size:12px;line-height:1.7;color:var(--text-faint);}
+  .rumor-kpis{display:flex;flex-wrap:wrap;gap:6px;}
+  .kpi{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:2px 6px;max-width:100%;padding:2px 8px;font-size:12px;line-height:1.6;color:var(--text);background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-sm);}
+  .kpi b{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--text-faint);}
   .rumor-author{font-family:var(--font-data);font-size:11px;font-stretch:87.5%;color:var(--text-faint);}
   .reply-note{margin:0;padding-left:10px;font-size:12.5px;line-height:1.75;color:var(--text-dim);border-left:2px solid var(--line-strong);}
   .event{display:grid;grid-template-columns:84px minmax(0,1fr);gap:16px;padding:15px 22px;border-top:1px solid var(--line);}
@@ -930,11 +933,11 @@
       <section class="section" aria-labelledby="hFocus" data-pane="news">
         <div class="section-head">
           <div class="head-title">
-            <h2 id="hFocus">今日焦點</h2>
+            <h2 id="hFocus">焦點新聞</h2>
             <span class="section-meta" id="focusMeta"></span>
           </div>
-          <div class="flow-tabs" id="focusTabs" role="tablist" aria-label="今日焦點與市場傳聞">
-            <button type="button" role="tab" id="tabFocus" data-view="focus" aria-selected="true">今日焦點</button>
+          <div class="flow-tabs" id="focusTabs" role="tablist" aria-label="焦點新聞與市場傳聞">
+            <button type="button" role="tab" id="tabFocus" data-view="focus" aria-selected="true">焦點新聞</button>
             <button type="button" role="tab" id="tabRumors" data-view="rumors" aria-selected="false">市場傳聞</button>
           </div>
         </div>
@@ -1301,6 +1304,14 @@
     + '</div>';
   }
 
+  // 營收、目標價、毛利率、關鍵業務月增年增 as [{label, value}] -> short chips under the summary.
+  function kpiChips(list){
+    const items = (Array.isArray(list) ? list : []).filter(k => typeof k === 'string' ? k : k && k.value);
+    return items.length ? '<div class="rumor-kpis">' + items.map(k => typeof k === 'string'
+      ? '<span class="kpi">' + esc(k) + '</span>'
+      : '<span class="kpi">' + (k.label ? '<b>' + esc(k.label) + '</b>' : '') + esc(k.value) + '</span>').join('') + '</div>' : '';
+  }
+
   function renderRumorItem(it){
     const post = safeUrl(it && it.post_url, ['x.com', 'twitter.com']);
     const tw = (Array.isArray(it.tw_stocks) ? it.tw_stocks : []).map(st =>
@@ -1320,6 +1331,7 @@
       +   (author ? '<span class="rumor-author">@' + esc(author) + '</span>' : '')
       +   (post ? '<a class="src-link" href="' + attr(post) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') + '</div>'
       + '<p class="rumor-text">' + esc(it.summary || '') + '</p>'
+      + kpiChips(it.metrics)
       + (it.reply_note ? '<p class="reply-note">作者留言：' + esc(it.reply_note) + '</p>' : '')
       + (it.tw_note ? '<p class="tw-note">台廠關聯：' + esc(it.tw_note) + '</p>' : '')
       + (tw || fx ? '<div class="rumor-tags">' + tw + fx + '</div>' : '')
@@ -1338,7 +1350,7 @@
   }
 
   const FOCUS_VIEWS = ['focus', 'rumors'];
-  const FOCUS_TITLES = { focus: '今日焦點', rumors: '市場傳聞' };
+  const FOCUS_TITLES = { focus: '焦點新聞', rumors: '市場傳聞' };
   let focusView = 'focus';
   try {
     const savedView = localStorage.getItem('joe.focusView');
@@ -1652,7 +1664,11 @@
 
     const focus = Array.isArray(data.today_focus) ? data.today_focus : [];
     $('focusList').innerHTML = focus.length ? focus.map(renderFocusItem).join('') : emptyNote('尚無資料');
-    $('focusMeta').textContent = focus.length ? focus.length + ' 則' : '';
+    // news_update is set by the 休市第二天 run, which refreshes only 焦點新聞 and 市場傳聞.
+    const nu = data.news_update && typeof data.news_update === 'object' && data.news_update.date ? String(data.news_update.date) : '';
+    const nuDay = nu ? new Date(nu + 'T00:00:00') : null;
+    $('focusMeta').textContent = (nu ? nu.slice(5).replace('-', '/') + (nuDay && !Number.isNaN(nuDay.getTime()) ? '（' + WEEKDAY[nuDay.getDay()] + '）' : '') + ' 休市更新・' : '')
+      + (focus.length ? focus.length + ' 則' : '');
 
     const events = Array.isArray(data.upcoming_events) ? data.upcoming_events : [];
     $('eventsList').innerHTML = events.length ? events.map(renderEventItem).join('') : emptyNote('尚無資料');
