@@ -1442,8 +1442,341 @@
    "2026-10-10",
    "2026-10-12"
   ],
-  "status": "unavailable",
-  "groups": []
+  "status": "ok",
+  "groups": [
+   {
+    "industry": "CPO/光通訊",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "大立光法說：3Q26 EPS 39.62元，FA已獲客戶認證、客戶要求提供完整FAU方案，預計2H27量產；新機良率偏低與綠電成本壓抑毛利率，手機拉貨11月起下滑。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "156.68億，季增14.6%、年減11%"
+       },
+       {
+        "label": "毛利率",
+        "value": "3Q26 42.2%，季減7.22個百分點"
+       },
+       {
+        "label": "FAU",
+        "value": "2H27量產，2027年中可提供一定產能"
+       }
+      ],
+      "reply_note": "作者續貼Q&A：提供完整FAU可避免良率責任歸屬爭議；明年開工新廠最快2030年完工；多排FA最快2028年專案；不看好MicroLED；客戶不希望公司切入其他CPO零組件。",
+      "post_url": "https://x.com/BlueJay87476298/status/2109585676954206229",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "直接為大立光法說筆記；大立光今日漲停、成交值第2名。"
+     },
+     {
+      "date": "10/12",
+      "summary": "外電整理：美系券商於法說後上修大立光目標價至市場最高，26–28年EPS預估162.6／207／278.6元；看好FA通過認證後客戶傾向採購FA＋FAU整合方案，FAU營收占比2027年約3%、2030年逾50%。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109436858640089476",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "直接點名大立光（成交值第2名、漲停9.98%）。"
+     },
+     {
+      "date": "10/11",
+      "summary": "摩根士丹利上修光引擎出貨模型：成品光引擎2027年由778萬顆上修至1,773萬顆（+128%），2028年由4,860萬顆上修至7,387萬顆（+52%），上修來自良率改善而非晶圓產能增加。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109135149728399649",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       },
+       {
+        "code": "6147",
+        "name": "頎邦"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "交叉比對：每顆CPO光引擎需搭配FA/FAU光纖耦合，大立光FA已過認證；頎邦（成交值第30名）屬CPO封測概念，光引擎放量有利相關供應鏈。"
+     }
+    ]
+   },
+   {
+    "industry": "半導體封測",
+    "items": [
+     {
+      "date": "10/10",
+      "summary": "AI加速器每顆晶片的測試內容成長快於晶片出貨，shift-left讓測試插入次數與時間增加；Yole估探針卡市場2026年38億美元→2031年55億美元、測試座23億→31億美元。HTSI溫控模組2027E／28E出貨約3,000／4,100套，第二代ASP高25–50%。",
+      "metrics": [
+       {
+        "label": "溫控模組",
+        "value": "2027E約3,000套、2028E約4,100套"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2108734627678703792",
+      "tw_stocks": [
+       {
+        "code": "7769",
+        "name": "鴻勁"
+       },
+       {
+        "code": "2449",
+        "name": "京元電子"
+       },
+       {
+        "code": "3264",
+        "name": "欣銓"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Advantest",
+        "ticker": "6857.T"
+       }
+      ],
+      "tw_note": "交叉比對：鴻勁主力為FT主動溫控(ATC)分選機，與文中溫控模組、Advantest測試機1:1搭配的描述相符（HTSI推測指鴻勁）；京元電子、欣銓為CP/FT測試代工，直接受惠測試TAM擴張。"
+     },
+     {
+      "date": "10/10",
+      "summary": "CPO測試成為下一波成長主軸，分四個插入點；單顆光學引擎須近100% KGD，否則整顆CoWoS封裝報廢。ficonTEC與在地夥伴HTSI合作，估2027E Insertion 2／3出貨約40／70套，CPO設備銷售2027／28E年增541%／135%。",
+      "post_url": "https://x.com/QQ_Timmy/status/2108590839656337715",
+      "tw_stocks": [
+       {
+        "code": "7769",
+        "name": "鴻勁"
+       },
+       {
+        "code": "3711",
+        "name": "日月光投控"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "交叉比對：NVIDIA Spectrum-X CPO交換器最多搭載32顆光學引擎，測試設備需求外溢至鴻勁；日月光投控正推進CPO客戶認證（工商時報10/12）。"
+     }
+    ]
+   },
+   {
+    "industry": "PCB/載板",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "外電整理：美系券商上修欣興目標價，購地支持長期擴產，預估明後年資本支出皆逾400億元，ABF之外PCB／HDI毛利率展望更樂觀，26–28年EPS預估21／37／64.8元。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109436858640089476",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "直接點名欣興（成交值第19名，外資連8日買超）。"
+     }
+    ]
+   },
+   {
+    "industry": "化合物半導體",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "外電整理：美系大行將穩懋升評至EW，理由為航太業務貢獻優於預期，以及來自SpaceX與Broadcom的光電二極體(PD)業務成長，並小幅上調利潤率假設。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109436858640089476",
+      "tw_stocks": [
+       {
+        "code": "3105",
+        "name": "穩懋"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Broadcom",
+        "ticker": "AVGO"
+       }
+      ],
+      "tw_note": "直接點名穩懋（成交值第21名、新上榜）；Broadcom為光通訊PD客戶。"
+     }
+    ]
+   },
+   {
+    "industry": "銅箔基板/PCB材料",
+    "items": [
+     {
+      "date": "10/10",
+      "summary": "美銀：台光電M7級以上高階CCL營收占比將由2026年73%升至2027年85%、2028年92%，主因NVIDIA運算板與LPU基板放量；風險為客戶全面改用PTFE材料，Rubin Ultra材料規格是關鍵。",
+      "metrics": [
+       {
+        "label": "毛利率",
+        "value": "2026年34.0%→2027年35.8%→2028年36.7%（美銀預估）"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2108788868082508119",
+      "tw_stocks": [
+       {
+        "code": "2383",
+        "name": "台光電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "直接點名台光電（TOP5第4名、成交值第12名）；NVIDIA為其高階CCL終端主要客戶。"
+     }
+    ]
+   },
+   {
+    "industry": "伺服器電源",
+    "items": [
+     {
+      "date": "10/10",
+      "summary": "USITC啟動337調查（337-TA-1526）：Vicor指控資料中心AI伺服器垂直供電系統侵犯其專利，請求有限排除令與停止令；被訴方含台達電、鴻海、廣達、Infineon、MPS等，立案不代表已認定侵權。",
+      "post_url": "https://x.com/QQ_Timmy/status/2108784999667569027",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Vicor",
+        "ticker": "VICR"
+       },
+       {
+        "name": "Infineon",
+        "ticker": "IFX.DE"
+       },
+       {
+        "name": "Monolithic Power Systems",
+        "ticker": "MPWR"
+       }
+      ],
+      "tw_note": "台達電名列被訴方（成交值第4名，今日跌3.31%）；Vicor與Infineon、MPS同為AI加速器供電模組競爭者。"
+     }
+    ]
+   },
+   {
+    "industry": "AI伺服器ODM",
+    "items": [
+     {
+      "date": "10/10",
+      "summary": "同一件337調查（337-TA-1526）被訴方包括鴻海（以富士康名義）與工業富聯、廣達、立訊等組裝與供電廠，被訴方須於收到通知20天內答辯。",
+      "post_url": "https://x.com/QQ_Timmy/status/2108784999667569027",
+      "tw_stocks": [
+       {
+        "code": "2317",
+        "name": "鴻海"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Vicor",
+        "ticker": "VICR"
+       }
+      ],
+      "tw_note": "鴻海名列被訴方（成交值第13名、新上榜，今日跌1.81%）。"
+     }
+    ]
+   },
+   {
+    "industry": "蘋果供應鏈",
+    "items": [
+     {
+      "date": "10/10",
+      "summary": "摩根士丹利：蘋果在iPhone 18 Pro／Pro Max上市約4週即削減零組件訂單，日經未證實報導稱10月訂單至少減15%；大立光法說亦證實客戶砍單，鴻海與台積電尚未見組裝或晶圓削減。",
+      "post_url": "https://x.com/QQ_Timmy/status/2108801702640099702",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       },
+       {
+        "code": "2317",
+        "name": "鴻海"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       },
+       {
+        "code": "4958",
+        "name": "臻鼎-KY"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Apple",
+        "ticker": "AAPL"
+       }
+      ],
+      "tw_note": "大立光、鴻海、台積電為文中直接點名；臻鼎為iPhone軟板主要供應商，同受拉貨下修影響。"
+     },
+     {
+      "date": "10/11",
+      "summary": "摩根大通中國通路追蹤：iPhone 18 Pro與Pro Max交付週期分別為26天、32天（去年同期17 Pro／Pro Max為22天、36天），Pro Max仍低於去年同期但差距縮小；中國約占iPhone出貨19%。",
+      "post_url": "https://x.com/BlueJay87476298/status/2109153376306888916",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       },
+       {
+        "code": "2317",
+        "name": "鴻海"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Apple",
+        "ticker": "AAPL"
+       }
+      ],
+      "tw_note": "交叉比對：交付週期反映iPhone 18 Pro系列需求，大立光（鏡頭）、鴻海（組裝）為主要台系供應商。"
+     }
+    ]
+   },
+   {
+    "industry": "航運",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "長榮法說：3Q26營收年增約51%，美線需求可支撐至春節前、歐線運價承壓；塞港造成全球有效運力損失約11%，對11月前承載樂觀，預期4Q26優於去年同期。",
+      "metrics": [
+       {
+        "label": "9月營收",
+        "value": "約497億元，創今年單月新高"
+       },
+       {
+        "label": "3Q26營收",
+        "value": "約1,468億元，年增約51%"
+       }
+      ],
+      "reply_note": "作者續貼Q&A：美國港口進口量創新高但庫存仍低；明年美線長約價大概率高於今年；近期空班主因塞港而非刻意控艙；港口擴建跟不上船隊，對2027年後新船交付不悲觀。",
+      "post_url": "https://x.com/BlueJay87476298/status/2109584775254307133",
+      "tw_stocks": [
+       {
+        "code": "2603",
+        "name": "長榮"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "直接為長榮法說筆記；長榮今日漲停、成交值第24名新上榜。"
+     }
+    ]
+   }
+  ]
  },
  "top50_sectors": [
   {
