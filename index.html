@@ -991,7 +991,7 @@
         <div class="rule"><span class="rule-key yellow"><span class="dot"></span>黃燈</span><span>跌破5日線、月季線糾結但仍在季線之上，謹慎操作。</span></div>
         <div class="rule"><span class="rule-key green"><span class="dot"></span>綠燈</span><span>跌破季線且趨勢向下，防禦：只買大盤龍頭或 ETF，無營收小型股立刻降部位。</span></div>
       </div>
-      <p class="disclaimer">本頁為個人交易紀律輔助工具，每個交易日 18:00 盤後自動更新，不構成投資建議。</p>
+      <p class="disclaimer">本頁為個人交易紀律輔助工具，每個交易日 17:30 盤後自動更新，不構成投資建議。</p>
     </div>
   </section>
 </div>
@@ -1247,7 +1247,7 @@
     $('statusWord').textContent = '—';
     $('statusWord').className = 'status-word';
     $('statusSub').textContent = '等待資料';
-    $('reason').textContent = message || '尚未有今日收盤資料，每個交易日 18:00 盤後自動更新。';
+    $('reason').textContent = message || '尚未有今日收盤資料，每個交易日 17:30 盤後自動更新。';
     ['lampRed', 'lampYellow', 'lampGreen'].forEach(id => $(id).classList.remove('on'));
     $('mIndex').textContent = '—';
     $('mIndexChg').textContent = '';
@@ -1261,7 +1261,7 @@
     $('maRuler').hidden = true;
     $('lightLog').hidden = true;
     renderTrack(null);
-    $('top5List').innerHTML = '<div class="empty-card"><p>今日選股清單尚未產出</p><p class="small">每個交易日 18:00 盤後自動更新</p></div>';
+    $('top5List').innerHTML = '<div class="empty-card"><p>今日選股清單尚未產出</p><p class="small">每個交易日 17:30 盤後自動更新</p></div>';
     $('radarList').innerHTML = emptyNote('尚無資料');
     $('flowTabs').hidden = true;
     $('focusList').innerHTML = emptyNote('尚無資料');
