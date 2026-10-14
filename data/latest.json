@@ -114,8 +114,473 @@
    "2026-10-12",
    "2026-10-14"
   ],
-  "status": "pending",
-  "groups": []
+  "status": "ok",
+  "groups": [
+   {
+    "industry": "銅箔基板/PCB材料",
+    "items": [
+     {
+      "date": "10/14",
+      "summary": "研究部CCL評析：建滔與松下FR-4級CCL及PP調漲15~200%，主因E-Glass中階玻布產能被T-Glass與Low Dk2排擠；2026年高中低階料號漲幅皆逾30%，4Q26~1Q27 M6以下中階料號單季漲逾20%，T-Glass新產能3Q27才出，高階料號2027年仍有20%以上漲價空間。",
+      "metrics": [
+       {
+        "label": "目標價",
+        "value": "台光電6,340元、台燿2,170元（買進）"
+       }
+      ],
+      "post_url": "https://x.com/BlueJay87476298/status/2110285578403258556",
+      "tw_stocks": [
+       {
+        "code": "2383",
+        "name": "台光電"
+       },
+       {
+        "code": "6274",
+        "name": "台燿"
+       },
+       {
+        "code": "1303",
+        "name": "南亞"
+       },
+       {
+        "code": "1815",
+        "name": "富喬"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Kingboard Laminates（建滔積層板）",
+        "ticker": "1888.HK"
+       },
+       {
+        "name": "Panasonic",
+        "ticker": "6752.T"
+       }
+      ],
+      "tw_note": "文中直接點名台光電、台燿；漲價主因是玻纖布供給轉向T-Glass，南亞（玻纖布+CCL）與富喬（玻纖布）同受報價帶動。"
+     },
+     {
+      "date": "10/13",
+      "summary": "Panasonic電子材料事業部發函，一般多層板覆銅板R-1705全規格及R-1566、R-1755等系列1.1mm以上產品調漲200%，2027/1/1出貨起實施，涵蓋郡山、廣州、蘇州、台灣、泰國廠。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109931625639481781",
+      "tw_stocks": [
+       {
+        "code": "2383",
+        "name": "台光電"
+       },
+       {
+        "code": "6274",
+        "name": "台燿"
+       },
+       {
+        "code": "1303",
+        "name": "南亞"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Panasonic",
+        "ticker": "6752.T"
+       }
+      ],
+      "tw_note": "Panasonic（MEGTRON系列）是台光電、台燿的高速CCL直接競爭者，日系大幅調價形成價格傘，有利台系CCL跟漲。"
+     },
+     {
+      "date": "10/13",
+      "summary": "建滔積層板通知，自即日接單起，以2116（含）以下薄布為原料的板料與PP售價上調15%，理由是薄布需求旺、上游玻璃布與玻璃紗供應緊張且大漲。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109846187805458599",
+      "tw_stocks": [
+       {
+        "code": "1303",
+        "name": "南亞"
+       },
+       {
+        "code": "1815",
+        "name": "富喬"
+       },
+       {
+        "code": "1802",
+        "name": "台玻"
+       },
+       {
+        "code": "6274",
+        "name": "台燿"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Kingboard Laminates（建滔積層板）",
+        "ticker": "1888.HK"
+       }
+      ],
+      "tw_note": "建滔是全球最大CCL廠之一，漲價理由直指玻璃布/玻璃紗緊缺，南亞、富喬、台玻等玻纖布廠為上游直接受惠者，台燿同屬CCL報價受益。"
+     }
+    ]
+   },
+   {
+    "industry": "記憶體",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "南亞科3Q26營收1,336億元、季增61.9%，毛利率85.7%、EPS 25.4元；ASP季增逾60%，過半來自LTA重新議價，4Q26續揚。位元出貨持平至2H27新廠產出，2027年供給仍緊；AI占比逾20%，目標2029~30年達40~50%。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "1,336億，季增61.9%、年增611.7%"
+       },
+       {
+        "label": "毛利率",
+        "value": "3Q26 85.7%"
+       }
+      ],
+      "reply_note": "作者留言補充：以AI晶片矽面積量化供需缺口，公司認為只要AI投資報酬合理，DRAM短缺將持續很久。",
+      "post_url": "https://x.com/BlueJay87476298/status/2109619873882190266",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "tw_note": "南亞科為本日成交值第6名，法說確認2027年DRAM供給吃緊，華邦電同屬利基型DRAM受惠。"
+     },
+     {
+      "date": "10/12",
+      "summary": "南亞科法說：LTA覆蓋率約50~70%，客戶希望延長至3年以上，部分策略夥伴洽談入股鎖產能；2027年產能基本不增，林口5A新廠1Q27裝機、2028年底月投片3萬片、2030年底5萬片；設備交期延長1~6個月。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109592359583596801",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       }
+      ],
+      "tw_note": "直接為南亞科法說重點，新產能最快2027年底才小量貢獻。"
+     },
+     {
+      "date": "10/12",
+      "summary": "TrendForce週觀察：記憶體廠把PC DRAM位元轉向伺服器，DRAM交期20週（平衡約8週），緊俏預計延續至2027年；MLCC則因手機/筆電ODM放緩備貨，但交期仍達35週（平衡約12週）。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109650690851410351",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       },
+       {
+        "code": "2327",
+        "name": "國巨"
+       },
+       {
+        "code": "3026",
+        "name": "禾伸堂"
+       }
+      ],
+      "tw_note": "DRAM交期拉長利多南亞科、華邦電；MLCC交期仍長但消費端備貨放緩，對國巨、禾伸堂為多空並陳訊號。"
+     }
+    ]
+   },
+   {
+    "industry": "CPO/光通訊",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "大立光3Q26營收156.7億元、季增14.6%，毛利率42.2%（季減7.22個百分點，受新機良率與綠電成本拖累）、EPS 39.62元；FA已通過客戶認證，客戶要求完整FAU方案，預計2H27量產，2027年中可提供一定FA產能，新廠2030年完成。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "156.7億，季增14.6%、年減11%"
+       },
+       {
+        "label": "毛利率",
+        "value": "3Q26 42.2%，季減7.22個百分點"
+       }
+      ],
+      "reply_note": "作者留言補充：公司整合出貨完整FAU而非只供FA，是為了避免量產良率問題時的責任歸屬爭議；新購土地均已有生產線用途。",
+      "post_url": "https://x.com/BlueJay87476298/status/2109585676954206229",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       }
+      ],
+      "tw_note": "大立光本日成交值第4名但收跌5.43%，市場在手機鏡頭降溫與CPO FAU長線題材間拉鋸。"
+     },
+     {
+      "date": "10/12",
+      "summary": "美系券商法說後上修大立光目標價至市場最高，預估26-28年EPS 162.6/207/278.6元；FA已通過認證、客戶偏好FA+FAU整合品，預估FAU 2027年營收占比3%、2030年逾50%。同篇亦提景碩、欣興獲美系升目標。",
+      "metrics": [
+       {
+        "label": "目標價",
+        "value": "大立光美系上修至市場最高（未列數字）"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2109436858640089476",
+      "tw_stocks": [
+       {
+        "code": "3008",
+        "name": "大立光"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "3037",
+        "name": "欣興"
+       }
+      ],
+      "tw_note": "同篇提到景碩預估4Q營收季增10%、毛利率29.3%，欣興明後年資本支出皆逾400億元。"
+     },
+     {
+      "date": "10/12",
+      "summary": "野村：AI光學互連（被動光纖連接器、CPO FAU）將重塑鏡頭產業；玉晶光已取得ferrule訂單，預計2026年底或2027年初出貨，預估CPO FAU 2028年獲利貢獻約16.8%；舜宇iPhone可變光圈良率問題間接有利玉晶光。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109661098396008476",
+      "tw_stocks": [
+       {
+        "code": "3406",
+        "name": "玉晶光"
+       },
+       {
+        "code": "3008",
+        "name": "大立光"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Sunny Optical（舜宇光學）",
+        "ticker": "2382.HK"
+       }
+      ],
+      "tw_note": "舜宇是大立光、玉晶光在iPhone鏡頭的直接競爭者，其良率問題對台廠有利；但玉晶光本日跌9.36%，題材尚待訂單驗證。"
+     },
+     {
+      "date": "10/12",
+      "summary": "Mizuho光學供應鏈：InP基板仍是最緊瓶頸，Sumitomo/AXT掌握約85%供應；InP基板產能2026/2027年估增81%/32%；CW雷射產能由2025年約8,300萬顆擴至2029年約4.27億顆，LITE/AVGO領先超高功率CW。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109437571881476528",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       },
+       {
+        "name": "AXT",
+        "ticker": "AXTI"
+       },
+       {
+        "name": "Sumitomo Electric",
+        "ticker": "5802.T"
+       }
+      ],
+      "tw_note": "聯亞為InP雷射磊晶片廠，矽光子CW雷射占營收逾7成，並與美國客戶簽2027–2030長約；CW雷射擴產直接帶動其磊晶需求，InP基板緊缺則是其供料風險。"
+     }
+    ]
+   },
+   {
+    "industry": "IC設計",
+    "items": [
+     {
+      "date": "10/13",
+      "summary": "UBS：Ibiden的EMIB-T基板良率改善超前、已達量產目標約50%；預估聯發科TPU v8t 4Q26銷售逾20億美元、2027年約180億美元，v9維持11月初投片交付目標，v10仍應為Google主要ASIC夥伴。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109892893078958407",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Ibiden",
+        "ticker": "4062.T"
+       },
+       {
+        "name": "Alphabet",
+        "ticker": "GOOGL"
+       },
+       {
+        "name": "Broadcom",
+        "ticker": "AVGO"
+       }
+      ],
+      "tw_note": "Ibiden是EMIB-T載板供應商、Google為TPU客戶、博通為競爭對手，三者皆直接牽動聯發科ASIC營收。"
+     },
+     {
+      "date": "10/13",
+      "summary": "ASIC更新：Google TPU v9 Core A設計延後約3週，tape-out延至2027年1月、出貨延至2028年1Q，sampling仍維持11月；EMIB-T基板良率45~50%的根因已找到。短期對聯發科是逆風，中長期仍看好。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109892137856680435",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "3661",
+        "name": "世芯-KY"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Alphabet",
+        "ticker": "GOOGL"
+       },
+       {
+        "name": "Marvell",
+        "ticker": "MRVL"
+       }
+      ],
+      "tw_note": "TPU v9時程延後直接影響聯發科2027年ASIC出貨節奏；同屬AI ASIC設計的世芯評價也會受市場情緒牽動。"
+     },
+     {
+      "date": "10/12",
+      "summary": "摩根大通：聯發科TPUv8t於台積電順利放量，2026年營收逾20億美元；2027年資料中心ASIC營收估約180億美元，高於公司120~160億美元指引，催化劑為TPUv9 tape-out（11~12月）與Tesla/SpaceX等新客戶。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109806680821395806",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "tw_note": "聯發科ASIC由台積電代工，ASIC放量同步貢獻台積電先進製程需求。"
+     }
+    ]
+   },
+   {
+    "industry": "晶圓代工",
+    "items": [
+     {
+      "date": "10/14",
+      "summary": "ASML 3Q26營收€11.66B、年增55.2%，毛利率57.5%；CY26指引上修至€44–45B，4Q指引€14.2–15.2B；洽談已延伸至2028年後，原訂CY27/28擴產30%已不夠，客戶認為2028年前供應都短缺，TSMC High-NA約2030年導入。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "€11.66B，季增25.0%、年增55.2%"
+       },
+       {
+        "label": "毛利率",
+        "value": "3Q26 57.5%，高於指引高端"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2110255489439445295",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "ASML",
+        "ticker": "ASML"
+       }
+      ],
+      "tw_note": "台積電是ASML最大EUV客戶，ASML訂單延伸至2028年反映晶圓廠持續擴產，為台積電10/15法說資本支出提供正面參照。"
+     }
+    ]
+   },
+   {
+    "industry": "半導體封測",
+    "items": [
+     {
+      "date": "10/13",
+      "summary": "京元電子董事會通過與NVIDIA簽訂客戶預付款協議：由NVIDIA預付款項，京元電與美國子公司AeternZ在美國建置產能並為其保留、提供測試服務，預付款日後抵減服務費。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109896576219181297",
+      "tw_stocks": [
+       {
+        "code": "2449",
+        "name": "京元電子"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "NVIDIA是京元電最主要AI測試客戶（市場估AI測試約占三成營收），預付款鎖定美國測試產能，確立長期合作。"
+     }
+    ]
+   },
+   {
+    "industry": "伺服器電源",
+    "items": [
+     {
+      "date": "10/13",
+      "summary": "大摩：原生800V機架推遲至2028年、Rubin Ultra仍用54VDC，但「全面延期」敘事過度，OCP大會可能成為正面催化；同日美系重申台達電正向，3Q受零組件短缺影響，預期4Q營收回到雙位數季增。",
+      "post_url": "https://x.com/QQ_Timmy/status/2109807051035840619",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "800VDC是台達電伺服器電源的長線題材，時程遞延但市場預期已回歸合理；10/13外電整理亦提美系重申台達電正向。"
+     }
+    ]
+   },
+   {
+    "industry": "AI伺服器ODM",
+    "items": [
+     {
+      "date": "10/12",
+      "summary": "摩根大通：AWS Trainium 3液冷伺服器出貨由2026年9月延至12月，1H27大機櫃建置前出現短暫空窗；緯穎9月營收1,726億元、年增100%，AWS占逾5成，但年底至1Q27相關營收有下修風險；智邦9月年增66%。",
+      "metrics": [
+       {
+        "label": "9月營收",
+        "value": "緯穎1,726億，年增100%"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2109609525737038316",
+      "tw_stocks": [
+       {
+        "code": "6669",
+        "name": "緯穎"
+       },
+       {
+        "code": "2345",
+        "name": "智邦"
+       },
+       {
+        "code": "2368",
+        "name": "金像電"
+       },
+       {
+        "code": "6274",
+        "name": "台燿"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Amazon",
+        "ticker": "AMZN"
+       }
+      ],
+      "tw_note": "AWS為緯穎最大客戶；Trainium 3延後也牽動金像電、台燿等AWS ASIC伺服器PCB/CCL供應鏈出貨節奏。緯穎本日跌3.64%。"
+     }
+    ]
+   }
+  ]
  },
  "top50_sectors": [
   {
