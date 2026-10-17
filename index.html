@@ -141,7 +141,7 @@
     max-width:1180px;
     margin:0 auto;
     padding-inline:clamp(16px,4vw,40px);
-    padding-block:clamp(28px,5vw,56px) 80px;
+    padding-block:clamp(24px,3vw,36px) 80px;
     display:grid;
     gap:clamp(44px,6vw,72px);
   }
@@ -153,6 +153,10 @@
     align-items:flex-end;
     flex-wrap:wrap;
     gap:18px 32px;
+    max-width:1180px;
+    margin:0 auto;
+    padding-inline:clamp(16px,4vw,40px);
+    padding-block:clamp(28px,5vw,56px) 0;
   }
   .eyebrow{
     margin:0 0 14px;
@@ -779,17 +783,73 @@
   .rule-key.green{color:var(--green);}
   .disclaimer{margin:0;font-size:12px;line-height:1.7;color:var(--text-faint);}
 
-  /* ---- phone tab bar (only shown at phone width) ---- */
+  /* ---- one pane at a time: bottom tab bar on phones, left rail on wider screens ---- */
+  .columns,.column{display:contents;}
+  [data-pane]:not(.pane-on){display:none;}
+  body:not([data-current="home"]) .eyebrow{display:none;}
   .tabbar{display:none;}
+  .nav-label,.nav-foot{display:none;}
+  @media (min-width:641px){
+    /* Title bar across the top; the menu sits under it on the left and stays put while the content scrolls. */
+    body:not([data-current="home"]) .eyebrow{display:block;}
+    .masthead{max-width:none;margin:0;padding:22px 32px 20px;border-bottom:1px solid var(--line);}
+    .masthead h1{font-size:40px;}
+    .eyebrow{margin-bottom:8px;}
+    .shell{display:grid;grid-template-columns:232px minmax(0,1fr);align-items:start;}
+    .shell > .wrap{grid-column:2;grid-row:1;width:100%;gap:40px;}
+    .tabbar{
+      grid-column:1;grid-row:1;
+      position:sticky;top:0;
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      height:100vh;height:100dvh;
+      overflow-y:auto;
+      padding:24px 14px 20px;
+      background:var(--surface);
+      border-right:1px solid var(--line);
+    }
+    .nav-label{display:block;margin:0 0 6px;padding:0 14px;font-size:12px;font-weight:700;letter-spacing:.16em;color:var(--text-faint);}
+    .tabbar button{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-height:52px;
+      padding:0 14px;
+      font-family:var(--font-body);
+      font-size:17px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-align:left;
+      color:var(--text-dim);
+      background:none;
+      border:0;
+      border-radius:10px;
+      cursor:pointer;
+    }
+    .tabbar button:hover{color:var(--text);background:var(--surface-2);}
+    .tabbar button[aria-current="page"]{color:var(--accent);background:var(--accent-dim);}
+    .tabbar svg{flex:none;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+    .tabbar[data-light="red"] .l-red{fill:var(--red);stroke:var(--red);}
+    .tabbar[data-light="yellow"] .l-yellow{fill:var(--yellow-fill);stroke:var(--yellow-fill);}
+    .tabbar[data-light="green"] .l-green{fill:var(--green);stroke:var(--green);}
+    .nav-foot{display:grid;gap:4px;margin-top:auto;padding:16px 14px 0;font-size:12px;line-height:1.6;color:var(--text-faint);border-top:1px solid var(--line);}
+    .rank-scroll{max-height:max(420px, calc(100vh - 220px));}
+    [aria-labelledby="hFocus"]{max-width:920px;}
+  }
+  /* Wide screens: the two lists of 選股 and of 消息 sit side by side. */
+  @media (min-width:1300px){
+    .shell > .wrap{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px;align-items:start;}
+    [data-pane="home"],[data-pane="news"]{grid-column:1 / -1;}
+    body[data-current="flow"] .shell > .wrap{grid-template-columns:minmax(0,5fr) minmax(0,7fr);}
+  }
 
   @media (max-width:900px){
     .columns{grid-template-columns:1fr;}
   }
   @media (max-width:640px){
-    /* One pane at a time behind the bottom tab bar; wider screens show every section. */
+    /* Phones: the pane switcher is a bar fixed to the bottom. */
     .wrap{gap:32px;padding-block-end:calc(96px + env(safe-area-inset-bottom, 0px));}
-    .columns,.column{display:contents;}
-    [data-pane]:not(.pane-on){display:none;}
     .market-badge,.rk-badge,.rev-k,.rev-new,.pick-badge,.pick-score .lbl,.focus-rel,.tr-tag{font-size:11px;}
     .rk-badge .tri{font-size:9px;}
     .pick-details summary{min-height:44px;margin-block:-8px;}
@@ -797,13 +857,12 @@
     .track-stat{padding:14px 16px 16px;}
     .track-stat .value{font-size:21px;}
     .track-row,.track-more summary{padding-inline:16px;}
-    .wrap:not([data-current="home"]) .eyebrow{display:none;}
-    .wrap:not([data-current="home"]) h1{font-size:26px;}
+    body:not([data-current="home"]) h1{font-size:26px;}
     .rank-scroll{max-height:max(360px, calc(100vh - 250px));max-height:max(360px, calc(100dvh - 250px));}
     .tabbar{
       position:fixed;left:0;right:0;bottom:0;z-index:40;
       display:grid;
-      grid-template-columns:repeat(5,minmax(0,1fr));
+      grid-template-columns:repeat(4,minmax(0,1fr));
       padding:0 6px env(safe-area-inset-bottom, 0px);
       background:var(--surface);
       border-top:1px solid var(--line-strong);
@@ -854,18 +913,20 @@
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="masthead">
-    <div>
-      <p class="eyebrow">主流順勢 ・ 活著為王</p>
-      <h1>Joe菜的選妃台</h1>
-    </div>
-    <div class="mast-side">
+<header class="masthead">
+  <div>
+    <p class="eyebrow">主流順勢 ・ 活著為王</p>
+    <h1>Joe菜的選妃台</h1>
+  </div>
+  <div class="mast-side">
       <div class="stamp" id="updated">尚未更新</div>
       <span class="offline-tag" id="offlineTag" hidden>離線・顯示上次資料</span>
       <button type="button" class="install-btn" id="installBtn" hidden>安裝 App</button>
     </div>
-  </header>
+</header>
+
+<div class="shell">
+<div class="wrap">
 
   <section class="signal" id="signalCard" aria-label="大盤燈號" data-pane="home">
     <div class="housing" aria-hidden="true">
@@ -936,26 +997,20 @@
             <h2 id="hFocus">焦點新聞</h2>
             <span class="section-meta" id="focusMeta"></span>
           </div>
-          <div class="flow-tabs" id="focusTabs" role="tablist" aria-label="焦點新聞與市場傳聞">
+          <div class="flow-tabs" id="focusTabs" role="tablist" aria-label="焦點新聞、市場傳聞與近期重要事件">
             <button type="button" role="tab" id="tabFocus" data-view="focus" aria-selected="true">焦點新聞</button>
             <button type="button" role="tab" id="tabRumors" data-view="rumors" aria-selected="false">市場傳聞</button>
+            <button type="button" role="tab" id="tabEvents" data-view="events" aria-selected="false">近期事件</button>
           </div>
         </div>
         <div class="focus-list" id="focusList"><p class="empty-note">尚無資料</p></div>
         <div class="rumors" id="rumorList" hidden><p class="empty-note">尚無市場傳聞資料</p></div>
-      </section>
-
-      <section class="section" aria-labelledby="hEvents" data-pane="news">
-        <div class="section-head">
-          <h2 id="hEvents">近期重要事件</h2>
-        </div>
-        <p class="section-note" id="eventsMeta">未來約一個月</p>
-        <div class="events" id="eventsList"><p class="empty-note">尚無資料</p></div>
+        <div class="events" id="eventsList" hidden><p class="empty-note">尚無資料</p></div>
       </section>
     </div>
   </div>
 
-  <section class="section" aria-labelledby="hRank" data-pane="rank">
+  <section class="section" aria-labelledby="hRank" data-pane="flow">
     <div class="section-head">
       <h2 id="hRank">成交值排行 TOP 30</h2>
       <span class="section-meta">上市＋上櫃・依成交金額</span>
@@ -997,6 +1052,7 @@
 </div>
 
 <nav class="tabbar" id="tabbar" aria-label="切換頁面">
+  <p class="nav-label">主要功能</p>
   <button type="button" data-go="home">
     <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="2.5" width="9" height="19" rx="2"/><circle class="l-red" cx="12" cy="7" r="1.8"/><circle class="l-yellow" cx="12" cy="12" r="1.8"/><circle class="l-green" cx="12" cy="17" r="1.8"/></svg>
     <span>燈號</span>
@@ -1013,11 +1069,9 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="1.5"/><line x1="7.5" y1="8" x2="16.5" y2="8"/><line x1="7.5" y1="12" x2="16.5" y2="12"/><line x1="7.5" y1="16" x2="13" y2="16"/></svg>
     <span>消息</span>
   </button>
-  <button type="button" data-go="rank">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="16" y2="12"/><line x1="4" y1="18" x2="11" y2="18"/></svg>
-    <span>排行</span>
-  </button>
+  <div class="nav-foot"><span>交易日 17:30 完整更新</span><span>休市日每天更新消息</span><span>鍵盤 1–4 可快速切換</span></div>
 </nav>
+</div>
 
 <script>
 (function(){
@@ -1265,10 +1319,10 @@
     $('radarList').innerHTML = emptyNote('尚無資料');
     $('flowTabs').hidden = true;
     $('focusList').innerHTML = emptyNote('尚無資料');
-    $('focusMeta').textContent = '';
+    focusMetaText = '';
     $('eventsList').innerHTML = emptyNote('尚無資料');
     $('rumorList').innerHTML = emptyNote('尚無市場傳聞資料');
-    $('eventsMeta').textContent = '未來約一個月';
+    eventsMetaText = '未來約一個月';
     paintFocusView();
     $('updated').textContent = '尚未更新';
     $('rankTable').hidden = true;
@@ -1350,9 +1404,9 @@
     + '</div>').join('');
   }
 
-  const FOCUS_VIEWS = ['focus', 'rumors'];
-  const FOCUS_TITLES = { focus: '焦點新聞', rumors: '市場傳聞' };
-  let focusView = 'focus';
+  const FOCUS_VIEWS = ['focus', 'rumors', 'events'];
+  const FOCUS_TITLES = { focus: '焦點新聞', rumors: '市場傳聞', events: '近期重要事件' };
+  let focusView = 'focus', focusMetaText = '', eventsMetaText = '未來約一個月';
   try {
     const savedView = localStorage.getItem('joe.focusView');
     if (FOCUS_VIEWS.includes(savedView)) focusView = savedView;
@@ -1361,7 +1415,9 @@
   function paintFocusView(){
     $('focusList').hidden = focusView !== 'focus';
     $('rumorList').hidden = focusView !== 'rumors';
-    $('focusMeta').hidden = focusView !== 'focus';
+    $('eventsList').hidden = focusView !== 'events';
+    $('focusMeta').hidden = focusView === 'rumors';
+    $('focusMeta').textContent = focusView === 'events' ? eventsMetaText : focusMetaText;
     $('hFocus').textContent = FOCUS_TITLES[focusView];
     Array.from($('focusTabs').querySelectorAll('button')).forEach(b => {
       b.setAttribute('aria-selected', String(b.dataset.view === focusView));
@@ -1376,18 +1432,28 @@
     paintFocusView();
   });
 
-  // Phone layout shows one pane per bottom tab (CSS ignores .pane-on on wider screens); every visit opens on 大盤.
-  const PANES = ['home', 'picks', 'flow', 'news', 'rank'];
+  // One pane per tab (bottom bar on phones, left rail on wider screens); every visit opens on 大盤.
+  const PANES = ['home', 'picks', 'flow', 'news'];
 
   function showPane(p){
     if (!PANES.includes(p)) p = 'home';
     document.querySelectorAll('[data-pane]').forEach(el => el.classList.toggle('pane-on', el.dataset.pane === p));
-    document.querySelector('.wrap').dataset.current = p;
+    document.body.dataset.current = p;
     Array.from($('tabbar').querySelectorAll('button')).forEach(b => {
       if (b.dataset.go === p) b.setAttribute('aria-current', 'page');
       else b.removeAttribute('aria-current');
     });
   }
+
+  // Keys 1–4 switch panes on a keyboard; the button titles say which key.
+  Array.from($('tabbar').querySelectorAll('button')).forEach((b, i) => { b.title = b.textContent.trim() + '（鍵盤 ' + (i + 1) + '）'; });
+  document.addEventListener('keydown', function(e){
+    if (e.altKey || e.ctrlKey || e.metaKey || /^(INPUT|TEXTAREA|SELECT)$/.test((e.target && e.target.tagName) || '')) return;
+    const i = '1234'.indexOf(e.key);
+    if (i < 0) return;
+    showPane(PANES[i]);
+    window.scrollTo(0, 0);
+  });
 
   $('tabbar').addEventListener('click', function(e){
     const b = e.target.closest('button[data-go]');
@@ -1665,15 +1731,15 @@
 
     const focus = Array.isArray(data.today_focus) ? data.today_focus : [];
     $('focusList').innerHTML = focus.length ? focus.map(renderFocusItem).join('') : emptyNote('尚無資料');
-    // news_update is set by the 休市第二天 run, which refreshes only 焦點新聞 and 市場傳聞.
+    // news_update is set by the 休市日 run, which refreshes only 焦點新聞、近期重要事件 and 市場傳聞.
     const nu = data.news_update && typeof data.news_update === 'object' && data.news_update.date ? String(data.news_update.date) : '';
     const nuDay = nu ? new Date(nu + 'T00:00:00') : null;
-    $('focusMeta').textContent = (nu ? nu.slice(5).replace('-', '/') + (nuDay && !Number.isNaN(nuDay.getTime()) ? '（' + WEEKDAY[nuDay.getDay()] + '）' : '') + ' 休市更新・' : '')
+    focusMetaText = (nu ? nu.slice(5).replace('-', '/') + (nuDay && !Number.isNaN(nuDay.getTime()) ? '（' + WEEKDAY[nuDay.getDay()] + '）' : '') + ' 休市更新・' : '')
       + (focus.length ? focus.length + ' 則' : '');
 
     const events = Array.isArray(data.upcoming_events) ? data.upcoming_events : [];
     $('eventsList').innerHTML = events.length ? events.map(renderEventItem).join('') : emptyNote('尚無資料');
-    $('eventsMeta').textContent = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
+    eventsMetaText = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
     const rumors = data.rumors && typeof data.rumors === 'object' ? data.rumors : null;
     $('rumorList').innerHTML = renderRumors(rumors);
     paintFocusView();
