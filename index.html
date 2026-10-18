@@ -366,18 +366,6 @@
     border:1px solid var(--line-strong);
     border-radius:var(--radius-sm);
   }
-  .strat{
-    display:inline-block;
-    padding:2px 8px;
-    font-size:11.5px;
-    font-weight:700;
-    letter-spacing:.04em;
-    white-space:nowrap;
-    border-radius:var(--radius-sm);
-  }
-  .strat.breakout{color:var(--red);background:var(--red-dim);}
-  .strat.pullback{color:var(--yellow);background:var(--yellow-dim);}
-  .strat.defend{color:var(--green);background:var(--green-dim);}
   .chev{display:inline-block;font-family:var(--font-data);font-size:10px;color:var(--text-faint);transition:transform .15s;}
   details[open] > summary .chev{transform:rotate(90deg);}
 
@@ -461,6 +449,7 @@
   .pick-score .bar i{display:block;height:100%;background:var(--accent);}
   .pick-score .lbl{font-size:10.5px;letter-spacing:.14em;color:var(--text-faint);}
   .pick-details{grid-column:2 / -1;}
+  .pick-news{grid-column:2 / -1;margin:0;}
   .pick-details summary{
     display:inline-flex;
     align-items:center;
@@ -485,7 +474,6 @@
   .row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;font-size:13.5px;line-height:1.85;}
   .row .k{padding-top:3px;font-size:11.5px;letter-spacing:.12em;color:var(--text-faint);}
   .row .v{color:var(--text);}
-  .row .v .strat{margin-right:8px;}
 
   /* ---- tabs (fund flow, events) ---- */
   .flow-tabs{display:inline-flex;gap:22px;margin-bottom:-13px;}
@@ -944,7 +932,7 @@
     .pick{grid-template-columns:28px minmax(0,1fr) auto;column-gap:12px;padding:18px 16px 16px;}
     .pick-rank{font-size:28px;}
     .name{font-size:21px;}
-    .pick-details{grid-column:1 / -1;}
+    .pick-details,.pick-news{grid-column:1 / -1;}
     .flow-group summary{padding-inline:16px;}
     .sector-stocks{padding-inline:16px;}
     .focus-item,.event,.rumor,.rumor-industry{padding-inline:16px;}
@@ -1132,8 +1120,8 @@
     green:  { word: '綠燈', sub: '防禦' },
   };
   const WEEKDAY = ['日', '一', '二', '三', '四', '五', '六'];
-  const FOCUS_CAT = { '籌碼': 'chips', '題材': 'theme', '評等': 'rating', '新聞': 'news' };
-  const STRATEGY = { '回檔承接': 'pullback', '動能突破': 'breakout', '保守守城': 'defend' };
+  const FOCUS_CAT = { '總經': 'rating', '國際': 'news', '美股': 'chips', '台股': 'theme',
+                      '籌碼': 'chips', '題材': 'theme', '評等': 'rating', '新聞': 'news' };
   const FLOW_PERIODS = ['today', 'this_week', 'last_week'];
 
   function fmt(n, digits){
@@ -1177,14 +1165,12 @@
     return '<p class="empty-note">' + esc(msg) + '</p>';
   }
 
-  function splitStrategy(text){
-    const t = String(text ?? '');
-    const m = /^\s*「?(回檔承接|動能突破|保守守城)」?[，,、：:\s]*/.exec(t);
-    return m ? { name: m[1], rest: t.slice(m[0].length) } : { name: null, rest: t };
-  }
-
-  function strategyChip(name){
-    return name ? '<span class="strat ' + STRATEGY[name] + '">' + name + '</span>' : '';
+  // "2026-10-18" or "2026-10-18 18:02" -> "10/18（日）" / "10/18（日）18:02"
+  function dayLabel(s){
+    const m = /^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}:\d{2}))?/.exec(String(s || ''));
+    if (!m) return '';
+    const d = new Date(m[1] + '-' + m[2] + '-' + m[3] + 'T00:00:00');
+    return m[2] + '/' + m[3] + (Number.isNaN(d.getTime()) ? '' : '（' + WEEKDAY[d.getDay()] + '）') + (m[4] ? m[4] : '');
   }
 
   // "2026-08" -> "8月"
@@ -1369,6 +1355,7 @@
     $('flowTabs').hidden = true;
     $('focusList').innerHTML = emptyNote('尚無資料');
     focusMetaText = '';
+    rumorMetaText = '';
     $('eventsList').innerHTML = emptyNote('尚無資料');
     $('rumorList').innerHTML = emptyNote('尚無市場傳聞資料');
     eventsMetaText = '未來約一個月';
@@ -1457,7 +1444,7 @@
 
   const FOCUS_VIEWS = ['focus', 'rumors', 'events'];
   const FOCUS_TITLES = { focus: '焦點新聞', rumors: '市場傳聞', events: '近期重要事件' };
-  let focusView = 'focus', focusMetaText = '', eventsMetaText = '未來約一個月';
+  let focusView = 'focus', focusMetaText = '', rumorMetaText = '', eventsMetaText = '未來約一個月';
   try {
     const savedView = localStorage.getItem('joe.focusView');
     if (FOCUS_VIEWS.includes(savedView)) focusView = savedView;
@@ -1467,8 +1454,9 @@
     $('focusList').hidden = focusView !== 'focus';
     $('rumorList').hidden = focusView !== 'rumors';
     $('eventsList').hidden = focusView !== 'events';
-    $('focusMeta').hidden = focusView === 'rumors';
-    $('focusMeta').textContent = focusView === 'events' ? eventsMetaText : focusMetaText;
+    const meta = focusView === 'events' ? eventsMetaText : focusView === 'rumors' ? rumorMetaText : focusMetaText;
+    $('focusMeta').hidden = !meta;
+    $('focusMeta').textContent = meta;
     $('hFocus').textContent = FOCUS_TITLES[focusView];
     Array.from($('focusTabs').querySelectorAll('button')).forEach(b => {
       b.setAttribute('aria-selected', String(b.dataset.view === focusView));
@@ -1543,7 +1531,7 @@
       : '<span class="pick-badge days" title="連續上榜天數">' + streak + ' 天</span>';
     const quote = (price == null && chg == null) ? ''
       : '<span class="pick-quote ' + dirClass(chg) + '"><b class="px">' + fmtPrice(price, code) + '</b><span class="pc">' + chgText(chg) + '</span></span>';
-    const strat = splitStrategy(p.buy_strategy);
+    const news = (Array.isArray(p.news) ? p.news : []).slice(0, 3);
     return '<article class="pick">'
       + '<div class="pick-rank">' + esc(p.rank ?? '') + '</div>'
       + '<div class="pick-main">'
@@ -1556,16 +1544,15 @@
       +   '<div class="pick-meta">'
       +     klineSvg(candle) + quote
       +     (p.sector ? '<span class="sector-tag">' + esc(p.sector) + '</span>' : '')
-      +     strategyChip(strat.name)
       +   '</div>'
       + '</div>'
       + '<div class="pick-score"><span class="num">' + score + '</span><span class="bar"><i style="width:' + score + '%"></i></span><span class="lbl">綜合評分</span></div>'
+      + (news.length ? '<ul class="hot-refs pick-news">' + news.map(newsItem).join('') + '</ul>' : '')
       + '<details class="pick-details"><summary><span class="chev">▸</span>詳細分析</summary>'
       +   '<div class="pick-body">'
       +     row('題材', esc(p.theme_reason ?? '—'))
       +     row('基本面', esc(p.fundamentals ?? '—'))
       +     row('籌碼', esc(p.chips_signal ?? '—'))
-      +     row('策略', strategyChip(strat.name) + esc(strat.rest || (strat.name ? '' : '—')))
       +   '</div>'
       + '</details>'
     + '</article>';
@@ -1716,6 +1703,14 @@
     paintRankView();
   });
 
+  function newsItem(n){
+    const url = safeUrl(n && n.url, NEWS_HOSTS);
+    const title = esc((n && n.title) || '');
+    return '<li><span class="ref-tag">新聞</span><span class="ref-body">'
+      + (url ? '<a href="' + attr(url) + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' : title)
+      + '<span class="ref-src">' + esc(((n && n.source) || '') + ' ' + ((n && n.time) || '')) + '</span></span></li>';
+  }
+
   function renderHot(data){
     const h = data && data.hot_list && typeof data.hot_list === 'object' ? data.hot_list : null;
     const list = h && Array.isArray(h.stocks) ? h.stocks : [];
@@ -1733,12 +1728,7 @@
       const code = String(s.code || '');
       const short = String(s.name || '').replace(/[-*].*$/, '');
       const refs = [];
-      (Array.isArray(s.news) ? s.news : []).slice(0, 3).forEach(n => {
-        const url = safeUrl(n.url, NEWS_HOSTS);
-        refs.push('<li><span class="ref-tag">新聞</span><span class="ref-body">'
-          + (url ? '<a href="' + attr(url) + '" target="_blank" rel="noopener noreferrer">' + esc(n.title || '') + '</a>' : esc(n.title || ''))
-          + '<span class="ref-src">' + esc((n.source || '') + ' ' + (n.time || '')) + '</span></span></li>');
-      });
+      (Array.isArray(s.news) ? s.news : []).slice(0, 3).forEach(n => refs.push(newsItem(n)));
       focus.filter(f => short && String(f.text || '').includes(short)).forEach(f => {
         const url = safeUrl(f.url, NEWS_HOSTS);
         refs.push('<li><span class="ref-tag tag-focus">焦點</span><span class="ref-body">'
@@ -1863,15 +1853,19 @@
     $('focusList').innerHTML = focus.length ? focus.map(renderFocusItem).join('') : emptyNote('尚無資料');
     // news_update is set by the 休市日 run, which refreshes only 焦點新聞、近期重要事件 and 市場傳聞.
     const nu = data.news_update && typeof data.news_update === 'object' && data.news_update.date ? String(data.news_update.date) : '';
-    const nuDay = nu ? new Date(nu + 'T00:00:00') : null;
-    focusMetaText = (nu ? nu.slice(5).replace('-', '/') + (nuDay && !Number.isNaN(nuDay.getTime()) ? '（' + WEEKDAY[nuDay.getDay()] + '）' : '') + ' 休市更新・' : '')
-      + (focus.length ? focus.length + ' 則' : '');
+    focusMetaText = [nu ? dayLabel(nu) + ' 休市更新' : data.date ? dayLabel(data.date) + ' 盤後更新' : '',
+      focus.length ? focus.length + ' 則' : ''].filter(Boolean).join('・');
 
     const events = Array.isArray(data.upcoming_events) ? data.upcoming_events : [];
     $('eventsList').innerHTML = events.length ? events.map(renderEventItem).join('') : emptyNote('尚無資料');
     eventsMetaText = '未來約一個月' + (events.length ? '・' + events.length + ' 則' : '');
     const rumors = data.rumors && typeof data.rumors === 'object' ? data.rumors : null;
     $('rumorList').innerHTML = renderRumors(rumors);
+    const ruWhen = rumors && (rumors.updated_at || (Array.isArray(rumors.window) ? rumors.window[1] : ''));
+    const ruCount = rumors && rumors.status === 'ok' && Array.isArray(rumors.groups)
+      ? rumors.groups.reduce((n, g) => n + (Array.isArray(g.items) ? g.items.length : 0), 0) : 0;
+    rumorMetaText = rumors && rumors.status === 'ok'
+      ? [ruWhen ? dayLabel(ruWhen) + ' 更新' : '', ruCount ? ruCount + ' 則' : ''].filter(Boolean).join('・') : '';
     paintFocusView();
 
     $('rankTable').hidden = !top30.length;
