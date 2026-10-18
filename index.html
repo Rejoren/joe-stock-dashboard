@@ -1057,7 +1057,6 @@
     <div class="section-head">
       <div class="head-title">
         <h2 id="hRank">成交值排行 TOP 30</h2>
-        <span class="section-meta" id="rankMeta">上市＋上櫃・依成交金額</span>
       </div>
       <div class="flow-tabs" id="rankTabs" role="tablist" aria-label="成交值排行與人氣雙榜">
         <button type="button" role="tab" data-rank="top30" aria-selected="true">TOP 30</button>
@@ -1694,7 +1693,7 @@
   // rumor and news updates show up too.
   const RANK_VIEWS = ['top30', 'hot'];
   const RANK_TITLES = { top30: '成交值排行 TOP 30', hot: '人氣雙榜' };
-  let rankView = 'top30', rankMetaText = '上市＋上櫃・依成交金額';
+  let rankView = 'top30';
   try {
     const v = localStorage.getItem('joe.rankView');
     if (RANK_VIEWS.includes(v)) rankView = v;
@@ -1704,8 +1703,6 @@
     $('rankPanel').hidden = rankView !== 'top30';
     $('hotList').hidden = rankView !== 'hot';
     $('hRank').textContent = RANK_TITLES[rankView];
-    $('rankMeta').textContent = rankView === 'hot' ? '' : rankMetaText;
-    $('rankMeta').hidden = rankView === 'hot';
     Array.from($('rankTabs').querySelectorAll('button')).forEach(b => {
       b.setAttribute('aria-selected', String(b.dataset.rank === rankView));
     });
