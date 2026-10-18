@@ -63,7 +63,9 @@
  "rumors": {
   "sources": [
    "@QQ_Timmy",
-   "@BlueJay87476298"
+   "@BlueJay87476298",
+   "@mingchikuo",
+   "@Leoskie_L"
   ],
   "window": [
    "2026-10-16",
@@ -75,15 +77,69 @@
     "industry": "晶圓代工",
     "items": [
      {
-      "date": "10/17",
-      "summary": "日本經產省認定台積電熊本第2廠計畫變更：由6–40奈米改為日本首座3奈米先進邏輯廠，初期月產能約6,000片、目標2028年量產；熊本一、二廠合計設備投資逾230億美元，第2廠第一階段補助上限6,451.5億日圓，豐田新加入出資。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111459653695709216",
+      "date": "10/18",
+      "post_url": "https://x.com/Leoskie_L/status/2111647202745413883",
+      "summary": "經產省核定台積電熊本二廠由6–12奈米改為全做3奈米，但第一階段月產僅6,000片（原計畫4.8萬片），補助上限反由7,320億日圓降至6,451.5億日圓、約少12%；投資額升至157億美元以上，2028年12月開始出貨。一廠停做12–16奈米，只做22–28奈米、月產4.5萬片。",
       "tw_stocks": [
        {
         "code": "2330",
         "name": "台積電"
        }
       ],
+      "tw_note": "台積電海外3奈米擴產，台積電強調依需求分階段生產、以日本政府持續支援為前提。"
+     },
+     {
+      "date": "10/18",
+      "post_url": "https://x.com/Leoskie_L/status/2111661046117155037",
+      "summary": "韓媒MTN：SK海力士HBM4底座晶片目前用台積電12奈米，HBM4E評估改用3奈米；三星則用自家4奈米。3奈米占台積電3Q晶圓營收33%、供不應求且價格續漲，SK海力士也在看英特爾代工但良率仍不及台積電。",
+      "reply_note": "作者補充：底座改用邏輯製程後，記憶體廠也成為台積電客戶、須與他人一起排隊產能；三星可用自家代工是例外，前提是良率撐得住。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       },
+       {
+        "code": "3443",
+        "name": "創意"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "SK hynix",
+        "ticker": "000660.KS"
+       },
+       {
+        "name": "Samsung Electronics",
+        "ticker": "005930.KS"
+       }
+      ],
+      "tw_note": "查證：SK海力士HBM4底座全數由台積電代工（12奈米），HBM4E高階款評估3奈米；另有報導指創意承接SK海力士HBM4底座設計（公司未證實）。"
+     },
+     {
+      "date": "10/18",
+      "post_url": "https://x.com/Leoskie_L/status/2111676146261647574",
+      "summary": "KeyBanc估 Google 下一代TPU改用英特爾EMIB-T封裝，但載板良率揖斐電約50–60%、欣興僅20–30%，可能使 TPU v9 量被限制在500萬–600萬顆；魏哲家法說被問是否當備援時暗示「已經很足夠」。",
+      "reply_note": "作者補充：EMIB-T 載板層數與尺寸持續放大，半年內能拉到多少要看實際出貨；在報廢率降下來前，大型ASIC仍以CoWoS為預設。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       },
+       {
+        "name": "Alphabet",
+        "ticker": "GOOGL"
+       }
+      ],
+      "tw_note": "英特爾EMIB-T與台積電CoWoS直接競爭先進封裝訂單，載板良率不足使CoWoS短期仍為主流。"
+     },
+     {
+      "date": "10/17",
       "foreign": [
        {
         "name": "Sony",
@@ -98,12 +154,50 @@
         "ticker": "7203.T"
        }
       ],
-      "tw_note": "台積電海外先進製程擴產；Sony、Denso、豐田為JASM出資夥伴，非競爭關係。"
+      "post_url": "https://x.com/QQ_Timmy/status/2111459653695709216",
+      "summary": "日本經產省認定台積電熊本第2廠計畫變更：由6–40奈米改為日本首座3奈米先進邏輯廠，初期月產能約6,000片、目標2028年量產；熊本一、二廠合計設備投資逾230億美元，第2廠第一階段補助上限6,451.5億日圓，豐田新加入出資。",
+      "tw_note": "台積電海外先進製程擴產；Sony、Denso、豐田為JASM出資夥伴，非競爭關係。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ]
      },
      {
       "date": "10/17",
-      "summary": "KeyBanc：AMD Helios 機櫃 ODM 量產卡在 OAM GPU 板與連接器問題，今年出貨由4K櫃下修至不到1K櫃，明年仍看約20K櫃；同時 AMD 的 CoWoS 供應預估上修，2026年至104K、2027年由130K上修至170K。",
+      "foreign": [
+       {
+        "name": "AMD",
+        "ticker": "AMD"
+       }
+      ],
       "post_url": "https://x.com/QQ_Timmy/status/2111278774444818548",
+      "summary": "KeyBanc：AMD Helios 機櫃 ODM 量產卡在 OAM GPU 板與連接器問題，今年出貨由4K櫃下修至不到1K櫃，明年仍看約20K櫃；同時 AMD 的 CoWoS 供應預估上修，2026年至104K、2027年由130K上修至170K。",
+      "tw_note": "AMD MI455 採台積電先進製程與 CoWoS，CoWoS 需求上修直接對應台積電先進封裝產能。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ]
+     },
+     {
+      "date": "10/17",
+      "post_url": "https://x.com/Leoskie_L/status/2111275587402875054",
+      "summary": "魏哲家法說：過去節點產能到位後不再擴充，這次為3奈米再加3座新廠——台南新廠1H27量產、台南再加一座1H28量產、亞利桑那二廠3Q27量產、熊本二廠2028年；台南5奈米機台持續轉做3奈米。3Q晶圓營收3奈米占33%、2奈米占8%。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "tw_note": "台積電3奈米需求強勁、破例擴產。"
+     },
+     {
+      "date": "10/17",
+      "post_url": "https://x.com/Leoskie_L/status/2111369595089211795",
+      "summary": "TrendForce：2Q台積電全球代工市占72.5%、季增0.2個百分點，三星由6.5%降至5.9%；台積電北美子公司執行長稱每天至少接10通詢問產能的電話。2奈米家族2027年產能將再翻倍以上，三星寄望德州Taylor廠2027年全面量產。",
       "tw_stocks": [
        {
         "code": "2330",
@@ -112,15 +206,14 @@
       ],
       "foreign": [
        {
-        "name": "AMD",
-        "ticker": "AMD"
+        "name": "Samsung Electronics",
+        "ticker": "005930.KS"
        }
       ],
-      "tw_note": "AMD MI455 採台積電先進製程與 CoWoS，CoWoS 需求上修直接對應台積電先進封裝產能。"
+      "tw_note": "三星為台積電晶圓代工直接競爭者，產能吃緊下訂單未外溢、市占持續拉開。"
      },
      {
       "date": "10/16",
-      "summary": "美系大行重申台積電正向：3Q毛利率略低但符合共識，4Q毛利率指引中值66%仍承壓；上調明後年資本支出預估至830億、920億美元以因應2奈米與1.4奈米擴產，並看好9倍／14倍光罩尺寸先進封裝。",
       "metrics": [
        {
         "label": "毛利率",
@@ -128,17 +221,17 @@
        }
       ],
       "post_url": "https://x.com/QQ_Timmy/status/2110886422576284135",
+      "summary": "美系大行重申台積電正向：3Q毛利率略低但符合共識，4Q毛利率指引中值66%仍承壓；上調明後年資本支出預估至830億、920億美元以因應2奈米與1.4奈米擴產，並看好9倍／14倍光罩尺寸先進封裝。",
+      "tw_note": "台積電法說後外資評價與資本支出上修。",
       "tw_stocks": [
        {
         "code": "2330",
         "name": "台積電"
        }
-      ],
-      "tw_note": "台積電法說後外資評價與資本支出上修。"
+      ]
      },
      {
       "date": "10/16",
-      "summary": "Jeff Pu 整理台積電3Q26：成長完好但毛利率偏軟，預估2027年營收年增39%，N2產能2027年倍增以上、A14加速；Terafab 合作因須由台積電營運可能性不高，維持 Hold。",
       "metrics": [
        {
         "label": "目標價",
@@ -146,25 +239,72 @@
        }
       ],
       "post_url": "https://x.com/QQ_Timmy/status/2110887976788250955",
+      "summary": "Jeff Pu 整理台積電3Q26：成長完好但毛利率偏軟，預估2027年營收年增39%，N2產能2027年倍增以上、A14加速；Terafab 合作因須由台積電營運可能性不高，維持 Hold。",
+      "tw_note": "台積電法說後外資評價。",
       "tw_stocks": [
        {
         "code": "2330",
         "name": "台積電"
        }
-      ],
-      "tw_note": "台積電法說後外資評價。"
+      ]
      },
      {
       "date": "10/16",
-      "summary": "彭博：經濟部長表示，作為台美《互惠貿易協定》的一部分，台灣將把AI伺服器與尖端半導體列入出口管制清單，未經許可運往中國將構成刑事犯罪，實施時間未定；另籌資數十億美元在美開發供應鏈園區。",
       "post_url": "https://x.com/QQ_Timmy/status/2110979679566127495",
+      "summary": "彭博：經濟部長表示，作為台美《互惠貿易協定》的一部分，台灣將把AI伺服器與尖端半導體列入出口管制清單，未經許可運往中國將構成刑事犯罪，實施時間未定；另籌資數十億美元在美開發供應鏈園區。",
+      "tw_note": "尖端晶片出口管制收緊，影響台積電對中國客戶的先進製程出貨。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ]
+     },
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/Leoskie_L/status/2110906070340399257",
+      "summary": "台積電法說對封裝缺口口氣放軟：7月稱封裝產能是「瓶頸」，這次改說後段「有一點短缺」；格芯10/8與台積電簽20億美元、5年矽中介層合約，1H28放量。9倍、14倍光罩尺寸封裝開發中，海外廠未來五年後段稀釋毛利率3–4個百分點。",
+      "reply_note": "作者補充：部分封裝外包後缺口不必全靠台積電自補，要看日月光承接哪一段，承接比例越高，台積電越能把產能留給最難的製程。",
       "tw_stocks": [
        {
         "code": "2330",
         "name": "台積電"
        }
       ],
-      "tw_note": "尖端晶片出口管制收緊，影響台積電對中國客戶的先進製程出貨。"
+      "foreign": [
+       {
+        "name": "GlobalFoundries",
+        "ticker": "GFS"
+       }
+      ],
+      "tw_note": "格芯承接台積電CoWoS矽中介層代工，為產能分擔而非競爭。"
+     },
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/Leoskie_L/status/2110956727533437112",
+      "summary": "SemiAnalysis：ASML 2022–2024年申請27個鍵合專利家族，多為晶粒對晶圓（D2W）混合鍵合；推論第一個大量採用的是台積電 SoIC（間距約6µm、2029年縮至4.5µm），HBM 可能2029年後才用。ASML 官方尚未發表。",
+      "reply_note": "作者補充：鍵合產能真正卡的是堆疊後良率與檢測，不只是機台，檢測站更值得觀察。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "ASML",
+        "ticker": "ASML"
+       },
+       {
+        "name": "BE Semiconductor",
+        "ticker": "BESI.AS"
+       },
+       {
+        "name": "Applied Materials",
+        "ticker": "AMAT"
+       }
+      ],
+      "tw_note": "ASML、BESI 為混合鍵合設備商，台積電 SoIC 為主要採用者。"
      }
     ]
    },
@@ -173,26 +313,27 @@
     "items": [
      {
       "date": "10/17",
-      "summary": "KeyBanc：AMD Helios 機櫃 ODM 夥伴量產遇到成長陣痛（OAM GPU 板、卡匣連接器問題，類似 GB200 初期），今年出貨由4K櫃下修至不到1K櫃，明年供應鏈仍預期約20K櫃。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111278774444818548",
-      "tw_stocks": [
-       {
-        "code": "6669",
-        "name": "緯穎"
-       }
-      ],
       "foreign": [
        {
         "name": "AMD",
         "ticker": "AMD"
        }
       ],
-      "tw_note": "查證 AMD 官方新聞稿，緯穎為 Helios 系統基礎架構夥伴之一，今年出貨遞延、明年放量。"
+      "post_url": "https://x.com/QQ_Timmy/status/2111278774444818548",
+      "summary": "KeyBanc：AMD Helios 機櫃 ODM 夥伴量產遇到成長陣痛（OAM GPU 板、卡匣連接器問題，類似 GB200 初期），今年出貨由4K櫃下修至不到1K櫃，明年供應鏈仍預期約20K櫃。",
+      "tw_note": "查證 AMD 官方新聞稿，緯穎為 Helios 系統基礎架構夥伴之一，今年出貨遞延、明年放量。",
+      "tw_stocks": [
+       {
+        "code": "6669",
+        "name": "緯穎"
+       }
+      ]
      },
      {
       "date": "10/16",
-      "summary": "台灣準備將AI伺服器與尖端半導體列入出口管制清單，未經授權運往中國將以《對外貿易法》論處刑事責任，範圍可能擴及所有中國客戶。",
       "post_url": "https://x.com/QQ_Timmy/status/2110979679566127495",
+      "summary": "台灣準備將AI伺服器與尖端半導體列入出口管制清單，未經授權運往中國將以《對外貿易法》論處刑事責任，範圍可能擴及所有中國客戶。",
+      "tw_note": "AI伺服器出口至中國受管制，ODM 須強化出貨合規。",
       "tw_stocks": [
        {
         "code": "2317",
@@ -202,8 +343,7 @@
         "code": "6669",
         "name": "緯穎"
        }
-      ],
-      "tw_note": "AI伺服器出口至中國受管制，ODM 須強化出貨合規。"
+      ]
      }
     ]
    },
@@ -212,18 +352,6 @@
     "items": [
      {
       "date": "10/18",
-      "summary": "黃仁勳展示 RTX Spark 14mm 筆電：Arm 架構、3奈米製程，將CPU、GPU與記憶體整合於單一晶片，具1 petaflop本地AI算力，可在裝置上執行1,200億參數模型。",
-      "post_url": "https://x.com/BlueJay87476298/status/2111607670407135329",
-      "tw_stocks": [
-       {
-        "code": "2454",
-        "name": "聯發科"
-       },
-       {
-        "code": "2330",
-        "name": "台積電"
-       }
-      ],
       "foreign": [
        {
         "name": "NVIDIA",
@@ -234,12 +362,9 @@
         "ticker": "ARM"
        }
       ],
-      "tw_note": "查證：RTX Spark 的 N1X CPU 由 NVIDIA 與聯發科共同設計、台積電3奈米製造，今年秋季起華碩、戴爾等推出機種。"
-     },
-     {
-      "date": "10/17",
-      "summary": "SemiAnalysis：Google 首度提交 TPUv7 Agentic 基準，每美元效能較 NVIDIA GB300 NVL72 FP4 高1.42倍、較 AMD MI355X 高約2.5倍；中高互動區間 TPUv7 FP8 最高較 GB200 高3.16倍（仍為預覽數據）。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111277898778935612",
+      "post_url": "https://x.com/BlueJay87476298/status/2111607670407135329",
+      "summary": "黃仁勳展示 RTX Spark 14mm 筆電：Arm 架構、3奈米製程，將CPU、GPU與記憶體整合於單一晶片，具1 petaflop本地AI算力，可在裝置上執行1,200億參數模型。",
+      "tw_note": "查證：RTX Spark 的 N1X CPU 由 NVIDIA 與聯發科共同設計、台積電3奈米製造，今年秋季起華碩、戴爾等推出機種。",
       "tw_stocks": [
        {
         "code": "2454",
@@ -249,7 +374,10 @@
         "code": "2330",
         "name": "台積電"
        }
-      ],
+      ]
+     },
+     {
+      "date": "10/17",
       "foreign": [
        {
         "name": "Alphabet",
@@ -264,19 +392,56 @@
         "ticker": "AMD"
        }
       ],
-      "tw_note": "查證：聯發科參與 Google TPU v7 Ironwood（I/O 等設計），由台積電生產；TPU 性價比領先有利後續拉貨。"
+      "post_url": "https://x.com/QQ_Timmy/status/2111277898778935612",
+      "summary": "SemiAnalysis：Google 首度提交 TPUv7 Agentic 基準，每美元效能較 NVIDIA GB300 NVL72 FP4 高1.42倍、較 AMD MI355X 高約2.5倍；中高互動區間 TPUv7 FP8 最高較 GB200 高3.16倍（仍為預覽數據）。",
+      "tw_note": "查證：聯發科參與 Google TPU v7 Ironwood（I/O 等設計），由台積電生產；TPU 性價比領先有利後續拉貨。",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ]
      },
      {
-      "date": "10/16",
-      "summary": "美系重申聯發科正向：彭博報導字節跳動接近與聯發科達成 ASIC 設計及統包服務協議，預期1H27共同開發AI推論晶片、1H28 tape-out、2029年量產，2029年可貢獻200–250億美元營收；手機方面有望拿下三星高階機約3成市占。",
-      "post_url": "https://x.com/QQ_Timmy/status/2110886422576284135",
+      "date": "10/17",
+      "metrics": [
+       {
+        "label": "目標價",
+        "value": "6,200元（美銀，維持買進）"
+       }
+      ],
+      "post_url": "https://x.com/Leoskie_L/status/2111464749108273328",
+      "summary": "美銀估聯發科營收2026年6,677億、2027年1.287兆、2028年2.476兆；字節跳動ASIC仍在洽談，若成案年約100萬顆、每顆2–2.5萬美元，約200–250億美元。turnkey 代購HBM與載板拉高ASP但稀釋毛利率；2H27打進三星旗艦機，約占營收5%。",
+      "reply_note": "作者補充：毛利率會被稀釋，但營收規模大很多。",
       "tw_stocks": [
        {
         "code": "2454",
         "name": "聯發科"
        }
       ],
-      "tw_note": "聯發科 ASIC 新客戶與三星高階手機市占。"
+      "foreign": [
+       {
+        "name": "Alphabet",
+        "ticker": "GOOGL"
+       }
+      ],
+      "tw_note": "聯發科為 Google TPU 共同設計夥伴，ASIC 新客戶與三星手機市占為成長動能。"
+     },
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/QQ_Timmy/status/2110886422576284135",
+      "summary": "美系重申聯發科正向：彭博報導字節跳動接近與聯發科達成 ASIC 設計及統包服務協議，預期1H27共同開發AI推論晶片、1H28 tape-out、2029年量產，2029年可貢獻200–250億美元營收；手機方面有望拿下三星高階機約3成市占。",
+      "tw_note": "聯發科 ASIC 新客戶與三星高階手機市占。",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       }
+      ]
      }
     ]
    },
@@ -285,14 +450,6 @@
     "items": [
      {
       "date": "10/18",
-      "summary": "BofA：銅纜在100G+ SerDes下傳輸距離縮至1–3公尺、scale-up擴展至千顆以上XPU，近封裝光學（NPO）採用加速；NPO功耗與密度優於可插拔，門檻低於CPO。CRDO、ALAB、MRVL、LITE 在 OCP 展示相關方案，LITE 聚焦外部雷射 CPO 與 VCSEL 架構。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111645356605977018",
-      "tw_stocks": [
-       {
-        "code": "3081",
-        "name": "聯亞"
-       }
-      ],
       "foreign": [
        {
         "name": "Lumentum",
@@ -311,12 +468,53 @@
         "ticker": "MRVL"
        }
       ],
-      "tw_note": "查證：聯亞為 InP 磊晶供應商，被列為 Lumentum 雷射晶片相關台廠，800G 矽光 CW 雷射磊晶需求增長。"
+      "post_url": "https://x.com/QQ_Timmy/status/2111645356605977018",
+      "summary": "BofA：銅纜在100G+ SerDes下傳輸距離縮至1–3公尺、scale-up擴展至千顆以上XPU，近封裝光學（NPO）採用加速；NPO功耗與密度優於可插拔，門檻低於CPO。CRDO、ALAB、MRVL、LITE 在 OCP 展示相關方案，LITE 聚焦外部雷射 CPO 與 VCSEL 架構。",
+      "tw_note": "查證：聯亞為 InP 磊晶供應商，被列為 Lumentum 雷射晶片相關台廠，800G 矽光 CW 雷射磊晶需求增長。",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ]
+     },
+     {
+      "date": "10/18",
+      "post_url": "https://x.com/Leoskie_L/status/2111653504586752255",
+      "summary": "Lumentum 執行長稱採購承諾「很大程度上不可取消」，自身晶圓廠須比需求早三年建產能；NVIDIA 3月投資20億美元並附多年期採購承諾。Lumentum 7月也與AXT簽磷化銦基板產能保留合約，先付4,350萬美元訂金、合約至2031年底。",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       },
+       {
+        "name": "AXT",
+        "ticker": "AXTI"
+       },
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "查證：聯亞為InP雷射磊晶供應商、列入Lumentum雷射晶片供應鏈，InP產能長約鎖定反映雷射缺貨延續。"
      },
      {
       "date": "10/17",
-      "summary": "Bernstein／Broadcom 封裝分析：可插拔光收發器每模組約需15–20W DSP功耗、約150美元元件成本，單模光纖精密對準約占製造成本30–35%；架構正由可插拔走向 NPO、CPO，雷射光源維持外部可插拔。",
+      "foreign": [
+       {
+        "name": "Broadcom",
+        "ticker": "AVGO"
+       }
+      ],
       "post_url": "https://x.com/QQ_Timmy/status/2111468591120032241",
+      "summary": "Bernstein／Broadcom 封裝分析：可插拔光收發器每模組約需15–20W DSP功耗、約150美元元件成本，單模光纖精密對準約占製造成本30–35%；架構正由可插拔走向 NPO、CPO，雷射光源維持外部可插拔。",
+      "tw_note": "CPO 的光纖對準（FAU）與外部雷射光源，分別對應大立光 FAU 與聯亞 CW 雷射磊晶。",
       "tw_stocks": [
        {
         "code": "3008",
@@ -326,25 +524,10 @@
         "code": "3081",
         "name": "聯亞"
        }
-      ],
-      "foreign": [
-       {
-        "name": "Broadcom",
-        "ticker": "AVGO"
-       }
-      ],
-      "tw_note": "CPO 的光纖對準（FAU）與外部雷射光源，分別對應大立光 FAU 與聯亞 CW 雷射磊晶。"
+      ]
      },
      {
       "date": "10/17",
-      "summary": "JPMorgan 上修美國四大CSP資料中心資本支出：2026年年增率由80%上修至85%、2027年由50%上修至70%，2027年已建置電力容量估125GW；看好網路設備，點名 CRDO、LITE、COHR、ANET、CLS、GLW 等。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111481863030345779",
-      "tw_stocks": [
-       {
-        "code": "3081",
-        "name": "聯亞"
-       }
-      ],
       "foreign": [
        {
         "name": "Lumentum",
@@ -363,7 +546,79 @@
         "ticker": "CLS"
        }
       ],
-      "tw_note": "LITE、COHR 為光通訊雷射龍頭，聯亞為其 InP 雷射磊晶供應鏈。"
+      "post_url": "https://x.com/QQ_Timmy/status/2111481863030345779",
+      "summary": "JPMorgan 上修美國四大CSP資料中心資本支出：2026年年增率由80%上修至85%、2027年由50%上修至70%，2027年已建置電力容量估125GW；看好網路設備，點名 CRDO、LITE、COHR、ANET、CLS、GLW 等。",
+      "tw_note": "LITE、COHR 為光通訊雷射龍頭，聯亞為其 InP 雷射磊晶供應鏈。",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ]
+     },
+     {
+      "date": "10/17",
+      "post_url": "https://x.com/Leoskie_L/status/2111293161880588333",
+      "summary": "NVIDIA 在 SEMICON West 發表 OOI（光引擎上中介層）原型，省去有機載板、訊號直接走 interposer，另展示單光纖8波長、256Gb/s；仍屬研究階段。量產CPO供應鏈：台積電COUPE矽光子封裝，鴻海負責散熱與最終測試，外部雷射為Coherent、Lumentum、住友電工。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       },
+       {
+        "code": "2317",
+        "name": "鴻海"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       },
+       {
+        "name": "Coherent",
+        "ticker": "COHR"
+       },
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       },
+       {
+        "name": "Corning",
+        "ticker": "GLW"
+       }
+      ],
+      "tw_note": "報導點名台積電（COUPE封裝）與鴻海（散熱、最終測試）為NVIDIA量產CPO供應鏈。"
+     },
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/Leoskie_L/status/2111067779466195031",
+      "summary": "博通OCP提出OCI光學scale-up規格：1,024顆XPU叢集約需26萬條光纖、約105萬條發射通道，但通道不等於雷射——外接CW雷射一分8約13萬顆、一分16約6.6萬顆（分光比為作者假設）。規格標準化對雷射廠是兩面刃，Bernstein提到亞洲投資人擔心中國CW雷射供過於求。",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Broadcom",
+        "ticker": "AVGO"
+       },
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       },
+       {
+        "name": "Coherent",
+        "ticker": "COHR"
+       },
+       {
+        "name": "Applied Optoelectronics",
+        "ticker": "AAOI"
+       }
+      ],
+      "tw_note": "聯亞供應CW雷射用InP磊晶，OCI外接雷射需求數量取決於分光比與叢集建置數。"
      }
     ]
    },
@@ -371,9 +626,83 @@
     "industry": "銅箔基板/PCB材料",
     "items": [
      {
+      "date": "10/17",
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111249257231765820",
+      "summary": "Jeff Pu OCP 觀察：NVIDIA 展出 PTFE NVLink 板，符合其對2H27 PCB規格的看法；與 Cisco 共推支援12.8Tb/s的 USFP 可插拔標準。",
+      "tw_note": "PTFE 高頻材料導入 NVLink 板，牽動 CCL 與伺服器 PCB 規格升級。",
+      "tw_stocks": [
+       {
+        "code": "2383",
+        "name": "台光電"
+       },
+       {
+        "code": "6274",
+        "name": "台燿"
+       },
+       {
+        "code": "2368",
+        "name": "金像電"
+       }
+      ]
+     },
+     {
       "date": "10/16",
-      "summary": "日東紡訪談：AI伺服器帶動T玻璃（低CTE）與NE／NER玻璃（低介電）需求極佳、供應嚴重緊俏；以台灣為中心增設熔爐，T玻璃紗2027年度起貢獻，織布與南亞塑膠合作，投資額上修至1,200億日圓、目標T玻璃產能為2025年度3倍；坦言已有競爭對手進入T玻璃市場。",
+      "foreign": [
+       {
+        "name": "日東紡",
+        "ticker": "3110.T"
+       }
+      ],
       "post_url": "https://x.com/QQ_Timmy/status/2110991167798337676",
+      "summary": "日東紡訪談：AI伺服器帶動T玻璃（低CTE）與NE／NER玻璃（低介電）需求極佳、供應嚴重緊俏；以台灣為中心增設熔爐，T玻璃紗2027年度起貢獻，織布與南亞塑膠合作，投資額上修至1,200億日圓、目標T玻璃產能為2025年度3倍；坦言已有競爭對手進入T玻璃市場。",
+      "tw_note": "日東紡明言與南亞合作織布；富喬、台玻為切入 Low-Dk／T玻璃的台廠競爭者，供應緊俏有利報價。",
+      "tw_stocks": [
+       {
+        "code": "1303",
+        "name": "南亞"
+       },
+       {
+        "code": "1815",
+        "name": "富喬"
+       },
+       {
+        "code": "1802",
+        "name": "台玻"
+       }
+      ]
+     },
+     {
+      "date": "10/16",
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2110889291924775377",
+      "summary": "NVIDIA 在 OCP 展示 NVLink PTFE 板原型並點名7家供應商；PTFE 混成仍是 VR300 NVL576 Switch 板首選，短期32層中僅8–12層使用 PTFE、對傳統樹脂影響有限，看好已具 PTFE 量產能力的台虹與中國 CCL／PCB 廠。",
+      "tw_note": "PTFE 層數有限、短期對台光電、台燿等傳統高速 CCL 衝擊不大，但為長期材料競爭變數。",
+      "tw_stocks": [
+       {
+        "code": "2383",
+        "name": "台光電"
+       },
+       {
+        "code": "6274",
+        "name": "台燿"
+       }
+      ]
+     },
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/Leoskie_L/status/2111003827491176560",
+      "summary": "日東紡稱AI用低膨脹T玻璃供給「非常緊」，台灣新熔爐的T玻璃紗仍在內部評估，2027年4月起才貢獻量產；載板核心厚度將倍增至2.4–3mm、吃更多玻纖布。日東紡承認競爭對手進入、市占可能小降。",
       "tw_stocks": [
        {
         "code": "1303",
@@ -394,55 +723,7 @@
         "ticker": "3110.T"
        }
       ],
-      "tw_note": "日東紡明言與南亞合作織布；富喬、台玻為切入 Low-Dk／T玻璃的台廠競爭者，供應緊俏有利報價。"
-     },
-     {
-      "date": "10/17",
-      "summary": "Jeff Pu OCP 觀察：NVIDIA 展出 PTFE NVLink 板，符合其對2H27 PCB規格的看法；與 Cisco 共推支援12.8Tb/s的 USFP 可插拔標準。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111249257231765820",
-      "tw_stocks": [
-       {
-        "code": "2383",
-        "name": "台光電"
-       },
-       {
-        "code": "6274",
-        "name": "台燿"
-       },
-       {
-        "code": "2368",
-        "name": "金像電"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "NVIDIA",
-        "ticker": "NVDA"
-       }
-      ],
-      "tw_note": "PTFE 高頻材料導入 NVLink 板，牽動 CCL 與伺服器 PCB 規格升級。"
-     },
-     {
-      "date": "10/16",
-      "summary": "NVIDIA 在 OCP 展示 NVLink PTFE 板原型並點名7家供應商；PTFE 混成仍是 VR300 NVL576 Switch 板首選，短期32層中僅8–12層使用 PTFE、對傳統樹脂影響有限，看好已具 PTFE 量產能力的台虹與中國 CCL／PCB 廠。",
-      "post_url": "https://x.com/QQ_Timmy/status/2110889291924775377",
-      "tw_stocks": [
-       {
-        "code": "2383",
-        "name": "台光電"
-       },
-       {
-        "code": "6274",
-        "name": "台燿"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "NVIDIA",
-        "ticker": "NVDA"
-       }
-      ],
-      "tw_note": "PTFE 層數有限、短期對台光電、台燿等傳統高速 CCL 衝擊不大，但為長期材料競爭變數。"
+      "tw_note": "日東紡與南亞合作織布；富喬、台玻為切入T玻璃／Low-Dk的台廠競爭者，供給緊俏有利報價。"
      }
     ]
    },
@@ -450,9 +731,89 @@
     "industry": "PCB/載板",
     "items": [
      {
+      "date": "10/18",
+      "post_url": "https://x.com/Leoskie_L/status/2111676146261647574",
+      "summary": "KeyBanc估英特爾EMIB-T封裝載板良率揖斐電約50–60%、欣興僅20–30%（分析師估計），要拿到100片好板欣興須投333–500片；良率可能把 Google TPU v9 量限制在500萬–600萬顆。",
+      "reply_note": "作者補充：載板良率是工程化問題，但EMIB-T層數與尺寸持續加大，半年內能拉到什麼程度要看實際出貨。",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Ibiden",
+        "ticker": "4062.T"
+       },
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       }
+      ],
+      "tw_note": "查證：欣興與揖斐電、新光電氣同為EMIB-T載板供應商；欣興自稱技術尚未成熟，客戶提供獲利保障機制。"
+     },
+     {
+      "date": "10/17",
+      "post_url": "https://x.com/Leoskie_L/status/2111307826769649836",
+      "summary": "黃仁勳在BG2訪談點名載板是供應關鍵環節：載板越大、晶片越多，熱膨脹與翹曲難控，「矽光子也供不應求，什麼都缺」，缺口幾年內難補上。",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "NVIDIA為ABF載板最大終端買家，台廠欣興、南電、景碩為ABF載板供應商。"
+     },
+     {
       "date": "10/16",
-      "summary": "美系券商預估BT載板供需缺口由今年1%擴大至明後年11%、14%，27–28年逐年漲價，主因光收發模組 mSAP 需求加速，mSAP 毛利率可望逾50%；上修臻鼎、景碩、南電、欣興獲利預估與目標價。",
       "post_url": "https://x.com/QQ_Timmy/status/2110886422576284135",
+      "summary": "美系券商預估BT載板供需缺口由今年1%擴大至明後年11%、14%，27–28年逐年漲價，主因光收發模組 mSAP 需求加速，mSAP 毛利率可望逾50%；上修臻鼎、景碩、南電、欣興獲利預估與目標價。",
+      "tw_note": "四檔皆為 top30 載板／PCB 廠。",
+      "tw_stocks": [
+       {
+        "code": "4958",
+        "name": "臻鼎-KY"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       },
+       {
+        "code": "3037",
+        "name": "欣興"
+       }
+      ]
+     },
+     {
+      "date": "10/16",
+      "metrics": [
+       {
+        "label": "毛利率",
+        "value": "光通訊mSAP約20%（景碩8/26自述）"
+       }
+      ],
+      "post_url": "https://x.com/Leoskie_L/status/2110976059361419429",
+      "summary": "美系券商估BT載板供需缺口今年約1%、明年11%、後年14%，光模組mSAP製程擴大BT廠商機，同步上修臻鼎、景碩、南電、欣興目標價；但mSAP毛利有20%、40–45%、50%以上三種說法。景碩BT稼動率約75%、年底回到85%。",
+      "reply_note": "作者補充：缺貨是真的，50%毛利是樂觀上緣；mSAP讓供給變緊，但不保證定價權。",
       "tw_stocks": [
        {
         "code": "4958",
@@ -471,7 +832,25 @@
         "name": "欣興"
        }
       ],
-      "tw_note": "四檔皆為 top30 載板／PCB 廠。"
+      "tw_note": "BT／ABF載板缺口擴大，景碩高階ABF另受T玻璃缺料影響。"
+     },
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/Leoskie_L/status/2111003827491176560",
+      "summary": "景碩8/26曾表示，高階ABF每月有10–15%營收因T玻璃缺料無法出貨；日東紡新產能最快2027年4月才貢獻，缺口短期難解。",
+      "tw_stocks": [
+       {
+        "code": "3189",
+        "name": "景碩"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "日東紡",
+        "ticker": "3110.T"
+       }
+      ],
+      "tw_note": "日東紡為T玻璃主要供應商，缺料直接限制景碩高階ABF出貨。"
      }
     ]
    },
@@ -480,21 +859,21 @@
     "items": [
      {
       "date": "10/16",
-      "summary": "歐系重申玉晶光正向：與3M私募合作擴大光學互連商機，3M EBO 技術今年7月已部署至微軟 Azure 資料中心，估可為玉晶光開啟1億美元潛在市場，並可能延伸至 CPO、參與改良 MT 光纖插芯。",
-      "post_url": "https://x.com/QQ_Timmy/status/2110886422576284135",
-      "tw_stocks": [
-       {
-        "code": "3406",
-        "name": "玉晶光"
-       }
-      ],
       "foreign": [
        {
         "name": "3M",
         "ticker": "MMM"
        }
       ],
-      "tw_note": "3M 為玉晶光私募合作夥伴，EBO 光學互連直接帶動玉晶光新業務。"
+      "post_url": "https://x.com/QQ_Timmy/status/2110886422576284135",
+      "summary": "歐系重申玉晶光正向：與3M私募合作擴大光學互連商機，3M EBO 技術今年7月已部署至微軟 Azure 資料中心，估可為玉晶光開啟1億美元潛在市場，並可能延伸至 CPO、參與改良 MT 光纖插芯。",
+      "tw_note": "3M 為玉晶光私募合作夥伴，EBO 光學互連直接帶動玉晶光新業務。",
+      "tw_stocks": [
+       {
+        "code": "3406",
+        "name": "玉晶光"
+       }
+      ]
      }
     ]
    },
@@ -503,8 +882,9 @@
     "items": [
      {
       "date": "10/17",
-      "summary": "Jeff Pu 美國行程：電力供應中短期無明顯風險，液冷基礎設施才是瓶頸；機架價格持續上漲，GB300 約550–650萬美元、VR200 約800萬美元。",
       "post_url": "https://x.com/QQ_Timmy/status/2111249257231765820",
+      "summary": "Jeff Pu 美國行程：電力供應中短期無明顯風險，液冷基礎設施才是瓶頸；機架價格持續上漲，GB300 約550–650萬美元、VR200 約800萬美元。",
+      "tw_note": "液冷成為資料中心建置瓶頸，對應奇鋐液冷模組與高力熱交換器。",
       "tw_stocks": [
        {
         "code": "3017",
@@ -514,23 +894,10 @@
         "code": "8996",
         "name": "高力"
        }
-      ],
-      "tw_note": "液冷成為資料中心建置瓶頸，對應奇鋐液冷模組與高力熱交換器。"
+      ]
      },
      {
       "date": "10/17",
-      "summary": "UBS 通路調查：資料中心需求2027年將加速，冷卻、電力與發電供給仍是主要限制，客戶偏好預製／模組化方案以縮短上線時間。",
-      "post_url": "https://x.com/BlueJay87476298/status/2111382128915362251",
-      "tw_stocks": [
-       {
-        "code": "3017",
-        "name": "奇鋐"
-       },
-       {
-        "code": "8996",
-        "name": "高力"
-       }
-      ],
       "foreign": [
        {
         "name": "Caterpillar",
@@ -545,7 +912,19 @@
         "ticker": "PWR"
        }
       ],
-      "tw_note": "CAT、CMI 為發電設備；冷卻供給吃緊同樣對應台廠液冷供應鏈。"
+      "post_url": "https://x.com/BlueJay87476298/status/2111382128915362251",
+      "summary": "UBS 通路調查：資料中心需求2027年將加速，冷卻、電力與發電供給仍是主要限制，客戶偏好預製／模組化方案以縮短上線時間。",
+      "tw_note": "CAT、CMI 為發電設備；冷卻供給吃緊同樣對應台廠液冷供應鏈。",
+      "tw_stocks": [
+       {
+        "code": "3017",
+        "name": "奇鋐"
+       },
+       {
+        "code": "8996",
+        "name": "高力"
+       }
+      ]
      }
     ]
    },
@@ -554,14 +933,6 @@
     "items": [
      {
       "date": "10/17",
-      "summary": "UBS：產業正收斂至800VDC架構，預計2027–2029年部署，可降低銅用量、熱量與配電複雜度；發電需求強勁，CAT 正擴充發電產能。",
-      "post_url": "https://x.com/BlueJay87476298/status/2111382128915362251",
-      "tw_stocks": [
-       {
-        "code": "2308",
-        "name": "台達電"
-       }
-      ],
       "foreign": [
        {
         "name": "Caterpillar",
@@ -572,25 +943,33 @@
         "ticker": "CMI"
        }
       ],
-      "tw_note": "台達電為 800VDC 資料中心電源架構主要供應商。"
-     },
-     {
-      "date": "10/17",
-      "summary": "OCP：Google 將資料中心定位為電網整合資源，LVDC 路線圖由 ±400VDC Mt Diablo 機架走向原生800VDC配電；Agentic AI 使 CPU 對加速器比例拉近至1:1。",
-      "post_url": "https://x.com/QQ_Timmy/status/2111249257231765820",
+      "post_url": "https://x.com/BlueJay87476298/status/2111382128915362251",
+      "summary": "UBS：產業正收斂至800VDC架構，預計2027–2029年部署，可降低銅用量、熱量與配電複雜度；發電需求強勁，CAT 正擴充發電產能。",
+      "tw_note": "台達電為 800VDC 資料中心電源架構主要供應商。",
       "tw_stocks": [
        {
         "code": "2308",
         "name": "台達電"
        }
-      ],
+      ]
+     },
+     {
+      "date": "10/17",
       "foreign": [
        {
         "name": "Alphabet",
         "ticker": "GOOGL"
        }
       ],
-      "tw_note": "800VDC 配電與 Mt Diablo 機架對應台達電資料中心電源方案。"
+      "post_url": "https://x.com/QQ_Timmy/status/2111249257231765820",
+      "summary": "OCP：Google 將資料中心定位為電網整合資源，LVDC 路線圖由 ±400VDC Mt Diablo 機架走向原生800VDC配電；Agentic AI 使 CPU 對加速器比例拉近至1:1。",
+      "tw_note": "800VDC 配電與 Mt Diablo 機架對應台達電資料中心電源方案。",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ]
      }
     ]
    },
@@ -598,15 +977,26 @@
     "industry": "記憶體",
     "items": [
      {
-      "date": "10/17",
-      "summary": "高盛：CXMT 4F2 DRAM 架構進展引發記憶體股重挫11–26%、市值蒸發逾7,000億美元；高盛認為市場反應過度，三星、SK海力士在先進 DRAM 與 HBM 仍具明顯技術優勢，股價已跌破淨值、反映2028年下行週期，風險報酬具吸引力但短期催化劑有限。",
-      "post_url": "https://x.com/BlueJay87476298/status/2111381599426355412",
+      "date": "10/18",
+      "post_url": "https://x.com/Leoskie_L/status/2111632153163469119",
+      "summary": "美光年報：9/3剩餘履約義務約1,340億美元（上季僅50億），以承諾量×最低價計算，約四分之一（約335億美元）在未來12個月認列，相較2026財年營收1,332億；客戶已付押金127.5億美元、2029–2031年須返還。",
+      "reply_note": "作者補充：以地板價計算代表漲價部分尚未算入、帳面數字保守；現貨跌價時客戶回頭砍價是主要風險，take-or-pay條款正是用來擋這點。",
       "tw_stocks": [
        {
         "code": "2408",
         "name": "南亞科"
        }
       ],
+      "foreign": [
+       {
+        "name": "Micron",
+        "ticker": "MU"
+       }
+      ],
+      "tw_note": "美光為南亞科DRAM同業，客戶以長約鎖量反映DRAM供給吃緊。"
+     },
+     {
+      "date": "10/17",
       "foreign": [
        {
         "name": "Samsung Electronics",
@@ -621,7 +1011,57 @@
         "ticker": "MU"
        }
       ],
-      "tw_note": "南亞科為 DRAM 廠，CXMT 技術追趕與記憶體週期疑慮同樣牽動南亞科評價。"
+      "post_url": "https://x.com/BlueJay87476298/status/2111381599426355412",
+      "summary": "高盛：CXMT 4F2 DRAM 架構進展引發記憶體股重挫11–26%、市值蒸發逾7,000億美元；高盛認為市場反應過度，三星、SK海力士在先進 DRAM 與 HBM 仍具明顯技術優勢，股價已跌破淨值、反映2028年下行週期，風險報酬具吸引力但短期催化劑有限。",
+      "tw_note": "南亞科為 DRAM 廠，CXMT 技術追趕與記憶體週期疑慮同樣牽動南亞科評價。",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       }
+      ]
+     },
+     {
+      "date": "10/17",
+      "metrics": [
+       {
+        "label": "1–3Q26營收",
+        "value": "長鑫2,650–2,700億人民幣，年增726–741.5%"
+       }
+      ],
+      "post_url": "https://x.com/Leoskie_L/status/2111276284244590752",
+      "summary": "長鑫10/16財報預告自述DRAM供不應求、價格大漲，前三季淨利1,310–1,325億人民幣，產能利用率維持高位；但3Q營收季增僅15–20%（2Q為95.9%）。群聯CEO稱長鑫衝擊是「鬼故事」，明年什麼都缺。",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "長鑫科技",
+        "ticker": "688825.SS"
+       }
+      ],
+      "tw_note": "查證：長鑫公告將獲利歸因於DRAM供不應求；長鑫為南亞科中國直接競爭者，產能滿載降低殺價疑慮。"
+     }
+    ]
+   },
+   {
+    "industry": "半導體封測",
+    "items": [
+     {
+      "date": "10/16",
+      "post_url": "https://x.com/Leoskie_L/status/2110906070340399257",
+      "summary": "台積電法說稱後段封裝僅「有一點短缺」，部分矽中介層外包給格芯（20億美元、5年合約，1H28放量），封裝缺口改由外部夥伴分擔。",
+      "reply_note": "作者補充：要看日月光接的是哪一段，承接比例越高，台積電越能把產能留給最難的那段。",
+      "tw_stocks": [
+       {
+        "code": "3711",
+        "name": "日月光投控"
+       }
+      ],
+      "tw_note": "日月光投控為台積電先進封裝外包夥伴，承接比例是後續觀察重點。"
      }
     ]
    }
