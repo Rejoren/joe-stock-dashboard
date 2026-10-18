@@ -3076,5 +3076,968 @@
    "date": "11/11",
    "event": "MSCI 11月季度指數調整公布（美國時間11/11、台北11/12清晨），12/01收盤後生效，牽動台股權重與被動資金"
   }
- ]
+ ],
+ "hot_list": {
+  "date": "2026-10-16",
+  "top": 100,
+  "news_days": 7,
+  "count": 28,
+  "stocks": [
+   {
+    "code": "3008",
+    "name": "大立光",
+    "market": "市",
+    "price": 6400.0,
+    "change_pct": -3.1,
+    "value_yi": 309.3,
+    "value_rank": 4,
+    "turnover_pct": 3.68,
+    "turnover_rank": 100,
+    "group": "CPO/光通訊",
+    "theme": "CPO光學(FAU)",
+    "news": [
+     {
+      "title": "Micro LED遭質疑？友達董座回應大立光：CPO光源技術尚未定於一尊",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5609491",
+      "time": "10/18 07:18",
+      "source": "自由財經"
+     },
+     {
+      "title": "台股血洗光學股卻有驚喜！3M砸48億入股玉晶光 大立光重挫、光學股兩樣情",
+      "url": "https://news.wearn.com/c2125953.html",
+      "time": "10/15 15:13",
+      "source": "聚財網"
+     },
+     {
+      "title": "《價值型投資 最新產業研究報告》大立光 (3008-TW) 光纖陣列通過認證，完整模組開啟新商機",
+      "url": "https://news.cnyes.com/news/id/6629279",
+      "time": "10/13 11:21",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -10,
+     "trust_streak": 10,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 15.3,
+     "yoy": -7.31
+    }
+   },
+   {
+    "code": "1815",
+    "name": "富喬",
+    "market": "櫃",
+    "price": 140.0,
+    "change_pct": 9.8,
+    "value_yi": 205.5,
+    "value_rank": 8,
+    "turnover_pct": 24.23,
+    "turnover_rank": 3,
+    "group": "銅箔基板/PCB材料",
+    "theme": "玻纖布(Low Dk)",
+    "news": [
+     {
+      "title": "PTFE、玻纖布雙雙炸裂！台郡連3漲停 富喬爆量、台玻狂飆",
+      "url": "https://news.wearn.com/c2127547.html",
+      "time": "10/18 14:30",
+      "source": "聚財網"
+     },
+     {
+      "title": "高階玻纖布獲利超補！富喬9月獲利年增341.33％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5608556",
+      "time": "10/16 16:08",
+      "source": "自由財經"
+     },
+     {
+      "title": "富喬:澄清媒體報導",
+      "url": "https://news.cnyes.com/news/id/6631062",
+      "time": "10/15 11:26",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 1,
+     "foreign_turn": true,
+     "trust_turn": true
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 2.86,
+     "yoy": 82.14
+    }
+   },
+   {
+    "code": "3406",
+    "name": "玉晶光",
+    "market": "市",
+    "price": 1085.0,
+    "change_pct": -2.69,
+    "value_yi": 171.4,
+    "value_rank": 11,
+    "turnover_pct": 13.35,
+    "turnover_rank": 14,
+    "group": "光學鏡頭",
+    "theme": "光學鏡頭",
+    "news": [
+     {
+      "title": "玉晶光(3406) 48億引資3M，卡位CPO光通訊戰略佈局！",
+      "url": "https://news.cnyes.com/news/id/6632204",
+      "time": "10/16 17:30",
+      "source": "鉅亨網"
+     },
+     {
+      "title": "台股收盤漲284點、光學股卻兩樣情！玉晶光慘跌9.36%、大立光重挫395元 中揚光逆勢飆",
+      "url": "https://news.wearn.com/c2125185.html",
+      "time": "10/14 16:31",
+      "source": "聚財網"
+     },
+     {
+      "title": "熱門股》投信連9買 玉晶光創天價",
+      "url": "https://ec.ltn.com.tw/article/paper/1774473",
+      "time": "10/14 05:30",
+      "source": "自由財經"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 10,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -1.75,
+     "yoy": 0.54
+    }
+   },
+   {
+    "code": "2313",
+    "name": "華通",
+    "market": "市",
+    "price": 248.0,
+    "change_pct": 8.77,
+    "value_yi": 124.3,
+    "value_rank": 21,
+    "turnover_pct": 4.08,
+    "turnover_rank": 88,
+    "group": "PCB/載板",
+    "theme": "HDI板/低軌衛星PCB",
+    "news": [
+     {
+      "title": "低軌衛星又起飛！昇達科、華通衝漲停 事欣科訂單底氣曝光",
+      "url": "https://news.wearn.com/c2126967.html",
+      "time": "10/16 18:27",
+      "source": "聚財網"
+     },
+     {
+      "title": "華通(2313)第三季營收創單季新高，衛星V3換代、光模組板放量帶動非消費性業務占比突破三成",
+      "url": "https://news.cnyes.com/news/id/6627929",
+      "time": "10/12 10:30",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 10,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 22.89,
+     "yoy": 15.01
+    }
+   },
+   {
+    "code": "2409",
+    "name": "友達",
+    "market": "市",
+    "price": 35.9,
+    "change_pct": 2.87,
+    "value_yi": 123.3,
+    "value_rank": 23,
+    "turnover_pct": 4.53,
+    "turnover_rank": 79,
+    "group": "面板/玻璃基板",
+    "theme": "玻璃基板(CoPoS)",
+    "news": [
+     {
+      "title": "Micro LED遭質疑？友達董座回應大立光：CPO光源技術尚未定於一尊",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5609491",
+      "time": "10/18 07:18",
+      "source": "自由財經"
+     },
+     {
+      "title": "友達搶攻AI先進封裝！彭双浪：不做封裝公司、要當關鍵供應商",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5609574",
+      "time": "10/17 16:36",
+      "source": "自由財經"
+     },
+     {
+      "title": "友達轉盈藏隱憂！本業獲利薄、估值高，籌碼賣壓未歇",
+      "url": "https://news.wearn.com/c2124131.html",
+      "time": "10/13 13:57",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 4,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 1.3,
+     "yoy": -4.26
+    }
+   },
+   {
+    "code": "6278",
+    "name": "台表科",
+    "market": "市",
+    "price": 298.5,
+    "change_pct": -1.49,
+    "value_yi": 121.3,
+    "value_rank": 26,
+    "turnover_pct": 13.68,
+    "turnover_rank": 13,
+    "group": "CPO/光通訊",
+    "theme": "光通訊模組SMT代工",
+    "news": [
+     {
+      "title": "AI光通訊火力全開！華星光亮燈、台表科飆新高",
+      "url": "https://news.wearn.com/c2125337.html",
+      "time": "10/14 19:12",
+      "source": "聚財網"
+     },
+     {
+      "title": "台表科、華經雙雙漲停！松川精密、希華逆勢大漲再創新高！",
+      "url": "https://news.wearn.com/c2123557.html",
+      "time": "10/12 18:55",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 10,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 11.52,
+     "yoy": 15.93
+    }
+   },
+   {
+    "code": "3081",
+    "name": "聯亞",
+    "market": "櫃",
+    "price": 2545.0,
+    "change_pct": -3.6,
+    "value_yi": 115.5,
+    "value_rank": 27,
+    "turnover_pct": 4.4,
+    "turnover_rank": 82,
+    "group": "CPO/光通訊",
+    "theme": "CPO光通訊磊晶",
+    "news": [
+     {
+      "title": "光通訊主力到底在買誰？聯光通漲停、光環強彈5% 聯亞、華星光等8檔卻收黑",
+      "url": "https://news.wearn.com/c2126850.html",
+      "time": "10/16 16:24",
+      "source": "聚財網"
+     },
+     {
+      "title": "博通一句話炸翻光通訊！聯亞、全新、前鼎慘摔跌停 AI飆股一夕變臉",
+      "url": "https://news.wearn.com/c2124499.html",
+      "time": "10/13 20:30",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 3.84,
+     "yoy": 190.16
+    }
+   },
+   {
+    "code": "3026",
+    "name": "禾伸堂",
+    "market": "市",
+    "price": 806.0,
+    "change_pct": -0.62,
+    "value_yi": 101.5,
+    "value_rank": 28,
+    "turnover_pct": 7.43,
+    "turnover_rank": 39,
+    "group": "被動元件",
+    "theme": "MLCC被動元件",
+    "news": [
+     {
+      "title": "輝達Rubin追單傳翻倍！禾伸堂啟動漲價卻收黑 國巨、華新科、凱美同步承壓",
+      "url": "https://news.wearn.com/c2126770.html",
+      "time": "10/16 14:46",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": true
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 10.97,
+     "yoy": 27.11
+    }
+   },
+   {
+    "code": "8996",
+    "name": "高力",
+    "market": "市",
+    "price": 1570.0,
+    "change_pct": 3.29,
+    "value_yi": 95.7,
+    "value_rank": 29,
+    "turnover_pct": 6.44,
+    "turnover_rank": 48,
+    "group": "散熱",
+    "theme": "熱交換器/液冷",
+    "news": [],
+    "inst": {
+     "foreign_streak": -4,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": true
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 34.23,
+     "yoy": 153.77
+    }
+   },
+   {
+    "code": "1802",
+    "name": "台玻",
+    "market": "市",
+    "price": 66.9,
+    "change_pct": 6.7,
+    "value_yi": 94.9,
+    "value_rank": 30,
+    "turnover_pct": 4.91,
+    "turnover_rank": 71,
+    "group": "銅箔基板/PCB材料",
+    "theme": "玻纖布/平板玻璃",
+    "news": [
+     {
+      "title": "PTFE、玻纖布雙雙炸裂！台郡連3漲停 富喬爆量、台玻狂飆",
+      "url": "https://news.wearn.com/c2127547.html",
+      "time": "10/18 14:30",
+      "source": "聚財網"
+     },
+     {
+      "title": "CCL漲價潮又來了！建滔今年第8度喊漲15% 台玻、聯茂強攻、騰輝電子-KY大漲",
+      "url": "https://news.wearn.com/c2125067.html",
+      "time": "10/14 14:34",
+      "source": "聚財網"
+     },
+     {
+      "title": "營收速報  - 台玻(1802)9月營收49.68億元年增率高達34.11％",
+      "url": "https://news.cnyes.com/news/id/6628262",
+      "time": "10/12 17:52",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 4,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 8.18,
+     "yoy": 34.1
+    }
+   },
+   {
+    "code": "8039",
+    "name": "台虹",
+    "market": "市",
+    "price": 311.5,
+    "change_pct": 9.88,
+    "value_yi": 89.3,
+    "value_rank": 31,
+    "turnover_pct": 11.1,
+    "turnover_rank": 22,
+    "group": "銅箔基板/PCB材料",
+    "theme": "FCCL軟性銅箔基板",
+    "news": [
+     {
+      "title": "PTFE題材發燒  台虹、台郡、亞電逆勢衝",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5609932",
+      "time": "10/18 11:00",
+      "source": "自由財經"
+     },
+     {
+      "title": "熱門股》入列輝達供應鏈 台虹跳空漲停",
+      "url": "https://ec.ltn.com.tw/article/paper/1774559",
+      "time": "10/15 05:30",
+      "source": "自由財經"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 4.1,
+     "yoy": -19.0
+    }
+   },
+   {
+    "code": "3167",
+    "name": "大量",
+    "market": "市",
+    "price": 1055.0,
+    "change_pct": 9.9,
+    "value_yi": 88.4,
+    "value_rank": 32,
+    "turnover_pct": 9.7,
+    "turnover_rank": 27,
+    "group": "PCB設備",
+    "theme": "PCB鑽孔機(背鑽)",
+    "news": [
+     {
+      "title": "大量(3167)9月營收年增172.33%連7月創高！合約負債一年翻倍，高階背鑽機的訂單還能看多遠？",
+      "url": "https://news.cnyes.com/news/id/6631905",
+      "time": "10/16 11:00",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 4,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 6.92,
+     "yoy": 172.33
+    }
+   },
+   {
+    "code": "8358",
+    "name": "金居",
+    "market": "櫃",
+    "price": 472.0,
+    "change_pct": 2.28,
+    "value_yi": 75.6,
+    "value_rank": 37,
+    "turnover_pct": 6.26,
+    "turnover_rank": 51,
+    "group": "銅箔基板/PCB材料",
+    "theme": "電解銅箔(HVLP)",
+    "news": [],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": true
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 4.52,
+     "yoy": 64.63
+    }
+   },
+   {
+    "code": "3264",
+    "name": "欣銓",
+    "market": "櫃",
+    "price": 258.5,
+    "change_pct": -3.54,
+    "value_yi": 63.3,
+    "value_rank": 43,
+    "turnover_pct": 4.93,
+    "turnover_rank": 70,
+    "group": "半導體封測",
+    "theme": "晶圓測試(CP)",
+    "news": [
+     {
+      "title": "欣銓(3264)第二季毛利率首度突破40%！AI ASIC測試與矽光子雙引擎，能撐起下一輪高峰嗎？",
+      "url": "https://news.cnyes.com/news/id/6631923",
+      "time": "10/16 11:30",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -1.04,
+     "yoy": 46.93
+    }
+   },
+   {
+    "code": "6147",
+    "name": "頎邦",
+    "market": "櫃",
+    "price": 207.5,
+    "change_pct": -3.26,
+    "value_yi": 59.6,
+    "value_rank": 46,
+    "turnover_pct": 3.8,
+    "turnover_rank": 98,
+    "group": "半導體封測",
+    "theme": "驅動IC封測/CPO",
+    "news": [
+     {
+      "title": "鉅亨速報 - Factset 最新調查：頎邦(6147-TW)目標價調升至280元，幅度約3.7%",
+      "url": "https://news.cnyes.com/news/id/6628849",
+      "time": "10/12 22:10",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -6,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -6.89,
+     "yoy": 27.94
+    }
+   },
+   {
+    "code": "3374",
+    "name": "精材",
+    "market": "櫃",
+    "price": 433.5,
+    "change_pct": -4.2,
+    "value_yi": 59.4,
+    "value_rank": 47,
+    "turnover_pct": 4.93,
+    "turnover_rank": 69,
+    "group": "半導體封測",
+    "theme": "晶圓級先進封裝",
+    "news": [
+     {
+      "title": "焦點股》精材：台積電擴大委外釋單 飆漲8.5％站回月線",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5605678",
+      "time": "10/14 11:46",
+      "source": "自由財經"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 2.56,
+     "yoy": 21.33
+    }
+   },
+   {
+    "code": "6209",
+    "name": "今國光",
+    "market": "市",
+    "price": 100.5,
+    "change_pct": 8.06,
+    "value_yi": 54.9,
+    "value_rank": 49,
+    "turnover_pct": 30.35,
+    "turnover_rank": 1,
+    "group": "光學鏡頭",
+    "theme": "紅外線熱成像鏡頭",
+    "news": [
+     {
+      "title": "焦點股》今國光：遠紅外線需求旺 一度攻漲停",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5608111",
+      "time": "10/16 11:12",
+      "source": "自由財經"
+     },
+     {
+      "title": "營收速報  - 今國光(6209)9月營收6.69億元年增率高達81.57％",
+      "url": "https://news.cnyes.com/news/id/6627799",
+      "time": "10/12 08:51",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 20.12,
+     "yoy": 81.57
+    }
+   },
+   {
+    "code": "4979",
+    "name": "華星光",
+    "market": "櫃",
+    "price": 520.0,
+    "change_pct": -4.06,
+    "value_yi": 51.8,
+    "value_rank": 52,
+    "turnover_pct": 6.86,
+    "turnover_rank": 43,
+    "group": "CPO/光通訊",
+    "theme": "光通訊模組",
+    "news": [
+     {
+      "title": "光通訊主力到底在買誰？聯光通漲停、光環強彈5% 聯亞、華星光等8檔卻收黑",
+      "url": "https://news.wearn.com/c2126850.html",
+      "time": "10/16 16:24",
+      "source": "聚財網"
+     },
+     {
+      "title": "AI光通訊火力全開！華星光亮燈、台表科飆新高",
+      "url": "https://news.wearn.com/c2125337.html",
+      "time": "10/14 19:12",
+      "source": "聚財網"
+     },
+     {
+      "title": "華星光(4979) 三引擎接棒！獲利高點究竟落在哪一年？",
+      "url": "https://news.cnyes.com/news/id/6629433",
+      "time": "10/13 16:00",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": -2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 5.29,
+     "yoy": 97.78
+    }
+   },
+   {
+    "code": "2478",
+    "name": "大毅",
+    "market": "市",
+    "price": 133.0,
+    "change_pct": -6.34,
+    "value_yi": 39.4,
+    "value_rank": 66,
+    "turnover_pct": 19.22,
+    "turnover_rank": 7,
+    "group": "被動元件",
+    "theme": "晶片電阻",
+    "news": [
+     {
+      "title": "熱門股》村田停產效應 大毅逆勢強漲",
+      "url": "https://ec.ltn.com.tw/article/paper/1774741",
+      "time": "10/16 05:30",
+      "source": "自由財經"
+     },
+     {
+      "title": "被動元件又噴了！7檔強勢股一次看 大毅漲停、日電貿、凱美飆近10%",
+      "url": "https://news.wearn.com/c2125235.html",
+      "time": "10/14 17:15",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -7.23,
+     "yoy": 29.82
+    }
+   },
+   {
+    "code": "3450",
+    "name": "聯鈞",
+    "market": "市",
+    "price": 457.0,
+    "change_pct": -2.25,
+    "value_yi": 38.0,
+    "value_rank": 69,
+    "turnover_pct": 5.66,
+    "turnover_rank": 59,
+    "group": "CPO/光通訊",
+    "theme": "CPO光通訊",
+    "news": [],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": -4,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 3.31,
+     "yoy": 99.78
+    }
+   },
+   {
+    "code": "6217",
+    "name": "中探針",
+    "market": "櫃",
+    "price": 194.0,
+    "change_pct": -0.51,
+    "value_yi": 37.7,
+    "value_rank": 70,
+    "turnover_pct": 16.18,
+    "turnover_rank": 10,
+    "group": "半導體封測",
+    "theme": "精密探針/測試座",
+    "news": [
+     {
+      "title": "AI半導體強勢反攻！中探針、智原、台星科、瑞耘4檔漲停 京元電卻逆勢收黑",
+      "url": "https://news.wearn.com/c2125298.html",
+      "time": "10/14 18:37",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -16.08,
+     "yoy": 0.69
+    }
+   },
+   {
+    "code": "8042",
+    "name": "金山電",
+    "market": "櫃",
+    "price": 144.0,
+    "change_pct": -2.7,
+    "value_yi": 32.6,
+    "value_rank": 76,
+    "turnover_pct": 15.33,
+    "turnover_rank": 11,
+    "group": "被動元件",
+    "theme": "鋁質電解電容",
+    "news": [],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -9.66,
+     "yoy": 25.7
+    }
+   },
+   {
+    "code": "6182",
+    "name": "合晶",
+    "market": "櫃",
+    "price": 110.5,
+    "change_pct": 0.45,
+    "value_yi": 27.3,
+    "value_rank": 86,
+    "turnover_pct": 3.87,
+    "turnover_rank": 95,
+    "group": "矽晶圓",
+    "theme": "矽晶圓",
+    "news": [],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 0.61,
+     "yoy": 13.52
+    }
+   },
+   {
+    "code": "6834",
+    "name": "天二科技",
+    "market": "市",
+    "price": 142.5,
+    "change_pct": -2.73,
+    "value_yi": 23.2,
+    "value_rank": 92,
+    "turnover_pct": 18.16,
+    "turnover_rank": 8,
+    "group": "被動元件",
+    "theme": "晶片電阻",
+    "news": [
+     {
+      "title": "被動元件大洗牌！天二科技逆勢攻漲停 國巨、華新科重挫",
+      "url": "https://news.wearn.com/c2124150.html",
+      "time": "10/13 14:27",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 6.74,
+     "yoy": 132.39
+    }
+   },
+   {
+    "code": "1709",
+    "name": "和益",
+    "market": "市",
+    "price": 54.9,
+    "change_pct": -6.63,
+    "value_yi": 22.6,
+    "value_rank": 94,
+    "turnover_pct": 8.47,
+    "turnover_rank": 35,
+    "group": "石化",
+    "theme": "烷基苯/碳氫樹脂",
+    "news": [],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": -23.62,
+     "yoy": 6.6
+    }
+   },
+   {
+    "code": "6269",
+    "name": "台郡",
+    "market": "市",
+    "price": 82.0,
+    "change_pct": 9.92,
+    "value_yi": 22.4,
+    "value_rank": 95,
+    "turnover_pct": 8.64,
+    "turnover_rank": 34,
+    "group": "PCB/載板",
+    "theme": "軟板FPC",
+    "news": [
+     {
+      "title": "PTFE、玻纖布雙雙炸裂！台郡連3漲停 富喬爆量、台玻狂飆",
+      "url": "https://news.wearn.com/c2127547.html",
+      "time": "10/18 14:30",
+      "source": "聚財網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 5.1,
+     "yoy": -2.69
+    }
+   },
+   {
+    "code": "4977",
+    "name": "眾達-KY",
+    "market": "市",
+    "price": 184.0,
+    "change_pct": -2.13,
+    "value_yi": 22.2,
+    "value_rank": 96,
+    "turnover_pct": 13.03,
+    "turnover_rank": 17,
+    "group": "CPO/光通訊",
+    "theme": "光收發模組",
+    "news": [
+     {
+      "title": "營收速報  - 眾達-KY(4977)9月營收2.32億元年增率高達125.77％",
+      "url": "https://news.cnyes.com/news/id/6628391",
+      "time": "10/12 18:51",
+      "source": "鉅亨網"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 11.43,
+     "yoy": 125.76
+    }
+   },
+   {
+    "code": "2340",
+    "name": "台亞",
+    "market": "市",
+    "price": 50.4,
+    "change_pct": 6.78,
+    "value_yi": 21.5,
+    "value_rank": 98,
+    "turnover_pct": 10.04,
+    "turnover_rank": 25,
+    "group": "功率半導體",
+    "theme": "碳化矽(SiC)",
+    "news": [],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-09",
+     "mom": 4.87,
+     "yoy": 34.26
+    }
+   }
+  ]
+ }
 }

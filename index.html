@@ -699,6 +699,40 @@
   .stock-theme{min-width:9em;max-width:13em;font-size:11px;line-height:1.4;white-space:normal;color:var(--text-dim);}
   .rank-empty{margin:0;padding:40px 16px;text-align:center;color:var(--text-faint);}
 
+  /* ---- 人氣雙榜 ---- */
+  .hot-list{display:grid;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+  .hot-list:has(.empty-note){background:none;border:0;}
+  .hot-group{display:inline-flex;align-items:baseline;padding:0 7px;font-size:11.5px;font-weight:700;line-height:20px;letter-spacing:.04em;white-space:nowrap;color:var(--accent);background:var(--accent-dim);border-radius:var(--radius-sm);}
+  .hot-group.none{color:var(--text-faint);background:var(--surface-3);}
+  .hot-row{display:grid;gap:8px;padding:15px 20px 16px;}
+  .hot-row + .hot-row{border-top:1px solid var(--line);}
+  .hot-main{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px 14px;}
+  .hot-name{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;font-weight:700;font-size:15px;letter-spacing:.02em;color:var(--text);text-decoration:none;}
+  .hot-name:hover{color:var(--accent);}
+  .hot-name .stock-code{font-weight:500;}
+  .hot-quote{display:inline-flex;align-items:baseline;gap:10px;font-family:var(--font-data);font-size:14px;font-weight:600;font-stretch:87.5%;font-variant-numeric:tabular-nums;}
+  .hot-quote.up{color:var(--red);}
+  .hot-quote.down{color:var(--green);}
+  .hot-quote.flat{color:var(--text-faint);}
+  .hot-class{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;}
+  .hot-theme{font-size:12px;color:var(--text-dim);}
+  .hot-data{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px 28px;}
+  .hot-cell{display:flex;align-items:flex-start;gap:10px;}
+  .hot-cell > b{padding-top:2px;font-size:11px;font-weight:700;letter-spacing:.08em;white-space:nowrap;color:var(--text-faint);}
+  .hot-refs{display:grid;gap:7px;margin:2px 0 0;padding:0;list-style:none;}
+  .hot-refs li{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;gap:10px;font-size:13px;line-height:1.65;}
+  .ref-tag{padding:0 6px;font-size:10.5px;font-weight:700;line-height:18px;letter-spacing:.06em;white-space:nowrap;color:var(--accent);background:var(--accent-dim);border-radius:var(--radius-sm);}
+  .ref-tag.tag-rumor{color:var(--yellow);background:var(--yellow-dim);}
+  .ref-tag.tag-focus{color:var(--text-dim);background:var(--surface-3);}
+  .ref-body{min-width:0;color:var(--text-dim);}
+  .ref-body a{color:inherit;text-decoration:none;}
+  .ref-body a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px;}
+  .ref-src{margin-left:8px;font-size:11px;color:var(--text-faint);white-space:nowrap;}
+  .hot-rumors{display:grid;gap:8px;margin-top:2px;}
+  .hot-rumors .rumor{padding:12px 14px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-sm);}
+  .hot-rumors .rumor-top{justify-content:flex-start;gap:10px;}
+  .hot-rumors .rumor-tags{display:none;}
+
   /* ---- light log & track record ---- */
   .light-log{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;font-size:12px;color:var(--text-faint);}
   .light-log-label{letter-spacing:.14em;}
@@ -842,6 +876,15 @@
     .shell > .wrap{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px;align-items:start;}
     [data-pane="home"],[data-pane="news"]{grid-column:1 / -1;}
     body[data-current="flow"] .shell > .wrap{grid-template-columns:minmax(0,5fr) minmax(0,7fr);}
+    /* The right-hand list ends where the left-hand one does and scrolls inside: TOP 30／人氣雙榜 beside
+       資金流向族群, 選股成績單 beside 今日選股 TOP 5. contain:size keeps it from making the row taller. */
+    [aria-labelledby="hRank"],[aria-labelledby="hTrack"]{align-self:stretch;contain:size;min-height:480px;}
+    [aria-labelledby="hRank"]{grid-template-rows:auto minmax(0,1fr);}
+    [aria-labelledby="hTrack"]{grid-template-rows:auto auto minmax(0,1fr);}
+    [aria-labelledby="hRank"] .rank-panel{display:flex;flex-direction:column;align-self:start;max-height:100%;min-height:0;}
+    [aria-labelledby="hRank"] .rank-scroll{flex:0 1 auto;max-height:none;min-height:0;}
+    #hotList,#trackList{align-self:start;max-height:100%;min-height:0;overflow:auto;overscroll-behavior:contain;}
+    #trackList .track-summary{position:sticky;top:0;z-index:1;background:var(--bg);}
   }
 
   @media (max-width:900px){
@@ -1012,10 +1055,16 @@
 
   <section class="section" aria-labelledby="hRank" data-pane="flow">
     <div class="section-head">
-      <h2 id="hRank">成交值排行 TOP 30</h2>
-      <span class="section-meta">上市＋上櫃・依成交金額</span>
+      <div class="head-title">
+        <h2 id="hRank">成交值排行 TOP 30</h2>
+        <span class="section-meta" id="rankMeta">上市＋上櫃・依成交金額</span>
+      </div>
+      <div class="flow-tabs" id="rankTabs" role="tablist" aria-label="成交值排行與人氣雙榜">
+        <button type="button" role="tab" data-rank="top30" aria-selected="true">TOP 30</button>
+        <button type="button" role="tab" data-rank="hot" aria-selected="false">人氣雙榜</button>
+      </div>
     </div>
-    <div class="rank-panel">
+    <div class="rank-panel" id="rankPanel">
       <div class="rank-scroll">
         <table class="rank-table" id="rankTable" hidden>
           <thead>
@@ -1032,6 +1081,7 @@
         <p class="rank-empty" id="rankEmpty">尚無成交值排行資料</p>
       </div>
     </div>
+    <div class="hot-list" id="hotList" hidden><p class="empty-note">尚無人氣雙榜資料</p></div>
   </section>
 
   <section class="section" aria-labelledby="hRules" data-pane="home">
@@ -1327,6 +1377,8 @@
     $('updated').textContent = '尚未更新';
     $('rankTable').hidden = true;
     $('rankEmpty').hidden = false;
+    renderHot(null);
+    paintRankView();
   }
 
   function attr(s){
@@ -1340,7 +1392,7 @@
     } catch (e) { return ''; }
   }
 
-  const NEWS_HOSTS = ['cnyes.com', 'udn.com', 'ctee.com.tw'];
+  const NEWS_HOSTS = ['cnyes.com', 'udn.com', 'ctee.com.tw', 'ltn.com.tw', 'wearn.com'];
 
   function renderFocusItem(f){
     const tag = (f && f.tag) || '焦點';
@@ -1366,7 +1418,7 @@
       : '<span class="kpi">' + (k.label ? '<b>' + esc(k.label) + '</b>' : '') + esc(k.value) + '</span>').join('') + '</div>' : '';
   }
 
-  function renderRumorItem(it){
+  function renderRumorItem(it, lead){
     const post = safeUrl(it && it.post_url, ['x.com', 'twitter.com']);
     const tw = (Array.isArray(it.tw_stocks) ? it.tw_stocks : []).map(st =>
       stockLink(st.code, 'stock-chip', '<b>' + esc(st.code || '') + '</b>' + esc(st.name || ''))).join('');
@@ -1381,7 +1433,7 @@
     // The posting account comes from the post URL (x.com/{account}/status/{id}).
     const author = (/^https:\/\/(?:[\w-]+\.)?(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status\//.exec(post) || [])[1];
     return '<div class="rumor">'
-      + '<div class="rumor-top"><span class="ev-date">' + esc(it.date || '') + '</span>'
+      + '<div class="rumor-top">' + (lead || '') + '<span class="ev-date">' + esc(it.date || '') + '</span>'
       +   (author ? '<span class="rumor-author">@' + esc(author) + '</span>' : '')
       +   (post ? '<a class="src-link" href="' + attr(post) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') + '</div>'
       + '<p class="rumor-text">' + esc(it.summary || '') + '</p>'
@@ -1400,7 +1452,7 @@
     if (!groups.length) return emptyNote('近 3 日沒有與成交值排行相關的貼文');
     return groups.map(g => '<div class="rumor-group">'
       + '<h3 class="rumor-industry">' + esc(g.industry || '其他') + '<span class="fg-count">' + g.items.length + ' 則</span></h3>'
-      + g.items.map(renderRumorItem).join('')
+      + g.items.map(it => renderRumorItem(it)).join('')
     + '</div>').join('');
   }
 
@@ -1637,6 +1689,87 @@
       + (v.new ? '<span class="rev-new">New</span>' : '') + '</span>';
   }
 
+  // 人氣雙榜 (hot_list from build_hot_list.py): 成交值 top-100 ∩ 周轉率 top-100, each with its 族群 and the
+  // week's news. The 焦點新聞 that name a stock and the 市場傳聞 that tag it are matched here, so later
+  // rumor and news updates show up too.
+  const RANK_VIEWS = ['top30', 'hot'];
+  const RANK_TITLES = { top30: '成交值排行 TOP 30', hot: '人氣雙榜' };
+  let rankView = 'top30', rankMetaText = '上市＋上櫃・依成交金額';
+  try {
+    const v = localStorage.getItem('joe.rankView');
+    if (RANK_VIEWS.includes(v)) rankView = v;
+  } catch (e) {}
+
+  function paintRankView(){
+    $('rankPanel').hidden = rankView !== 'top30';
+    $('hotList').hidden = rankView !== 'hot';
+    $('hRank').textContent = RANK_TITLES[rankView];
+    $('rankMeta').textContent = rankView === 'hot' ? '' : rankMetaText;
+    $('rankMeta').hidden = rankView === 'hot';
+    Array.from($('rankTabs').querySelectorAll('button')).forEach(b => {
+      b.setAttribute('aria-selected', String(b.dataset.rank === rankView));
+    });
+  }
+
+  $('rankTabs').addEventListener('click', function(e){
+    const b = e.target.closest('button[data-rank]');
+    if (!b || !RANK_VIEWS.includes(b.dataset.rank)) return;
+    rankView = b.dataset.rank;
+    try { localStorage.setItem('joe.rankView', rankView); } catch (err) {}
+    paintRankView();
+  });
+
+  function renderHot(data){
+    const h = data && data.hot_list && typeof data.hot_list === 'object' ? data.hot_list : null;
+    const list = h && Array.isArray(h.stocks) ? h.stocks : [];
+    if (!list.length){
+      $('hotList').innerHTML = emptyNote('尚無人氣雙榜資料');
+      return;
+    }
+    const focus = Array.isArray(data.today_focus) ? data.today_focus : [];
+    const rumorItems = [];
+    ((data.rumors && Array.isArray(data.rumors.groups)) ? data.rumors.groups : []).forEach(g => {
+      (Array.isArray(g.items) ? g.items : []).forEach(it => rumorItems.push(it));
+    });
+    const lookback = num(data.inst_lookback);
+    const rows = list.map(s => {
+      const code = String(s.code || '');
+      const short = String(s.name || '').replace(/[-*].*$/, '');
+      const refs = [];
+      (Array.isArray(s.news) ? s.news : []).slice(0, 3).forEach(n => {
+        const url = safeUrl(n.url, NEWS_HOSTS);
+        refs.push('<li><span class="ref-tag">新聞</span><span class="ref-body">'
+          + (url ? '<a href="' + attr(url) + '" target="_blank" rel="noopener noreferrer">' + esc(n.title || '') + '</a>' : esc(n.title || ''))
+          + '<span class="ref-src">' + esc((n.source || '') + ' ' + (n.time || '')) + '</span></span></li>');
+      });
+      focus.filter(f => short && String(f.text || '').includes(short)).forEach(f => {
+        const url = safeUrl(f.url, NEWS_HOSTS);
+        refs.push('<li><span class="ref-tag tag-focus">焦點</span><span class="ref-body">'
+          + (url ? '<a href="' + attr(url) + '" target="_blank" rel="noopener noreferrer">' + esc(f.text || '') + '</a>' : esc(f.text || ''))
+          + (f.source ? '<span class="ref-src">' + esc(f.source) + '</span>' : '') + '</span></li>');
+      });
+      const rumors = rumorItems.filter(it => (Array.isArray(it.tw_stocks) ? it.tw_stocks : []).some(t => String(t.code) === code))
+        .map(it => renderRumorItem(it, '<span class="ref-tag tag-rumor">傳聞</span>'));
+      const chg = num(s.change_pct);
+      const dir = dirClass(chg);
+      const wrap = t => '<span' + (chg != null && Math.abs(chg) >= 9.5 ? ' class="hi ' + dir + '"' : '') + '>' + t + '</span>';
+      return '<div class="hot-row">'
+        + '<div class="hot-main">'
+        +   stockLink(code, 'hot-name', esc(s.name || '') + '<span class="stock-code">' + esc(code)
+        +     (s.market ? '<span class="market-badge">' + esc(s.market) + '</span>' : '') + '</span>')
+        +   '<span class="hot-quote ' + dir + '">' + wrap(fmtPrice(num(s.price), code)) + wrap(chgText(chg)) + '</span>'
+        + '</div>'
+        + '<div class="hot-class"><span class="hot-group' + (s.group ? '' : ' none') + '">' + esc(s.group || '未分類') + '</span>'
+        +   (s.theme && s.theme !== s.group ? '<span class="hot-theme">' + esc(s.theme) + '</span>' : '') + '</div>'
+        + '<div class="hot-data"><div class="hot-cell"><b>營收</b>' + revenueCell(s.revenue) + '</div>'
+        +   '<div class="hot-cell"><b>法人同買</b>' + instCell(s.inst, lookback) + '</div></div>'
+        + (refs.length ? '<ul class="hot-refs">' + refs.join('') + '</ul>' : '')
+        + (rumors.length ? '<div class="hot-rumors">' + rumors.join('') + '</div>' : '')
+      + '</div>';
+    });
+    $('hotList').innerHTML = rows.join('');
+  }
+
   function renderRankRow(r, lookback){
     const code = String(r.code ?? '').trim();
     const chg = num(r.change_pct);
@@ -1750,6 +1883,8 @@
     if (top30.length){
       $('rankTableBody').innerHTML = top30.map(r => renderRankRow(r, num(data.inst_lookback))).join('');
     }
+    renderHot(data);
+    paintRankView();
 
     if (data.date){
       const d = new Date(String(data.date) + 'T00:00:00');
