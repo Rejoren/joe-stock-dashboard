@@ -1,1 +1,27 @@
 image_*.jpg
+
+# 機密檔案：環境變數、金鑰、憑證、密碼，一律不 commit
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+id_rsa*
+id_ed25519*
+id_ecdsa*
+.netrc
+.npmrc
+.pypirc
+.git-credentials
+*credential*
+*secret*
+*password*
+*token*.json
+*service[-_]account*.json
+.claude/
