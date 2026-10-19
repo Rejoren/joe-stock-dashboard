@@ -1181,26 +1181,12 @@
  "otc_ma60": 397.72,
  "revenue_month": "2026-09",
  "rumors": {
-  "sources": [
-   "@QQ_Timmy",
-   "@BlueJay87476298",
-   "@mingchikuo",
-   "@Leoskie_L"
-  ],
-  "window": [
-   "2026-10-17",
-   "2026-10-19"
-  ],
-  "status": "ok",
-  "updated_at": "2026-10-19 18:05",
   "groups": [
    {
     "industry": "晶圓代工",
     "items": [
      {
       "date": "10/18",
-      "post_url": "https://x.com/QQ_Timmy/status/2111836450593333366",
-      "summary": "首爾經濟獨家：輝達要求三星、SK海力士、美光的客製NVHBM基礎晶粒都用台積電3奈米、核心晶粒統一1c DRAM；三星首度在HBM製造環節找台積電，標準版HBM4/4E仍用自家4奈米，並驗證自家代工當備援。",
       "foreign": [
        {
         "name": "Samsung Electronics",
@@ -1219,19 +1205,19 @@
         "ticker": "NVDA"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111836450593333366",
+      "summary": "首爾經濟獨家：輝達要求三星、SK海力士、美光的客製NVHBM基礎晶粒都用台積電3奈米、核心晶粒統一1c DRAM；三星首度在HBM製造環節找台積電，標準版HBM4/4E仍用自家4奈米，並驗證自家代工當備援。",
       "tw_note": "三大記憶體廠的NVHBM底座都排進台積電3奈米，HBM越客製越吃台積電先進製程產能。",
       "tw_stocks": [
        {
         "code": "2330",
         "name": "台積電"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/18",
-      "post_url": "https://x.com/Leoskie_L/status/2111661046117155037",
-      "summary": "韓國MTN：SK海力士HBM4底座目前在台積電12奈米生產，HBM4E評估直接改用3奈米；3奈米占台積電3Q晶圓營收33%、供不應求且價格續漲，SK海力士也在看英特爾代工但仍猶豫。",
-      "reply_note": "作者補充：底座換成邏輯製程後記憶體廠也成了台積電客戶、要一起排隊；三星可用自家代工，但前提是良率撐得住。",
       "foreign": [
        {
         "name": "SK hynix",
@@ -1246,6 +1232,9 @@
         "ticker": "INTC"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111661046117155037",
+      "reply_note": "作者補充：底座換成邏輯製程後記憶體廠也成了台積電客戶、要一起排隊；三星可用自家代工，但前提是良率撐得住。",
+      "summary": "韓國MTN：SK海力士HBM4底座目前在台積電12奈米生產，HBM4E評估直接改用3奈米；3奈米占台積電3Q晶圓營收33%、供不應求且價格續漲，SK海力士也在看英特爾代工但仍猶豫。",
       "tw_note": "HBM4E底座若轉台積電3奈米，HBM漲價的部分價值將流向台積電。",
       "tw_stocks": [
        {
@@ -1268,8 +1257,6 @@
      },
      {
       "date": "10/17",
-      "post_url": "https://x.com/QQ_Timmy/status/2111459653695709216",
-      "summary": "日本經產省10/16認定台積電熊本第2廠計畫變更，由6–40奈米改為3奈米，初期月產能約6,000片、2028年量產出貨；第2廠第一階段補助上限6,451.5億日圓，豐田新加入出資。",
       "foreign": [
        {
         "name": "Sony",
@@ -1284,6 +1271,8 @@
         "ticker": "7203.T"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111459653695709216",
+      "summary": "日本經產省10/16認定台積電熊本第2廠計畫變更，由6–40奈米改為3奈米，初期月產能約6,000片、2028年量產出貨；第2廠第一階段補助上限6,451.5億日圓，豐田新加入出資。",
       "tw_note": "台積電海外先進製程據點擴大，Sony、Denso、豐田為JASM出資夥伴。",
       "tw_stocks": [
        {
@@ -1294,8 +1283,6 @@
      },
      {
       "date": "10/18",
-      "post_url": "https://x.com/Leoskie_L/status/2111676146261647574",
-      "summary": "KeyBanc亞洲行：Google下一代TPU改用英特爾EMIB-T封裝，但所需載板良率揖斐電約50–60%、欣興僅20–30%，可能把TPU v9量限制在500萬到600萬顆；魏哲家被問是否當備援時暗示「已經很足夠」。",
       "foreign": [
        {
         "name": "Intel",
@@ -1310,6 +1297,8 @@
         "ticker": "GOOGL"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111676146261647574",
+      "summary": "KeyBanc亞洲行：Google下一代TPU改用英特爾EMIB-T封裝，但所需載板良率揖斐電約50–60%、欣興僅20–30%，可能把TPU v9量限制在500萬到600萬顆；魏哲家被問是否當備援時暗示「已經很足夠」。",
       "tw_note": "英特爾EMIB-T載板良率偏低，台積電CoWoS可能成為Google TPU的備援產能。",
       "tw_stocks": [
        {
@@ -1320,14 +1309,14 @@
      },
      {
       "date": "10/17",
-      "post_url": "https://x.com/QQ_Timmy/status/2111278774444818548",
-      "summary": "KeyBanc：AMD Helios機櫃因OAM板與卡匣連接器問題量產卡關，今年出貨由4K櫃下修到不到1K櫃，明年仍看約20K櫃；同時上修CoWoS供應，2026年由90K上修至104K、2027年由130K上修至170K。",
       "foreign": [
        {
         "name": "AMD",
         "ticker": "AMD"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111278774444818548",
+      "summary": "KeyBanc：AMD Helios機櫃因OAM板與卡匣連接器問題量產卡關，今年出貨由4K櫃下修到不到1K櫃，明年仍看約20K櫃；同時上修CoWoS供應，2026年由90K上修至104K、2027年由130K上修至170K。",
       "tw_note": "CoWoS供應預估大幅上修，直接對應台積電先進封裝產能擴張。",
       "tw_stocks": [
        {
@@ -1338,8 +1327,6 @@
      },
      {
       "date": "10/18",
-      "post_url": "https://x.com/QQ_Timmy/status/2111802786166001795",
-      "summary": "財報狗570集：台積電法說關注德州廠、2/3奈米組合與CoWoS/SoIC產能；傳Google封裝單轉英特爾後良率出問題想轉回台積電；封測廠正進行史上少見擴產，AMD、NVIDIA、Google、AWS是主要買方。",
       "foreign": [
        {
         "name": "Alphabet",
@@ -1350,6 +1337,8 @@
         "ticker": "INTC"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111802786166001795",
+      "summary": "財報狗570集：台積電法說關注德州廠、2/3奈米組合與CoWoS/SoIC產能；傳Google封裝單轉英特爾後良率出問題想轉回台積電；封測廠正進行史上少見擴產，AMD、NVIDIA、Google、AWS是主要買方。",
       "tw_note": "Google封裝回流傳聞與封測擴產潮，牽動台積電CoWoS與日月光投控封測產能。",
       "tw_stocks": [
        {
@@ -1360,12 +1349,11 @@
         "code": "3711",
         "name": "日月光投控"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/19",
-      "post_url": "https://x.com/BlueJay87476298/status/2111970723959074936",
-      "summary": "投顧9月營收評析：晶圓代工族群9月與3Q26營收大致符合預期，N7以下與N3/N5稼動率維持滿載、成熟製程約9成以上；預估4Q26營收季增10.9%、年增56.8%，推薦台積電。",
       "metrics": [
        {
         "label": "9月營收",
@@ -1376,13 +1364,16 @@
         "value": "晶圓代工族群季增12.2%、年增49.3%"
        }
       ],
+      "post_url": "https://x.com/BlueJay87476298/status/2111970723959074936",
+      "summary": "投顧9月營收評析：晶圓代工族群9月與3Q26營收大致符合預期，N7以下與N3/N5稼動率維持滿載、成熟製程約9成以上；預估4Q26營收季增10.9%、年增56.8%，推薦台積電。",
       "tw_note": "報告點名台積電為晶圓代工首選，AI/HPC需求推動先進製程。",
       "tw_stocks": [
        {
         "code": "2330",
         "name": "台積電"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1399,7 +1390,8 @@
         "code": "3711",
         "name": "日月光投控"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1408,15 +1400,6 @@
     "items": [
      {
       "date": "10/17",
-      "post_url": "https://x.com/Leoskie_L/status/2111464749108273328",
-      "summary": "美銀維持聯發科買進，營收估2026年6,677億、2027年1.287兆、2028年2.476兆；新ASIC潛在客戶字節跳動仍在洽談，規劃2029年初量產、年約100萬顆；turnkey代購HBM與載板會拉高ASP但稀釋毛利率，另將打進三星旗艦手機。",
-      "metrics": [
-       {
-        "label": "目標價",
-        "value": "6,200元（美銀維持買進）"
-       }
-      ],
-      "reply_note": "作者回覆：代購料件會稀釋毛利率，但營收規模會大很多。",
       "foreign": [
        {
         "name": "Alphabet",
@@ -1427,13 +1410,23 @@
         "ticker": "005930.KS"
        }
       ],
+      "metrics": [
+       {
+        "label": "目標價",
+        "value": "6,200元（美銀維持買進）"
+       }
+      ],
+      "post_url": "https://x.com/Leoskie_L/status/2111464749108273328",
+      "reply_note": "作者回覆：代購料件會稀釋毛利率，但營收規模會大很多。",
+      "summary": "美銀維持聯發科買進，營收估2026年6,677億、2027年1.287兆、2028年2.476兆；新ASIC潛在客戶字節跳動仍在洽談，規劃2029年初量產、年約100萬顆；turnkey代購HBM與載板會拉高ASP但稀釋毛利率，另將打進三星旗艦手機。",
       "tw_note": "聯發科ASIC業務延伸至Google TPU之外的新客戶，HBM與ABF載板仍握有定價權。",
       "tw_stocks": [
        {
         "code": "2454",
         "name": "聯發科"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/19",
@@ -1449,7 +1442,8 @@
         "code": "3443",
         "name": "創意"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1458,8 +1452,6 @@
     "items": [
      {
       "date": "10/19",
-      "post_url": "https://x.com/QQ_Timmy/status/2112065206834610592",
-      "summary": "Counterpoint、TrendForce：長鑫DRAM月產能將由約32萬片增至2027年42萬片（+31.3%），2028年底達50–60萬片，目標2030年前翻倍；韓廠專攻HBM與先進DRAM，中國快速打進通用型DRAM。",
       "foreign": [
        {
         "name": "CXMT",
@@ -1474,24 +1466,19 @@
         "ticker": "000660.KS"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2112065206834610592",
+      "summary": "Counterpoint、TrendForce：長鑫DRAM月產能將由約32萬片增至2027年42萬片（+31.3%），2028年底達50–60萬片，目標2030年前翻倍；韓廠專攻HBM與先進DRAM，中國快速打進通用型DRAM。",
       "tw_note": "長鑫擴產集中在通用型DRAM，與南亞科的標準型DRAM產品直接競爭。",
       "tw_stocks": [
        {
         "code": "2408",
         "name": "南亞科"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/17",
-      "post_url": "https://x.com/Leoskie_L/status/2111276284244590752",
-      "summary": "長鑫10/16業績預告仍寫「DRAM供不應求、價格大幅上漲」，前三季營收2,650–2,700億人民幣、淨利1,310–1,325億，但3Q營收季增僅15–20%（2Q為95.9%）；群聯潘健成稱長鑫衝擊是「鬼故事」。",
-      "metrics": [
-       {
-        "label": "前三季營收",
-        "value": "2,650–2,700億人民幣，年增726–741.5%"
-       }
-      ],
       "foreign": [
        {
         "name": "CXMT",
@@ -1502,6 +1489,14 @@
         "ticker": "MU"
        }
       ],
+      "metrics": [
+       {
+        "label": "前三季營收",
+        "value": "2,650–2,700億人民幣，年增726–741.5%"
+       }
+      ],
+      "post_url": "https://x.com/Leoskie_L/status/2111276284244590752",
+      "summary": "長鑫10/16業績預告仍寫「DRAM供不應求、價格大幅上漲」，前三季營收2,650–2,700億人民幣、淨利1,310–1,325億，但3Q營收季增僅15–20%（2Q為95.9%）；群聯潘健成稱長鑫衝擊是「鬼故事」。",
       "tw_note": "長鑫產能滿載、無多餘貨源砸價，DRAM報價仍漲，對南亞科報價面偏正向。",
       "tw_stocks": [
        {
@@ -1512,9 +1507,6 @@
      },
      {
       "date": "10/19",
-      "post_url": "https://x.com/Leoskie_L/status/2111996033047896117",
-      "summary": "記憶體股重挫主因是利率與資金：10/12–16三星跌17.8%、SK海力士跌24.3%，外資淨賣11.2兆韓元；但韓亞證券稱4Q DRAM漲幅將上修，DDR5 16Gb現貨均價60.60美元小漲；南亞科10/19早盤跌5.81%至421.5元。",
-      "reply_note": "作者補充：賣壓主要來自外資，兩家占78.8%，要看外資連續回補才算數；下一個要盯的是沒簽長約的客戶能吞漲價多久、會不會轉為砍單。",
       "foreign": [
        {
         "name": "Samsung Electronics",
@@ -1525,31 +1517,36 @@
         "ticker": "000660.KS"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111996033047896117",
+      "reply_note": "作者補充：賣壓主要來自外資，兩家占78.8%，要看外資連續回補才算數；下一個要盯的是沒簽長約的客戶能吞漲價多久、會不會轉為砍單。",
+      "summary": "記憶體股重挫主因是利率與資金：10/12–16三星跌17.8%、SK海力士跌24.3%，外資淨賣11.2兆韓元；但韓亞證券稱4Q DRAM漲幅將上修，DDR5 16Gb現貨均價60.60美元小漲；南亞科10/19早盤跌5.81%至421.5元。",
       "tw_note": "韓系記憶體股的利率／資金賣壓同步拖累南亞科股價，但報價面仍上漲。",
       "tw_stocks": [
        {
         "code": "2408",
         "name": "南亞科"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/18",
-      "post_url": "https://x.com/QQ_Timmy/status/2111802786166001795",
-      "summary": "財報狗570集：長鑫年底新一代DDR5改採4F²架構與垂直閘極3D結構、G5 DRAM每片晶粒多50%，引發韓台美記憶體股重挫；來賓認為良率仍是問號，記憶體毛利率逼近80%高點，明年仍供不應求，此次下跌偏消息面衝擊。",
       "foreign": [
        {
         "name": "CXMT",
         "ticker": "688825.SS"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111802786166001795",
+      "summary": "財報狗570集：長鑫年底新一代DDR5改採4F²架構與垂直閘極3D結構、G5 DRAM每片晶粒多50%，引發韓台美記憶體股重挫；來賓認為良率仍是問號，記憶體毛利率逼近80%高點，明年仍供不應求，此次下跌偏消息面衝擊。",
       "tw_note": "長鑫4F²技術追趕衝擊台灣記憶體股，南亞科為主要連動標的。",
       "tw_stocks": [
        {
         "code": "2408",
         "name": "南亞科"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1558,8 +1555,6 @@
     "items": [
      {
       "date": "10/18",
-      "post_url": "https://x.com/QQ_Timmy/status/2111836047361622319",
-      "summary": "高盛上修全球伺服器TAM，2027年+31%、2028年+45%；NVL72整櫃2027年11萬櫃、2028年16.4萬櫃，8-GPU與ASIC伺服器2028年330萬台（上調29%），AI晶片需求2028年3,800萬顆、ASIC滲透率約60%。",
       "foreign": [
        {
         "name": "NVIDIA",
@@ -1570,13 +1565,16 @@
         "ticker": "AMD"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111836047361622319",
+      "summary": "高盛上修全球伺服器TAM，2027年+31%、2028年+45%；NVL72整櫃2027年11萬櫃、2028年16.4萬櫃，8-GPU與ASIC伺服器2028年330萬台（上調29%），AI晶片需求2028年3,800萬顆、ASIC滲透率約60%。",
       "tw_note": "高盛AI伺服器買進名單以台廠為主，ODM點名鴻海、緯穎。",
       "tw_stocks": [
        {
         "code": "6669",
         "name": "緯穎"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1585,14 +1583,14 @@
     "items": [
      {
       "date": "10/18",
-      "post_url": "https://x.com/QQ_Timmy/status/2111804139785355735",
-      "summary": "ZDNet Korea：日東紡T-glass是PCB/CCL用高階玻纖紗，AI晶片搶走產能、日東紡優先供應AI，缺貨已擴散到手機，iPhone Duo加單受限於T-glass供應。",
       "foreign": [
        {
         "name": "Nitto Boseki",
         "ticker": "3110.T"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111804139785355735",
+      "summary": "ZDNet Korea：日東紡T-glass是PCB/CCL用高階玻纖紗，AI晶片搶走產能、日東紡優先供應AI，缺貨已擴散到手機，iPhone Duo加單受限於T-glass供應。",
       "tw_note": "交叉比對：全球能穩定量產T-glass者僅日東紡、AGY、台玻等少數；台玻擴產高階玻纖布、Low CTE產品已過認證，富喬亦具低CTE玻纖布能力，缺貨有利台廠議價。",
       "tw_stocks": [
        {
@@ -1607,7 +1605,8 @@
         "code": "1303",
         "name": "南亞"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/18",
@@ -1619,12 +1618,11 @@
         "code": "2383",
         "name": "台光電"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/17",
-      "post_url": "https://x.com/Leoskie_L/status/2111307826769649836",
-      "summary": "黃仁勳BG2訪談點名載板與矽光子供不應求，指出載板變大後熱膨脹與翹曲難控；作者連結日東紡低膨脹T玻璃「非常緊」、台灣新爐最快2027年4月才貢獻量產。",
       "foreign": [
        {
         "name": "NVIDIA",
@@ -1635,6 +1633,8 @@
         "ticker": "3110.T"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111307826769649836",
+      "summary": "黃仁勳BG2訪談點名載板與矽光子供不應求，指出載板變大後熱膨脹與翹曲難控；作者連結日東紡低膨脹T玻璃「非常緊」、台灣新爐最快2027年4月才貢獻量產。",
       "tw_note": "T玻璃（低CTE玻纖）缺口延續，台玻、富喬等高階玻纖布台廠受惠。",
       "tw_stocks": [
        {
@@ -1657,7 +1657,8 @@
         "code": "8358",
         "name": "金居"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1674,7 +1675,8 @@
         "code": "6505",
         "name": "台塑化"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1683,14 +1685,14 @@
     "items": [
      {
       "date": "10/17",
-      "post_url": "https://x.com/Leoskie_L/status/2111307826769649836",
-      "summary": "黃仁勳BG2：2027年瓶頸除了電力，還有載板與矽光子；載板越大、晶片越多，有機材料精度、熱膨脹與翹曲難控，每週供給在加但訂單漲更快，「缺口幾年內很難補上」。",
       "foreign": [
        {
         "name": "NVIDIA",
         "ticker": "NVDA"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111307826769649836",
+      "summary": "黃仁勳BG2：2027年瓶頸除了電力，還有載板與矽光子；載板越大、晶片越多，有機材料精度、熱膨脹與翹曲難控，每週供給在加但訂單漲更快，「缺口幾年內很難補上」。",
       "tw_note": "最大買家輝達親口喊載板缺，ABF載板三雄欣興、景碩、南電直接受惠。",
       "tw_stocks": [
        {
@@ -1709,8 +1711,6 @@
      },
      {
       "date": "10/18",
-      "post_url": "https://x.com/Leoskie_L/status/2111676146261647574",
-      "summary": "KeyBanc估英特爾EMIB-T封裝所需載板良率：揖斐電約50–60%、欣興僅20–30%，換算欣興要投333–500片才能拿到100片好板，良率拉升速度決定Google TPU v9的量。",
       "foreign": [
        {
         "name": "Intel",
@@ -1721,6 +1721,8 @@
         "ticker": "4062.T"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111676146261647574",
+      "summary": "KeyBanc估英特爾EMIB-T封裝所需載板良率：揖斐電約50–60%、欣興僅20–30%，換算欣興要投333–500片才能拿到100片好板，良率拉升速度決定Google TPU v9的量。",
       "tw_note": "欣興為EMIB-T載板供應商之一，良率提升是後續出貨關鍵。",
       "tw_stocks": [
        {
@@ -1739,7 +1741,8 @@
         "code": "2368",
         "name": "金像電"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1748,14 +1751,14 @@
     "items": [
      {
       "date": "10/19",
-      "post_url": "https://x.com/Leoskie_L/status/2112038533552582984",
-      "summary": "大立光林恩平稱Micro LED切入CPO「不可行」、友達彭双浪回應「應是誤解」，兩人講的是不同距離：友達指機箱內10公分以內短距（耗電僅銅線5–10%），大立光指交換器CPO的雷射加單模光纖；友達CPO模組送樣中，效益需2–3年。",
       "foreign": [
        {
         "name": "Credo",
         "ticker": "CRDO"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2112038533552582984",
+      "summary": "大立光林恩平稱Micro LED切入CPO「不可行」、友達彭双浪回應「應是誤解」，兩人講的是不同距離：友達指機箱內10公分以內短距（耗電僅銅線5–10%），大立光指交換器CPO的雷射加單模光纖；友達CPO模組送樣中，效益需2–3年。",
       "tw_note": "短期雷射瓶頸不會被Micro LED解掉，聯亞等InP雷射廠先吃可插拔模組的量；友達發光元件與大立光FAU可互補。",
       "tw_stocks": [
        {
@@ -1766,12 +1769,11 @@
         "code": "2409",
         "name": "友達"
        }
-      ]
+      ],
+      "is_new": true
      },
      {
       "date": "10/17",
-      "post_url": "https://x.com/Leoskie_L/status/2111293161880588333",
-      "summary": "輝達SEMICON West發表optics-on-interposer（OOI）原型，把光引擎放進與運算晶片同一片中介層、省去有機載板路徑，仍在研究階段；量產CPO供應鏈由台積電COUPE封裝、鴻海負責散熱與最終測試。",
       "foreign": [
        {
         "name": "NVIDIA",
@@ -1790,6 +1792,8 @@
         "ticker": "GLW"
        }
       ],
+      "post_url": "https://x.com/Leoskie_L/status/2111293161880588333",
+      "summary": "輝達SEMICON West發表optics-on-interposer（OOI）原型，把光引擎放進與運算晶片同一片中介層、省去有機載板路徑，仍在研究階段；量產CPO供應鏈由台積電COUPE封裝、鴻海負責散熱與最終測試。",
       "tw_note": "報導列出的量產CPO供應鏈點名台積電（COUPE）與鴻海（散熱與最終測試）。",
       "tw_stocks": [
        {
@@ -1800,8 +1804,6 @@
      },
      {
       "date": "10/18",
-      "post_url": "https://x.com/QQ_Timmy/status/2111836047361622319",
-      "summary": "高盛上修AI伺服器預估，光通訊供應鏈買進名單含FAU的大立光與矽光子的聯亞。",
       "foreign": [
        {
         "name": "Innolight",
@@ -1812,13 +1814,16 @@
         "ticker": "300502.SZ"
        }
       ],
+      "post_url": "https://x.com/QQ_Timmy/status/2111836047361622319",
+      "summary": "高盛上修AI伺服器預估，光通訊供應鏈買進名單含FAU的大立光與矽光子的聯亞。",
       "tw_note": "高盛點名大立光（FAU）、聯亞（矽光子）為受惠標的。",
       "tw_stocks": [
        {
         "code": "3008",
         "name": "大立光"
        }
-      ]
+      ],
+      "is_new": true
      }
     ]
    },
@@ -1827,8 +1832,6 @@
     "items": [
      {
       "date": "10/17",
-      "post_url": "https://x.com/BlueJay87476298/status/2111382128915362251",
-      "summary": "UBS：業界專家預期資料中心需求2027年加速、供不應求，客戶偏好預製/模組化方案，產業正圍繞800VDC架構整合、預計2027–2029年部署。",
       "foreign": [
        {
         "name": "Caterpillar",
@@ -1839,6 +1842,8 @@
         "ticker": "CMI"
        }
       ],
+      "post_url": "https://x.com/BlueJay87476298/status/2111382128915362251",
+      "summary": "UBS：業界專家預期資料中心需求2027年加速、供不應求，客戶偏好預製/模組化方案，產業正圍繞800VDC架構整合、預計2027–2029年部署。",
       "tw_note": "交叉比對：台達電為輝達800VDC電源架構合作夥伴，800VDC部署時程直接對應其AI伺服器電源業務。",
       "tw_stocks": [
        {
@@ -1849,6 +1854,18 @@
      }
     ]
    }
+  ],
+  "sources": [
+   "@QQ_Timmy",
+   "@BlueJay87476298",
+   "@mingchikuo",
+   "@Leoskie_L"
+  ],
+  "status": "ok",
+  "updated_at": "2026-10-19 18:05",
+  "window": [
+   "2026-10-17",
+   "2026-10-19"
   ]
  },
  "sector_flows": {

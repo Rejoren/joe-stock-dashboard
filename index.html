@@ -607,6 +607,12 @@
   .kpi b{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--text-faint);}
   .rumor-author{font-family:var(--font-data);font-size:11px;font-stretch:87.5%;color:var(--text-faint);}
   .reply-note{margin:0;padding-left:10px;font-size:12.5px;line-height:1.75;color:var(--text-dim);border-left:2px solid var(--line-strong);}
+  /* 新傳聞: a yellow ring that blinks (steady when the viewer prefers less motion) and a New tag */
+  .rumor.is-new{box-shadow:inset 0 0 0 3px var(--yellow-fill);animation:rumor-blink 1.2s ease-in-out infinite;}
+  .rumor.is-new .rumor-top{justify-content:flex-start;gap:10px;}
+  @keyframes rumor-blink{50%{box-shadow:inset 0 0 0 3px transparent;}}
+  @media (prefers-reduced-motion:reduce){.rumor.is-new{animation:none;}}
+  .rumor-new{padding:0 6px;font-family:var(--font-data);font-size:10.5px;font-weight:700;font-stretch:87.5%;line-height:18px;letter-spacing:.04em;white-space:nowrap;color:var(--yellow);background:var(--yellow-dim);border-radius:var(--radius-sm);}
   .event{display:grid;grid-template-columns:84px minmax(0,1fr);gap:16px;padding:15px 22px;border-top:1px solid var(--line);}
   .event:first-child{border-top:0;}
   .ev-when{display:grid;align-content:start;gap:3px;}
@@ -1404,7 +1410,7 @@
       : '<span class="kpi">' + (k.label ? '<b>' + esc(k.label) + '</b>' : '') + esc(k.value) + '</span>').join('') + '</div>' : '';
   }
 
-  function renderRumorItem(it, lead){
+  function renderRumorItem(it, lead, isNew){
     const post = safeUrl(it && it.post_url, ['x.com', 'twitter.com']);
     const tw = (Array.isArray(it.tw_stocks) ? it.tw_stocks : []).map(st =>
       stockLink(st.code, 'stock-chip', '<b>' + esc(st.code || '') + '</b>' + esc(st.name || ''))).join('');
@@ -1418,7 +1424,7 @@
     }).join('');
     // The posting account comes from the post URL (x.com/{account}/status/{id}).
     const author = (/^https:\/\/(?:[\w-]+\.)?(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status\//.exec(post) || [])[1];
-    return '<div class="rumor">'
+    return '<div class="rumor' + (isNew ? ' is-new' : '') + '">'
       + '<div class="rumor-top">' + (lead || '') + '<span class="ev-date">' + esc(it.date || '') + '</span>'
       +   (author ? '<span class="rumor-author">@' + esc(author) + '</span>' : '')
       +   (post ? '<a class="src-link" href="' + attr(post) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') + '</div>'
@@ -1430,16 +1436,51 @@
     + '</div>';
   }
 
+  // is_new is written by the 市場傳聞 run (first seen in this update). Data from before that field existed falls
+  // back to the posts dated on the update day.
+  function rumorIsNew(r){
+    const groups = r && Array.isArray(r.groups) ? r.groups : [];
+    const marked = groups.some(g => (Array.isArray(g.items) ? g.items : []).some(it => it && 'is_new' in it));
+    const m = /^\d{4}-(\d{2})-(\d{2})/.exec(String((r && (r.updated_at || (Array.isArray(r.window) ? r.window[1] : ''))) || ''));
+    const day = m ? m[1] + '/' + m[2] : '';
+    return it => marked ? !!(it && it.is_new === true) : !!(day && it && it.date === day);
+  }
+
   function renderRumors(r){
     if (!r || typeof r !== 'object') return emptyNote('尚無市場傳聞資料');
     if (r.status === 'pending') return emptyNote('市場傳聞整理中，讀完 X 後會自動補上');
     if (r.status === 'unavailable') return emptyNote('今天無法讀取 X（Chrome 未開啟、擴充功能未連線或未登入）');
     const groups = (Array.isArray(r.groups) ? r.groups : []).filter(g => Array.isArray(g.items) && g.items.length);
     if (!groups.length) return emptyNote('近 3 日沒有與成交值排行相關的貼文');
-    return groups.map(g => '<div class="rumor-group">'
-      + '<h3 class="rumor-industry">' + esc(g.industry || '其他') + '<span class="fg-count">' + g.items.length + ' 則</span></h3>'
-      + g.items.map(it => renderRumorItem(it)).join('')
-    + '</div>').join('');
+    const isNew = rumorIsNew(r);
+    const NEW_TAG = '<span class="rumor-new">New</span>';
+    // "MM/DD" -> sortable number; a December post in a window that ends in January counts as last year.
+    const endM = +((/^\d{4}-(\d{2})/.exec(String((Array.isArray(r.window) ? r.window[1] : '') || '')) || [])[1] || 12);
+    const dateKey = d => {
+      const m = /^(\d{1,2})\/(\d{1,2})/.exec(String(d || ''));
+      if (!m) return 0;
+      return (+m[1] > endM + 1 ? -1200 : 0) + (+m[1]) * 100 + (+m[2]);
+    };
+    // Inside a group: newest date first (a new rumor first within the same day); the posts from the group's
+    // newest day stay open and the older ones fold into 「顯示較舊的 N 則」. Groups with new rumors come first,
+    // then the group with the most recent post.
+    return groups.map((g, i) => {
+      const items = g.items.map((it, j) => ({ it: it, j: j, n: isNew(it), k: dateKey(it.date) }))
+        .sort((a, b) => (b.k - a.k) || (b.n - a.n) || (a.j - b.j));
+      const top = items.length ? items[0].k : 0;
+      return { g: g, i: i, top: top, shown: items.filter(x => x.k === top), older: items.filter(x => x.k !== top),
+               fresh: items.filter(x => x.n).length };
+    }).sort((a, b) => ((b.fresh > 0) - (a.fresh > 0)) || (b.top - a.top) || (a.i - b.i)).map(o => {
+      const card = x => renderRumorItem(x.it, x.n ? NEW_TAG : '', x.n);
+      const olderNew = o.older.filter(x => x.n).length;
+      return '<div class="rumor-group">'
+        + '<h3 class="rumor-industry">' + esc(o.g.industry || '其他') + '<span class="fg-count">' + (o.shown.length + o.older.length) + ' 則</span>'
+        +   (o.fresh ? '<span class="rumor-new">' + o.fresh + ' 則 New</span>' : '') + '</h3>'
+        + o.shown.map(card).join('')
+        + (o.older.length ? '<details class="track-more rumor-more"><summary><span class="chev">▸</span>顯示較舊的 ' + o.older.length + ' 則'
+          + (olderNew ? '（含 ' + olderNew + ' 則 New）' : '') + '</summary>' + o.older.map(card).join('') + '</details>' : '')
+      + '</div>';
+    }).join('');
   }
 
   const FOCUS_VIEWS = ['focus', 'rumors', 'events'];
@@ -1864,8 +1905,10 @@
     const ruWhen = rumors && (rumors.updated_at || (Array.isArray(rumors.window) ? rumors.window[1] : ''));
     const ruCount = rumors && rumors.status === 'ok' && Array.isArray(rumors.groups)
       ? rumors.groups.reduce((n, g) => n + (Array.isArray(g.items) ? g.items.length : 0), 0) : 0;
+    const ruNew = rumors && rumors.status === 'ok' && Array.isArray(rumors.groups)
+      ? rumors.groups.reduce((n, g) => n + (Array.isArray(g.items) ? g.items.filter(rumorIsNew(rumors)).length : 0), 0) : 0;
     rumorMetaText = rumors && rumors.status === 'ok'
-      ? [ruWhen ? dayLabel(ruWhen) + ' 更新' : '', ruCount ? ruCount + ' 則' : ''].filter(Boolean).join('・') : '';
+      ? [ruWhen ? dayLabel(ruWhen) + ' 更新' : '', ruCount ? ruCount + ' 則' : '', ruNew ? ruNew + ' 則新' : ''].filter(Boolean).join('・') : '';
     paintFocusView();
 
     $('rankTable').hidden = !top30.length;
