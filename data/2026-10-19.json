@@ -3107,140 +3107,152 @@
  ],
  "top5": [
   {
-   "buy_strategy": "保守守城：櫃買跌破季線轉綠燈，富喬連日漲停不追；均線多頭排列（5MA約137元、10MA約134元、20MA約126元），資金分3筆，回測5日線先進第1筆，10日線與20日線再分批打進後抱緊，跌破20日線停損。",
-   "chips_signal": "外資買超約20,235張（連2日買超）、投信買超約489張（連2日買超），外資投信同買；量增至5日均量2.18倍，外資投信同步站買方",
-   "code": "1815",
-   "fundamentals": "9月營收 MoM +2.86%、YoY +82.14%",
-   "name": "富喬",
-   "news": [
-    {
-     "source": "聚財網",
-     "time": "10/19 17:43",
-     "title": "富喬19萬張巨量炸出新天價！台玻衝高助陣 AI玻纖布行情燒不停",
-     "url": "https://news.wearn.com/c2128185.html"
-    },
-    {
-     "source": "優分析",
-     "time": "10/19",
-     "title": "〈焦點股〉富喬泰國新廠動工 逆勢爆量攻漲停創天價",
-     "url": "https://uanalyze.com.tw/articles/2385457341"
-    },
-    {
-     "source": "經濟日報",
-     "time": "10/19 11:43",
-     "title": "玻纖布抗跌！富喬9月毛利率暴衝至近52% 股價漲停再創新高",
-     "url": "https://money.udn.com/money/story/11074/9823620"
-    }
-   ],
    "rank": 1,
-   "score": 91,
+   "code": "1815",
+   "name": "富喬",
    "sector": "玻纖布(Low Dk)",
-   "streak": 2,
-   "theme_reason": "Low Dk2玻纖布供不應求、E-glass報價調漲，TPCA預估PCB材料吃緊延續至2027年；今日再亮燈漲停154元，成交值躍居全市場第3。"
-  },
-  {
-   "buy_strategy": "保守守城：大盤轉綠燈，台玻5>10>20>60日線多排、距20日高點僅1.5%；外資賣壓大，資金分3筆，回測10日線（約63.7元）進第1筆，20日線（約61.2元）附近再分兩筆打進，跌破60日線（約57.7元）停損。",
-   "chips_signal": "外資賣超約29,814張、投信買超約41張（連5日買超）；量增至5日均量1.93倍，外資大幅調節、投信連5日小幅承接",
-   "code": "1802",
-   "fundamentals": "9月營收 MoM +8.18%、YoY +34.10%",
-   "name": "台玻",
-   "news": [
-    {
-     "source": "聚財網",
-     "time": "10/19 17:43",
-     "title": "富喬19萬張巨量炸出新天價！台玻衝高助陣 AI玻纖布行情燒不停",
-     "url": "https://news.wearn.com/c2128185.html"
-    },
-    {
-     "source": "MoneyDJ",
-     "time": "10/15 08:28",
-     "title": "台玻10/12~14處分凱基金1萬張，獲利約2.13億元",
-     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=53ee97e9-bae9-4d58-a3de-ae9a3db9bf1c"
-    },
-    {
-     "source": "聚財網",
-     "time": "10/14 14:34",
-     "title": "CCL漲價潮又來了！建滔今年第8度喊漲15% 台玻、聯茂強攻、騰輝電子-KY大漲",
-     "url": "https://news.wearn.com/c2125067.html"
-    }
-   ],
-   "rank": 2,
-   "score": 84,
-   "sector": "玻纖布/平板玻璃",
-   "streak": 1,
-   "theme_reason": "玻纖布供給吃緊、價格上揚，台玻為TPCA展玻纖布參展代表廠；9月營收月增8.18%、年增34.1%，股價均線多頭排列、逆勢守穩。"
-  },
-  {
-   "buy_strategy": "保守守城：櫃買跌破季線，金像電仍守20日線（約1155元）、距波段高點僅2.7%，5/10日線糾結；資金分3筆，回測10日線（約1236元）進第1筆，20日線與60日線（約1046元）前分批補足後抱緊。",
-   "chips_signal": "外資賣超約1,647張（連4日賣超）、投信買超約1,214張（連5日買超）；量能0.87倍未放大，投信持續承接外資賣壓",
-   "code": "2368",
-   "fundamentals": "9月營收 MoM -10.24%、YoY +55.46%",
-   "name": "金像電",
-   "news": [
-    {
-     "source": "經濟日報",
-     "time": "10/18 02:34",
-     "title": "16檔悍將國家隊撐腰 台塑化、金像電等有望捍衛多頭",
-     "url": "https://money.udn.com/money/story/5607/9821396"
-    }
-   ],
-   "rank": 3,
+   "theme_reason": "高階玻纖布供不應求、2027年仍缺，富喬泰國新廠動工擴產，9月毛利率衝近52%。題材30/40：產業機遇15（10/19 泰國新廠動工、擴產）、需求側10（玻纖布供不應求）、供給側0、獲利上修與估值5（本益比44.6倍低於PCB材料族群中位數81.5倍）。",
+   "fundamentals": "9月營收 MoM +2.86%、YoY +82.14%",
+   "chips_signal": "外資買超約20,235張（連2日買超）、投信買超約489張（連2日買超），外資投信同買；量增至5日均量1.64倍，外資投信同步站買方",
+   "buy_strategy": "保守守城：櫃買跌破季線轉綠燈，富喬連日漲停不追；均線多頭排列（5MA約137元、10MA約134元、20MA約126元），資金分3筆，回測5日線先進第1筆，10日線與20日線再分批打進後抱緊，跌破20日線停損。",
    "score": 80,
-   "sector": "伺服器PCB",
-   "streak": 5,
-   "theme_reason": "AI伺服器與800G交換器板放量，TPCA預估今年台灣PCB總產值1.1365兆元、年增24.2%創新高；9月營收年增55.46%，投信連5日買超。"
-  },
-  {
-   "buy_strategy": "保守守城：綠燈日不追高，台燿自高點1780元拉回8.4%、守20日線（約1584元）；資金分3筆，20日線附近進第1筆，跌近60日線（約1464元）再分兩筆打進後抱緊。",
-   "chips_signal": "外資賣超約1,070張（連3日賣超）、投信買超約706張（連5日買超）；量能1.04倍持平，投信連5日逆勢承接",
-   "code": "6274",
-   "fundamentals": "9月營收 MoM +3.56%、YoY +114.79%",
-   "name": "台燿",
+   "streak": 2,
    "news": [
     {
-     "source": "鉅亨網",
-     "time": "10/14 18:00",
-     "title": "CCL三雄誰最會賺？台光電(2383)、台燿(6274)、聯茂(6213) 產品布局、漲價動能全解析",
-     "url": "https://news.cnyes.com/news/id/6630357"
-    }
-   ],
-   "rank": 4,
-   "score": 76,
-   "sector": "CCL銅箔基板",
-   "streak": 5,
-   "theme_reason": "AI伺服器與交換器帶動低損耗高速CCL需求，TPCA指出CCL供給吃緊、部分產品漲價；9月營收年增114.79%，CCL族群獲利動能最強。"
-  },
-  {
-   "buy_strategy": "保守守城：南亞自高點349元拉回13%、守20日線（約276元），MACD紅柱縮短；資金分3筆，10日線（約310元）下方進第1筆，跌近20日線再分兩筆加碼，跌破20日線停損。",
-   "chips_signal": "外資賣超約8,895張（連3日賣超）、投信買超約1,919張（連5日買超）；量能0.85倍縮量整理，外資調節、投信連5日承接",
-   "code": "1303",
-   "fundamentals": "9月營收 MoM +12.49%、YoY +55.25%",
-   "name": "南亞",
-   "news": [
-    {
-     "source": "鉅亨網",
-     "time": "10/19 14:10",
-     "title": "鉅亨速報 - Factset 最新調查：南亞(1303-TW)EPS預估上修至15.38元，預估目標價為390元",
-     "url": "https://news.cnyes.com/news/id/6633361"
+     "title": "10／19台股雷達｜族群輪動 富喬、友達股價強勢上攻 原因一次看",
+     "url": "https://www.ctee.com.tw/news/20261019701819-430204",
+     "source": "工商時報",
+     "time": "10/19 19:36"
     },
     {
+     "title": "2027年高階玻纖布續缺 富喬擴產營運旺亮燈漲停",
+     "url": "https://money.udn.com/money/story/11074/9823419",
+     "time": "10/19",
+     "source": "經濟日報"
+    },
+    {
+     "title": "玻纖布含金量飆升！富喬毛利破5成、股價創新高",
+     "url": "https://news.wearn.com/c2128224.html",
      "source": "聚財網",
-     "time": "10/19 10:08",
-     "title": "台股早盤狂殺867點！台積電、記憶體一片綠 南亞、台塑化逆勢抗空",
-     "url": "https://news.wearn.com/c2127850.html"
+     "time": "10/19 18:48"
+    }
+   ]
+  },
+  {
+   "rank": 2,
+   "code": "1802",
+   "name": "台玻",
+   "sector": "玻纖布/平板玻璃",
+   "theme_reason": "T-glass獲認證、高階玻纖布持續出貨，建滔CCL再漲價、玻纖布供應緊張。題材30/40：產業機遇15（10/19 T-glass獲認證）、需求側10（玻纖布供應緊張、建滔漲價）、供給側0、獲利上修與估值5（本益比76.7倍低於族群中位數81.5倍）。",
+   "fundamentals": "9月營收 MoM +8.18%、YoY +34.10%",
+   "chips_signal": "外資賣超約29,814張、投信買超約41張（連5日買超）；量增至5日均量1.60倍，外資大幅調節、投信連5日小幅承接",
+   "buy_strategy": "保守守城：大盤轉綠燈，台玻5>10>20>60日線多排、距20日高點僅1.5%；外資賣壓大，資金分3筆，回測10日線（約63.7元）進第1筆，20日線（約61.2元）附近再分兩筆打進，跌破60日線（約57.7元）停損。",
+   "score": 68,
+   "streak": 1,
+   "news": [
+    {
+     "title": "台玻T-glass獲認證、高階玻纖布持續出貨 法人給予投資建議點讚",
+     "url": "https://news.cnyes.com/news/id/6633660",
+     "source": "鉅亨網",
+     "time": "10/19 20:49"
     },
     {
-     "source": "自由財經",
-     "time": "10/19 09:59",
-     "title": "焦點股》南亞：CCL漲價 散戶喊「大爆V」",
-     "url": "https://ec.ltn.com.tw/article/breakingnews/5610895"
+     "title": "玻纖布族群太狂了！富喬漲停、台玻創高，供不應求加持還能追嗎？",
+     "url": "https://news.wearn.com/c2128241.html",
+     "source": "聚財網",
+     "time": "10/19 19:00"
+    },
+    {
+     "title": "PTFE、玻纖布雙雙炸裂！台郡連3漲停 富喬爆量、台玻狂飆",
+     "url": "https://news.wearn.com/c2127547.html",
+     "source": "聚財網",
+     "time": "10/18 14:30"
     }
-   ],
-   "rank": 5,
-   "score": 72,
+   ]
+  },
+  {
+   "rank": 3,
+   "code": "1303",
+   "name": "南亞",
    "sector": "電子材料(CCL/玻纖布)",
+   "theme_reason": "同時握有玻纖布與CCL，CCL與玻纖布漲價延續；FactSet調查EPS預估上修至15.38元、目標價390元。題材30/40：產業機遇10（主流題材、近7日無新催化）、需求側10（CCL漲價、玻纖布供應緊張）、供給側0、獲利上修與估值10（10/19 EPS預估上修；本益比49.0倍低於族群中位數81.5倍）。",
+   "fundamentals": "9月營收 MoM +12.49%、YoY +55.25%",
+   "chips_signal": "外資賣超約8,895張（連3日賣超）、投信買超約1,921張（連5日買超）；量能0.81倍未放大，外資調節、投信連5日承接",
+   "buy_strategy": "保守守城：南亞自高點349元拉回13%、守20日線（約276元），MACD紅柱縮短；資金分3筆，10日線（約310元）下方進第1筆，跌近20日線再分兩筆加碼，跌破20日線停損。",
+   "score": 60,
    "streak": 5,
-   "theme_reason": "同時握有玻纖布與CCL，玻纖布漲價潮延續；FactSet最新調查南亞EPS預估上修至15.38元、目標價390元，9月營收年增55.25%。"
+   "news": [
+    {
+     "title": "鉅亨速報 - Factset 最新調查：南亞(1303-TW)EPS預估上修至15.38元，預估目標價為390元",
+     "url": "https://news.cnyes.com/news/id/6633361",
+     "source": "鉅亨網",
+     "time": "10/19 14:10"
+    },
+    {
+     "title": "台股早盤狂殺867點！台積電、記憶體一片綠 南亞、台塑化逆勢抗空",
+     "url": "https://news.wearn.com/c2127850.html",
+     "source": "聚財網",
+     "time": "10/19 10:08"
+    },
+    {
+     "title": "焦點股》南亞：CCL漲價 散戶喊「大爆V」",
+     "url": "https://ec.ltn.com.tw/article/breakingnews/5610895",
+     "source": "自由財經",
+     "time": "10/19 09:59"
+    }
+   ]
+  },
+  {
+   "rank": 4,
+   "code": "6269",
+   "name": "台郡",
+   "sector": "軟板FPC",
+   "theme_reason": "輝達點名PTFE交換器板供應鏈，PTFE題材帶動連3根漲停；9月營收年減2.69%，基本面尚待跟上。題材15/40：產業機遇15（10/19 輝達點名台郡）、需求側0（尚無具體訂單或漲價報導）、供給側0、獲利上修與估值0（目前虧損、無本益比）。",
+   "fundamentals": "9月營收 MoM +5.10%、YoY -2.69%",
+   "chips_signal": "外資買超約3,209張（連3日買超）、投信買賣超持平；量增至5日均量3.69倍，外資連3日買超撐盤",
+   "buy_strategy": "保守守城：綠燈日不追高，台郡連3漲停後距60日高點仍回落約11%、站穩各均線（5MA約73元、10MA約69元、20MA約67元）；資金分3筆，回測10日線先進第1筆，20日線與60日線（約64.5元）附近再分兩筆，跌破60日線停損。",
+   "score": 55,
+   "streak": 1,
+   "news": [
+    {
+     "title": "焦點股》台郡：輝達點名  市場很捧場",
+     "url": "https://ec.ltn.com.tw/article/breakingnews/5610886",
+     "source": "自由財經",
+     "time": "10/19 09:49"
+    },
+    {
+     "title": "PTFE、玻纖布雙雙炸裂！台郡連3漲停 富喬爆量、台玻狂飆",
+     "url": "https://news.wearn.com/c2127547.html",
+     "source": "聚財網",
+     "time": "10/18 14:30"
+    },
+    {
+     "title": "輝達概念股台郡 AI 伺服器產品布局將顯現 資金關注",
+     "url": "https://money.udn.com/money/story/5710/9815909",
+     "source": "經濟日報",
+     "time": "10/15 10:22"
+    }
+   ]
+  },
+  {
+   "rank": 5,
+   "code": "2368",
+   "name": "金像電",
+   "sector": "伺服器PCB",
+   "theme_reason": "通吃Google、Amazon訂單，Amazon入股並啟動79億元新廠，AI伺服器與交換器板放量；9月營收年增55.46%。題材26/40：產業機遇10（主流題材、近7日無新催化）、需求側6（Google、Amazon訂單）、供給側0、獲利上修與估值10（10/05 法人調升目標價；本益比44.9倍低於PCB/載板族群中位數69.7倍）。",
+   "fundamentals": "9月營收 MoM -10.24%、YoY +55.46%",
+   "chips_signal": "外資賣超約1,647張（連4日賣超）、投信買超約1,214張（連5日買超）；量能0.85倍未放大，投信持續承接外資賣壓",
+   "buy_strategy": "保守守城：櫃買跌破季線，金像電仍守20日線（約1155元）、距波段高點僅2.7%，5/10日線糾結；資金分3筆，回測10日線（約1236元）進第1筆，20日線與60日線（約1046元）前分批補足後抱緊。",
+   "score": 55,
+   "streak": 5,
+   "news": [
+    {
+     "title": "16檔悍將國家隊撐腰 台塑化、金像電等有望捍衛多頭",
+     "url": "https://money.udn.com/money/story/5607/9821396",
+     "source": "經濟日報",
+     "time": "10/18 02:34"
+    }
+   ]
   }
  ],
  "top50_sectors": [
@@ -3328,754 +3340,754 @@
     "status": "empty"
    },
    {
-    "avg_return": 5.92,
+    "month": "2026-09",
+    "status": "settled",
+    "settle_date": "2026-09-30",
     "count": 24,
     "counted": 24,
-    "month": "2026-09",
+    "win_rate": 70.8,
+    "avg_return": 5.92,
     "picks": [
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "1303",
-      "days": 2,
-      "entry": 247,
-      "entry_date": "2026-09-29",
-      "exit": 255.5,
-      "listed": false,
-      "month_end": false,
       "name": "南亞",
-      "relist": [],
+      "start": "2026-09-29",
+      "entry_date": "2026-09-29",
+      "entry": 247.0,
+      "exit": 255.5,
       "ret": 3.44,
-      "start": "2026-09-29"
-     },
-     {
+      "relist": [],
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "3016",
-      "days": 1,
-      "entry": 172.5,
-      "entry_date": "2026-09-29",
-      "exit": 169,
       "listed": false,
-      "month_end": false,
-      "name": "嘉晶",
-      "relist": [],
-      "ret": -2.03,
-      "start": "2026-09-29"
+      "month_end": false
      },
      {
+      "code": "3016",
+      "name": "嘉晶",
+      "start": "2026-09-29",
+      "entry_date": "2026-09-29",
+      "entry": 172.5,
+      "exit": 169.0,
+      "ret": -2.03,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3189",
+      "name": "景碩",
+      "start": "2026-09-24",
+      "entry_date": "2026-09-24",
+      "entry": 962.0,
+      "exit": 970.0,
+      "ret": 0.83,
+      "relist": [],
+      "days": 3,
       "carried_in": false,
       "carried_out": true,
-      "code": "3189",
-      "days": 3,
-      "entry": 962,
-      "entry_date": "2026-09-24",
-      "exit": 970,
       "listed": false,
-      "month_end": false,
-      "name": "景碩",
-      "relist": [],
-      "ret": 0.83,
-      "start": "2026-09-24"
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "8046",
-      "days": 2,
-      "entry": 1165,
-      "entry_date": "2026-09-22",
-      "exit": 1340,
-      "listed": false,
-      "month_end": false,
       "name": "南電",
-      "relist": [],
+      "start": "2026-09-22",
+      "entry_date": "2026-09-22",
+      "entry": 1165.0,
+      "exit": 1340.0,
       "ret": 15.02,
-      "start": "2026-09-22"
-     },
-     {
+      "relist": [],
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2409",
-      "days": 2,
-      "entry": 36.65,
-      "entry_date": "2026-09-22",
-      "exit": 38.55,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2409",
       "name": "友達",
+      "start": "2026-09-22",
+      "entry_date": "2026-09-22",
+      "entry": 36.65,
+      "exit": 38.55,
+      "ret": 5.18,
       "relist": [
        "2026-09-30"
       ],
-      "ret": 5.18,
-      "start": "2026-09-22"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2449",
-      "days": 1,
-      "entry": 317,
-      "entry_date": "2026-09-22",
-      "exit": 294.5,
-      "listed": false,
-      "month_end": false,
-      "name": "京元電子",
-      "relist": [],
-      "ret": -7.1,
-      "start": "2026-09-22"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3443",
       "days": 2,
-      "entry": 7615,
-      "entry_date": "2026-09-21",
-      "exit": 8040,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2449",
+      "name": "京元電子",
+      "start": "2026-09-22",
+      "entry_date": "2026-09-22",
+      "entry": 317.0,
+      "exit": 294.5,
+      "ret": -7.1,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3443",
       "name": "創意",
+      "start": "2026-09-21",
+      "entry_date": "2026-09-21",
+      "entry": 7615.0,
+      "exit": 8040.0,
+      "ret": 5.58,
       "relist": [
        "2026-09-23"
       ],
-      "ret": 5.58,
-      "start": "2026-09-21"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3711",
-      "days": 1,
-      "entry": 638,
-      "entry_date": "2026-09-18",
-      "exit": 703,
-      "listed": false,
-      "month_end": false,
-      "name": "日月光投控",
-      "relist": [],
-      "ret": 10.19,
-      "start": "2026-09-18"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2344",
-      "days": 1,
-      "entry": 179.5,
-      "entry_date": "2026-09-18",
-      "exit": 179.5,
-      "listed": false,
-      "month_end": false,
-      "name": "華邦電",
-      "relist": [],
-      "ret": 0,
-      "start": "2026-09-18"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2408",
-      "days": 1,
-      "entry": 525,
-      "entry_date": "2026-09-18",
-      "exit": 519,
-      "listed": false,
-      "month_end": false,
-      "name": "南亞科",
-      "relist": [],
-      "ret": -1.14,
-      "start": "2026-09-18"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3105",
       "days": 2,
-      "entry": 471,
-      "entry_date": "2026-09-17",
-      "exit": 542,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3711",
+      "name": "日月光投控",
+      "start": "2026-09-18",
+      "entry_date": "2026-09-18",
+      "entry": 638.0,
+      "exit": 703.0,
+      "ret": 10.19,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2344",
+      "name": "華邦電",
+      "start": "2026-09-18",
+      "entry_date": "2026-09-18",
+      "entry": 179.5,
+      "exit": 179.5,
+      "ret": 0.0,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "start": "2026-09-18",
+      "entry_date": "2026-09-18",
+      "entry": 525.0,
+      "exit": 519.0,
+      "ret": -1.14,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3105",
       "name": "穩懋",
+      "start": "2026-09-17",
+      "entry_date": "2026-09-17",
+      "entry": 471.0,
+      "exit": 542.0,
+      "ret": 15.07,
       "relist": [
        "2026-09-30"
       ],
-      "ret": 15.07,
-      "start": "2026-09-17"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2455",
-      "days": 1,
-      "entry": 534,
-      "entry_date": "2026-09-17",
-      "exit": 552,
       "listed": false,
-      "month_end": false,
-      "name": "全新",
-      "relist": [],
-      "ret": 3.37,
-      "start": "2026-09-17"
+      "month_end": false
      },
      {
+      "code": "2455",
+      "name": "全新",
+      "start": "2026-09-17",
+      "entry_date": "2026-09-17",
+      "entry": 534.0,
+      "exit": 552.0,
+      "ret": 3.37,
+      "relist": [],
+      "days": 1,
       "carried_in": false,
-      "carried_out": true,
-      "code": "6213",
-      "days": 3,
-      "entry": 550,
-      "entry_date": "2026-09-16",
-      "exit": 623,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6213",
       "name": "聯茂",
+      "start": "2026-09-16",
+      "entry_date": "2026-09-16",
+      "entry": 550.0,
+      "exit": 623.0,
+      "ret": 13.27,
       "relist": [
        "2026-09-29"
       ],
-      "ret": 13.27,
-      "start": "2026-09-16"
+      "days": 3,
+      "carried_in": false,
+      "carried_out": true,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "3081",
-      "days": 1,
-      "entry": 2805,
-      "entry_date": "2026-09-16",
-      "exit": 2695,
-      "listed": false,
-      "month_end": false,
       "name": "聯亞",
-      "relist": [],
+      "start": "2026-09-16",
+      "entry_date": "2026-09-16",
+      "entry": 2805.0,
+      "exit": 2695.0,
       "ret": -3.92,
-      "start": "2026-09-16"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "3653",
-      "days": 2,
-      "entry": 5310,
-      "entry_date": "2026-09-15",
-      "exit": 6800,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3653",
       "name": "健策",
+      "start": "2026-09-15",
+      "entry_date": "2026-09-15",
+      "entry": 5310.0,
+      "exit": 6800.0,
+      "ret": 28.06,
       "relist": [
        "2026-09-24"
       ],
-      "ret": 28.06,
-      "start": "2026-09-15"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2308",
-      "days": 2,
-      "entry": 1670,
-      "entry_date": "2026-09-15",
-      "exit": 1890,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2308",
       "name": "台達電",
+      "start": "2026-09-15",
+      "entry_date": "2026-09-15",
+      "entry": 1670.0,
+      "exit": 1890.0,
+      "ret": 13.17,
       "relist": [
        "2026-09-21"
       ],
-      "ret": 13.17,
-      "start": "2026-09-15"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "3037",
-      "days": 4,
-      "entry": 970,
-      "entry_date": "2026-09-14",
-      "exit": 1175,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3037",
       "name": "欣興",
+      "start": "2026-09-14",
+      "entry_date": "2026-09-14",
+      "entry": 970.0,
+      "exit": 1175.0,
+      "ret": 21.13,
       "relist": [
        "2026-09-23"
       ],
-      "ret": 21.13,
-      "start": "2026-09-14"
-     },
-     {
+      "days": 4,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2327",
-      "days": 1,
-      "entry": 545,
-      "entry_date": "2026-09-14",
-      "exit": 548,
-      "listed": false,
-      "month_end": false,
       "name": "國巨",
-      "relist": [],
-      "ret": 0.55,
-      "start": "2026-09-14"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "8358",
-      "days": 3,
-      "entry": 518,
+      "start": "2026-09-14",
       "entry_date": "2026-09-14",
-      "exit": 495,
-      "listed": false,
-      "month_end": false,
-      "name": "金居",
+      "entry": 545.0,
+      "exit": 548.0,
+      "ret": 0.55,
       "relist": [],
-      "ret": -4.44,
-      "start": "2026-09-14"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "2303",
-      "days": 7,
-      "entry": 140.5,
-      "entry_date": "2026-09-11",
-      "exit": 154.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "8358",
+      "name": "金居",
+      "start": "2026-09-14",
+      "entry_date": "2026-09-14",
+      "entry": 518.0,
+      "exit": 495.0,
+      "ret": -4.44,
+      "relist": [],
+      "days": 3,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2303",
       "name": "聯電",
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 140.5,
+      "exit": 154.5,
+      "ret": 9.96,
       "relist": [
        "2026-09-16"
       ],
-      "ret": 9.96,
-      "start": "2026-09-11"
-     },
-     {
+      "days": 7,
       "carried_in": false,
       "carried_out": false,
-      "code": "2454",
-      "days": 7,
-      "entry": 4585,
-      "entry_date": "2026-09-11",
-      "exit": 4920,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2454",
       "name": "聯發科",
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 4585.0,
+      "exit": 4920.0,
+      "ret": 7.31,
       "relist": [
        "2026-09-15",
        "2026-09-17",
        "2026-09-21"
       ],
-      "ret": 7.31,
-      "start": "2026-09-11"
-     },
-     {
+      "days": 7,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "3026",
-      "days": 1,
-      "entry": 744,
-      "entry_date": "2026-09-11",
-      "exit": 791,
-      "listed": false,
-      "month_end": false,
       "name": "禾伸堂",
-      "relist": [],
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 744.0,
+      "exit": 791.0,
       "ret": 6.32,
-      "start": "2026-09-11"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "2330",
-      "days": 9,
-      "entry": 2410,
-      "entry_date": "2026-09-11",
-      "exit": 2480,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2330",
       "name": "台積電",
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 2410.0,
+      "exit": 2480.0,
+      "ret": 2.9,
       "relist": [
        "2026-09-23"
       ],
-      "ret": 2.9,
-      "start": "2026-09-11"
-     },
-     {
+      "days": 9,
       "carried_in": false,
       "carried_out": false,
-      "code": "6173",
-      "days": 1,
-      "entry": 290,
-      "entry_date": "2026-09-11",
-      "exit": 288.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6173",
       "name": "信昌電",
-      "relist": [],
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 290.0,
+      "exit": 288.5,
       "ret": -0.52,
-      "start": "2026-09-11"
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      }
-    ],
-    "settle_date": "2026-09-30",
-    "status": "settled",
-    "win_rate": 70.8
+    ]
    },
    {
-    "avg_return": -4.79,
+    "month": "2026-10",
+    "status": "open",
+    "settle_date": "2026-10-19",
     "count": 22,
     "counted": 22,
-    "month": "2026-10",
+    "win_rate": 31.8,
+    "avg_return": -4.79,
     "picks": [
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "8046",
-      "days": 1,
-      "entry": 1345,
-      "entry_date": "2026-10-15",
-      "exit": 1380,
-      "listed": false,
-      "month_end": false,
       "name": "南電",
-      "relist": [],
-      "ret": 2.6,
-      "start": "2026-10-15"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "6278",
-      "days": 1,
-      "entry": 303,
+      "start": "2026-10-15",
       "entry_date": "2026-10-15",
-      "exit": 289.5,
+      "entry": 1345.0,
+      "exit": 1380.0,
+      "ret": 2.6,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6278",
       "name": "台表科",
-      "relist": [],
+      "start": "2026-10-15",
+      "entry_date": "2026-10-15",
+      "entry": 303.0,
+      "exit": 289.5,
       "ret": -4.46,
-      "start": "2026-10-15"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "1802",
-      "days": 1,
-      "entry": 67,
-      "entry_date": "2026-10-14",
-      "exit": 66,
-      "listed": false,
-      "month_end": false,
       "name": "台玻",
-      "relist": [],
+      "start": "2026-10-14",
+      "entry_date": "2026-10-14",
+      "entry": 67.0,
+      "exit": 66.0,
       "ret": -1.49,
-      "start": "2026-10-14"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2368",
-      "days": 5,
-      "entry": 1170,
-      "entry_date": "2026-10-13",
-      "exit": 1250,
-      "listed": true,
-      "month_end": false,
       "name": "金像電",
-      "relist": [],
+      "start": "2026-10-13",
+      "entry_date": "2026-10-13",
+      "entry": 1170.0,
+      "exit": 1250.0,
       "ret": 6.84,
-      "start": "2026-10-13"
-     },
-     {
+      "relist": [],
+      "days": 5,
       "carried_in": false,
       "carried_out": false,
+      "listed": true,
+      "month_end": false
+     },
+     {
       "code": "3711",
-      "days": 1,
-      "entry": 762,
-      "entry_date": "2026-10-12",
-      "exit": 670,
-      "listed": false,
-      "month_end": false,
       "name": "日月光投控",
-      "relist": [],
+      "start": "2026-10-12",
+      "entry_date": "2026-10-12",
+      "entry": 762.0,
+      "exit": 670.0,
       "ret": -12.07,
-      "start": "2026-10-12"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2383",
-      "days": 1,
-      "entry": 6150,
-      "entry_date": "2026-10-12",
-      "exit": 5125,
-      "listed": false,
-      "month_end": false,
       "name": "台光電",
-      "relist": [],
-      "ret": -16.67,
-      "start": "2026-10-12"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "7769",
-      "days": 1,
-      "entry": 6490,
+      "start": "2026-10-12",
       "entry_date": "2026-10-12",
-      "exit": 5400,
-      "listed": false,
-      "month_end": false,
-      "name": "鴻勁",
+      "entry": 6150.0,
+      "exit": 5125.0,
+      "ret": -16.67,
       "relist": [],
-      "ret": -16.8,
-      "start": "2026-10-12"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "4958",
-      "days": 3,
-      "entry": 592,
-      "entry_date": "2026-10-08",
-      "exit": 547,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "7769",
+      "name": "鴻勁",
+      "start": "2026-10-12",
+      "entry_date": "2026-10-12",
+      "entry": 6490.0,
+      "exit": 5400.0,
+      "ret": -16.8,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "4958",
       "name": "臻鼎-KY",
+      "start": "2026-10-08",
+      "entry_date": "2026-10-08",
+      "entry": 592.0,
+      "exit": 547.0,
+      "ret": -7.6,
       "relist": [
        "2026-10-13",
        "2026-10-16"
       ],
-      "ret": -7.6,
-      "start": "2026-10-08"
-     },
-     {
+      "days": 3,
       "carried_in": false,
       "carried_out": false,
-      "code": "2408",
-      "days": 1,
-      "entry": 532,
-      "entry_date": "2026-10-08",
-      "exit": 436,
       "listed": false,
-      "month_end": false,
-      "name": "南亞科",
-      "relist": [],
-      "ret": -18.05,
-      "start": "2026-10-08"
+      "month_end": false
      },
      {
+      "code": "2408",
+      "name": "南亞科",
+      "start": "2026-10-08",
+      "entry_date": "2026-10-08",
+      "entry": 532.0,
+      "exit": 436.0,
+      "ret": -18.05,
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "1815",
-      "days": 4,
-      "entry": 132.5,
-      "entry_date": "2026-10-07",
-      "exit": 154,
-      "listed": true,
-      "month_end": false,
       "name": "富喬",
+      "start": "2026-10-07",
+      "entry_date": "2026-10-07",
+      "entry": 132.5,
+      "exit": 154.0,
+      "ret": 16.23,
       "relist": [
        "2026-10-14",
        "2026-10-16"
       ],
-      "ret": 16.23,
-      "start": "2026-10-07"
-     },
-     {
+      "days": 4,
       "carried_in": false,
       "carried_out": false,
-      "code": "2327",
-      "days": 1,
-      "entry": 647,
-      "entry_date": "2026-10-07",
-      "exit": 534,
-      "listed": false,
-      "month_end": false,
-      "name": "國巨*",
-      "relist": [],
-      "ret": -17.47,
-      "start": "2026-10-07"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "1303",
-      "days": 8,
-      "entry": 293,
-      "entry_date": "2026-10-06",
-      "exit": 303.5,
       "listed": true,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2327",
+      "name": "國巨*",
+      "start": "2026-10-07",
+      "entry_date": "2026-10-07",
+      "entry": 647.0,
+      "exit": 534.0,
+      "ret": -17.47,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "1303",
       "name": "南亞",
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 293.0,
+      "exit": 303.5,
+      "ret": 3.58,
       "relist": [
        "2026-10-13"
       ],
-      "ret": 3.58,
-      "start": "2026-10-06"
-     },
-     {
+      "days": 8,
       "carried_in": false,
       "carried_out": false,
+      "listed": true,
+      "month_end": false
+     },
+     {
       "code": "2313",
-      "days": 2,
-      "entry": 252,
-      "entry_date": "2026-10-06",
-      "exit": 248,
-      "listed": false,
-      "month_end": false,
       "name": "華通",
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 252.0,
+      "exit": 248.0,
+      "ret": -1.59,
       "relist": [
        "2026-10-12"
       ],
-      "ret": -1.59,
-      "start": "2026-10-06"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "6274",
-      "days": 6,
-      "entry": 1755,
-      "entry_date": "2026-10-06",
-      "exit": 1630,
-      "listed": true,
-      "month_end": false,
       "name": "台燿",
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 1755.0,
+      "exit": 1630.0,
+      "ret": -7.12,
       "relist": [
        "2026-10-13"
       ],
-      "ret": -7.12,
-      "start": "2026-10-06"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3661",
       "days": 5,
-      "entry": 4180,
-      "entry_date": "2026-10-06",
-      "exit": 3715,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3661",
       "name": "世芯-KY",
-      "relist": [],
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 4180.0,
+      "exit": 3715.0,
       "ret": -11.12,
-      "start": "2026-10-06"
-     },
-     {
+      "relist": [],
+      "days": 5,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "8358",
-      "days": 1,
-      "entry": 570,
-      "entry_date": "2026-10-05",
-      "exit": 484,
-      "listed": false,
-      "month_end": false,
       "name": "金居",
-      "relist": [],
+      "start": "2026-10-05",
+      "entry_date": "2026-10-05",
+      "entry": 570.0,
+      "exit": 484.0,
       "ret": -15.09,
-      "start": "2026-10-05"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3105",
-      "days": 2,
-      "entry": 591,
-      "entry_date": "2026-10-02",
-      "exit": 482,
-      "listed": false,
-      "month_end": false,
-      "name": "穩懋",
       "relist": [],
-      "ret": -18.44,
-      "start": "2026-10-02"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "2492",
-      "days": 3,
-      "entry": 329,
-      "entry_date": "2026-10-01",
-      "exit": 364,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3105",
+      "name": "穩懋",
+      "start": "2026-10-02",
+      "entry_date": "2026-10-02",
+      "entry": 591.0,
+      "exit": 482.0,
+      "ret": -18.44,
+      "relist": [],
+      "days": 2,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2492",
       "name": "華新科",
+      "start": "2026-10-01",
+      "entry_date": "2026-10-01",
+      "entry": 329.0,
+      "exit": 364.0,
+      "ret": 10.64,
       "relist": [
        "2026-10-07"
       ],
-      "ret": 10.64,
-      "start": "2026-10-01"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3037",
       "days": 3,
-      "entry": 1215,
-      "entry_date": "2026-10-01",
-      "exit": 1120,
-      "listed": false,
-      "month_end": false,
-      "name": "欣興",
-      "relist": [],
-      "ret": -7.82,
-      "start": "2026-10-01"
-     },
-     {
       "carried_in": false,
       "carried_out": false,
-      "code": "3026",
-      "days": 2,
-      "entry": 852,
-      "entry_date": "2026-10-01",
-      "exit": 735,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3037",
+      "name": "欣興",
+      "start": "2026-10-01",
+      "entry_date": "2026-10-01",
+      "entry": 1215.0,
+      "exit": 1120.0,
+      "ret": -7.82,
+      "relist": [],
+      "days": 3,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3026",
       "name": "禾伸堂",
+      "start": "2026-10-01",
+      "entry_date": "2026-10-01",
+      "entry": 852.0,
+      "exit": 735.0,
+      "ret": -13.73,
       "relist": [
        "2026-10-08"
       ],
-      "ret": -13.73,
-      "start": "2026-10-01"
+      "days": 2,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": true,
-      "carried_out": false,
       "code": "6213",
-      "days": 6,
-      "entry": 623,
-      "entry_date": "2026-09-30",
-      "exit": 767,
-      "listed": false,
-      "month_end": false,
       "name": "聯茂",
-      "relist": [],
+      "start": "2026-09-29",
+      "entry_date": "2026-09-30",
+      "entry": 623.0,
+      "exit": 767.0,
       "ret": 23.11,
-      "start": "2026-09-29"
-     },
-     {
+      "relist": [],
+      "days": 6,
       "carried_in": true,
       "carried_out": false,
-      "code": "3189",
-      "days": 6,
-      "entry": 970,
-      "entry_date": "2026-09-30",
-      "exit": 982,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3189",
       "name": "景碩",
-      "relist": [],
+      "start": "2026-09-24",
+      "entry_date": "2026-09-30",
+      "entry": 970.0,
+      "exit": 982.0,
       "ret": 1.24,
-      "start": "2026-09-24"
+      "relist": [],
+      "days": 6,
+      "carried_in": true,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      }
-    ],
-    "settle_date": "2026-10-19",
-    "status": "open",
-    "win_rate": 31.8
+    ]
    }
   ]
  },
