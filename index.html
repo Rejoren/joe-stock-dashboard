@@ -1446,6 +1446,16 @@
     return it => marked ? !!(it && it.is_new === true) : !!(day && it && it.date === day);
   }
 
+  // "MM/DD" -> sortable number; a December post in a window that ends in January counts as last year.
+  function rumorDateKey(r){
+    const endM = +((/^\d{4}-(\d{2})/.exec(String((r && Array.isArray(r.window) ? r.window[1] : '') || '')) || [])[1] || 12);
+    return d => {
+      const m = /^(\d{1,2})\/(\d{1,2})/.exec(String(d || ''));
+      if (!m) return 0;
+      return (+m[1] > endM + 1 ? -1200 : 0) + (+m[1]) * 100 + (+m[2]);
+    };
+  }
+
   function renderRumors(r){
     if (!r || typeof r !== 'object') return emptyNote('尚無市場傳聞資料');
     if (r.status === 'pending') return emptyNote('市場傳聞整理中，讀完 X 後會自動補上');
@@ -1454,13 +1464,7 @@
     if (!groups.length) return emptyNote('近 3 日沒有與成交值排行相關的貼文');
     const isNew = rumorIsNew(r);
     const NEW_TAG = '<span class="rumor-new">New</span>';
-    // "MM/DD" -> sortable number; a December post in a window that ends in January counts as last year.
-    const endM = +((/^\d{4}-(\d{2})/.exec(String((Array.isArray(r.window) ? r.window[1] : '') || '')) || [])[1] || 12);
-    const dateKey = d => {
-      const m = /^(\d{1,2})\/(\d{1,2})/.exec(String(d || ''));
-      if (!m) return 0;
-      return (+m[1] > endM + 1 ? -1200 : 0) + (+m[1]) * 100 + (+m[2]);
-    };
+    const dateKey = rumorDateKey(r);
     // Inside a group: newest date first (a new rumor first within the same day); the posts from the group's
     // newest day stay open and the older ones fold into 「顯示較舊的 N 則」. Groups with new rumors come first,
     // then the group with the most recent post.
@@ -1764,6 +1768,7 @@
     ((data.rumors && Array.isArray(data.rumors.groups)) ? data.rumors.groups : []).forEach(g => {
       (Array.isArray(g.items) ? g.items : []).forEach(it => rumorItems.push(it));
     });
+    const dateKey = rumorDateKey(data.rumors);
     const lookback = num(data.inst_lookback);
     const rows = list.map(s => {
       const code = String(s.code || '');
@@ -1777,7 +1782,8 @@
           + (f.source ? '<span class="ref-src">' + esc(f.source) + '</span>' : '') + '</span></li>');
       });
       const rumors = rumorItems.filter(it => (Array.isArray(it.tw_stocks) ? it.tw_stocks : []).some(t => String(t.code) === code))
-        .map(it => renderRumorItem(it, '<span class="ref-tag tag-rumor">傳聞</span>'));
+        .map((it, j) => ({ it: it, j: j, k: dateKey(it.date) })).sort((a, b) => (b.k - a.k) || (a.j - b.j))
+        .map(x => renderRumorItem(x.it, '<span class="ref-tag tag-rumor">傳聞</span>'));
       const chg = num(s.change_pct);
       const dir = dirClass(chg);
       const wrap = t => '<span' + (chg != null && Math.abs(chg) >= 9.5 ? ' class="hi ' + dir + '"' : '') + '>' + t + '</span>';
