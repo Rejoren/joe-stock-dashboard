@@ -1468,7 +1468,7 @@
     if (r.status === 'pending') return emptyNote('市場傳聞整理中，讀完 X 後會自動補上');
     if (r.status === 'unavailable') return emptyNote('今天無法讀取 X（Chrome 未開啟、擴充功能未連線或未登入）');
     const groups = (Array.isArray(r.groups) ? r.groups : []).filter(g => Array.isArray(g.items) && g.items.length);
-    if (!groups.length) return emptyNote('近 3 日沒有與成交值排行相關的貼文');
+    if (!groups.length) return emptyNote('近 2 日沒有與成交值排行相關的貼文');
     const isNew = rumorIsNew(r);
     const NEW_TAG = '<span class="rumor-new">New</span>';
     const dateKey = rumorDateKey(r);
