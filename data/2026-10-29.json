@@ -1431,13 +1431,13 @@
    "light": "green"
   }
  ],
- "light_reason": "櫃買指數387.37跌破5MA(387.66)，並落在20MA(406.40)與60MA(406.07)之下，趨勢偏弱",
+ "light_reason": "櫃買指數387.37跌破5MA(387.66)，並落在20MA(408.76)與60MA(400.48)之下，趨勢偏弱",
  "otc_change": -7.24,
  "otc_change_pct": -1.83,
  "otc_index": 387.37,
- "otc_ma20": 406.4,
+ "otc_ma20": 408.76,
  "otc_ma5": 387.66,
- "otc_ma60": 406.07,
+ "otc_ma60": 400.48,
  "revenue_month": "2026-09",
  "rumors": {
   "sources": [
