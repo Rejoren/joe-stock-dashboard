@@ -1341,6 +1341,13 @@
   }
  ],
  "light_reason": "櫃買重挫4.42%至370.26，跌破5MA、20MA與60MA，月線下彎趨勢轉弱",
+ "news_update": {
+  "date": "2026-11-01",
+  "window": [
+   "2026-10-30",
+   "2026-11-01"
+  ]
+ },
  "otc_change": -17.11,
  "otc_change_pct": -4.42,
  "otc_index": 370.26,
@@ -1359,8 +1366,461 @@
    "2026-10-31",
    "2026-11-01"
   ],
-  "status": "pending",
-  "groups": []
+  "status": "ok",
+  "updated_at": "2026-11-01 16:04",
+  "groups": [
+   {
+    "industry": "記憶體",
+    "items": [
+     {
+      "date": "11/01",
+      "summary": "瑞銀產業查核認為AI基建理想CPU：GPU比可能升至3：1、甚至4：1；以CY30約4,400萬顆加速器推算，AI相關CPU約1.2億顆。AI用CPU單機記憶體約1.5TB、下一代可達2–3TB，遠高於傳統CPU約0.5TB。",
+      "post_url": "https://x.com/QQ_Timmy/status/2116770432632459600",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       },
+       {
+        "name": "AMD",
+        "ticker": "AMD"
+       },
+       {
+        "name": "Arm",
+        "ticker": "ARM"
+       },
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "CPU數量與每顆CPU的DRAM附著量同步上升，擴大伺服器DRAM需求，南亞科、華邦電為台系DRAM供應商。",
+      "sentiment": "利多",
+      "is_new": true
+     },
+     {
+      "date": "11/01",
+      "summary": "黃仁勳表示不認為HBM等記憶體會很快過剩，記憶體「永遠用得更多」，HBM與LPDDR都會被使用很多年。",
+      "post_url": "https://x.com/BlueJay87476298/status/2116756755380420757",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "NVIDIA執行長淡化記憶體過剩疑慮，支撐DRAM報價續強的看法，有利台系DRAM廠。",
+      "sentiment": "利多",
+      "is_new": true
+     },
+     {
+      "date": "10/31",
+      "summary": "TrendForce：4Q PC DRAM合約價再漲13–18%（3Q已漲18–23%），筆電出貨3Q季減14%、4Q再減9%；韓廠規劃2027年PC DRAM出貨年減逾兩成，產能轉往伺服器DRAM。作者認為是漲價把PC需求擠出，而非單純庫存循環。",
+      "post_url": "https://x.com/Leoskie_L/status/2116424942761992558",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Samsung Electronics",
+        "ticker": "005930.KS"
+       },
+       {
+        "name": "SK hynix",
+        "ticker": "000660.KS"
+       }
+      ],
+      "tw_note": "韓廠縮減PC DRAM供給、合約價續漲，南亞科以標準型DRAM為主，報價面受惠；但終端PC需求轉弱需留意。",
+      "sentiment": "利多",
+      "is_new": true
+     },
+     {
+      "date": "10/31",
+      "summary": "鎧俠下季營業利益財測約2.0兆日圓，低於市場約2.35兆，NAND均價漲幅由上季約70%縮至20%中段、下季看持平，股價夜盤再跌；作者指出約550億日圓為匯率逆風，2027年產能已售罄、2028年長約鎖住過半位元。",
+      "reply_note": "作者留言補充：財測「持平」約一半是匯率造成，關鍵在NAND下季價格能否站穩；若站穩，市場殺的是漲價斜率而非需求。",
+      "post_url": "https://x.com/Leoskie_L/status/2116526856396771664",
+      "tw_stocks": [
+       {
+        "code": "2344",
+        "name": "華邦電"
+       },
+       {
+        "code": "2408",
+        "name": "南亞科"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Kioxia",
+        "ticker": "285A.T"
+       },
+       {
+        "name": "SanDisk",
+        "ticker": "SNDK"
+       }
+      ],
+      "tw_note": "鎧俠為NAND大廠，財測引發「記憶體漲價高峰已過」疑慮，影響華邦電（含SLC NAND）與記憶體族群情緒；但長約鎖量顯示需求未退。",
+      "sentiment": "中性",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "industry": "CPO/光通訊",
+    "items": [
+     {
+      "date": "11/01",
+      "summary": "市場傳Marvell擬收購Lumentum，作者推論共同股東NVIDIA有意整合光引擎與InP外部雷射光源；以2030年互連TAM約650億美元、取得50%市占推估合併體市值約2,000億美元，但原作者自陳為樂觀粗估，OIO未必成為下一代。",
+      "post_url": "https://x.com/QQ_Timmy/status/2116769266099962179",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Marvell",
+        "ticker": "MRVL"
+       },
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       },
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "查證：聯亞為Lumentum長期InP磊晶片供應商；併購若成真將強化Lumentum雷射需求，屬傳聞推演、未有訂單數字。",
+      "sentiment": "中性",
+      "is_new": true
+     },
+     {
+      "date": "11/01",
+      "summary": "住友電工上修InP基板擴產：2030年3月期產能達2025年3月期的4.5倍（5月原計畫為2029年3倍）；全球僅住友（市占約四成）、JX金屬、AXT三家能做。作者認為擴產時間軸拉長到2030，CPO、1.6T推進期間雷射基板仍缺。",
+      "reply_note": "作者留言補充：長約已先鎖走2027、2028年的量，即使2030年產能到4.5倍，現貨能鬆的部分比倍數更小、更慢。",
+      "post_url": "https://x.com/Leoskie_L/status/2116749573909803083",
+      "tw_stocks": [
+       {
+        "code": "3081",
+        "name": "聯亞"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Sumitomo Electric",
+        "ticker": "5802.T"
+       },
+       {
+        "name": "JX Advanced Metals",
+        "ticker": "5016.T"
+       },
+       {
+        "name": "AXT",
+        "ticker": "AXTI"
+       },
+       {
+        "name": "Lumentum",
+        "ticker": "LITE"
+       }
+      ],
+      "tw_note": "查證：聯亞以InP基板生產雷射磊晶片並供應Lumentum；上游基板長期吃緊代表InP雷射供不應求，有利磊晶議價，但也可能限制聯亞取得基板的量。",
+      "sentiment": "利多",
+      "is_new": true
+     },
+     {
+      "date": "11/01",
+      "summary": "NVIDIA於SEMICON West展示兩項下一代互連研究：光引擎改放矽中介層的Optics-on-Interposer，以及8波長單纖256Gb/s的DWDM光I/O；仍在研究階段、未公布商業化時程，挑戰在散熱、良率與維修性。",
+      "post_url": "https://x.com/QQ_Timmy/status/2116745719747076300",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       },
+       {
+        "code": "3711",
+        "name": "日月光投控"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "ticker": "NVDA"
+       }
+      ],
+      "tw_note": "文中點名供應鏈含台積電矽光子與日月光封測；屬技術展示，無訂單或營收影響。",
+      "sentiment": "中性",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "industry": "PCB/載板",
+    "items": [
+     {
+      "date": "10/31",
+      "summary": "Intel把載板產能與供應商拉高40%，明年下半年才陸續到位；三星電機稱FCBGA缺到2027，NVIDIA對欣興簽產能保留、欣興新產能2027年Q2起貢獻。作者認為更上游卡在T-Glass玻纖布（日東紡市占過半）。",
+      "reply_note": "作者留言補充：載板拉高40%也要等到明年下半年，真正卡的是上游玻纖布，設備與產能都在日本、擴產快不起來。",
+      "post_url": "https://x.com/Leoskie_L/status/2116387185393807841",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       },
+       {
+        "name": "Ibiden",
+        "ticker": "4062.T"
+       },
+       {
+        "name": "Nitto Boseki",
+        "ticker": "3110.T"
+       },
+       {
+        "name": "Samsung Electro-Mechanics",
+        "ticker": "009150.KS"
+       }
+      ],
+      "tw_note": "伺服器CPU／GPU用ABF載板缺到2027年，欣興已獲NVIDIA產能保留，台系ABF三雄議價與稼動受惠。",
+      "sentiment": "利多",
+      "is_new": true
+     },
+     {
+      "date": "10/31",
+      "summary": "StatementDog研究總監TPCA展後上調PCB設備需求預期，標準鑽孔機與ABF載板設備需求都偏強；欣興董事長指出逾八成設備交期拉長、部分關鍵機台約30個月，展後券商陸續上調PCB與銅箔基板展望。",
+      "post_url": "https://x.com/QQ_Timmy/status/2116520405649461594",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       },
+       {
+        "code": "2368",
+        "name": "金像電"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "設備交期拉長反映PCB／ABF擴產需求強，短期供給受限有利既有產能議價。",
+      "sentiment": "利多",
+      "is_new": true
+     },
+     {
+      "date": "11/01",
+      "summary": "聯發科法說提到第二代AI加速器封裝以Intel EMIB-T為「絕對優先」，同時續與台積電合作；第二個ASIC客戶已確認且非中國客戶。作者認為瓶頸轉為矽橋埋入大尺寸ABF的良率，方向上看欣興、景碩、南電。",
+      "reply_note": "作者留言補充：關鍵在「第二代專案」選了另一條封裝路線，不是台積電失單；距2028年Q1約15個月，要看EMIB-T良率與New Mexico產線爬坡，載板也要同步跟上。",
+      "post_url": "https://x.com/Leoskie_L/status/2116734476126744842",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "3189",
+        "name": "景碩"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       },
+       {
+        "name": "Ibiden",
+        "ticker": "4062.T"
+       }
+      ],
+      "tw_note": "EMIB-T需大尺寸ABF載板，擴大台系ABF載板的潛在需求；作者未給份額數字。",
+      "sentiment": "利多",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "industry": "IC設計",
+    "items": [
+     {
+      "date": "11/01",
+      "summary": "聯發科第二代AI加速器封裝以Intel EMIB-T為絕對優先，同時續與台積電合作；第二個ASIC客戶確認到手且非中國客戶，壓下字節跳動傳聞，既有客戶市場推測為Google TPU。",
+      "reply_note": "作者留言補充：關鍵在「第二代專案」選了另一條封裝路線，不是台積電失單；距2028年Q1約15個月，要看EMIB-T良率與New Mexico產線爬坡，載板也要同步跟上。",
+      "post_url": "https://x.com/Leoskie_L/status/2116734476126744842",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Intel",
+        "ticker": "INTC"
+       },
+       {
+        "name": "Alphabet",
+        "ticker": "GOOGL"
+       }
+      ],
+      "tw_note": "聯發科ASIC第二客戶確認屬正面，但封裝改走EMIB-T增加良率與時程變數；對台積電為封裝路線分流、非失單。",
+      "sentiment": "中性",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "industry": "被動元件",
+    "items": [
+     {
+      "date": "10/31",
+      "summary": "TDK上半年營收、獲利創同期新高，主因AI資料中心需求（HDD磁頭、被動元件）；全年財測上修至營收3.05兆日圓、營業利益3,650億日圓，資料中心相關被動元件預估年增逾3倍，將投入約400億日圓擴產薄膜電感。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "8,196億日圓，季增10.6%、年增26.6%"
+       },
+       {
+        "label": "資料中心被動元件",
+        "value": "預估年增逾3倍"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2116475545399750719",
+      "tw_stocks": [
+       {
+        "code": "2327",
+        "name": "國巨*"
+       },
+       {
+        "code": "2492",
+        "name": "華新科"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "TDK",
+        "ticker": "6762.T"
+       }
+      ],
+      "tw_note": "查證：TDK為日系被動元件大廠，AI伺服器被動元件用量為傳統伺服器2–3倍；日韓廠產能優先給高階AI料件，國巨、華新科同受AI需求與供給缺口帶動。",
+      "sentiment": "利多",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "industry": "伺服器電源",
+    "items": [
+     {
+      "date": "10/31",
+      "summary": "光寶科3Q26營收、EPS 3.27元創單季新高，AI營收占比逾30%、2027年目標40–50%；800VDC Power Rack 11月第二批送樣做系統整合，正式出貨約落在2027年Q1，較原先「11月小量出貨」說法延後。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "574億，季增9%、年增28%"
+       },
+       {
+        "label": "毛利率",
+        "value": "3Q26 25.9%，年增0.9個百分點"
+       }
+      ],
+      "post_url": "https://x.com/QQ_Timmy/status/2116365241818792099",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "光寶科為台達電在AI伺服器電源的主要競爭者；AI電源需求強勁印證產業景氣，但競爭者800VDC量產延後，對台達電影響好壞參半。",
+      "sentiment": "中性",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "industry": "AI伺服器ODM",
+    "items": [
+     {
+      "date": "10/31",
+      "summary": "OpenAI執行長Altman赴台北與鴻海董事長劉揚偉會面，劉揚偉證實與OpenAI有新合作在談、明年AI維持雙位數成長；鴻海休士頓已有6棟廠生產AI伺服器並將再擴。",
+      "metrics": [
+       {
+        "label": "雲端網路產品",
+        "value": "2Q占營收51%，首度過半"
+       }
+      ],
+      "post_url": "https://x.com/Leoskie_L/status/2116319238915051880",
+      "tw_stocks": [
+       {
+        "code": "2317",
+        "name": "鴻海"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [],
+      "tw_note": "OpenAI直接找鴻海確保機櫃供應，鴻海美國產能持續擴充。",
+      "sentiment": "利多",
+      "is_new": true
+     }
+    ]
+   }
+  ]
  },
  "sector_flows": {
   "last_week": [
@@ -2094,52 +2554,52 @@
  },
  "today_focus": [
   {
-   "tag": "美股",
    "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6642875",
-   "text": "美股週五（30日）科技股拋售擴大，那斯達克創6月5日來最大單日跌幅、10月為2025年3月來最差單月，那指100進入修正；英特爾暴跌29%創至少1980年來最差單日，市場憂AI基建支出放緩。"
+   "tag": "美股",
+   "text": "美股週五（30日）科技股拋售擴大，那斯達克創6月5日來最大單日跌幅、10月為2025年3月來最差單月，那指100進入修正；英特爾暴跌29%創至少1980年來最差單日，市場憂AI基建支出放緩。",
+   "url": "https://news.cnyes.com/news/id/6642875"
   },
   {
-   "tag": "美股",
    "source": "經濟日報",
-   "url": "https://money.udn.com/money/story/5607/9850057",
-   "text": "費半上週五重挫7.2%，英特爾極弱財測與亞馬遜財報引爆恐慌，法人在AMD、ARM財報前避險賣出；資金轉進沃爾瑪、可口可樂等防禦股，蘋果重奪全球市值第一。"
-  },
-  {
-   "tag": "台股",
-   "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6642405",
-   "text": "聯發科法說：首款AI加速器ASIC 9月起出貨，第四季雲端ASIC營收上修至25億美元，2027年該專案可望達160億美元高標、約占市場20%，並已取得第二家雲端ASIC客戶、2028年起貢獻營收；基板是目前最吃緊的供應環節。"
-  },
-  {
-   "tag": "國際",
-   "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6643199",
-   "text": "伊朗宣布11/1起禁止南韓油輪巨頭Sinokor整支船隊通行荷姆茲海峽，該公司10月上旬占當地VLCC交通量逾50%；伊朗最高領袖同時下令軍方對美以威脅立即反制，今年VLCC運費已飆逾1,600%。"
-  },
-  {
-   "tag": "總經",
-   "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6643270",
-   "text": "南韓10月半導體出口564.4億美元、年增259.4%，帶動總出口年增93.7%至1,152.8億美元，半導體占比升至49%；DDR5合約價持續走高，伺服器SSD帶動電腦類出口年增496.6%。"
-  },
-  {
    "tag": "美股",
-   "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6642795",
-   "text": "標普將Meta信評展望由「穩定」調為「負向」，估其自由營運現金流赤字2026年達390億美元、2027年擴至710億美元；Meta估全年資本支出1,350億至1,450億美元，AI支出變現能力遭質疑。"
+   "text": "費半上週五重挫7.2%，英特爾極弱財測與亞馬遜財報引爆恐慌，法人在AMD、ARM財報前避險賣出；資金轉進沃爾瑪、可口可樂等防禦股，蘋果重奪全球市值第一。",
+   "url": "https://money.udn.com/money/story/5607/9850057"
   },
   {
-   "tag": "總經",
    "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6642751",
-   "text": "黃金週五重挫3.3%，Comex 12月期貨收每盎司3,898.90美元、創一年新低，10月累跌10%；股市大跌引發籌現賣壓，道瓊跌1.1%、標普500跌1.8%、那指跌2.9%。"
+   "tag": "台股",
+   "text": "聯發科法說：首款AI加速器ASIC 9月起出貨，第四季雲端ASIC營收上修至25億美元，2027年該專案可望達160億美元高標、約占市場20%，並已取得第二家雲端ASIC客戶、2028年起貢獻營收；基板是目前最吃緊的供應環節。",
+   "url": "https://news.cnyes.com/news/id/6642405"
   },
   {
+   "source": "鉅亨網",
+   "tag": "國際",
+   "text": "伊朗宣布11/1起禁止南韓油輪巨頭Sinokor整支船隊通行荷姆茲海峽，該公司10月上旬占當地VLCC交通量逾50%；伊朗最高領袖同時下令軍方對美以威脅立即反制，今年VLCC運費已飆逾1,600%。",
+   "url": "https://news.cnyes.com/news/id/6643199"
+  },
+  {
+   "source": "鉅亨網",
    "tag": "總經",
+   "text": "南韓10月半導體出口564.4億美元、年增259.4%，帶動總出口年增93.7%至1,152.8億美元，半導體占比升至49%；DDR5合約價持續走高，伺服器SSD帶動電腦類出口年增496.6%。",
+   "url": "https://news.cnyes.com/news/id/6643270"
+  },
+  {
+   "source": "鉅亨網",
+   "tag": "美股",
+   "text": "標普將Meta信評展望由「穩定」調為「負向」，估其自由營運現金流赤字2026年達390億美元、2027年擴至710億美元；Meta估全年資本支出1,350億至1,450億美元，AI支出變現能力遭質疑。",
+   "url": "https://news.cnyes.com/news/id/6642795"
+  },
+  {
+   "source": "鉅亨網",
+   "tag": "總經",
+   "text": "黃金週五重挫3.3%，Comex 12月期貨收每盎司3,898.90美元、創一年新低，10月累跌10%；股市大跌引發籌現賣壓，道瓊跌1.1%、標普500跌1.8%、那指跌2.9%。",
+   "url": "https://news.cnyes.com/news/id/6642751"
+  },
+  {
    "source": "自由財經",
-   "url": "https://ec.ltn.com.tw/article/paper/1776707",
-   "text": "中國10月製造業PMI由50.1降至49.3、低於預期49.9，四個月內第三度落入萎縮；非製造業PMI降至49.7，僅高科技製造業PMI仍維持51.3擴張。"
+   "tag": "總經",
+   "text": "中國10月製造業PMI由50.1降至49.3、低於預期49.9，四個月內第三度落入萎縮；非製造業PMI降至49.7，僅高科技製造業PMI仍維持51.3擴張。",
+   "url": "https://ec.ltn.com.tw/article/paper/1776707"
   }
  ],
  "top30": [
@@ -4102,12 +4562,5 @@
    "date": "11/27",
    "event": "主計總處公布第三季GDP修正值並更新今明兩年經濟預測"
   }
- ],
- "news_update": {
-  "date": "2026-11-01",
-  "window": [
-   "2026-10-30",
-   "2026-11-01"
-  ]
- }
+ ]
 }
