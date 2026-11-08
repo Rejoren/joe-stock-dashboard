@@ -3296,6 +3296,32 @@
    "turnover": "100.7億"
   },
   {
+   "change_pct": -1.45,
+   "code": "6488",
+   "high": 857,
+   "inst": {
+    "foreign_streak": -9,
+    "foreign_turn": false,
+    "trust_streak": -2,
+    "trust_turn": false
+   },
+   "is_new": true,
+   "low": 807,
+   "market": "櫃",
+   "market_cap": "4298.8億",
+   "name": "環球晶",
+   "open": 855,
+   "price": 814,
+   "rank": 27,
+   "revenue": {
+    "mom": 7.64,
+    "ym": "2026-09",
+    "yoy": -13.12
+   },
+   "theme": "矽晶圓",
+   "turnover": "100.1億"
+  },
+  {
    "change_pct": -7.47,
    "code": "3665",
    "high": 1890,
@@ -3312,7 +3338,7 @@
    "name": "貿聯-KY",
    "open": 1890,
    "price": 1735,
-   "rank": 27,
+   "rank": 28,
    "revenue": {
     "mom": 4.95,
     "ym": "2026-09",
@@ -3337,7 +3363,7 @@
    "name": "富喬",
    "open": 141,
    "price": 131,
-   "rank": 28,
+   "rank": 29,
    "revenue": {
     "mom": 2.86,
     "ym": "2026-09",
@@ -3345,32 +3371,6 @@
    },
    "theme": "玻纖布(Low Dk)",
    "turnover": "99.7億"
-  },
-  {
-   "change_pct": -1.45,
-   "code": "6488",
-   "high": 857,
-   "inst": {
-    "foreign_streak": -9,
-    "foreign_turn": false,
-    "trust_streak": -2,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 807,
-   "market": "櫃",
-   "market_cap": "4298.8億",
-   "name": "環球晶",
-   "open": 855,
-   "price": 814,
-   "rank": 29,
-   "revenue": {
-    "mom": 7.64,
-    "ym": "2026-09",
-    "yoy": -13.12
-   },
-   "theme": "矽晶圓",
-   "turnover": "98.5億"
   },
   {
    "change_pct": 5.98,

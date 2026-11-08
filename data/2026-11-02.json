@@ -90,7 +90,7 @@
     "turnover_pct": 4.47,
     "turnover_rank": 52,
     "value_rank": 10,
-    "value_yi": 161.6
+    "value_yi": 161.8
    },
    {
     "change_pct": -2.36,
@@ -2499,7 +2499,7 @@
     "ym": "2026-10"
    },
    "theme": "晶圓代工(先進製程)",
-   "turnover": "909.6億"
+   "turnover": "959.5億"
   },
   {
    "change_pct": 1.4,
@@ -2523,7 +2523,7 @@
     "ym": "2026-10"
    },
    "theme": "IC設計/AI ASIC",
-   "turnover": "486.7億"
+   "turnover": "496.3億"
   },
   {
    "change_pct": 1.5,
@@ -2547,7 +2547,7 @@
     "ym": "2026-10"
    },
    "theme": "AI伺服器電源",
-   "turnover": "289.3億"
+   "turnover": "290.5億"
   },
   {
    "change_pct": 1.69,
@@ -2572,7 +2572,7 @@
     "ym": "2026-10"
    },
    "theme": "電子材料(CCL/玻纖布)",
-   "turnover": "253.1億"
+   "turnover": "253.6億"
   },
   {
    "change_pct": 0.81,
@@ -2597,7 +2597,7 @@
     "ym": "2026-10"
    },
    "theme": "ABF載板",
-   "turnover": "205.6億"
+   "turnover": "220.9億"
   },
   {
    "change_pct": 1.73,
@@ -2647,7 +2647,7 @@
     "ym": "2026-10"
    },
    "theme": "AI ASIC設計",
-   "turnover": "167.8億"
+   "turnover": "168.1億"
   },
   {
    "change_pct": 0.9,
@@ -2671,7 +2671,7 @@
     "ym": "2026-10"
    },
    "theme": "半導體封測/先進封裝",
-   "turnover": "165.5億"
+   "turnover": "166.4億"
   },
   {
    "change_pct": -0.7,
@@ -2695,7 +2695,7 @@
     "ym": "2026-10"
    },
    "theme": "MLCC被動元件",
-   "turnover": "165.4億"
+   "turnover": "165.5億"
   },
   {
    "change_pct": -4.35,
@@ -2720,7 +2720,31 @@
     "ym": "2026-10"
    },
    "theme": "CCL銅箔基板",
-   "turnover": "161.6億"
+   "turnover": "161.8億"
+  },
+  {
+   "change_pct": 0.64,
+   "code": "2383",
+   "high": 4835,
+   "inst": {
+    "foreign_streak": -2,
+    "foreign_turn": false,
+    "trust_streak": 9,
+    "trust_turn": false
+   },
+   "low": 4500,
+   "market": "市",
+   "market_cap": "1.69兆",
+   "name": "台光電",
+   "open": 4500,
+   "price": 4705,
+   "rank": 11,
+   "revenue": {
+    "pending": true,
+    "ym": "2026-10"
+   },
+   "theme": "CCL銅箔基板",
+   "turnover": "158.8億"
   },
   {
    "change_pct": -2.36,
@@ -2738,8 +2762,8 @@
    "name": "景碩",
    "open": 900,
    "price": 910,
-   "rank": 11,
-   "rank_up": 4,
+   "rank": 12,
+   "rank_up": 3,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
@@ -2763,13 +2787,13 @@
    "name": "南亞科",
    "open": 433,
    "price": 456.5,
-   "rank": 12,
+   "rank": 13,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
    },
    "theme": "記憶體(DRAM)",
-   "turnover": "156.6億"
+   "turnover": "156.9億"
   },
   {
    "change_pct": -1.35,
@@ -2787,37 +2811,13 @@
    "name": "聯電",
    "open": 109.5,
    "price": 110,
-   "rank": 13,
-   "revenue": {
-    "pending": true,
-    "ym": "2026-10"
-   },
-   "theme": "成熟製程晶圓代工",
-   "turnover": "144.0億"
-  },
-  {
-   "change_pct": 0.64,
-   "code": "2383",
-   "high": 4835,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 9,
-    "trust_turn": false
-   },
-   "low": 4500,
-   "market": "市",
-   "market_cap": "1.69兆",
-   "name": "台光電",
-   "open": 4500,
-   "price": 4705,
    "rank": 14,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
    },
-   "theme": "CCL銅箔基板",
-   "turnover": "143.9億"
+   "theme": "成熟製程晶圓代工",
+   "turnover": "144.3億"
   },
   {
    "change_pct": -4.51,
@@ -2867,7 +2867,7 @@
     "ym": "2026-10"
    },
    "theme": "AI伺服器ODM",
-   "turnover": "124.3億"
+   "turnover": "124.6億"
   },
   {
    "change_pct": 9.88,
@@ -3091,30 +3091,6 @@
    "turnover": "78.3億"
   },
   {
-   "change_pct": 3.92,
-   "code": "2368",
-   "high": 1080,
-   "inst": {
-    "foreign_streak": -5,
-    "foreign_turn": false,
-    "trust_streak": 10,
-    "trust_turn": false
-   },
-   "low": 984,
-   "market": "市",
-   "market_cap": "5624.3億",
-   "name": "金像電",
-   "open": 984,
-   "price": 1060,
-   "rank": 26,
-   "revenue": {
-    "pending": true,
-    "ym": "2026-10"
-   },
-   "theme": "伺服器PCB",
-   "turnover": "77.2億"
-  },
-  {
    "change_pct": 0.08,
    "code": "3653",
    "high": 6370,
@@ -3130,13 +3106,37 @@
    "name": "健策",
    "open": 6145,
    "price": 6320,
-   "rank": 27,
+   "rank": 26,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
    },
    "theme": "均熱片(IHS)",
-   "turnover": "76.2億"
+   "turnover": "77.7億"
+  },
+  {
+   "change_pct": 3.92,
+   "code": "2368",
+   "high": 1080,
+   "inst": {
+    "foreign_streak": -5,
+    "foreign_turn": false,
+    "trust_streak": 10,
+    "trust_turn": false
+   },
+   "low": 984,
+   "market": "市",
+   "market_cap": "5624.3億",
+   "name": "金像電",
+   "open": 984,
+   "price": 1060,
+   "rank": 27,
+   "revenue": {
+    "pending": true,
+    "ym": "2026-10"
+   },
+   "theme": "伺服器PCB",
+   "turnover": "77.2億"
   },
   {
    "change_pct": 0.33,
@@ -3163,6 +3163,31 @@
    "turnover": "67.2億"
   },
   {
+   "change_pct": 0.55,
+   "code": "6669",
+   "high": 1830,
+   "inst": {
+    "foreign_streak": -1,
+    "foreign_turn": false,
+    "trust_streak": -10,
+    "trust_turn": false
+   },
+   "low": 1765,
+   "market": "市",
+   "market_cap": "1.02兆",
+   "name": "緯穎",
+   "open": 1765,
+   "price": 1820,
+   "rank": 29,
+   "revenue": {
+    "pending": true,
+    "ym": "2026-10"
+   },
+   "theme": "AI伺服器ODM",
+   "turnover": "67.0億",
+   "rank_up": 1
+  },
+  {
    "change_pct": -2.28,
    "code": "2360",
    "high": 1730,
@@ -3179,37 +3204,13 @@
    "name": "致茂",
    "open": 1655,
    "price": 1715,
-   "rank": 29,
+   "rank": 30,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
    },
    "theme": "半導體測試設備",
    "turnover": "67.0億"
-  },
-  {
-   "change_pct": 0.55,
-   "code": "6669",
-   "high": 1830,
-   "inst": {
-    "foreign_streak": -1,
-    "foreign_turn": false,
-    "trust_streak": -10,
-    "trust_turn": false
-   },
-   "low": 1765,
-   "market": "市",
-   "market_cap": "1.02兆",
-   "name": "緯穎",
-   "open": 1765,
-   "price": 1820,
-   "rank": 30,
-   "revenue": {
-    "pending": true,
-    "ym": "2026-10"
-   },
-   "theme": "AI伺服器ODM",
-   "turnover": "66.7億"
   }
  ],
  "top5": [

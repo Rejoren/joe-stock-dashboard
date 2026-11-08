@@ -2930,7 +2930,7 @@
    "open": 438,
    "price": 411,
    "rank": 6,
-   "rank_up": 6,
+   "rank_up": 7,
    "revenue": {
     "mom": 3.07,
     "new": true,
@@ -3055,7 +3055,7 @@
    "open": 109,
    "price": 103,
    "rank": 11,
-   "rank_up": 2,
+   "rank_up": 3,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
@@ -3300,7 +3300,7 @@
    "open": 6165,
    "price": 6035,
    "rank": 21,
-   "rank_up": 6,
+   "rank_up": 5,
    "revenue": {
     "pending": true,
     "ym": "2026-10"
@@ -3325,7 +3325,7 @@
    "open": 1020,
    "price": 970,
    "rank": 22,
-   "rank_up": 4,
+   "rank_up": 5,
    "revenue": {
     "pending": true,
     "ym": "2026-10"

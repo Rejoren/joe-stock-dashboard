@@ -214,7 +214,7 @@
    "low": 929.0,
    "change_pct": 6.18,
    "rank": 1,
-   "turnover": "410.5億",
+   "turnover": "424.2億",
    "market_cap": "5068.9億",
    "rank_up": 5,
    "theme": "ABF載板",
@@ -235,7 +235,7 @@
    "low": 5105.0,
    "change_pct": 1.93,
    "rank": 2,
-   "turnover": "409.2億",
+   "turnover": "411.8億",
    "market_cap": "8.48兆",
    "theme": "IC設計/AI ASIC",
    "inst": {
@@ -255,7 +255,7 @@
    "low": 2470.0,
    "change_pct": -1.0,
    "rank": 3,
-   "turnover": "355.2億",
+   "turnover": "361.1億",
    "market_cap": "64.18兆",
    "theme": "晶圓代工(先進製程)",
    "inst": {
@@ -275,7 +275,7 @@
    "low": 152.0,
    "change_pct": -3.75,
    "rank": 4,
-   "turnover": "241.5億",
+   "turnover": "241.6億",
    "market_cap": "1.94兆",
    "rank_up": 6,
    "theme": "成熟製程晶圓代工",
@@ -410,26 +410,6 @@
    }
   },
   {
-   "code": "8046",
-   "market": "市",
-   "name": "南電",
-   "price": 1240.0,
-   "open": 1210.0,
-   "high": 1270.0,
-   "low": 1190.0,
-   "change_pct": 2.48,
-   "rank": 11,
-   "turnover": "171.1億",
-   "market_cap": "8012.5億",
-   "theme": "ABF載板",
-   "inst": {
-    "foreign_streak": 3,
-    "trust_streak": 2,
-    "foreign_turn": false,
-    "trust_turn": false
-   }
-  },
-  {
    "code": "2308",
    "market": "市",
    "name": "台達電",
@@ -438,13 +418,34 @@
    "high": 1935.0,
    "low": 1875.0,
    "change_pct": 0.53,
-   "rank": 12,
-   "turnover": "169.3億",
+   "rank": 11,
+   "turnover": "171.7億",
    "market_cap": "4.96兆",
    "theme": "AI伺服器電源",
    "inst": {
     "foreign_streak": -3,
     "trust_streak": 4,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "rank_up": 1
+  },
+  {
+   "code": "8046",
+   "market": "市",
+   "name": "南電",
+   "price": 1240.0,
+   "open": 1210.0,
+   "high": 1270.0,
+   "low": 1190.0,
+   "change_pct": 2.48,
+   "rank": 12,
+   "turnover": "171.1億",
+   "market_cap": "8012.5億",
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": 3,
+    "trust_streak": 2,
     "foreign_turn": false,
     "trust_turn": false
    }
@@ -501,7 +502,7 @@
    "low": 8205.0,
    "change_pct": 1.67,
    "rank": 15,
-   "turnover": "120.5億",
+   "turnover": "123.7億",
    "market_cap": "1.14兆",
    "theme": "AI ASIC設計",
    "inst": {
@@ -594,27 +595,6 @@
    }
   },
   {
-   "code": "3026",
-   "market": "市",
-   "name": "禾伸堂",
-   "price": 810.0,
-   "open": 768.0,
-   "high": 820.0,
-   "low": 765.0,
-   "change_pct": 5.47,
-   "rank": 20,
-   "turnover": "105.9億",
-   "market_cap": "1343.7億",
-   "is_new": true,
-   "theme": "MLCC被動元件",
-   "inst": {
-    "foreign_streak": 1,
-    "trust_streak": 10,
-    "foreign_turn": true,
-    "trust_turn": false
-   }
-  },
-  {
    "code": "3665",
    "market": "市",
    "name": "貿聯-KY",
@@ -623,8 +603,8 @@
    "high": 2470.0,
    "low": 2285.0,
    "change_pct": 0.0,
-   "rank": 21,
-   "turnover": "105.3億",
+   "rank": 20,
+   "turnover": "106.4億",
    "market_cap": "4670.1億",
    "is_new": true,
    "theme": "連接器/線束",
@@ -632,6 +612,27 @@
     "foreign_streak": -4,
     "trust_streak": 2,
     "foreign_turn": false,
+    "trust_turn": false
+   }
+  },
+  {
+   "code": "3026",
+   "market": "市",
+   "name": "禾伸堂",
+   "price": 810.0,
+   "open": 768.0,
+   "high": 820.0,
+   "low": 765.0,
+   "change_pct": 5.47,
+   "rank": 21,
+   "turnover": "105.9億",
+   "market_cap": "1343.7億",
+   "is_new": true,
+   "theme": "MLCC被動元件",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 10,
+    "foreign_turn": true,
     "trust_turn": false
    }
   },
@@ -737,26 +738,6 @@
    }
   },
   {
-   "code": "2344",
-   "market": "市",
-   "name": "華邦電",
-   "price": 171.5,
-   "open": 169.0,
-   "high": 171.5,
-   "low": 166.5,
-   "change_pct": -0.58,
-   "rank": 27,
-   "turnover": "86.3億",
-   "market_cap": "7717.5億",
-   "theme": "記憶體(DRAM/NOR)",
-   "inst": {
-    "foreign_streak": -1,
-    "trust_streak": -6,
-    "foreign_turn": false,
-    "trust_turn": false
-   }
-  },
-  {
    "code": "2317",
    "market": "市",
    "name": "鴻海",
@@ -765,14 +746,34 @@
    "high": 253.0,
    "low": 249.5,
    "change_pct": -2.15,
-   "rank": 28,
-   "turnover": "86.1億",
+   "rank": 27,
+   "turnover": "86.5億",
    "market_cap": "3.53兆",
    "is_new": true,
    "theme": "AI伺服器ODM",
    "inst": {
     "foreign_streak": -1,
     "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   }
+  },
+  {
+   "code": "2344",
+   "market": "市",
+   "name": "華邦電",
+   "price": 171.5,
+   "open": 169.0,
+   "high": 171.5,
+   "low": 166.5,
+   "change_pct": -0.58,
+   "rank": 28,
+   "turnover": "86.3億",
+   "market_cap": "7717.5億",
+   "theme": "記憶體(DRAM/NOR)",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -6,
     "foreign_turn": false,
     "trust_turn": false
    }
