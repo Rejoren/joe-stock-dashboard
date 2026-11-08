@@ -159,7 +159,7 @@
     "theme": "AI ASIC設計",
     "turnover_pct": 3.78,
     "turnover_rank": 71,
-    "value_rank": 23,
+    "value_rank": 24,
     "value_yi": 89.9
    },
    {
@@ -2177,31 +2177,6 @@
    "turnover": "94.2億"
   },
   {
-   "change_pct": -4.39,
-   "code": "3661",
-   "high": 2875,
-   "inst": {
-    "foreign_streak": -7,
-    "foreign_turn": false,
-    "trust_streak": 2,
-    "trust_turn": false
-   },
-   "low": 2665,
-   "market": "市",
-   "market_cap": "2443.7億",
-   "name": "世芯-KY",
-   "open": 2665,
-   "price": 2830,
-   "rank": 23,
-   "rank_up": 5,
-   "revenue": {
-    "pending": true,
-    "ym": "2026-10"
-   },
-   "theme": "AI ASIC設計",
-   "turnover": "89.9億"
-  },
-  {
    "change_pct": -3.85,
    "code": "8299",
    "high": 1520,
@@ -2217,8 +2192,8 @@
    "name": "群聯",
    "open": 1405,
    "price": 1500,
-   "rank": 24,
-   "rank_up": 6,
+   "rank": 23,
+   "rank_up": 7,
    "revenue": {
     "mom": 2.9,
     "new": true,
@@ -2226,7 +2201,32 @@
     "yoy": 346.26
    },
    "theme": "記憶體控制IC",
-   "turnover": "89.7億"
+   "turnover": "90.9億"
+  },
+  {
+   "change_pct": -4.39,
+   "code": "3661",
+   "high": 2875,
+   "inst": {
+    "foreign_streak": -7,
+    "foreign_turn": false,
+    "trust_streak": 2,
+    "trust_turn": false
+   },
+   "low": 2665,
+   "market": "市",
+   "market_cap": "2443.7億",
+   "name": "世芯-KY",
+   "open": 2665,
+   "price": 2830,
+   "rank": 24,
+   "rank_up": 4,
+   "revenue": {
+    "pending": true,
+    "ym": "2026-10"
+   },
+   "theme": "AI ASIC設計",
+   "turnover": "89.9億"
   },
   {
    "change_pct": 7.17,
