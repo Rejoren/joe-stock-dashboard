@@ -1544,8 +1544,520 @@
    "2026-11-09",
    "2026-11-10"
   ],
-  "status": "unavailable",
-  "groups": []
+  "status": "ok",
+  "updated_at": "2026-11-11 00:26",
+  "groups": [
+   {
+    "group": "晶圓代工",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/Leoskie_L/status/2120056364114579855",
+      "sentiment": "利多",
+      "summary": "早盤流傳NVIDIA可能砍台積電訂單（未證實），但台積電10月營收5,868.9億元創新高，比9月多出約750億，公司說明為先進製程需求增加。作者認為到10月出貨仍在加速，但投片到出貨有時間差，砍單傳聞要用11月營收驗證。",
+      "metrics": [
+       {
+        "label": "10月營收",
+        "value": "5,868.9億，月增14.7%、年增59.7%"
+       }
+      ],
+      "reply_note": "作者留言補充：單月營收無法證明有無砍單，要看後續幾個月節奏與法說會的產品組合；總額創新高可能是先進製程單價在撐，投片量需等季報製程占比確認。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "symbol": "NVDA"
+       }
+      ],
+      "tw_note": "直接涉及台積電；作者也提醒先進製程放量後，封裝、ABF載板與記憶體可能成為下一個瓶頸。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2120147440225378552",
+      "sentiment": "利多",
+      "summary": "台積電董事會通過3Q26財報：營收約1兆4,942億元、稅後純益約7,630億元，每季配息9.0元；核准約409億美元資本預算擴建先進製程與先進封裝產能，並各以不超過5億美元認購Anthropic普通股與OpenAI特別股。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "1兆4,942億元，EPS 29.43元"
+       }
+      ],
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "tw_note": "台積電官方公告；大額資本預算顯示先進製程與封裝需求能見度仍高。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/BlueJay87476298/status/2120094807586738257",
+      "sentiment": "利多",
+      "summary": "摩根大通比較台韓AI供應鏈：台灣掌握晶圓代工、先進封裝、ABF載板、BMC與客製化ASIC，具不可替代性與較低波動；韓國記憶體雙雄則有更大的獲利槓桿與估值重估空間。台積電預估ROE約40.5%、本益比約19.4倍。",
+      "tw_stocks": [
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "tw_note": "外資報告直接點名台積電為AI生態系最堅固的基石。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "IC設計",
+    "items": [
+     {
+      "date": "11/09",
+      "post_url": "https://x.com/QQ_Timmy/status/2119818498188902421",
+      "sentiment": "利多",
+      "summary": "Google擴充第8代TPU產品線，新增機密運算用的TPU 8tx與TPU 8i Max；8i Max在同一封裝放兩顆TPU 8i，運算、SRAM與HBM頻寬都加倍，主打長上下文推論，今年共推出四款第8代TPU系統，外部客戶已近100家。",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "2330",
+        "name": "台積電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Alphabet",
+        "symbol": "GOOGL"
+       },
+       {
+        "name": "Broadcom",
+        "symbol": "AVGO"
+       }
+      ],
+      "tw_note": "查證：業界報導（SemiAnalysis等）指出TPU 8t由Broadcom設計、TPU 8i由聯發科設計，均由台積電代工；8i Max雙晶片封裝等於推論TPU用量加倍，有利聯發科ASIC出貨（Google未正式證實分工）。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2119947104743518259",
+      "sentiment": "利空",
+      "summary": "美系大行對雲端半導體轉趨謹慎，認為獲利上修已近高峰，原定2028年新增的美國資料中心產能約20%可能受影響，亞洲供應鏈對2027–28年通用伺服器的能見度也在減弱；雖上修信驊2026–28年EPS至220/345/488元，仍以明年42倍本益比評價，降評並調降目標價。",
+      "tw_stocks": [
+       {
+        "code": "5274",
+        "name": "信驊"
+       }
+      ],
+      "tw_note": "外資每日報告直接點名信驊降評降目標。",
+      "is_new": true
+     },
+     {
+      "date": "11/09",
+      "post_url": "https://x.com/QQ_Timmy/status/2119585138820645338",
+      "sentiment": "利多",
+      "summary": "信驊10月營收符合美系大行預期，券商估4Q營收季增38%，反映通用型與AI伺服器需求均強，重申正向。",
+      "tw_stocks": [
+       {
+        "code": "5274",
+        "name": "信驊"
+       }
+      ],
+      "tw_note": "外資每日報告直接點名信驊，看好4Q成長（隔日另一家美系大行則降評，見上則）。"
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/BlueJay87476298/status/2120094807586738257",
+      "sentiment": "利多",
+      "summary": "摩根大通台韓AI供應鏈比較中，點名聯發科（客製化ASIC/SoC）與信驊（伺服器管理晶片）為台灣不可替代的環節；信驊預估ROE高達87.8%，聯發科預估本益比約38.4倍。",
+      "tw_stocks": [
+       {
+        "code": "2454",
+        "name": "聯發科"
+       },
+       {
+        "code": "5274",
+        "name": "信驊"
+       }
+      ],
+      "tw_note": "外資報告直接點名兩家公司具結構性成長。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "伺服器電源",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2119947104743518259",
+      "sentiment": "利多",
+      "summary": "台達電10月營收優於美系大行預期，主要由電源供應器、HVDC電源機櫃與液冷產品出貨增加推動；券商重申正向，但認為獲利能否明顯超越預期取決於HVDC電源機櫃的滲透率。",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ],
+      "tw_note": "外資每日報告直接點名台達電。",
+      "is_new": true
+     },
+     {
+      "date": "11/09",
+      "post_url": "https://x.com/QQ_Timmy/status/2119477419828769194",
+      "sentiment": "中性",
+      "summary": "Counterpoint分析800V直流配電：1MW負載下54V需約18,500安培、800V僅約1,250安培；既有機房以加裝電源櫃過渡，固態變壓器新建方案目標2028年第一季。NVIDIA採單極800V、OCP的Mt Diablo採雙極±400V，規格逐步靠攏但仍待互通驗證。",
+      "tw_stocks": [
+       {
+        "code": "2308",
+        "name": "台達電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "symbol": "NVDA"
+       },
+       {
+        "name": "Advanced Energy",
+        "symbol": "AEIS"
+       }
+      ],
+      "tw_note": "原文附圖（Counterpoint 800VDC價值鏈）把台達電列為商用電源（機架電源、轉換）供應商，與NVIDIA的800V參考設計直接相關；屬產業觀察、無訂單數字。"
+     }
+    ]
+   },
+   {
+    "group": "銅箔基板/PCB材料",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2120149443106529444",
+      "sentiment": "利多",
+      "summary": "供應鏈消息指一家既有CCL供應商因介電材料品質問題退出NVIDIA Vera Rubin NVLink Switch（Rosalind）供應鏈，PCB良率跌破10%，遠低於台光電EM-892K2材料的70–80%；Rosalind板升級到32層N+N結構，SemiAnalysis預估台光電將拿下100%市占，但前供應商問題可能拖累4Q26交換器與NVL72出貨。",
+      "tw_stocks": [
+       {
+        "code": "2383",
+        "name": "台光電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "symbol": "NVDA"
+       },
+       {
+        "name": "勝宏科技",
+        "symbol": "300476.SZ"
+       },
+       {
+        "name": "建滔集團",
+        "symbol": "0148.HK"
+       }
+      ],
+      "tw_note": "原文直接點名台光電材料型號EM-892K2，將成為Rosalind獨家CCL供應商。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "PCB/載板",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2119947104743518259",
+      "sentiment": "利多",
+      "summary": "美系券商重申南電正向，預估4Q ABF毛利率達40%以上（高階品推動），明年在美系CSP次世代AI專案與高階伺服器CPU專案取得顯著份額；1.6T乙太網路交換器將推升載板價格50%以上，BT載板明年漲價趨勢轉強。",
+      "metrics": [
+       {
+        "label": "毛利率",
+        "value": "4Q26 ABF 40%以上（美系預估）"
+       }
+      ],
+      "tw_stocks": [
+       {
+        "code": "8046",
+        "name": "南電"
+       }
+      ],
+      "tw_note": "外資每日報告直接點名南電；40%毛利率屬單一券商預估，國內券商估值較保守，需待財報驗證。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2120067342420095378",
+      "sentiment": "利多",
+      "summary": "TrendForce統計AI供應鏈7項關鍵零組件全部偏緊，ABF載板交期48–56週為最長（平衡時12週）；每代晶片需要更大載板面積、良率更難維持，ABF產能消耗快於晶片出貨成長，短缺可能延續。",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       },
+       {
+        "code": "8046",
+        "name": "南電"
+       }
+      ],
+      "tw_note": "ABF供給吃緊有利台灣載板廠稼動率與議價。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/BlueJay87476298/status/2120094807586738257",
+      "sentiment": "利多",
+      "summary": "摩根大通台韓AI供應鏈比較中，把欣興列為台灣壟斷全球ABF載板的代表廠商之一。",
+      "tw_stocks": [
+       {
+        "code": "3037",
+        "name": "欣興"
+       }
+      ],
+      "tw_note": "外資報告直接點名欣興。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "記憶體",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2120067342420095378",
+      "sentiment": "利多",
+      "summary": "TrendForce將DRAM列為「非常緊」，交期18週（平衡時8週）；中國大型雲端業者縮減高容量RDIMM採購、拖累當地現貨氣氛，但美國雲端業者需求仍強；企業級SSD漲價趨勢可望延續到4Q27。",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       },
+       {
+        "code": "8299",
+        "name": "群聯"
+       }
+      ],
+      "tw_note": "DRAM供需緊俏有利南亞科、華邦電報價；企業級SSD漲價有利群聯控制晶片與模組業務。",
+      "is_new": true
+     },
+     {
+      "date": "11/09",
+      "post_url": "https://x.com/QQ_Timmy/status/2119684172516372783",
+      "sentiment": "利多",
+      "summary": "摩根士丹利半導體選股清單維持NVIDIA首選，但在電力與機房限制下更看重記憶體的估值修復與反彈彈性，對Sandisk與美光偏好相當，看好上行週期自由現金流支撐回購。",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Micron",
+        "symbol": "MU"
+       },
+       {
+        "name": "Sandisk",
+        "symbol": "SNDK"
+       }
+      ],
+      "tw_note": "美光為DRAM同業，記憶體族群獲外資點名看好有利南亞科、華邦電評價；兩者同屬DRAM報價循環。"
+     },
+     {
+      "date": "11/09",
+      "post_url": "https://x.com/QQ_Timmy/status/2119702107167281612",
+      "sentiment": "利多",
+      "summary": "華邦電總經理表示國際大廠縮減DDR3、DDR4、LPDDR4供應後客戶積極尋求長約，預期4Q記憶體價格續漲、營收續增但增幅收斂；也提醒手機、PC、電視需求仍在修正，漲價不能視為必然延續。14奈米EUV規劃2030年導入。",
+      "tw_stocks": [
+       {
+        "code": "2344",
+        "name": "華邦電"
+       },
+       {
+        "code": "2408",
+        "name": "南亞科"
+       }
+      ],
+      "tw_note": "直接涉及華邦電；南亞科主力同為DDR4/LPDDR4利基型DRAM，大廠減產與4Q續漲同樣有利。"
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/BlueJay87476298/status/2120094561829855374",
+      "sentiment": "利空",
+      "summary": "高盛比較三星、SK海力士與長鑫存儲：長鑫缺乏EUV，2027年前仍以1z節點與LPDDR4/X為主，技術落後韓廠；但長鑫積極擴產，DRAM月產能預計從2026年底約290千片增至2028年底513千片（增77%），增幅遠高於三星（21%）與SK海力士（17%）。",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Samsung Electronics",
+        "symbol": "005930.KS"
+       },
+       {
+        "name": "SK hynix",
+        "symbol": "000660.KS"
+       }
+      ],
+      "tw_note": "長鑫主力LPDDR4/X與南亞科、華邦電的利基型DRAM直接競爭，產能大增77%不利台廠中長期報價。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2119826805880434740",
+      "sentiment": "中性",
+      "summary": "SemiAnalysis指長鑫存儲首批4F² DDR5 RDIMM目標年底送樣，但模擬顯示記憶單元反而比現有G5大約10%，密度提升約10%主要靠晶圓接合（Cell-on-Periphery），需要處理兩片晶圓，良率與每位元成本仍是關鍵。",
+      "tw_stocks": [
+       {
+        "code": "2408",
+        "name": "南亞科"
+       },
+       {
+        "code": "2344",
+        "name": "華邦電"
+       }
+      ],
+      "tw_note": "長鑫為台系DRAM廠的直接競爭者；新架構密度優勢有限、成本待驗，短期威脅不大。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "被動元件",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/QQ_Timmy/status/2120067342420095378",
+      "sentiment": "中性",
+      "summary": "TrendForce指MLCC屬「緊」，交期38週（平衡時12週），但記憶體短缺影響手機與筆電生產，消費性MLCC需求幾乎看不到復甦跡象。",
+      "tw_stocks": [
+       {
+        "code": "2327",
+        "name": "國巨*"
+       },
+       {
+        "code": "2492",
+        "name": "華新科"
+       }
+      ],
+      "tw_note": "AI用MLCC交期拉長有利議價，但消費性需求疲弱，好壞參半。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "半導體封測",
+    "items": [
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/Leoskie_L/status/2119954441520685503",
+      "sentiment": "利空",
+      "summary": "京元電下修4Q指引為季增約7–10%、毛利率36–37%，原因是關鍵客戶新一代GPU（市場指NVIDIA Rubin）因HBM4良率延遲量產，加上新產線折舊；ASIC與CPU（Google TPU、Axion等）補上部分缺口，摩根士丹利預期延後的測試單1Q27回來。",
+      "metrics": [
+       {
+        "label": "3Q26營收",
+        "value": "121.42億，季增9%、年增31%"
+       },
+       {
+        "label": "毛利率",
+        "value": "3Q26 37.6%，4Q指引36–37%"
+       }
+      ],
+      "reply_note": "作者留言補充：測試是最後一關，機台到位只代表準備就緒，真正拉貨要看上游晶圓與封裝何時放量，明年恢復要先盯上游投片節奏。",
+      "tw_stocks": [
+       {
+        "code": "2449",
+        "name": "京元電子"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "NVIDIA",
+        "symbol": "NVDA"
+       }
+      ],
+      "tw_note": "直接涉及京元電子財測下修；營收仍季增，但成長放緩。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/Leoskie_L/status/2119950621050847462",
+      "sentiment": "利多",
+      "summary": "作者整理兩週資料中心新聞，因需求取消的只有1筆；日月光一波133.9億元設備採購中77%付給愛德萬測試機，顯示測試產能持續擴充，市場擔心的是建置速度而非需求。",
+      "tw_stocks": [
+       {
+        "code": "3711",
+        "name": "日月光投控"
+       }
+      ],
+      "foreign": [
+       {
+        "name": "Advantest",
+        "symbol": "6857.T"
+       }
+      ],
+      "tw_note": "日月光大舉採購愛德萬（AI晶片測試機龍頭）設備，代表AI測試產能擴張。",
+      "is_new": true
+     },
+     {
+      "date": "11/10",
+      "post_url": "https://x.com/BlueJay87476298/status/2120094807586738257",
+      "sentiment": "利多",
+      "summary": "摩根大通台韓AI供應鏈比較中，把日月光投控與台積電CoWoS並列為台灣主導先進封裝的代表。",
+      "tw_stocks": [
+       {
+        "code": "3711",
+        "name": "日月光投控"
+       }
+      ],
+      "tw_note": "外資報告直接點名日月光投控。",
+      "is_new": true
+     }
+    ]
+   },
+   {
+    "group": "AI伺服器ODM",
+    "items": [
+     {
+      "date": "11/09",
+      "post_url": "https://x.com/QQ_Timmy/status/2119585138820645338",
+      "sentiment": "利多",
+      "summary": "美系券商重申緯穎正向：3Q營業費用率因營運槓桿下降，預期4Q營收季增20%；鴻海10月營收年增46%符合預期，手機、伺服器、零組件三大部門皆月增，並為CPO交換器主要供應商。",
+      "metrics": [
+       {
+        "label": "10月營收",
+        "value": "鴻海年增46%，符合預期"
+       }
+      ],
+      "tw_stocks": [
+       {
+        "code": "2317",
+        "name": "鴻海"
+       }
+      ],
+      "tw_note": "外資每日報告直接點名鴻海並重申正向。"
+     }
+    ]
+   }
+  ]
  },
  "sector_flows": {
   "last_week": [
