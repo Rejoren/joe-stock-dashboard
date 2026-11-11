@@ -1438,7 +1438,7 @@
   "updated_at": "2026-11-09 19:14",
   "groups": [
    {
-    "group": "AI伺服器ODM",
+    "industry": "AI伺服器ODM",
     "items": [
      {
       "date": "11/09",
@@ -1467,7 +1467,7 @@
     ]
    },
    {
-    "group": "伺服器機構件",
+    "industry": "伺服器機構件",
     "items": [
      {
       "date": "11/09",
@@ -1486,7 +1486,7 @@
     ]
    },
    {
-    "group": "IC設計",
+    "industry": "IC設計",
     "items": [
      {
       "date": "11/09",
@@ -1505,7 +1505,7 @@
     ]
    },
    {
-    "group": "伺服器電源",
+    "industry": "伺服器電源",
     "items": [
      {
       "date": "11/09",
@@ -1520,11 +1520,11 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        },
        {
         "name": "Advanced Energy",
-        "symbol": "AEIS"
+        "ticker": "AEIS"
        }
       ],
       "tw_note": "原文附圖（Counterpoint 800VDC價值鏈）把台達電列為商用電源（機架電源、轉換）供應商，與NVIDIA的800V參考設計直接相關；屬產業觀察、無訂單數字。",
@@ -1534,7 +1534,7 @@
     ]
    },
    {
-    "group": "PCB/載板",
+    "industry": "PCB/載板",
     "items": [
      {
       "date": "11/08",
@@ -1571,11 +1571,11 @@
       "foreign": [
        {
         "name": "TTM Technologies",
-        "symbol": "TTMI"
+        "ticker": "TTMI"
        },
        {
         "name": "深南電路",
-        "symbol": "002916.SZ"
+        "ticker": "002916.SZ"
        }
       ],
       "tw_note": "原文直接點名金像電為能從容應對的一線板廠，但陸廠價格競爭加劇。",
@@ -1585,7 +1585,7 @@
     ]
    },
    {
-    "group": "銅箔基板/PCB材料",
+    "industry": "銅箔基板/PCB材料",
     "items": [
      {
       "date": "11/08",
@@ -1604,7 +1604,7 @@
       "foreign": [
        {
         "name": "生益科技",
-        "symbol": "600183.SS"
+        "ticker": "600183.SS"
        }
       ],
       "tw_note": "原文直接點名台光電、南亞為材料端主導廠商。",
@@ -1628,7 +1628,7 @@
     ]
    },
    {
-    "group": "晶圓代工",
+    "industry": "晶圓代工",
     "items": [
      {
       "date": "11/08",
@@ -1647,11 +1647,11 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        },
        {
         "name": "Micron",
-        "symbol": "MU"
+        "ticker": "MU"
        }
       ],
       "tw_note": "直接涉及台積電；創意被點名為客製化HBM方案的合作夥伴。",
@@ -1675,7 +1675,7 @@
     ]
    },
    {
-    "group": "記憶體",
+    "industry": "記憶體",
     "items": [
      {
       "date": "11/09",
@@ -1690,11 +1690,11 @@
       "foreign": [
        {
         "name": "Micron",
-        "symbol": "MU"
+        "ticker": "MU"
        },
        {
         "name": "Sandisk",
-        "symbol": "SNDK"
+        "ticker": "SNDK"
        }
       ],
       "tw_note": "美光為DRAM同業，記憶體族群獲外資點名看好有利南亞科評價；查證南亞科產品以DDR4/LPDDR4為主，與美光同屬DRAM報價循環。",
@@ -1728,7 +1728,7 @@
       "foreign": [
        {
         "name": "Amazon",
-        "symbol": "AMZN"
+        "ticker": "AMZN"
        }
       ],
       "tw_note": "雲端大廠證實記憶體供不應求，有利DRAM報價，南亞科為台灣主要DRAM廠。",
@@ -1738,7 +1738,7 @@
     ]
    },
    {
-    "group": "半導體封測",
+    "industry": "半導體封測",
     "items": [
      {
       "date": "11/08",
@@ -1753,7 +1753,7 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        }
       ],
       "tw_note": "直接涉及京元電子美國測試產能擴建，客戶為NVIDIA。",

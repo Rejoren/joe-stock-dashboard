@@ -1548,7 +1548,7 @@
   "updated_at": "2026-11-11 00:26",
   "groups": [
    {
-    "group": "晶圓代工",
+    "industry": "晶圓代工",
     "items": [
      {
       "date": "11/10",
@@ -1571,7 +1571,7 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        }
       ],
       "tw_note": "直接涉及台積電；作者也提醒先進製程放量後，封裝、ABF載板與記憶體可能成為下一個瓶頸。",
@@ -1614,7 +1614,7 @@
     ]
    },
    {
-    "group": "IC設計",
+    "industry": "IC設計",
     "items": [
      {
       "date": "11/09",
@@ -1634,11 +1634,11 @@
       "foreign": [
        {
         "name": "Alphabet",
-        "symbol": "GOOGL"
+        "ticker": "GOOGL"
        },
        {
         "name": "Broadcom",
-        "symbol": "AVGO"
+        "ticker": "AVGO"
        }
       ],
       "tw_note": "查證：業界報導（SemiAnalysis等）指出TPU 8t由Broadcom設計、TPU 8i由聯發科設計，均由台積電代工；8i Max雙晶片封裝等於推論TPU用量加倍，有利聯發科ASIC出貨（Google未正式證實分工）。",
@@ -1692,7 +1692,7 @@
     ]
    },
    {
-    "group": "伺服器電源",
+    "industry": "伺服器電源",
     "items": [
      {
       "date": "11/10",
@@ -1722,11 +1722,11 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        },
        {
         "name": "Advanced Energy",
-        "symbol": "AEIS"
+        "ticker": "AEIS"
        }
       ],
       "tw_note": "原文附圖（Counterpoint 800VDC價值鏈）把台達電列為商用電源（機架電源、轉換）供應商，與NVIDIA的800V參考設計直接相關；屬產業觀察、無訂單數字。"
@@ -1734,7 +1734,7 @@
     ]
    },
    {
-    "group": "銅箔基板/PCB材料",
+    "industry": "銅箔基板/PCB材料",
     "items": [
      {
       "date": "11/10",
@@ -1750,15 +1750,15 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        },
        {
         "name": "勝宏科技",
-        "symbol": "300476.SZ"
+        "ticker": "300476.SZ"
        },
        {
         "name": "建滔集團",
-        "symbol": "0148.HK"
+        "ticker": "0148.HK"
        }
       ],
       "tw_note": "原文直接點名台光電材料型號EM-892K2，將成為Rosalind獨家CCL供應商。",
@@ -1767,7 +1767,7 @@
     ]
    },
    {
-    "group": "PCB/載板",
+    "industry": "PCB/載板",
     "items": [
      {
       "date": "11/10",
@@ -1824,7 +1824,7 @@
     ]
    },
    {
-    "group": "記憶體",
+    "industry": "記憶體",
     "items": [
      {
       "date": "11/10",
@@ -1866,11 +1866,11 @@
       "foreign": [
        {
         "name": "Micron",
-        "symbol": "MU"
+        "ticker": "MU"
        },
        {
         "name": "Sandisk",
-        "symbol": "SNDK"
+        "ticker": "SNDK"
        }
       ],
       "tw_note": "美光為DRAM同業，記憶體族群獲外資點名看好有利南亞科、華邦電評價；兩者同屬DRAM報價循環。"
@@ -1910,11 +1910,11 @@
       "foreign": [
        {
         "name": "Samsung Electronics",
-        "symbol": "005930.KS"
+        "ticker": "005930.KS"
        },
        {
         "name": "SK hynix",
-        "symbol": "000660.KS"
+        "ticker": "000660.KS"
        }
       ],
       "tw_note": "長鑫主力LPDDR4/X與南亞科、華邦電的利基型DRAM直接競爭，產能大增77%不利台廠中長期報價。",
@@ -1941,7 +1941,7 @@
     ]
    },
    {
-    "group": "被動元件",
+    "industry": "被動元件",
     "items": [
      {
       "date": "11/10",
@@ -1964,7 +1964,7 @@
     ]
    },
    {
-    "group": "半導體封測",
+    "industry": "半導體封測",
     "items": [
      {
       "date": "11/10",
@@ -1991,7 +1991,7 @@
       "foreign": [
        {
         "name": "NVIDIA",
-        "symbol": "NVDA"
+        "ticker": "NVDA"
        }
       ],
       "tw_note": "直接涉及京元電子財測下修；營收仍季增，但成長放緩。",
@@ -2011,7 +2011,7 @@
       "foreign": [
        {
         "name": "Advantest",
-        "symbol": "6857.T"
+        "ticker": "6857.T"
        }
       ],
       "tw_note": "日月光大舉採購愛德萬（AI晶片測試機龍頭）設備，代表AI測試產能擴張。",
@@ -2034,7 +2034,7 @@
     ]
    },
    {
-    "group": "AI伺服器ODM",
+    "industry": "AI伺服器ODM",
     "items": [
      {
       "date": "11/09",
