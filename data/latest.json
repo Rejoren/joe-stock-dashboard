@@ -1,1263 +1,3073 @@
 {
- "date": "2026-11-25",
- "generated_at": "2026-11-25T15:14:13Z",
- "hot_list": {
-  "count": 35,
-  "date": "2026-11-25",
-  "news_days": 7,
-  "stocks": [
-   {
-    "change_pct": -4.57,
-    "code": "3037",
-    "group": "PCB/載板",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 1,
-     "trust_turn": true
+ "date": "2026-11-26",
+ "generated_at": "2026-11-26T12:13:51Z",
+ "otc_index": 289.84,
+ "otc_change": 13.87,
+ "otc_change_pct": 5.03,
+ "otc_ma5": 278.65,
+ "otc_ma20": 317.15,
+ "otc_ma60": 376.86,
+ "light": "green",
+ "light_reason": "櫃買289.84反彈站上5MA，但仍在20MA與60MA之下且均線下彎，維持防禦",
+ "today_focus": [
+  {
+   "tag": "國際",
+   "text": "USTR公布產能過剩301調查，擬對台灣等14國加徵關稅；台灣建議稅率15%不疊加MFN，與日韓歐同屬最低級別，1/25起舉行公聽會。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6671882"
+  },
+  {
+   "tag": "總經",
+   "text": "美國10月PCE年增3.8%、核心PCE升至3.3%創三年新高，Fed褐皮書指薪資漲幅擴大，市場預期12/8-9會議至少升息一碼。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6671862"
+  },
+  {
+   "tag": "美股",
+   "text": "美股25日劇烈震盪，道瓊收復逾1100點失土收漲164點，那指、標普仍收黑；輝達跌3.91%、美光挫4.53%，AI股賣壓未歇。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6671872"
+  },
+  {
+   "tag": "美股",
+   "text": "SemiAnalysis大砍AI加速器支出預測，2027年降19%至6270億美元、2030年下修約40%，輝達受衝擊最大，HBM需求同步降溫。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6672014"
+  },
+  {
+   "tag": "台股",
+   "text": "白宮表示川普12月4日赴亞利桑那州，出席台積電第五期擴建動土典禮；台積電對美投資承諾總額達2650億美元。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6671912"
+  },
+  {
+   "tag": "總經",
+   "text": "胡塞武裝聲稱攻擊沙國最大煉油廠拉斯塔努拉，Brent收漲3.5%至每桶94.61美元、WTI報83.53美元；OPEC+ 11/29開會。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6671866"
+  },
+  {
+   "tag": "總經",
+   "text": "南韓央行升息1碼至3.25%，為下半年第三次升息，並上修今年GDP成長至3.9%、2027年至4.1%，AI記憶體出口為主要動能。",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6671960"
+  }
+ ],
+ "upcoming_events": [
+  {
+   "date": "11/30",
+   "event": "MSCI 11月半年度調整生效（11/30盤後），台股在新興市場指數權重由28.86%調升至29.01%，南電、景碩、台燿新納入台灣指數"
+  },
+  {
+   "date": "12/10",
+   "event": "Broadcom第四季財報（官方公布美東12/9盤後，台北12/10清晨），牽動ASIC與網通供應鏈"
+  },
+  {
+   "date": "12/10",
+   "event": "聯準會FOMC利率決議（美東12/8-9會議，台北12/10凌晨公布），市場幾乎完全反映升息1碼，含最新經濟預測與點陣圖"
+  },
+  {
+   "date": "12/10",
+   "event": "台積電11月營收公布（依慣例每月10日前後，日期未正式公布）"
+  },
+  {
+   "date": "12/16",
+   "event": "台指期貨/選擇權12月結算（每月第三個星期三）"
+  },
+  {
+   "date": "12月中下旬",
+   "event": "美光第一季財報（依慣例12月中下旬，日期未正式公布），牽動記憶體供應鏈"
+  },
+  {
+   "date": "12/18",
+   "event": "美股四巫日（12月第三個星期五，指數與個股期貨/選擇權同日到期），當日與前後常見爆量波動並外溢台股"
+  },
+  {
+   "date": "12/21",
+   "event": "富時FTSE全球指數(GEIS)12月季度調整生效（FTSE官方時程12/21生效，即12/18盤後），公布日未確認"
+  }
+ ],
+ "rumors": {
+  "sources": [
+   "@QQ_Timmy",
+   "@BlueJay87476298",
+   "@mingchikuo",
+   "@Leoskie_L"
+  ],
+  "window": [
+   "2026-11-25",
+   "2026-11-26"
+  ],
+  "status": "pending",
+  "groups": []
+ },
+ "top50_sectors": [
+  {
+   "sector": "晶圓代工",
+   "count": 2,
+   "stocks": [
+    {
+     "code": "2330",
+     "name": "台積電"
     },
-    "market": "市",
-    "name": "欣興",
-    "news": [
+    {
+     "code": "2303",
+     "name": "聯電"
+    }
+   ]
+  },
+  {
+   "sector": "IC設計",
+   "count": 3,
+   "stocks": [
+    {
+     "code": "2454",
+     "name": "聯發科"
+    },
+    {
+     "code": "3661",
+     "name": "世芯-KY"
+    },
+    {
+     "code": "3443",
+     "name": "創意"
+    }
+   ]
+  },
+  {
+   "sector": "銅箔基板/PCB材料",
+   "count": 4,
+   "stocks": [
+    {
+     "code": "2383",
+     "name": "台光電"
+    },
+    {
+     "code": "1802",
+     "name": "台玻"
+    },
+    {
+     "code": "1303",
+     "name": "南亞"
+    },
+    {
+     "code": "6274",
+     "name": "台燿"
+    }
+   ]
+  },
+  {
+   "sector": "PCB/載板",
+   "count": 3,
+   "stocks": [
+    {
+     "code": "3037",
+     "name": "欣興"
+    },
+    {
+     "code": "3189",
+     "name": "景碩"
+    },
+    {
+     "code": "2368",
+     "name": "金像電"
+    }
+   ]
+  },
+  {
+   "sector": "半導體封測",
+   "count": 2,
+   "stocks": [
+    {
+     "code": "3711",
+     "name": "日月光投控"
+    },
+    {
+     "code": "3374",
+     "name": "精材"
+    }
+   ]
+  },
+  {
+   "sector": "記憶體",
+   "count": 2,
+   "stocks": [
+    {
+     "code": "2408",
+     "name": "南亞科"
+    },
+    {
+     "code": "8299",
+     "name": "群聯"
+    }
+   ]
+  }
+ ],
+ "top5": [
+  {
+   "rank": 1,
+   "code": "8299",
+   "name": "群聯",
+   "sector": "記憶體控制IC",
+   "theme_reason": "題材35分：記憶體主流族群（前20名含南亞科、群聯）；產業機遇15：〈群聯續推進企業級SSD布局 新一代X3明年H1量產〉(MoneyDJ 11/25)；需求側10：〈NAND漲價只是表面！群聯真正的新故事在AI儲存與邊緣運算〉(經濟日報 10/30)；供給側0；獲利上修5：〈鉅亨速報 - Factset 最新調查：群聯(8299-TW)EPS…〉(鉅亨網 11/23)；本益比4.71低於同族群10檔中位數5.13 5。",
+   "fundamentals": "2026-10營收 MoM +2.90%、YoY +346.26%（累計YoY +297.78%）",
+   "chips_signal": "外資賣超約1,237張（連3日賣超）、投信買超約1,692張（連2日買超）；今日量為5日均量0.94倍",
+   "buy_strategy": "保守守城：綠燈防禦期不追反彈，記憶體控制IC僅在大盤重挫3%以上且量能放大時分3筆小量布局。",
+   "score": 71,
+   "streak": 1,
+   "news": [
+    {
+     "title": "記憶體重新開機！群聯、南亞科領軍5檔漲停 9雄全面反攻",
+     "url": "https://news.wearn.com/c2154773.html",
+     "source": "聚財網",
+     "time": "11/26 13:47"
+    },
+    {
+     "title": "群聯買回庫藏股提前執行完畢、共2,000張，均價1647.82元",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8a2e3026-0934-4dfe-b581-7fe12f50f51a",
+     "source": "MoneyDJ",
+     "time": "11/26 09:01"
+    },
+    {
+     "title": "群聯續推進企業級SSD布局 新一代X3明年H1量產",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b2957132-11ed-4ff5-8d92-3cc9da77d994",
+     "source": "MoneyDJ",
+     "time": "11/25 09:09"
+    }
+   ]
+  },
+  {
+   "rank": 2,
+   "code": "3661",
+   "name": "世芯-KY",
+   "sector": "AI ASIC設計",
+   "theme_reason": "題材31分：IC設計主流族群（前20名含聯發科、世芯-KY、創意）；產業機遇10（近7日無新催化）；需求側6：〈創意10月獲利年增1.56倍 世芯成長66%〉(經濟日報 11/16)；供給側5：〈AI晶片搶單大戰開打！聯發科、世芯目標價喊上天 ASIC供應鏈全面升…〉(聚財網 11/10)；獲利上修5：〈CSP 客戶訂單續旺 法人調高世芯獲利預估值及目標價〉(經濟日報 11/09)；本益比41.34低於同族群9檔中位數57.10 5。",
+   "fundamentals": "2026-10營收 MoM +2.82%、YoY +515.80%（累計YoY +72.61%）",
+   "chips_signal": "外資賣超約666張（連3日賣超）、投信買超約124張（連2日買超）；今日量為5日均量1.08倍",
+   "buy_strategy": "保守守城：綠燈期ASIC龍頭僅於大盤重挫3%以上、主力站賣方時分3筆低接，不追價。",
+   "score": 60,
+   "streak": 2,
+   "news": [
+    {
+     "title": "IC設計大洗牌！世芯、聯發科雙漲停 創意重挫5%失守股后",
+     "url": "https://news.wearn.com/c2152142.html",
+     "source": "聚財網",
+     "time": "11/23 16:46"
+    },
+    {
+     "title": "鉅亨速報 - Factset 最新調查：世芯-KY(3661-TW)EPS預估下修至122.91元，預估目標價為5630元",
+     "url": "https://news.cnyes.com/news/id/6670093",
+     "source": "鉅亨網",
+     "time": "11/23 12:10"
+    },
+    {
+     "title": "朱成志：少了老黃「ASIC >GPU」，4萬點築底模式，世芯股價該大於聯發科嗎？",
+     "url": "https://money.udn.com/money/story/5607/9891488",
+     "source": "經濟日報",
+     "time": "11/21 21:35"
+    }
+   ]
+  },
+  {
+   "rank": 3,
+   "code": "2368",
+   "name": "金像電",
+   "sector": "伺服器PCB",
+   "theme_reason": "題材25分：PCB/載板主流族群（前20名含欣興、景碩、金像電）；產業機遇10（近7日無新催化）；需求側10：〈金像電(2368) 漲價轉嫁原物料成本！第 3 季毛利率 38.7%…〉(鉅亨網 11/13)；供給側0；獲利上修0；本益比29.84低於同族群7檔中位數33.28 5。",
+   "fundamentals": "2026-10營收 MoM +6.36%、YoY +76.17%（累計YoY +69.88%）",
+   "chips_signal": "外資賣超約2,669張（連3日賣超）、投信買超約2,822張（連2日買超）；今日量為5日均量1.2倍",
+   "buy_strategy": "保守守城：綠燈防禦期，伺服器PCB待大盤急殺爆量時分批低接，嚴控部位。",
+   "score": 57,
+   "streak": 2,
+   "news": [
+    {
+     "title": "熱門股》土洋對作 金像電逆勢收紅",
+     "url": "https://ec.ltn.com.tw/article/paper/1779920",
+     "source": "自由財經",
+     "time": "11/26 05:30"
+    }
+   ]
+  },
+  {
+   "rank": 4,
+   "code": "6274",
+   "name": "台燿",
+   "sector": "CCL銅箔基板",
+   "theme_reason": "題材30分：銅箔基板/PCB材料主流族群（前20名含台光電、台玻、南亞、台燿）；產業機遇10（近7日無新催化）；需求側10：〈台燿(6274)第三季毛利率衝上36.9%！四年產能近乎倍增，漲價與…〉(優分析 10/29)；供給側0；獲利上修5：〈鉅亨速報 - Factset 最新調查：台燿(6274-TW)EPS…〉(鉅亨網 11/17)；本益比27.84低於同族群11檔中位數34.53 5。",
+   "fundamentals": "2026-10營收 MoM +5.76%、YoY +126.99%（累計YoY +102.67%）",
+   "chips_signal": "外資賣超約998張（連3日賣超）、投信賣超約200張，外資投信同賣；今日量為5日均量1.29倍",
+   "buy_strategy": "保守守城：綠燈期CCL仍在20日線下，僅於大盤重挫爆量時分3筆布局，不追高。",
+   "score": 53,
+   "streak": 2,
+   "news": []
+  },
+  {
+   "rank": 5,
+   "code": "2303",
+   "name": "聯電",
+   "sector": "成熟製程晶圓代工",
+   "theme_reason": "題材31分：晶圓代工主流族群（前20名含台積電、聯電）；產業機遇10（近7日無新催化）；需求側6：〈三星搶星鏈訂單叫陣台積 加速退出成熟製程 聯電、力積有望迎轉單〉(經濟日報 11/17)；供給側5：〈聯電漲停鎖死買不到！三星轉單傳聞助攻 3萬張排隊等上車〉(聚財網 11/23)；獲利上修5：〈鉅亨速報 - Factset 最新調查：聯電(2303-TW)目標價…〉(鉅亨網 10/29)；本益比13.12低於同族群2檔中位數16.11 5。",
+   "fundamentals": "2026-10營收 MoM -0.60%、YoY +18.32%（累計YoY +16.32%）",
+   "chips_signal": "外資賣超約21,904張（連3日賣超）、投信買超約10,498張（連2日買超）；今日量為5日均量1.09倍",
+   "buy_strategy": "保守守城：綠燈期晶圓代工權值股僅在大盤重挫3%以上時分批承接後抱緊。",
+   "score": 52,
+   "streak": 1,
+   "news": [
+    {
+     "title": "聯電連拉2根漲停今秒殺跌停！兇手抓到了 118萬股東傻眼",
+     "url": "https://ec.ltn.com.tw/article/breakingnews/5653100",
+     "source": "自由財經",
+     "time": "11/25 16:30"
+    }
+   ]
+  }
+ ],
+ "top30": [
+  {
+   "rank": 1,
+   "code": "2330",
+   "market": "市",
+   "name": "台積電",
+   "price": 2145,
+   "open": 2150,
+   "high": 2170,
+   "low": 2120,
+   "change_pct": -0.23,
+   "turnover": "986.6億",
+   "market_cap": "55.62兆",
+   "theme": "晶圓代工(先進製程)",
+   "inst": {
+    "foreign_streak": -10,
+    "trust_streak": 4,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 14.65,
+    "yoy": 59.7
+   }
+  },
+  {
+   "rank": 2,
+   "code": "2454",
+   "market": "市",
+   "name": "聯發科",
+   "price": 3705,
+   "open": 3720,
+   "high": 3885,
+   "low": 3645,
+   "change_pct": 1.65,
+   "turnover": "591.0億",
+   "market_cap": "5.95兆",
+   "theme": "IC設計/AI ASIC",
+   "inst": {
+    "foreign_streak": -9,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": -0.67,
+    "yoy": 5.76
+   }
+  },
+  {
+   "rank": 3,
+   "code": "2383",
+   "market": "市",
+   "name": "台光電",
+   "price": 3660,
+   "open": 3515,
+   "high": 3690,
+   "low": 3485,
+   "change_pct": 9.09,
+   "turnover": "317.2億",
+   "market_cap": "1.31兆",
+   "theme": "CCL銅箔基板",
+   "rank_up": 2,
+   "inst": {
+    "foreign_streak": -4,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 13.65,
+    "yoy": 203.07
+   }
+  },
+  {
+   "rank": 4,
+   "code": "1802",
+   "market": "市",
+   "name": "台玻",
+   "price": 59.7,
+   "open": 62.6,
+   "high": 63.3,
+   "low": 57.3,
+   "change_pct": -0.33,
+   "turnover": "240.2億",
+   "market_cap": "1736.1億",
+   "theme": "玻纖布/平板玻璃",
+   "rank_up": 5,
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": -2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 12.04,
+    "yoy": 56.48
+   }
+  },
+  {
+   "rank": 5,
+   "code": "2308",
+   "market": "市",
+   "name": "台達電",
+   "price": 1120,
+   "open": 1110,
+   "high": 1140,
+   "low": 1065,
+   "change_pct": 6.16,
+   "turnover": "239.0億",
+   "market_cap": "2.91兆",
+   "theme": "AI伺服器電源",
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 14.16,
+    "yoy": 30.11
+   }
+  },
+  {
+   "rank": 6,
+   "code": "3037",
+   "market": "市",
+   "name": "欣興",
+   "price": 643,
+   "open": 620,
+   "high": 643,
+   "low": 612,
+   "change_pct": 9.91,
+   "turnover": "219.7億",
+   "market_cap": "1.06兆",
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 1.79,
+    "yoy": 67.61
+   }
+  },
+  {
+   "rank": 7,
+   "code": "3189",
+   "market": "市",
+   "name": "景碩",
+   "price": 530,
+   "open": 544,
+   "high": 544,
+   "low": 507,
+   "change_pct": 7.07,
+   "turnover": "210.8億",
+   "market_cap": "2792.6億",
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 3.59,
+    "yoy": 49.04
+   }
+  },
+  {
+   "rank": 8,
+   "code": "1303",
+   "market": "市",
+   "name": "南亞",
+   "price": 244,
+   "open": 236,
+   "high": 248,
+   "low": 235,
+   "change_pct": 7.73,
+   "turnover": "204.5億",
+   "market_cap": "1.94兆",
+   "theme": "電子材料(CCL/玻纖布)",
+   "inst": {
+    "foreign_streak": -4,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 1.5,
+    "yoy": 64.59
+   }
+  },
+  {
+   "rank": 9,
+   "code": "2303",
+   "market": "市",
+   "name": "聯電",
+   "price": 88.8,
+   "open": 87.4,
+   "high": 90.9,
+   "low": 86.6,
+   "change_pct": 1.6,
+   "turnover": "192.9億",
+   "market_cap": "1.12兆",
+   "theme": "成熟製程晶圓代工",
+   "rank_up": 8,
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": -0.6,
+    "yoy": 18.32
+   }
+  },
+  {
+   "rank": 10,
+   "code": "3711",
+   "market": "市",
+   "name": "日月光投控",
+   "price": 511,
+   "open": 500,
+   "high": 522,
+   "low": 488.5,
+   "change_pct": 4.71,
+   "turnover": "164.4億",
+   "market_cap": "2.29兆",
+   "theme": "半導體封測/先進封裝",
+   "rank_up": 6,
+   "inst": {
+    "foreign_streak": -10,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 0.55,
+    "yoy": 47.12
+   }
+  },
+  {
+   "rank": 11,
+   "code": "2368",
+   "market": "市",
+   "name": "金像電",
+   "price": 995,
+   "open": 951,
+   "high": 995,
+   "low": 940,
+   "change_pct": 9.94,
+   "turnover": "143.8億",
+   "market_cap": "5279.4億",
+   "theme": "伺服器PCB",
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 6.36,
+    "yoy": 76.17
+   }
+  },
+  {
+   "rank": 12,
+   "code": "6274",
+   "market": "櫃",
+   "name": "台燿",
+   "price": 794,
+   "open": 787,
+   "high": 812,
+   "low": 756,
+   "change_pct": 7.44,
+   "turnover": "132.7億",
+   "market_cap": "2378.0億",
+   "theme": "CCL銅箔基板",
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 5.76,
+    "yoy": 126.99
+   }
+  },
+  {
+   "rank": 13,
+   "code": "3661",
+   "market": "市",
+   "name": "世芯-KY",
+   "price": 3735,
+   "open": 3780,
+   "high": 3895,
+   "low": 3695,
+   "change_pct": 3.61,
+   "turnover": "130.5億",
+   "market_cap": "3226.4億",
+   "theme": "AI ASIC設計",
+   "rank_up": 1,
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 2.82,
+    "yoy": 515.8
+   }
+  },
+  {
+   "rank": 14,
+   "code": "2408",
+   "market": "市",
+   "name": "南亞科",
+   "price": 306,
+   "open": 285.5,
+   "high": 306,
+   "low": 285,
+   "change_pct": 9.87,
+   "turnover": "123.3億",
+   "market_cap": "1.06兆",
+   "theme": "記憶體(DRAM)",
+   "rank_up": 8,
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 2,
+    "foreign_turn": true,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 3.07,
+    "yoy": 487.72
+   }
+  },
+  {
+   "rank": 15,
+   "code": "2317",
+   "market": "市",
+   "name": "鴻海",
+   "price": 216.5,
+   "open": 208.5,
+   "high": 220,
+   "low": 208,
+   "change_pct": 4.84,
+   "turnover": "115.7億",
+   "market_cap": "3.05兆",
+   "theme": "AI伺服器ODM",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 8,
+    "foreign_turn": true,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 12.66,
+    "yoy": 45.73
+   }
+  },
+  {
+   "rank": 16,
+   "code": "3374",
+   "market": "櫃",
+   "name": "精材",
+   "price": 340,
+   "open": 340,
+   "high": 353.5,
+   "low": 324.5,
+   "change_pct": 1.19,
+   "turnover": "102.6億",
+   "market_cap": "922.6億",
+   "theme": "晶圓級先進封裝",
+   "is_new": true,
+   "inst": {
+    "foreign_streak": -9,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 6.07,
+    "yoy": 38.98
+   }
+  },
+  {
+   "rank": 17,
+   "code": "3443",
+   "market": "市",
+   "name": "創意",
+   "price": 5390,
+   "open": 5000,
+   "high": 5510,
+   "low": 4950,
+   "change_pct": 6.31,
+   "turnover": "94.4億",
+   "market_cap": "7223.2億",
+   "theme": "AI ASIC設計",
+   "is_new": true,
+   "inst": {
+    "foreign_streak": 2,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 18.02,
+    "yoy": 126.95
+   }
+  },
+  {
+   "rank": 18,
+   "code": "8299",
+   "market": "櫃",
+   "name": "群聯",
+   "price": 1630,
+   "open": 1540,
+   "high": 1630,
+   "low": 1530,
+   "change_pct": 9.76,
+   "turnover": "91.3億",
+   "market_cap": "3609.5億",
+   "theme": "記憶體控制IC",
+   "rank_up": 5,
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 2.9,
+    "yoy": 346.26
+   }
+  },
+  {
+   "rank": 19,
+   "code": "2327",
+   "market": "市",
+   "name": "國巨*",
+   "price": 339.5,
+   "open": 330,
+   "high": 339.5,
+   "low": 329,
+   "change_pct": 9.87,
+   "turnover": "90.7億",
+   "market_cap": "7004.3億",
+   "theme": "MLCC被動元件",
+   "inst": {
+    "foreign_streak": 2,
+    "trust_streak": -10,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 3.1,
+    "yoy": 55.0
+   }
+  },
+  {
+   "rank": 20,
+   "code": "2412",
+   "market": "市",
+   "name": "中華電",
+   "price": 166.5,
+   "open": 164.5,
+   "high": 170,
+   "low": 164.5,
+   "change_pct": 1.83,
+   "turnover": "89.1億",
+   "market_cap": "1.29兆",
+   "theme": "電信服務",
+   "rank_up": 7,
+   "inst": {
+    "foreign_streak": -5,
+    "trust_streak": 7,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": -2.66,
+    "yoy": 13.44
+   }
+  },
+  {
+   "rank": 21,
+   "code": "2345",
+   "market": "市",
+   "name": "智邦",
+   "price": 1620,
+   "open": 1565,
+   "high": 1620,
+   "low": 1545,
+   "change_pct": 9.83,
+   "turnover": "88.9億",
+   "market_cap": "9090.1億",
+   "theme": "AI網通交換器",
+   "inst": {
+    "foreign_streak": -8,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 10.55,
+    "yoy": 91.15
+   }
+  },
+  {
+   "rank": 22,
+   "code": "6213",
+   "market": "市",
+   "name": "聯茂",
+   "price": 429,
+   "open": 418,
+   "high": 429,
+   "low": 402,
+   "change_pct": 10.0,
+   "turnover": "82.8億",
+   "market_cap": "1559.9億",
+   "theme": "CCL銅箔基板",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 2,
+    "foreign_turn": true,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 3.63,
+    "yoy": 119.53
+   }
+  },
+  {
+   "rank": 23,
+   "code": "8046",
+   "market": "市",
+   "name": "南電",
+   "price": 731,
+   "open": 719,
+   "high": 731,
+   "low": 704,
+   "change_pct": 9.92,
+   "turnover": "77.9億",
+   "market_cap": "4723.5億",
+   "theme": "ABF載板",
+   "inst": {
+    "foreign_streak": 2,
+    "trust_streak": -9,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 12.58,
+    "yoy": 69.67
+   }
+  },
+  {
+   "rank": 24,
+   "code": "3017",
+   "market": "市",
+   "name": "奇鋐",
+   "price": 2795,
+   "open": 2655,
+   "high": 2795,
+   "low": 2650,
+   "change_pct": 9.82,
+   "turnover": "73.1億",
+   "market_cap": "1.10兆",
+   "theme": "散熱模組(液冷)",
+   "inst": {
+    "foreign_streak": 1,
+    "trust_streak": 2,
+    "foreign_turn": true,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 5.16,
+    "yoy": 34.35
+   }
+  },
+  {
+   "rank": 25,
+   "code": "3665",
+   "market": "市",
+   "name": "貿聯-KY",
+   "price": 1790,
+   "open": 1720,
+   "high": 1790,
+   "low": 1695,
+   "change_pct": 9.82,
+   "turnover": "70.9億",
+   "market_cap": "3572.5億",
+   "theme": "連接器/線束",
+   "inst": {
+    "foreign_streak": -7,
+    "trust_streak": 10,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 26.93,
+    "yoy": 79.99
+   }
+  },
+  {
+   "rank": 26,
+   "code": "2603",
+   "market": "市",
+   "name": "長榮",
+   "price": 254,
+   "open": 252.5,
+   "high": 258,
+   "low": 249,
+   "change_pct": 0.59,
+   "turnover": "69.0億",
+   "market_cap": "5499.2億",
+   "theme": "貨櫃航運",
+   "is_new": true,
+   "inst": {
+    "foreign_streak": 5,
+    "trust_streak": -2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 7.82,
+    "yoy": 96.13
+   }
+  },
+  {
+   "rank": 27,
+   "code": "3167",
+   "market": "市",
+   "name": "大量",
+   "price": 620,
+   "open": 631,
+   "high": 645,
+   "low": 592,
+   "change_pct": 3.68,
+   "turnover": "68.7億",
+   "market_cap": "555.0億",
+   "theme": "PCB鑽孔機(背鑽)",
+   "is_new": true,
+   "inst": {
+    "foreign_streak": -3,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 5.09,
+    "yoy": 174.9
+   }
+  },
+  {
+   "rank": 28,
+   "code": "2449",
+   "market": "市",
+   "name": "京元電子",
+   "price": 188,
+   "open": 183,
+   "high": 189.5,
+   "low": 176,
+   "change_pct": 8.67,
+   "turnover": "68.4億",
+   "market_cap": "2413.7億",
+   "theme": "半導體測試",
+   "inst": {
+    "foreign_streak": -1,
+    "trust_streak": 2,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 8.71,
+    "yoy": 29.46
+   }
+  },
+  {
+   "rank": 29,
+   "code": "2882",
+   "market": "市",
+   "name": "國泰金",
+   "price": 104.5,
+   "open": 100.5,
+   "high": 104.5,
+   "low": 100,
+   "change_pct": 3.98,
+   "turnover": "66.9億",
+   "market_cap": "1.53兆",
+   "theme": "金控(壽險/銀行)",
+   "is_new": true,
+   "inst": {
+    "foreign_streak": 5,
+    "trust_streak": -5,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 12.37,
+    "yoy": -61.4
+   }
+  },
+  {
+   "rank": 30,
+   "code": "3105",
+   "market": "櫃",
+   "name": "穩懋",
+   "price": 444.5,
+   "open": 444.5,
+   "high": 444.5,
+   "low": 428.5,
+   "change_pct": 9.89,
+   "turnover": "64.5億",
+   "market_cap": "1884.4億",
+   "theme": "砷化鎵晶圓代工",
+   "inst": {
+    "foreign_streak": -4,
+    "trust_streak": -1,
+    "foreign_turn": false,
+    "trust_turn": false
+   },
+   "revenue": {
+    "ym": "2026-10",
+    "mom": 1.32,
+    "yoy": 31.87
+   }
+  }
+ ],
+ "sector_flows": {
+  "today": [
+   {
+    "group": "記憶體",
+    "count": 2,
+    "net_yi": 33.62,
+    "avg_pct": 9.81,
+    "stocks": [
      {
-      "source": "自由財經",
-      "time": "11/25 09:49",
-      "title": "焦點股》欣興：輝達包產能  黃仁勳回歸信心大振",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5652441"
+      "code": "2408",
+      "name": "南亞科",
+      "net_yi": 25.65,
+      "pct": 9.87
      },
      {
-      "source": "聚財網",
-      "time": "11/24 14:27",
-      "title": "PCB王者歸來！台光電、欣興領軍9強亮紅燈 台股狂飆3310點",
-      "url": "https://news.wearn.com/c2152954.html"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/23 21:30",
-      "title": "大摩：南電10月獲利符合預期維持2,000元目標價 看好程度略遜欣興",
-      "url": "https://money.udn.com/money/story/5607/9897216"
+      "code": "8299",
+      "name": "群聯",
+      "net_yi": 7.97,
+      "pct": 9.76
      }
-    ],
-    "price": 585,
-    "revenue": {
-     "mom": 1.79,
-     "ym": "2026-10",
-     "yoy": 67.61
-    },
-    "theme": "ABF載板",
-    "turnover_pct": 2.84,
-    "turnover_rank": 94,
-    "value_rank": 6,
-    "value_yi": 276.6
+    ]
    },
    {
-    "change_pct": -3.7,
-    "code": "3189",
-    "group": "PCB/載板",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 1,
-     "trust_turn": true
-    },
-    "market": "市",
-    "name": "景碩",
-    "news": [
-     {
-      "source": "MoneyDJ",
-      "time": "11/25 19:07",
-      "title": "景碩4/28~11/25訂購機器設備一批，計約5.47億元",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21e9e102-790b-414c-87d8-26187a5c1971"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/25 11:42",
-      "title": "明年營收年增逾三成？景碩：媒體預測",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5dbf0018-6368-4f3e-b7e9-9833d737bc91"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/25 09:48",
-      "title": "景碩積極擴產 法人估今年 EPS 上看12元",
-      "url": "https://money.udn.com/money/story/5710/9900297"
-     }
-    ],
-    "price": 495,
-    "revenue": {
-     "mom": 3.59,
-     "ym": "2026-10",
-     "yoy": 49.04
-    },
-    "theme": "ABF載板",
-    "turnover_pct": 9.39,
-    "turnover_rank": 21,
-    "value_rank": 7,
-    "value_yi": 249.7
-   },
-   {
-    "change_pct": 5.23,
-    "code": "2368",
-    "group": "PCB/載板",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": true
-    },
-    "market": "市",
-    "name": "金像電",
-    "news": [
-     {
-      "source": "經濟日報",
-      "time": "11/23 20:23",
-      "title": "今日最夯股／金像電強攻漲停 三大法人齊買超",
-      "url": "https://money.udn.com/money/story/5607/9897049"
-     }
-    ],
-    "price": 905,
-    "revenue": {
-     "mom": 6.36,
-     "ym": "2026-10",
-     "yoy": 76.17
-    },
-    "theme": "伺服器PCB",
-    "turnover_pct": 5.22,
-    "turnover_rank": 49,
-    "value_rank": 8,
-    "value_yi": 243.3
-   },
-   {
-    "change_pct": -6.26,
-    "code": "1802",
-    "group": "銅箔基板/PCB材料",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "台玻",
-    "news": [
-     {
-      "source": "鉅亨網",
-      "time": "11/24 13:40",
-      "title": "〈焦點股〉黃仁勳回歸AI供應鏈爆漲 玻纖布廠南亞、台玻聯袂亮燈攻漲停",
-      "url": "https://news.cnyes.com/news/id/6670934"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/24 08:11",
-      "title": "上週外資在集中市場賣超2,186.69億元，賣超台玻9.99萬張最多",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=edc0b944-a6d1-4a9d-b43b-0f2a11f8f5ac"
-     },
-     {
-      "source": "聚財網",
-      "time": "11/23 20:30",
-      "title": "玻纖布這次不當韭菜！南亞殺破200元又漲停 台玻爆量衝",
-      "url": "https://news.wearn.com/c2152322.html"
-     }
-    ],
-    "price": 59.9,
-    "revenue": {
-     "mom": 12.04,
-     "ym": "2026-10",
-     "yoy": 56.48
-    },
-    "theme": "玻纖布/平板玻璃",
-    "turnover_pct": 12.3,
-    "turnover_rank": 10,
-    "value_rank": 9,
-    "value_yi": 225.6
-   },
-   {
-    "change_pct": -1.86,
-    "code": "6274",
-    "group": "銅箔基板/PCB材料",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "台燿",
-    "news": [],
-    "price": 739,
-    "revenue": {
-     "mom": 5.76,
-     "ym": "2026-10",
-     "yoy": 126.99
-    },
-    "theme": "CCL銅箔基板",
-    "turnover_pct": 9.4,
-    "turnover_rank": 20,
-    "value_rank": 11,
-    "value_yi": 210.3
-   },
-   {
-    "change_pct": 1.13,
-    "code": "3008",
-    "group": "CPO/光通訊",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 3,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "大立光",
-    "news": [
-     {
-      "source": "自由財經",
-      "time": "11/25 12:25",
-      "title": "焦點股》大立光：光學族群震盪 股價振幅逾12％",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5652715"
-     },
-     {
-      "source": "自由財經",
-      "time": "11/24 11:03",
-      "title": "焦點股》大立光：光學股王回神 強攻漲停",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5651398"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/24 02:58",
-      "title": "i18、 i18e 明年接棒亮相 台積、大立光迎新拉貨潮",
-      "url": "https://money.udn.com/money/story/11162/9897325"
-     }
-    ],
-    "price": 4025,
-    "revenue": {
-     "mom": 1.14,
-     "ym": "2026-10",
-     "yoy": -7.04
-    },
-    "theme": "CPO光學(FAU)",
-    "turnover_pct": 3.85,
-    "turnover_rank": 68,
-    "value_rank": 12,
-    "value_yi": 203.4
-   },
-   {
-    "change_pct": -7.92,
-    "code": "3661",
     "group": "IC設計",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "世芯-KY",
-    "news": [
+    "count": 3,
+    "net_yi": -18.84,
+    "avg_pct": 3.86,
+    "stocks": [
      {
-      "source": "聚財網",
-      "time": "11/23 16:46",
-      "title": "IC設計大洗牌！世芯、聯發科雙漲停 創意重挫5%失守股后",
-      "url": "https://news.wearn.com/c2152142.html"
+      "code": "2454",
+      "name": "聯發科",
+      "net_yi": 1.01,
+      "pct": 1.65
      },
      {
-      "source": "鉅亨網",
-      "time": "11/23 12:10",
-      "title": "鉅亨速報 - Factset 最新調查：世芯-KY(3661-TW)EPS預估下修至122.91元，預估目標價為5630元",
-      "url": "https://news.cnyes.com/news/id/6670093"
+      "code": "3443",
+      "name": "創意",
+      "net_yi": -0.86,
+      "pct": 6.31
      },
      {
-      "source": "經濟日報",
-      "time": "11/21 21:35",
-      "title": "朱成志：少了老黃「ASIC >GPU」，4萬點築底模式，世芯股價該大於聯發科嗎？",
-      "url": "https://money.udn.com/money/story/5607/9891488"
+      "code": "3661",
+      "name": "世芯-KY",
+      "net_yi": -18.99,
+      "pct": 3.61
      }
-    ],
-    "price": 3605,
-    "revenue": {
-     "mom": 2.82,
-     "ym": "2026-10",
-     "yoy": 515.8
-    },
-    "theme": "AI ASIC設計",
-    "turnover_pct": 5.82,
-    "turnover_rank": 40,
-    "value_rank": 14,
-    "value_yi": 187.8
+    ]
    },
    {
-    "change_pct": 3.82,
-    "code": "3665",
-    "group": "連接器/線材",
-    "inst": {
-     "foreign_streak": -6,
-     "foreign_turn": false,
-     "trust_streak": 10,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "貿聯-KY",
-    "news": [
-     {
-      "source": "經濟日報",
-      "time": "11/25 19:58",
-      "title": "今日最夯股／貿聯連三日收紅、成交量破萬張 有何利多？",
-      "url": "https://money.udn.com/money/story/5607/9901961"
-     },
-     {
-      "source": "自由財經",
-      "time": "11/24 10:31",
-      "title": "焦點股》貿聯-KY：台指期漲3665點吉兆 帶量漲停",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5651331"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/24 09:57",
-      "title": "貿聯-KY擴AI機櫃整合，光銅並進攻高速互連",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c071a1f0-92ff-4ba1-8209-e5f1fca2e956"
-     }
-    ],
-    "price": 1630,
-    "revenue": {
-     "mom": 26.93,
-     "ym": "2026-10",
-     "yoy": 79.99
-    },
-    "theme": "連接器/線束",
-    "turnover_pct": 5.69,
-    "turnover_rank": 42,
-    "value_rank": 15,
-    "value_yi": 184.3
-   },
-   {
-    "change_pct": -9.77,
-    "code": "8046",
-    "group": "PCB/載板",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -8,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "南電",
-    "news": [
-     {
-      "source": "MoneyDJ",
-      "time": "11/25 14:24",
-      "title": "南電 代子公司南亞電路板(香港)有限公司公告董事會決議發放股利",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2a8ef054-ce41-48ad-a606-438e75466ae2"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/24 01:18",
-      "title": "南電獲利符預期 大摩看好將躍進",
-      "url": "https://money.udn.com/money/story/5607/9897064"
-     }
-    ],
-    "price": 665,
-    "revenue": {
-     "mom": 12.58,
-     "ym": "2026-10",
-     "yoy": 69.67
-    },
-    "theme": "ABF載板",
-    "turnover_pct": 3.2,
-    "turnover_rank": 83,
-    "value_rank": 20,
-    "value_yi": 143.8
-   },
-   {
-    "change_pct": -9.3,
-    "code": "6213",
-    "group": "銅箔基板/PCB材料",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "聯茂",
-    "news": [
-     {
-      "source": "聚財網",
-      "time": "11/24 17:40",
-      "title": "聯茂跌掉半條命再飆2根漲停！瑞銀喊價650元 CCL三雄大反攻",
-      "url": "https://news.wearn.com/c2153185.html"
-     },
-     {
-      "source": "鉅亨網",
-      "time": "11/23 14:10",
-      "title": "鉅亨速報 - Factset 最新調查：聯茂(6213-TW)EPS預估上修至23.1元，預估目標價為1042.5元",
-      "url": "https://news.cnyes.com/news/id/6670133"
-     }
-    ],
-    "price": 390,
-    "revenue": {
-     "mom": 3.63,
-     "ym": "2026-10",
-     "yoy": 119.53
-    },
-    "theme": "CCL銅箔基板",
-    "turnover_pct": 8.77,
-    "turnover_rank": 23,
-    "value_rank": 21,
-    "value_yi": 130.7
-   },
-   {
-    "change_pct": -6.9,
-    "code": "8299",
-    "group": "記憶體",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "群聯",
-    "news": [
-     {
-      "source": "經濟日報",
-      "time": "11/25 19:03",
-      "title": "群聯砸32.96億元買回庫藏股 提前逾一個月完成、執行率100%",
-      "url": "https://money.udn.com/money/story/11074/9901873"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/25 09:09",
-      "title": "群聯續推進企業級SSD布局 新一代X3明年H1量產",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b2957132-11ed-4ff5-8d92-3cc9da77d994"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/25 00:38",
-      "title": "群聯自研固態硬碟解決方案 X2晶片打進台積鏈 協助提升伺服器效能",
-      "url": "https://money.udn.com/money/story/11074/9899500"
-     }
-    ],
-    "price": 1485,
-    "revenue": {
-     "mom": 2.9,
-     "ym": "2026-10",
-     "yoy": 346.26
-    },
-    "theme": "記憶體控制IC",
-    "turnover_pct": 3.77,
-    "turnover_rank": 72,
-    "value_rank": 23,
-    "value_yi": 127
-   },
-   {
-    "change_pct": -9.91,
-    "code": "3105",
-    "group": "化合物半導體",
-    "inst": {
-     "foreign_streak": -3,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "穩懋",
-    "news": [
-     {
-      "source": "MoneyDJ",
-      "time": "11/24 09:12",
-      "title": "中環11/17~23處分穩懋843張，損失約1729萬元",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e8f5ab6c-f3be-46d2-a3f0-db605beeceee"
-     }
-    ],
-    "price": 404.5,
-    "revenue": {
-     "mom": 1.32,
-     "ym": "2026-10",
-     "yoy": 31.87
-    },
-    "theme": "砷化鎵晶圓代工",
-    "turnover_pct": 6.93,
-    "turnover_rank": 31,
-    "value_rank": 24,
-    "value_yi": 125.6
-   },
-   {
-    "change_pct": 0.29,
-    "code": "2449",
     "group": "半導體封測",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "京元電子",
-    "news": [
+    "count": 3,
+    "net_yi": -22.96,
+    "avg_pct": 4.86,
+    "stocks": [
      {
-      "source": "經濟日報",
-      "time": "11/19 11:18",
-      "title": "輝達點名喊擴大合作也撐不住股價 景碩、欣興、京元電子齊跌停",
-      "url": "https://money.udn.com/money/story/5710/9888377"
-     }
-    ],
-    "price": 173,
-    "revenue": {
-     "mom": 8.71,
-     "ym": "2026-10",
-     "yoy": 29.46
-    },
-    "theme": "半導體測試",
-    "turnover_pct": 5.29,
-    "turnover_rank": 46,
-    "value_rank": 25,
-    "value_yi": 116.6
-   },
-   {
-    "change_pct": -9.78,
-    "code": "1815",
-    "group": "銅箔基板/PCB材料",
-    "inst": {
-     "foreign_streak": -1,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "富喬",
-    "news": [
-     {
-      "source": "經濟日報",
-      "time": "11/23 21:53",
-      "title": "違約交割連發 富喬今年第二度",
-      "url": "https://money.udn.com/money/story/11074/9897235"
+      "code": "2449",
+      "name": "京元電子",
+      "net_yi": -1.13,
+      "pct": 8.67
      },
      {
-      "source": "MoneyDJ",
-      "time": "11/23 18:50",
-      "title": "富喬11/30參加群益金鼎證舉辦之法說會",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31469bb2-0ce1-4ec1-8f0f-5855ec5edadc"
-     }
-    ],
-    "price": 101.5,
-    "revenue": {
-     "mom": 11.75,
-     "ym": "2026-10",
-     "yoy": 85.61
-    },
-    "theme": "玻纖布(Low Dk)",
-    "turnover_pct": 11.37,
-    "turnover_rank": 14,
-    "value_rank": 31,
-    "value_yi": 75.2
-   },
-   {
-    "change_pct": -2.61,
-    "code": "3167",
-    "group": "PCB設備",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "大量",
-    "news": [],
-    "price": 598,
-    "revenue": {
-     "mom": 5.09,
-     "ym": "2026-10",
-     "yoy": 174.9
-    },
-    "theme": "PCB鑽孔機(背鑽)",
-    "turnover_pct": 12.45,
-    "turnover_rank": 8,
-    "value_rank": 35,
-    "value_yi": 67.8
-   },
-   {
-    "change_pct": -2.45,
-    "code": "3406",
-    "group": "光學鏡頭",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 1,
-     "trust_turn": true
-    },
-    "market": "市",
-    "name": "玉晶光",
-    "news": [
-     {
-      "source": "經濟日報",
-      "time": "11/24 23:59",
-      "title": "玉晶光期 展望佳",
-      "url": "https://money.udn.com/money/story/11113/9899730"
+      "code": "3711",
+      "name": "日月光投控",
+      "net_yi": -8.93,
+      "pct": 4.71
      },
      {
-      "source": "財報狗",
-      "time": "11/23",
-      "title": "EBO 是什麼？3M 估 2028 年市場 20 億美元 玉晶光、廣宇搶進",
-      "url": "https://statementdog.com/news/18114"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/22 10:56",
-      "title": "台股雪崩他照賺！本土劇男星公開對帳單「靠大立光玉晶光進帳二百萬」",
-      "url": "https://money.udn.com/money/story/5648/9894188"
+      "code": "3374",
+      "name": "精材",
+      "net_yi": -12.9,
+      "pct": 1.19
      }
-    ],
-    "price": 716,
-    "revenue": {
-     "mom": -20.41,
-     "ym": "2026-10",
-     "yoy": -5.77
-    },
-    "theme": "光學鏡頭",
-    "turnover_pct": 7.16,
-    "turnover_rank": 30,
-    "value_rank": 38,
-    "value_yi": 62
+    ]
    },
    {
-    "change_pct": -3.3,
-    "code": "3715",
     "group": "PCB/載板",
-    "inst": {
-     "foreign_streak": 2,
-     "foreign_turn": false,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "定穎投控",
-    "news": [],
-    "price": 132,
-    "revenue": {
-     "mom": 17.37,
-     "ym": "2026-10",
-     "yoy": 121.47
-    },
-    "theme": "車用/AI伺服器PCB",
-    "turnover_pct": 12.33,
-    "turnover_rank": 9,
-    "value_rank": 44,
-    "value_yi": 47.8
-   },
-   {
-    "change_pct": -6.56,
-    "code": "3324",
-    "group": "散熱",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "雙鴻",
-    "news": [
+    "count": 4,
+    "net_yi": -25.33,
+    "avg_pct": 9.21,
+    "stocks": [
      {
-      "source": "MoneyDJ",
-      "time": "11/25 10:03",
-      "title": "雙鴻雙面水冷板量產，明年CDU占比續升",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6f810a93-a9b6-4f23-8a09-55ce593c8a88"
+      "code": "8046",
+      "name": "南電",
+      "net_yi": 3.84,
+      "pct": 9.92
      },
      {
-      "source": "聚財網",
-      "time": "11/24 19:17",
-      "title": "AI散熱大反攻！奇鋐鎖漲停、健策迎規格升級 雙鴻水冷訂單蓄勢待發",
-      "url": "https://news.wearn.com/c2153297.html"
+      "code": "2368",
+      "name": "金像電",
+      "net_yi": 2.17,
+      "pct": 9.94
      },
      {
-      "source": "經濟日報",
-      "time": "11/23 01:11",
-      "title": "第一類接觸／雙鴻看好 AI 伺服器散熱需求持續成長 明年營運拚新高",
-      "url": "https://money.udn.com/money/story/11074/9894971"
+      "code": "3037",
+      "name": "欣興",
+      "net_yi": -0.29,
+      "pct": 9.91
+     },
+     {
+      "code": "3189",
+      "name": "景碩",
+      "net_yi": -31.05,
+      "pct": 7.07
      }
-    ],
-    "price": 798,
-    "revenue": {
-     "mom": 16.91,
-     "ym": "2026-10",
-     "yoy": 44.74
-    },
-    "theme": "散熱模組(液冷)",
-    "turnover_pct": 6.13,
-    "turnover_rank": 38,
-    "value_rank": 46,
-    "value_yi": 47.3
+    ]
    },
    {
-    "change_pct": -6.54,
-    "code": "3006",
-    "group": "記憶體",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "晶豪科",
-    "news": [],
-    "price": 171.5,
-    "revenue": {
-     "mom": -12.26,
-     "ym": "2026-10",
-     "yoy": 430.06
-    },
-    "theme": "記憶體IC設計",
-    "turnover_pct": 8.54,
-    "turnover_rank": 24,
-    "value_rank": 50,
-    "value_yi": 43.8
-   },
-   {
-    "change_pct": -5.42,
-    "code": "2468",
-    "group": "資安/軟體",
-    "inst": {
-     "foreign_streak": -3,
-     "foreign_turn": false,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "華經",
-    "news": [
-     {
-      "source": "自由財經",
-      "time": "11/23 11:25",
-      "title": "焦點股》華經：當沖比連2日達9成 股價劇烈震盪",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5650272"
-     },
-     {
-      "source": "聚財網",
-      "time": "11/21 12:00",
-      "title": "台股殺聲隆隆、資安股卻開趴！華經、資通逆勢漲停",
-      "url": "https://news.wearn.com/c2151143.html"
-     },
-     {
-      "source": "聚財網",
-      "time": "11/20 20:14",
-      "title": "限空令擋不住賣壓！資安三霸照樣強鎖漲停，意藍、華經爆量蓄勢創高！",
-      "url": "https://news.wearn.com/c2150870.html"
-     }
-    ],
-    "price": 62.8,
-    "revenue": {
-     "mom": -31.69,
-     "ym": "2026-10",
-     "yoy": 20
-    },
-    "theme": "資安/系統整合",
-    "turnover_pct": 88.03,
-    "turnover_rank": 1,
-    "value_rank": 54,
-    "value_yi": 41.3
-   },
-   {
-    "change_pct": -8.6,
-    "code": "8358",
     "group": "銅箔基板/PCB材料",
-    "inst": {
-     "foreign_streak": -1,
-     "foreign_turn": false,
-     "trust_streak": -1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "金居",
-    "news": [
+    "count": 5,
+    "net_yi": -103.81,
+    "avg_pct": 6.79,
+    "stocks": [
      {
-      "source": "經濟日報",
-      "time": "11/20 21:45",
-      "title": "櫃買市場再爆違約交割！金居遭通報逾2,000萬元",
-      "url": "https://money.udn.com/money/story/11074/9892220"
-     }
-    ],
-    "price": 244.5,
-    "revenue": {
-     "mom": 0.35,
-     "ym": "2026-10",
-     "yoy": 57.95
-    },
-    "theme": "電解銅箔(HVLP)",
-    "turnover_pct": 6.37,
-    "turnover_rank": 37,
-    "value_rank": 55,
-    "value_yi": 41.1
-   },
-   {
-    "change_pct": -2.26,
-    "code": "3163",
-    "group": "CPO/光通訊",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "波若威",
-    "news": [
-     {
-      "source": "聚財網",
-      "time": "11/19 12:27",
-      "title": "AI光通訊全面失速！華星光、波若威重挫 光聖失守千元",
-      "url": "https://news.wearn.com/c2149674.html"
-     }
-    ],
-    "price": 346,
-    "revenue": {
-     "mom": -14.46,
-     "ym": "2026-10",
-     "yoy": 11.35
-    },
-    "theme": "光纖被動元件",
-    "turnover_pct": 11.72,
-    "turnover_rank": 13,
-    "value_rank": 56,
-    "value_yi": 40
-   },
-   {
-    "change_pct": -8.82,
-    "code": "3026",
-    "group": "被動元件",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -3,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "禾伸堂",
-    "news": [],
-    "price": 331,
-    "revenue": {
-     "mom": -10.39,
-     "ym": "2026-10",
-     "yoy": 33.35
-    },
-    "theme": "MLCC被動元件",
-    "turnover_pct": 6.82,
-    "turnover_rank": 33,
-    "value_rank": 58,
-    "value_yi": 38.6
-   },
-   {
-    "change_pct": -6.06,
-    "code": "4979",
-    "group": "CPO/光通訊",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "華星光",
-    "news": [
-     {
-      "source": "聚財網",
-      "time": "11/19 12:27",
-      "title": "AI光通訊全面失速！華星光、波若威重挫 光聖失守千元",
-      "url": "https://news.wearn.com/c2149674.html"
-     }
-    ],
-    "price": 263.5,
-    "revenue": {
-     "mom": -2.83,
-     "ym": "2026-10",
-     "yoy": 75.42
-    },
-    "theme": "光通訊模組",
-    "turnover_pct": 8.23,
-    "turnover_rank": 26,
-    "value_rank": 66,
-    "value_yi": 32.1
-   },
-   {
-    "change_pct": -8.46,
-    "code": "6672",
-    "group": "銅箔基板/PCB材料",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "騰輝電子-KY",
-    "news": [],
-    "price": 362.5,
-    "revenue": {
-     "mom": 14.86,
-     "ym": "2026-10",
-     "yoy": 224.35
-    },
-    "theme": "高頻CCL銅箔基板",
-    "turnover_pct": 10.28,
-    "turnover_rank": 17,
-    "value_rank": 67,
-    "value_yi": 32
-   },
-   {
-    "change_pct": -9.91,
-    "code": "2492",
-    "group": "被動元件",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -5,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "華新科",
-    "news": [
-     {
-      "source": "聚財網",
-      "time": "11/25 16:13",
-      "title": "被動元件紅燈海只撐1天！國巨、華新科領軍迎賣壓大考",
-      "url": "https://news.wearn.com/c2153986.html"
+      "code": "1303",
+      "name": "南亞",
+      "net_yi": 7.42,
+      "pct": 7.73
      },
      {
-      "source": "聚財網",
-      "time": "11/24 13:20",
-      "title": "被動元件集體復活！國巨、華新科領28檔亮紅燈",
-      "url": "https://news.wearn.com/c2152890.html"
+      "code": "6213",
+      "name": "聯茂",
+      "net_yi": 2.69,
+      "pct": 10.0
      },
      {
-      "source": "MoneyDJ",
-      "time": "11/24 09:12",
-      "title": "吉祥全：浩瀚動力11/16~23處分華新科847張，損失約1.06億元",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a21135ee-e49a-4ee1-b952-7424cd94f6a5"
+      "code": "6274",
+      "name": "台燿",
+      "net_yi": -8.47,
+      "pct": 7.44
+     },
+     {
+      "code": "2383",
+      "name": "台光電",
+      "net_yi": -50.65,
+      "pct": 9.09
+     },
+     {
+      "code": "1802",
+      "name": "台玻",
+      "net_yi": -54.8,
+      "pct": -0.33
      }
-    ],
-    "price": 191,
-    "revenue": {
-     "mom": -8.56,
-     "ym": "2026-10",
-     "yoy": 57.11
-    },
-    "theme": "MLCC被動元件",
-    "turnover_pct": 3.29,
-    "turnover_rank": 81,
-    "value_rank": 69,
-    "value_yi": 31.7
+    ]
    },
    {
-    "change_pct": -9.92,
-    "code": "3374",
-    "group": "半導體封測",
-    "inst": {
-     "foreign_streak": -8,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": true
-    },
-    "market": "櫃",
-    "name": "精材",
-    "news": [
+    "group": "晶圓代工",
+    "count": 2,
+    "net_yi": -342.25,
+    "avg_pct": 0.69,
+    "stocks": [
      {
-      "source": "鉅亨網",
-      "time": "11/19 10:06",
-      "title": "台灣精材10月營收0.77億元年增54.17% 1—10月達6.66億元",
-      "url": "https://news.cnyes.com/news/id/6667132"
+      "code": "2303",
+      "name": "聯電",
+      "net_yi": -9.12,
+      "pct": 1.6
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "net_yi": -333.13,
+      "pct": -0.23
      }
-    ],
-    "price": 336,
-    "revenue": {
-     "mom": 6.07,
-     "ym": "2026-10",
-     "yoy": 38.98
-    },
-    "theme": "晶圓級先進封裝",
-    "turnover_pct": 3.01,
-    "turnover_rank": 89,
-    "value_rank": 72,
-    "value_yi": 28.5
-   },
-   {
-    "change_pct": -6.54,
-    "code": "6442",
-    "group": "CPO/光通訊",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "光聖",
-    "news": [
-     {
-      "source": "聚財網",
-      "time": "11/24 16:26",
-      "title": "光通訊13強全亮紅燈！聯亞直衝1525元 光聖逼近千元",
-      "url": "https://news.wearn.com/c2153089.html"
-     },
-     {
-      "source": "聚財網",
-      "time": "11/19 20:30",
-      "title": "轉單利多變跌停噩夢！光通訊11檔慘倒 聯亞週跌28%、光聖失千元",
-      "url": "https://news.wearn.com/c2150122.html"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/19 09:10",
-      "title": "中環10/8~11/18處分光聖253張，損失約3184萬元",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b60db4d9-adf2-4112-b7b7-48395de80af7"
-     }
-    ],
-    "price": 915,
-    "revenue": {
-     "mom": -10.86,
-     "ym": "2026-10",
-     "yoy": 82.56
-    },
-    "theme": "光纖被動元件",
-    "turnover_pct": 3.65,
-    "turnover_rank": 74,
-    "value_rank": 73,
-    "value_yi": 28.4
-   },
-   {
-    "change_pct": -6.96,
-    "code": "2355",
-    "group": "PCB/載板",
-    "inst": {
-     "foreign_streak": -3,
-     "foreign_turn": false,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "敬鵬",
-    "news": [
-     {
-      "source": "經濟日報",
-      "time": "11/25 00:29",
-      "title": "敬鵬大陸、泰國擴產",
-      "url": "https://money.udn.com/money/story/5710/9899457"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/23 14:43",
-      "title": "敬鵬訂11/30召開法說會",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9463fbad-471b-4d28-bbcd-0b4d0e0c0053"
-     }
-    ],
-    "price": 54.8,
-    "revenue": {
-     "mom": -0.98,
-     "ym": "2026-10",
-     "yoy": 33.01
-    },
-    "theme": "車用PCB",
-    "turnover_pct": 11.33,
-    "turnover_rank": 15,
-    "value_rank": 81,
-    "value_yi": 25.4
-   },
-   {
-    "change_pct": -2.46,
-    "code": "3450",
-    "group": "CPO/光通訊",
-    "inst": {
-     "foreign_streak": -1,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "聯鈞",
-    "news": [],
-    "price": 277,
-    "revenue": {
-     "mom": -5.36,
-     "ym": "2026-10",
-     "yoy": 74.58
-    },
-    "theme": "CPO光通訊",
-    "turnover_pct": 5.29,
-    "turnover_rank": 47,
-    "value_rank": 85,
-    "value_yi": 21.6
-   },
-   {
-    "change_pct": -5.36,
-    "code": "2455",
-    "group": "化合物半導體",
-    "inst": {
-     "foreign_streak": 1,
-     "foreign_turn": true,
-     "trust_streak": -1,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "全新",
-    "news": [],
-    "price": 282.5,
-    "revenue": {
-     "mom": 4.92,
-     "ym": "2026-10",
-     "yoy": 32.66
-    },
-    "theme": "化合物半導體磊晶",
-    "turnover_pct": 3.8,
-    "turnover_rank": 69,
-    "value_rank": 86,
-    "value_yi": 20.6
-   },
-   {
-    "change_pct": -0.29,
-    "code": "6199",
-    "group": "其他/轉型股",
-    "inst": {
-     "foreign_streak": -1,
-     "foreign_turn": false,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "天品",
-    "news": [],
-    "price": 172.5,
-    "revenue": {
-     "mom": 7.52,
-     "ym": "2026-10",
-     "yoy": 143.5
-    },
-    "theme": "AI水冷清洗/無人機轉型",
-    "turnover_pct": 18.78,
-    "turnover_rank": 5,
-    "value_rank": 88,
-    "value_yi": 20
-   },
-   {
-    "change_pct": -7.3,
-    "code": "6187",
-    "group": "半導體設備",
-    "inst": {
-     "foreign_streak": -2,
-     "foreign_turn": false,
-     "trust_streak": 1,
-     "trust_turn": false
-    },
-    "market": "櫃",
-    "name": "萬潤",
-    "news": [
-     {
-      "source": "MoneyDJ",
-      "time": "11/23 09:23",
-      "title": "萬潤Q4營收估居高；明年訂單能見度仍佳",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=55da2f6d-78bc-4f05-b893-520873268447"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/20 17:58",
-      "title": "萬潤11/23參加Citi舉辦之法說會",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a308d187-b47b-48ea-b176-47350f7a6876"
-     },
-     {
-      "source": "經濟日報",
-      "time": "11/20 01:39",
-      "title": "日月光擴產先進封測 萬潤、鈦昇迎設備訂單",
-      "url": "https://money.udn.com/money/story/5612/9890044"
-     }
-    ],
-    "price": 686,
-    "revenue": {
-     "mom": -15.7,
-     "ym": "2026-10",
-     "yoy": 217.74
-    },
-    "theme": "先進封裝設備(CoWoS)",
-    "turnover_pct": 2.73,
-    "turnover_rank": 95,
-    "value_rank": 89,
-    "value_yi": 19.2
-   },
-   {
-    "change_pct": 9.9,
-    "code": "2471",
-    "group": "資安/軟體",
-    "inst": {
-     "foreign_streak": 2,
-     "foreign_turn": false,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "資通",
-    "news": [
-     {
-      "source": "工商時報",
-      "time": "11/25 19:57",
-      "title": "11／25台股雷達｜大盤賣壓沈重 岱宇、資通逆勢飆漲停原因曝",
-      "url": "https://www.ctee.com.tw/news/20261125702087-430204"
-     },
-     {
-      "source": "MoneyDJ",
-      "time": "11/25 11:15",
-      "title": "資通拓展業務機會，明年再推新產品",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6a7d3555-0d31-409f-86c7-923f31a31919"
-     },
-     {
-      "source": "聚財網",
-      "time": "11/21 12:00",
-      "title": "台股殺聲隆隆、資安股卻開趴！華經、資通逆勢漲停",
-      "url": "https://news.wearn.com/c2151143.html"
-     }
-    ],
-    "price": 66.6,
-    "revenue": {
-     "mom": -0.95,
-     "ym": "2026-10",
-     "yoy": 5.31
-    },
-    "theme": "企業軟體/系統整合",
-    "turnover_pct": 59.37,
-    "turnover_rank": 3,
-    "value_rank": 96,
-    "value_yi": 17.9
-   },
-   {
-    "change_pct": -9.64,
-    "code": "2465",
-    "group": "AI伺服器ODM",
-    "inst": {
-     "foreign_streak": -3,
-     "foreign_turn": false,
-     "trust_streak": 0,
-     "trust_turn": false
-    },
-    "market": "市",
-    "name": "麗臺",
-    "news": [],
-    "price": 112.5,
-    "revenue": {
-     "mom": 7.62,
-     "ym": "2026-10",
-     "yoy": 340.57
-    },
-    "theme": "AI工作站/專業繪圖卡",
-    "turnover_pct": 15.72,
-    "turnover_rank": 6,
-    "value_rank": 98,
-    "value_yi": 17.7
+    ]
    }
   ],
-  "top": 100
+  "this_week": [
+   {
+    "group": "記憶體",
+    "count": 2,
+    "net_yi": 37.31,
+    "avg_pct": 19.59,
+    "stocks": [
+     {
+      "code": "8299",
+      "name": "群聯",
+      "net_yi": 22.41,
+      "pct": 23.48
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "net_yi": 14.9,
+      "pct": 15.69
+     }
+    ]
+   },
+   {
+    "group": "PCB/載板",
+    "count": 4,
+    "net_yi": -56.7,
+    "avg_pct": 22.17,
+    "stocks": [
+     {
+      "code": "2368",
+      "name": "金像電",
+      "net_yi": 2.69,
+      "pct": 39.94
+     },
+     {
+      "code": "8046",
+      "name": "南電",
+      "net_yi": -0.78,
+      "pct": 16.22
+     },
+     {
+      "code": "3037",
+      "name": "欣興",
+      "net_yi": -12.9,
+      "pct": 19.74
+     },
+     {
+      "code": "3189",
+      "name": "景碩",
+      "net_yi": -45.71,
+      "pct": 12.77
+     }
+    ]
+   },
+   {
+    "group": "半導體封測",
+    "count": 3,
+    "net_yi": -68.52,
+    "avg_pct": 12.54,
+    "stocks": [
+     {
+      "code": "2449",
+      "name": "京元電子",
+      "net_yi": -1.3,
+      "pct": 19.37
+     },
+     {
+      "code": "3374",
+      "name": "精材",
+      "net_yi": -20.09,
+      "pct": 6.42
+     },
+     {
+      "code": "3711",
+      "name": "日月光投控",
+      "net_yi": -47.13,
+      "pct": 11.82
+     }
+    ]
+   },
+   {
+    "group": "IC設計",
+    "count": 3,
+    "net_yi": -116.63,
+    "avg_pct": 8.56,
+    "stocks": [
+     {
+      "code": "3443",
+      "name": "創意",
+      "net_yi": 11.29,
+      "pct": -0.19
+     },
+     {
+      "code": "3661",
+      "name": "世芯-KY",
+      "net_yi": -1.59,
+      "pct": 15.28
+     },
+     {
+      "code": "2454",
+      "name": "聯發科",
+      "net_yi": -126.33,
+      "pct": 10.6
+     }
+    ]
+   },
+   {
+    "group": "銅箔基板/PCB材料",
+    "count": 5,
+    "net_yi": -203.39,
+    "avg_pct": 21.94,
+    "stocks": [
+     {
+      "code": "6213",
+      "name": "聯茂",
+      "net_yi": -6.32,
+      "pct": 20.68
+     },
+     {
+      "code": "1303",
+      "name": "南亞",
+      "net_yi": -12.85,
+      "pct": 18.45
+     },
+     {
+      "code": "6274",
+      "name": "台燿",
+      "net_yi": -43.08,
+      "pct": 27.45
+     },
+     {
+      "code": "1802",
+      "name": "台玻",
+      "net_yi": -57.47,
+      "pct": 12.85
+     },
+     {
+      "code": "2383",
+      "name": "台光電",
+      "net_yi": -83.67,
+      "pct": 30.25
+     }
+    ]
+   },
+   {
+    "group": "晶圓代工",
+    "count": 2,
+    "net_yi": -1077.6,
+    "avg_pct": 8.92,
+    "stocks": [
+     {
+      "code": "2303",
+      "name": "聯電",
+      "net_yi": -61.49,
+      "pct": 10.59
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "net_yi": -1016.11,
+      "pct": 7.25
+     }
+    ]
+   }
+  ],
+  "last_week": [
+   {
+    "group": "記憶體",
+    "count": 2,
+    "net_yi": 26.57,
+    "avg_pct": -24.68,
+    "stocks": [
+     {
+      "code": "8299",
+      "name": "群聯",
+      "net_yi": 23.32,
+      "pct": -19.51
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "net_yi": 3.25,
+      "pct": -29.84
+     }
+    ]
+   },
+   {
+    "group": "PCB/載板",
+    "count": 4,
+    "net_yi": -110.79,
+    "avg_pct": -31.95,
+    "stocks": [
+     {
+      "code": "8046",
+      "name": "南電",
+      "net_yi": 5.61,
+      "pct": -35.62
+     },
+     {
+      "code": "2368",
+      "name": "金像電",
+      "net_yi": -7.98,
+      "pct": -30.97
+     },
+     {
+      "code": "3037",
+      "name": "欣興",
+      "net_yi": -54.15,
+      "pct": -31.59
+     },
+     {
+      "code": "3189",
+      "name": "景碩",
+      "net_yi": -54.27,
+      "pct": -29.64
+     }
+    ]
+   },
+   {
+    "group": "銅箔基板/PCB材料",
+    "count": 5,
+    "net_yi": -127.51,
+    "avg_pct": -34.55,
+    "stocks": [
+     {
+      "code": "2383",
+      "name": "台光電",
+      "net_yi": 32.43,
+      "pct": -33.33
+     },
+     {
+      "code": "6274",
+      "name": "台燿",
+      "net_yi": 26.85,
+      "pct": -36.04
+     },
+     {
+      "code": "6213",
+      "name": "聯茂",
+      "net_yi": 3.54,
+      "pct": -33.3
+     },
+     {
+      "code": "1802",
+      "name": "台玻",
+      "net_yi": -69.78,
+      "pct": -37.84
+     },
+     {
+      "code": "1303",
+      "name": "南亞",
+      "net_yi": -120.55,
+      "pct": -32.24
+     }
+    ]
+   },
+   {
+    "group": "半導體封測",
+    "count": 3,
+    "net_yi": -149.05,
+    "avg_pct": -29.42,
+    "stocks": [
+     {
+      "code": "2449",
+      "name": "京元電子",
+      "net_yi": -13.33,
+      "pct": -26.23
+     },
+     {
+      "code": "3374",
+      "name": "精材",
+      "net_yi": -53.01,
+      "pct": -38.44
+     },
+     {
+      "code": "3711",
+      "name": "日月光投控",
+      "net_yi": -82.71,
+      "pct": -23.58
+     }
+    ]
+   },
+   {
+    "group": "IC設計",
+    "count": 3,
+    "net_yi": -189.04,
+    "avg_pct": -25.12,
+    "stocks": [
+     {
+      "code": "3443",
+      "name": "創意",
+      "net_yi": 19.33,
+      "pct": -37.28
+     },
+     {
+      "code": "3661",
+      "name": "世芯-KY",
+      "net_yi": 12.0,
+      "pct": -19.4
+     },
+     {
+      "code": "2454",
+      "name": "聯發科",
+      "net_yi": -220.37,
+      "pct": -18.69
+     }
+    ]
+   },
+   {
+    "group": "晶圓代工",
+    "count": 2,
+    "net_yi": -679.3,
+    "avg_pct": -17.89,
+    "stocks": [
+     {
+      "code": "2303",
+      "name": "聯電",
+      "net_yi": 38.48,
+      "pct": -20.89
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "net_yi": -717.78,
+      "pct": -14.89
+     }
+    ]
+   }
+  ]
+ },
+ "sector_flows_range": {
+  "today": [
+   "2026-11-26",
+   "2026-11-26"
+  ],
+  "this_week": [
+   "2026-11-23",
+   "2026-11-26"
+  ],
+  "last_week": [
+   "2026-11-16",
+   "2026-11-20"
+  ]
+ },
+ "hot_list": {
+  "date": "2026-11-26",
+  "top": 100,
+  "news_days": 7,
+  "count": 41,
+  "stocks": [
+   {
+    "code": "2383",
+    "name": "台光電",
+    "market": "市",
+    "price": 3660,
+    "change_pct": 9.09,
+    "value_yi": 317.2,
+    "value_rank": 3,
+    "turnover_pct": 2.44,
+    "turnover_rank": 79,
+    "group": "銅箔基板/PCB材料",
+    "theme": "CCL銅箔基板",
+    "news": [
+     {
+      "title": "台光電11/27參加富邦證舉辦之法說會",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7ff88f7b-cd7f-499d-baee-53596a2e268f",
+      "source": "MoneyDJ",
+      "time": "11/26 19:15"
+     },
+     {
+      "title": "SpaceX百萬衛星計畫獲准，華通/台光電迎長線商機",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=30d81c46-2806-4009-8b44-23cc11ff0cf7",
+      "source": "MoneyDJ",
+      "time": "11/26 10:28"
+     },
+     {
+      "title": "台光電需求將爆發 大摩挺",
+      "url": "https://money.udn.com/money/story/5607/9901971",
+      "source": "經濟日報",
+      "time": "11/26 00:15"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -4,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 13.65,
+     "yoy": 203.07
+    }
+   },
+   {
+    "code": "1802",
+    "name": "台玻",
+    "market": "市",
+    "price": 59.7,
+    "change_pct": -0.33,
+    "value_yi": 240.2,
+    "value_rank": 4,
+    "turnover_pct": 13.79,
+    "turnover_rank": 8,
+    "group": "銅箔基板/PCB材料",
+    "theme": "玻纖布/平板玻璃",
+    "news": [
+     {
+      "title": "外資還在賣！鎖定權值、傳產龍頭、金融股提款 台玻遭狂賣8.1萬張最多",
+      "url": "https://money.udn.com/money/story/5607/9904107",
+      "source": "經濟日報",
+      "time": "11/26 17:47"
+     },
+     {
+      "title": "外資昨大買近2.5萬張買假的？台玻今越跌越深 玻纖布族群卻強漲",
+      "url": "https://money.udn.com/money/story/5607/9903000",
+      "source": "經濟日報",
+      "time": "11/26 11:05"
+     },
+     {
+      "title": "〈焦點股〉黃仁勳回歸AI供應鏈爆漲 玻纖布廠南亞、台玻聯袂亮燈攻漲停",
+      "url": "https://news.cnyes.com/news/id/6670934",
+      "source": "鉅亨網",
+      "time": "11/24 13:40"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": -2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 12.04,
+     "yoy": 56.48
+    }
+   },
+   {
+    "code": "3189",
+    "name": "景碩",
+    "market": "市",
+    "price": 530,
+    "change_pct": 7.07,
+    "value_yi": 210.8,
+    "value_rank": 7,
+    "turnover_pct": 7.56,
+    "turnover_rank": 22,
+    "group": "PCB/載板",
+    "theme": "ABF載板",
+    "news": [
+     {
+      "title": "景碩4/28~11/25訂購機器設備一批，計約5.47億元",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21e9e102-790b-414c-87d8-26187a5c1971",
+      "source": "MoneyDJ",
+      "time": "11/25 19:07"
+     },
+     {
+      "title": "明年營收年增逾三成？景碩：媒體預測",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5dbf0018-6368-4f3e-b7e9-9833d737bc91",
+      "source": "MoneyDJ",
+      "time": "11/25 11:42"
+     },
+     {
+      "title": "景碩積極擴產 法人估今年 EPS 上看12元",
+      "url": "https://money.udn.com/money/story/5710/9900297",
+      "source": "經濟日報",
+      "time": "11/25 09:48"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 3.59,
+     "yoy": 49.04
+    }
+   },
+   {
+    "code": "2368",
+    "name": "金像電",
+    "market": "市",
+    "price": 995,
+    "change_pct": 9.94,
+    "value_yi": 143.8,
+    "value_rank": 11,
+    "turnover_pct": 2.78,
+    "turnover_rank": 69,
+    "group": "PCB/載板",
+    "theme": "伺服器PCB",
+    "news": [
+     {
+      "title": "熱門股》土洋對作 金像電逆勢收紅",
+      "url": "https://ec.ltn.com.tw/article/paper/1779920",
+      "source": "自由財經",
+      "time": "11/26 05:30"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 6.36,
+     "yoy": 76.17
+    }
+   },
+   {
+    "code": "6274",
+    "name": "台燿",
+    "market": "櫃",
+    "price": 794,
+    "change_pct": 7.44,
+    "value_yi": 132.7,
+    "value_rank": 12,
+    "turnover_pct": 5.63,
+    "turnover_rank": 29,
+    "group": "銅箔基板/PCB材料",
+    "theme": "CCL銅箔基板",
+    "news": [],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 5.76,
+     "yoy": 126.99
+    }
+   },
+   {
+    "code": "3661",
+    "name": "世芯-KY",
+    "market": "市",
+    "price": 3735,
+    "change_pct": 3.61,
+    "value_yi": 130.5,
+    "value_rank": 13,
+    "turnover_pct": 3.99,
+    "turnover_rank": 43,
+    "group": "IC設計",
+    "theme": "AI ASIC設計",
+    "news": [
+     {
+      "title": "IC設計大洗牌！世芯、聯發科雙漲停 創意重挫5%失守股后",
+      "url": "https://news.wearn.com/c2152142.html",
+      "source": "聚財網",
+      "time": "11/23 16:46"
+     },
+     {
+      "title": "鉅亨速報 - Factset 最新調查：世芯-KY(3661-TW)EPS預估下修至122.91元，預估目標價為5630元",
+      "url": "https://news.cnyes.com/news/id/6670093",
+      "source": "鉅亨網",
+      "time": "11/23 12:10"
+     },
+     {
+      "title": "朱成志：少了老黃「ASIC >GPU」，4萬點築底模式，世芯股價該大於聯發科嗎？",
+      "url": "https://money.udn.com/money/story/5607/9891488",
+      "source": "經濟日報",
+      "time": "11/21 21:35"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 2.82,
+     "yoy": 515.8
+    }
+   },
+   {
+    "code": "3374",
+    "name": "精材",
+    "market": "櫃",
+    "price": 340,
+    "change_pct": 1.19,
+    "value_yi": 102.6,
+    "value_rank": 16,
+    "turnover_pct": 11.16,
+    "turnover_rank": 12,
+    "group": "半導體封測",
+    "theme": "晶圓級先進封裝",
+    "news": [],
+    "inst": {
+     "foreign_streak": -9,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 6.07,
+     "yoy": 38.98
+    }
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "market": "櫃",
+    "price": 1630,
+    "change_pct": 9.76,
+    "value_yi": 91.3,
+    "value_rank": 18,
+    "turnover_pct": 2.55,
+    "turnover_rank": 76,
+    "group": "記憶體",
+    "theme": "記憶體控制IC",
+    "news": [
+     {
+      "title": "記憶體重新開機！群聯、南亞科領軍5檔漲停 9雄全面反攻",
+      "url": "https://news.wearn.com/c2154773.html",
+      "source": "聚財網",
+      "time": "11/26 13:47"
+     },
+     {
+      "title": "群聯買回庫藏股提前執行完畢、共2,000張，均價1647.82元",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8a2e3026-0934-4dfe-b581-7fe12f50f51a",
+      "source": "MoneyDJ",
+      "time": "11/26 09:01"
+     },
+     {
+      "title": "群聯續推進企業級SSD布局 新一代X3明年H1量產",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b2957132-11ed-4ff5-8d92-3cc9da77d994",
+      "source": "MoneyDJ",
+      "time": "11/25 09:09"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 2.9,
+     "yoy": 346.26
+    }
+   },
+   {
+    "code": "6213",
+    "name": "聯茂",
+    "market": "市",
+    "price": 429,
+    "change_pct": 10.0,
+    "value_yi": 82.8,
+    "value_rank": 22,
+    "turnover_pct": 5.45,
+    "turnover_rank": 30,
+    "group": "銅箔基板/PCB材料",
+    "theme": "CCL銅箔基板",
+    "news": [
+     {
+      "title": "聯茂跌掉半條命再飆2根漲停！瑞銀喊價650元 CCL三雄大反攻",
+      "url": "https://news.wearn.com/c2153185.html",
+      "source": "聚財網",
+      "time": "11/24 17:40"
+     },
+     {
+      "title": "鉅亨速報 - Factset 最新調查：聯茂(6213-TW)EPS預估上修至23.1元，預估目標價為1042.5元",
+      "url": "https://news.cnyes.com/news/id/6670133",
+      "source": "鉅亨網",
+      "time": "11/23 14:10"
+     },
+     {
+      "title": "聯茂員工認股權憑證於第三季行使所發行之普通股已上市20,000股",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=23a198ec-b56b-488a-af5f-7a7b3eb849d8",
+      "source": "MoneyDJ",
+      "time": "11/23 09:41"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 2,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 3.63,
+     "yoy": 119.53
+    }
+   },
+   {
+    "code": "3167",
+    "name": "大量",
+    "market": "市",
+    "price": 620,
+    "change_pct": 3.68,
+    "value_yi": 68.7,
+    "value_rank": 27,
+    "turnover_pct": 12.44,
+    "turnover_rank": 10,
+    "group": "PCB設備",
+    "theme": "PCB鑽孔機(背鑽)",
+    "news": [],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 5.09,
+     "yoy": 174.9
+    }
+   },
+   {
+    "code": "2449",
+    "name": "京元電子",
+    "market": "市",
+    "price": 188,
+    "change_pct": 8.67,
+    "value_yi": 68.4,
+    "value_rank": 28,
+    "turnover_pct": 2.9,
+    "turnover_rank": 66,
+    "group": "半導體封測",
+    "theme": "半導體測試",
+    "news": [],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": 2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 8.71,
+     "yoy": 29.46
+    }
+   },
+   {
+    "code": "3105",
+    "name": "穩懋",
+    "market": "櫃",
+    "price": 444.5,
+    "change_pct": 9.89,
+    "value_yi": 64.5,
+    "value_rank": 30,
+    "turnover_pct": 3.43,
+    "turnover_rank": 51,
+    "group": "化合物半導體",
+    "theme": "砷化鎵晶圓代工",
+    "news": [
+     {
+      "title": "〈焦點股〉SpaceX獲准發射百萬顆衛星 激勵穩懋亮燈漲停領7檔題材股齊嗨",
+      "url": "https://news.cnyes.com/news/id/6672121",
+      "source": "鉅亨網",
+      "time": "11/26 13:24"
+     },
+     {
+      "title": "穩懋衛星、光通訊發力，明年獲利看增",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6b8ad313-2ef6-488b-8e4e-3cbfe4926db9",
+      "source": "MoneyDJ",
+      "time": "11/26 09:45"
+     },
+     {
+      "title": "中環11/17~23處分穩懋843張，損失約1729萬元",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e8f5ab6c-f3be-46d2-a3f0-db605beeceee",
+      "source": "MoneyDJ",
+      "time": "11/24 09:12"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -4,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 1.32,
+     "yoy": 31.87
+    }
+   },
+   {
+    "code": "2313",
+    "name": "華通",
+    "market": "市",
+    "price": 168,
+    "change_pct": 9.8,
+    "value_yi": 62.6,
+    "value_rank": 32,
+    "turnover_pct": 3.02,
+    "turnover_rank": 62,
+    "group": "PCB/載板",
+    "theme": "HDI板/低軌衛星PCB",
+    "news": [
+     {
+      "title": "11／26台股雷達｜大盤反彈千點 華通、緯創、國巨＊股價勢頭強勁亮眼",
+      "url": "https://www.ctee.com.tw/news/20261126701991-430204",
+      "source": "工商時報",
+      "time": "11/26 19:09"
+     },
+     {
+      "title": "PCB全產業鏈火力全開！12檔漲停 華通、欣興、南電領軍反攻",
+      "url": "https://news.wearn.com/c2154990.html",
+      "source": "聚財網",
+      "time": "11/26 17:20"
+     },
+     {
+      "title": "SpaceX百萬衛星計畫獲准，華通/台光電迎長線商機",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=30d81c46-2806-4009-8b44-23cc11ff0cf7",
+      "source": "MoneyDJ",
+      "time": "11/26 10:28"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": -2,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 1.92,
+     "yoy": 24.73
+    }
+   },
+   {
+    "code": "3406",
+    "name": "玉晶光",
+    "market": "市",
+    "price": 767,
+    "change_pct": 7.12,
+    "value_yi": 61.9,
+    "value_rank": 33,
+    "turnover_pct": 6.9,
+    "turnover_rank": 24,
+    "group": "光學鏡頭",
+    "theme": "光學鏡頭",
+    "news": [
+     {
+      "title": "CPO 商機升溫！大立光、玉晶光2027年拚新技術量產",
+      "url": "https://money.udn.com/money/story/5612/9903715",
+      "source": "經濟日報",
+      "time": "11/26 15:05"
+     },
+     {
+      "title": "焦點股》玉晶光：手機、光通訊雙動能 股價走強",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5653995",
+      "source": "自由財經",
+      "time": "11/26 11:52"
+     },
+     {
+      "title": "玉晶光期 展望佳",
+      "url": "https://money.udn.com/money/story/11113/9899730",
+      "source": "經濟日報",
+      "time": "11/24 23:59"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -20.41,
+     "yoy": -5.77
+    }
+   },
+   {
+    "code": "1815",
+    "name": "富喬",
+    "market": "櫃",
+    "price": 107.5,
+    "change_pct": 5.91,
+    "value_yi": 58.2,
+    "value_rank": 36,
+    "turnover_pct": 8.8,
+    "turnover_rank": 18,
+    "group": "銅箔基板/PCB材料",
+    "theme": "玻纖布(Low Dk)",
+    "news": [
+     {
+      "title": "違約交割連發 富喬今年第二度",
+      "url": "https://money.udn.com/money/story/11074/9897235",
+      "source": "經濟日報",
+      "time": "11/23 21:53"
+     },
+     {
+      "title": "富喬11/30參加群益金鼎證舉辦之法說會",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31469bb2-0ce1-4ec1-8f0f-5855ec5edadc",
+      "source": "MoneyDJ",
+      "time": "11/23 18:50"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 2,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 11.75,
+     "yoy": 85.61
+    }
+   },
+   {
+    "code": "3324",
+    "name": "雙鴻",
+    "market": "櫃",
+    "price": 858,
+    "change_pct": 7.52,
+    "value_yi": 45.5,
+    "value_rank": 44,
+    "turnover_pct": 5.78,
+    "turnover_rank": 28,
+    "group": "散熱",
+    "theme": "散熱模組(液冷)",
+    "news": [
+     {
+      "title": "雙鴻估關稅影響有限，台廠先前多已調整產能",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=08512e48-7f67-4c96-a55d-0a52f60f8c59",
+      "source": "MoneyDJ",
+      "time": "11/26 12:11"
+     },
+     {
+      "title": "雙鴻雙面水冷板量產，明年CDU占比續升",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6f810a93-a9b6-4f23-8a09-55ce593c8a88",
+      "source": "MoneyDJ",
+      "time": "11/25 10:03"
+     },
+     {
+      "title": "AI散熱大反攻！奇鋐鎖漲停、健策迎規格升級 雙鴻水冷訂單蓄勢待發",
+      "url": "https://news.wearn.com/c2153297.html",
+      "source": "聚財網",
+      "time": "11/24 19:17"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 16.91,
+     "yoy": 44.74
+    }
+   },
+   {
+    "code": "3715",
+    "name": "定穎投控",
+    "market": "市",
+    "price": 143.5,
+    "change_pct": 8.71,
+    "value_yi": 38.7,
+    "value_rank": 51,
+    "turnover_pct": 9.71,
+    "turnover_rank": 15,
+    "group": "PCB/載板",
+    "theme": "車用/AI伺服器PCB",
+    "news": [
+     {
+      "title": "永續治理資優生 定穎投控雙喜臨門",
+      "url": "https://money.udn.com/money/story/125079/9901444",
+      "source": "經濟日報",
+      "time": "11/26 10:11"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 17.37,
+     "yoy": 121.47
+    }
+   },
+   {
+    "code": "2337",
+    "name": "旺宏",
+    "market": "市",
+    "price": 65.2,
+    "change_pct": 6.54,
+    "value_yi": 30.7,
+    "value_rank": 55,
+    "turnover_pct": 2.39,
+    "turnover_rank": 85,
+    "group": "記憶體",
+    "theme": "記憶體(NOR/NAND Flash)",
+    "news": [
+     {
+      "title": "旺宏 本公司訂購機器設備公告",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b727d6f2-070f-4bc8-9f1f-cf24a139dd25",
+      "source": "MoneyDJ",
+      "time": "11/25 17:29"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -4,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 0.55,
+     "yoy": 217.19
+    }
+   },
+   {
+    "code": "2492",
+    "name": "華新科",
+    "market": "市",
+    "price": 210,
+    "change_pct": 9.95,
+    "value_yi": 30.1,
+    "value_rank": 57,
+    "turnover_pct": 2.99,
+    "turnover_rank": 64,
+    "group": "被動元件",
+    "theme": "MLCC被動元件",
+    "news": [
+     {
+      "title": "國巨高點回跌逾7成反彈是真的？被動元件華新科、禾伸堂齊亮燈",
+      "url": "https://money.udn.com/money/story/5710/9903264",
+      "source": "經濟日報",
+      "time": "11/26 12:08"
+     },
+     {
+      "title": "被動元件紅燈海只撐1天！國巨、華新科領軍迎賣壓大考",
+      "url": "https://news.wearn.com/c2153986.html",
+      "source": "聚財網",
+      "time": "11/25 16:13"
+     },
+     {
+      "title": "被動元件集體復活！國巨、華新科領28檔亮紅燈",
+      "url": "https://news.wearn.com/c2152890.html",
+      "source": "聚財網",
+      "time": "11/24 13:20"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -8.56,
+     "yoy": 57.11
+    }
+   },
+   {
+    "code": "3006",
+    "name": "晶豪科",
+    "market": "市",
+    "price": 185,
+    "change_pct": 7.87,
+    "value_yi": 29.1,
+    "value_rank": 58,
+    "turnover_pct": 5.36,
+    "turnover_rank": 32,
+    "group": "記憶體",
+    "theme": "記憶體IC設計",
+    "news": [],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": true
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -12.26,
+     "yoy": 430.06
+    }
+   },
+   {
+    "code": "6672",
+    "name": "騰輝電子-KY",
+    "market": "市",
+    "price": 398.5,
+    "change_pct": 9.93,
+    "value_yi": 26.4,
+    "value_rank": 63,
+    "turnover_pct": 8.15,
+    "turnover_rank": 20,
+    "group": "銅箔基板/PCB材料",
+    "theme": "高頻CCL銅箔基板",
+    "news": [
+     {
+      "title": "《價值型投資 最新產業研究報告》騰輝電子-KY (6672-TW) 黏合片推升毛利，特殊材料接新單",
+      "url": "https://news.cnyes.com/news/id/6672693",
+      "source": "鉅亨網",
+      "time": "11/26 13:55"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 14.86,
+     "yoy": 224.35
+    }
+   },
+   {
+    "code": "2466",
+    "name": "冠西電",
+    "market": "市",
+    "price": 329,
+    "change_pct": -4.64,
+    "value_yi": 26.3,
+    "value_rank": 64,
+    "turnover_pct": 4.43,
+    "turnover_rank": 39,
+    "group": "CPO/光通訊",
+    "theme": "光收發模組(800G)",
+    "news": [],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -50.38,
+     "yoy": 54.17
+    }
+   },
+   {
+    "code": "6187",
+    "name": "萬潤",
+    "market": "櫃",
+    "price": 715,
+    "change_pct": 4.23,
+    "value_yi": 24.3,
+    "value_rank": 67,
+    "turnover_pct": 3.48,
+    "turnover_rank": 50,
+    "group": "半導體設備",
+    "theme": "先進封裝設備(CoWoS)",
+    "news": [
+     {
+      "title": "萬潤Q4營收估居高；明年訂單能見度仍佳",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=55da2f6d-78bc-4f05-b893-520873268447",
+      "source": "MoneyDJ",
+      "time": "11/23 09:23"
+     },
+     {
+      "title": "萬潤11/23參加Citi舉辦之法說會",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a308d187-b47b-48ea-b176-47350f7a6876",
+      "source": "MoneyDJ",
+      "time": "11/20 17:58"
+     },
+     {
+      "title": "日月光擴產先進封測 萬潤、鈦昇迎設備訂單",
+      "url": "https://money.udn.com/money/story/5612/9890044",
+      "source": "經濟日報",
+      "time": "11/20 01:39"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": -1,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -15.7,
+     "yoy": 217.74
+    }
+   },
+   {
+    "code": "3026",
+    "name": "禾伸堂",
+    "market": "市",
+    "price": 364,
+    "change_pct": 9.97,
+    "value_yi": 23.7,
+    "value_rank": 69,
+    "turnover_pct": 3.96,
+    "turnover_rank": 44,
+    "group": "被動元件",
+    "theme": "MLCC被動元件",
+    "news": [
+     {
+      "title": "國巨高點回跌逾7成反彈是真的？被動元件華新科、禾伸堂齊亮燈",
+      "url": "https://money.udn.com/money/story/5710/9903264",
+      "source": "經濟日報",
+      "time": "11/26 12:08"
+     },
+     {
+      "title": "禾伸堂AI領域持續成長，Q4延續成長態勢",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9c7f07c2-8421-4167-a1d9-ea0f0c4b8e78",
+      "source": "MoneyDJ",
+      "time": "11/26 09:53"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": -4,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -10.39,
+     "yoy": 33.35
+    }
+   },
+   {
+    "code": "2468",
+    "name": "華經",
+    "market": "市",
+    "price": 61.9,
+    "change_pct": -1.43,
+    "value_yi": 22.2,
+    "value_rank": 71,
+    "turnover_pct": 51.06,
+    "turnover_rank": 1,
+    "group": "資安/軟體",
+    "theme": "資安/系統整合",
+    "news": [
+     {
+      "title": "華經訂11/27召開線上法說會",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=37437f7f-c07a-4b01-9902-01cfeb12401b",
+      "source": "MoneyDJ",
+      "time": "11/26 19:16"
+     },
+     {
+      "title": "焦點股》華經：當沖比連2日達9成 股價劇烈震盪",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5650272",
+      "source": "自由財經",
+      "time": "11/23 11:25"
+     },
+     {
+      "title": "台股殺聲隆隆、資安股卻開趴！華經、資通逆勢漲停",
+      "url": "https://news.wearn.com/c2151143.html",
+      "source": "聚財網",
+      "time": "11/21 12:00"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 0,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -31.69,
+     "yoy": 20.0
+    }
+   },
+   {
+    "code": "8358",
+    "name": "金居",
+    "market": "櫃",
+    "price": 268.5,
+    "change_pct": 9.82,
+    "value_yi": 22.2,
+    "value_rank": 72,
+    "turnover_pct": 3.33,
+    "turnover_rank": 53,
+    "group": "銅箔基板/PCB材料",
+    "theme": "電解銅箔(HVLP)",
+    "news": [
+     {
+      "title": "櫃買市場再爆違約交割！金居遭通報逾2,000萬元",
+      "url": "https://money.udn.com/money/story/11074/9892220",
+      "source": "經濟日報",
+      "time": "11/20 21:45"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": -2,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 0.35,
+     "yoy": 57.95
+    }
+   },
+   {
+    "code": "6531",
+    "name": "愛普*",
+    "market": "市",
+    "price": 533,
+    "change_pct": 3.29,
+    "value_yi": 22.1,
+    "value_rank": 73,
+    "turnover_pct": 2.34,
+    "turnover_rank": 90,
+    "group": "記憶體",
+    "theme": "記憶體IP設計",
+    "news": [
+     {
+      "title": "證交所：愛普、創意、景碩、金像電違約交割　總金額1.78億",
+      "url": "https://money.udn.com/money/story/5607/9897012",
+      "source": "經濟日報",
+      "time": "11/23 19:45"
+     },
+     {
+      "title": "愛普*現增參與發行海外存託憑證之新股11/23起上市買賣，原股款繳納憑證同日終止上市",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7c1601d-30e7-4156-bbbb-498c531f23af",
+      "source": "MoneyDJ",
+      "time": "11/20 10:22"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": -2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 9.26,
+     "yoy": 155.85
+    }
+   },
+   {
+    "code": "6285",
+    "name": "啟碁",
+    "market": "市",
+    "price": 193,
+    "change_pct": 9.97,
+    "value_yi": 21.7,
+    "value_rank": 74,
+    "turnover_pct": 2.35,
+    "turnover_rank": 88,
+    "group": "網通設備",
+    "theme": "低軌衛星終端/網通",
+    "news": [
+     {
+      "title": "〈焦點股〉SpaceX獲准部署百萬顆衛星 啟碁、兆赫、友訊強攻漲停領軍網通族群",
+      "url": "https://news.cnyes.com/news/id/6672049",
+      "source": "鉅亨網",
+      "time": "11/26 11:11"
+     },
+     {
+      "title": "啟碁明年營運看增，800G交換器放量為成長主力",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d03bc091-e280-48df-ad57-0d0f40702fdf",
+      "source": "MoneyDJ",
+      "time": "11/26 10:00"
+     },
+     {
+      "title": "啟碁奪TCSA年度最佳報告書 獲台灣百大永續典範企業",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=355e725c-a672-4481-8b98-3dd08b031c70",
+      "source": "MoneyDJ",
+      "time": "11/26 08:44"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 2,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 4.84,
+     "yoy": 77.78
+    }
+   },
+   {
+    "code": "6147",
+    "name": "頎邦",
+    "market": "櫃",
+    "price": 132,
+    "change_pct": 6.45,
+    "value_yi": 21.6,
+    "value_rank": 75,
+    "turnover_pct": 2.22,
+    "turnover_rank": 95,
+    "group": "半導體封測",
+    "theme": "驅動IC封測/CPO",
+    "news": [],
+    "inst": {
+     "foreign_streak": 4,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -0.09,
+     "yoy": 33.03
+    }
+   },
+   {
+    "code": "2355",
+    "name": "敬鵬",
+    "market": "市",
+    "price": 60.2,
+    "change_pct": 9.85,
+    "value_yi": 21.3,
+    "value_rank": 77,
+    "turnover_pct": 9.04,
+    "turnover_rank": 16,
+    "group": "PCB/載板",
+    "theme": "車用PCB",
+    "news": [
+     {
+      "title": "敬鵬大陸、泰國擴產",
+      "url": "https://money.udn.com/money/story/5710/9899457",
+      "source": "經濟日報",
+      "time": "11/25 00:29"
+     },
+     {
+      "title": "敬鵬訂11/30召開法說會",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9463fbad-471b-4d28-bbcd-0b4d0e0c0053",
+      "source": "MoneyDJ",
+      "time": "11/23 14:43"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 0,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -0.98,
+     "yoy": 33.01
+    }
+   },
+   {
+    "code": "2455",
+    "name": "全新",
+    "market": "市",
+    "price": 294.5,
+    "change_pct": 4.25,
+    "value_yi": 20.9,
+    "value_rank": 78,
+    "turnover_pct": 3.8,
+    "turnover_rank": 46,
+    "group": "化合物半導體",
+    "theme": "化合物半導體磊晶",
+    "news": [],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": 1,
+     "foreign_turn": false,
+     "trust_turn": true
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 4.92,
+     "yoy": 32.66
+    }
+   },
+   {
+    "code": "5289",
+    "name": "宜鼎",
+    "market": "櫃",
+    "price": 795,
+    "change_pct": 3.52,
+    "value_yi": 19.1,
+    "value_rank": 81,
+    "turnover_pct": 2.43,
+    "turnover_rank": 80,
+    "group": "記憶體",
+    "theme": "工控記憶體模組(SSD/DRAM)",
+    "news": [
+     {
+      "title": "宜鼎董事會決議購置新北市汐止區大同路一段不動產，計3.55億元",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=776e8a0a-c858-4317-b884-6a11a66d15a3",
+      "source": "MoneyDJ",
+      "time": "11/23 19:01"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": -1,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -11.04,
+     "yoy": 454.57
+    }
+   },
+   {
+    "code": "6442",
+    "name": "光聖",
+    "market": "市",
+    "price": 980,
+    "change_pct": 7.1,
+    "value_yi": 18.8,
+    "value_rank": 82,
+    "turnover_pct": 2.37,
+    "turnover_rank": 86,
+    "group": "CPO/光通訊",
+    "theme": "光纖被動元件",
+    "news": [
+     {
+      "title": "光通訊13強全亮紅燈！聯亞直衝1525元 光聖逼近千元",
+      "url": "https://news.wearn.com/c2153089.html",
+      "source": "聚財網",
+      "time": "11/24 16:26"
+     },
+     {
+      "title": "轉單利多變跌停噩夢！光通訊11檔慘倒 聯亞週跌28%、光聖失千元",
+      "url": "https://news.wearn.com/c2150122.html",
+      "source": "聚財網",
+      "time": "11/19 20:30"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 2,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -10.86,
+     "yoy": 82.56
+    }
+   },
+   {
+    "code": "6199",
+    "name": "天品",
+    "market": "櫃",
+    "price": 173,
+    "change_pct": 0.29,
+    "value_yi": 18.6,
+    "value_rank": 83,
+    "turnover_pct": 17.42,
+    "turnover_rank": 6,
+    "group": "其他/轉型股",
+    "theme": "AI水冷清洗/無人機轉型",
+    "news": [],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": 0,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 7.52,
+     "yoy": 143.5
+    }
+   },
+   {
+    "code": "3264",
+    "name": "欣銓",
+    "market": "櫃",
+    "price": 156,
+    "change_pct": 7.22,
+    "value_yi": 18.6,
+    "value_rank": 84,
+    "turnover_pct": 2.48,
+    "turnover_rank": 78,
+    "group": "半導體封測",
+    "theme": "晶圓測試(CP)",
+    "news": [
+     {
+      "title": "封測股重挫前就有警訊？京元電、欣銓遭外資賣超 借券放空10月已升溫",
+      "url": "https://money.udn.com/money/story/12040/9902065",
+      "source": "經濟日報",
+      "time": "11/25 21:09"
+     }
+    ],
+    "inst": {
+     "foreign_streak": 1,
+     "trust_streak": -1,
+     "foreign_turn": true,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": 4.58,
+     "yoy": 47.86
+    }
+   },
+   {
+    "code": "4977",
+    "name": "眾達-KY",
+    "market": "市",
+    "price": 141.5,
+    "change_pct": -1.74,
+    "value_yi": 16.8,
+    "value_rank": 88,
+    "turnover_pct": 12.83,
+    "turnover_rank": 9,
+    "group": "CPO/光通訊",
+    "theme": "光收發模組",
+    "news": [],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -17.35,
+     "yoy": 117.36
+    }
+   },
+   {
+    "code": "7788",
+    "name": "松川精密",
+    "market": "市",
+    "price": 223,
+    "change_pct": -3.25,
+    "value_yi": 15.9,
+    "value_rank": 91,
+    "turnover_pct": 8.44,
+    "turnover_rank": 19,
+    "group": "被動元件",
+    "theme": "繼電器(車用/新能源)",
+    "news": [
+     {
+      "title": "松川精密自結10月獲利1.18億元，每股稅後1.47元",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=448a9be3-9a9f-4375-8f97-c15db08c0ba7",
+      "source": "MoneyDJ",
+      "time": "11/26 15:57"
+     },
+     {
+      "title": "松川精密Q4毛利率可望回升，產業展望看佳",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c015c0fa-dda7-4aba-8b4a-c907fc09fc62",
+      "source": "MoneyDJ",
+      "time": "11/24 10:06"
+     },
+     {
+      "title": "90度急拉！松川精密逆勢翻紅 50年老牌繼電器廠轉型新能源有成",
+      "url": "https://money.udn.com/money/story/11074/9891082",
+      "source": "經濟日報",
+      "time": "11/20 12:43"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -3,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -3.18,
+     "yoy": 53.61
+    }
+   },
+   {
+    "code": "7765",
+    "name": "中華資安",
+    "market": "市",
+    "price": 297,
+    "change_pct": -4.5,
+    "value_yi": 15.0,
+    "value_rank": 94,
+    "turnover_pct": 12.33,
+    "turnover_rank": 11,
+    "group": "資安/軟體",
+    "theme": "資安服務",
+    "news": [
+     {
+      "title": "熱門股》資安題材 中華資安亮紅燈",
+      "url": "https://ec.ltn.com.tw/article/paper/1779921",
+      "source": "自由財經",
+      "time": "11/26 05:30"
+     },
+     {
+      "title": "台股重挫破年線！中華資安連2漲停、仁大資訊齊亮燈，意藍逢高賣一半",
+      "url": "https://news.wearn.com/c2154222.html",
+      "source": "聚財網",
+      "time": "11/25 19:54"
+     },
+     {
+      "title": "中華資安12/3參加國泰證舉辦之法說會",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cb4484fb-a10b-4ddb-a751-e91d25a30e6b",
+      "source": "MoneyDJ",
+      "time": "11/25 19:07"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -6.65,
+     "yoy": 32.2
+    }
+   },
+   {
+    "code": "4979",
+    "name": "華星光",
+    "market": "櫃",
+    "price": 279,
+    "change_pct": 5.88,
+    "value_yi": 15.0,
+    "value_rank": 95,
+    "turnover_pct": 3.79,
+    "turnover_rank": 47,
+    "group": "CPO/光通訊",
+    "theme": "光通訊模組",
+    "news": [],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": -2,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -2.83,
+     "yoy": 75.42
+    }
+   },
+   {
+    "code": "3450",
+    "name": "聯鈞",
+    "market": "市",
+    "price": 292,
+    "change_pct": 5.42,
+    "value_yi": 14.3,
+    "value_rank": 98,
+    "turnover_pct": 3.41,
+    "turnover_rank": 52,
+    "group": "CPO/光通訊",
+    "theme": "CPO光通訊",
+    "news": [],
+    "inst": {
+     "foreign_streak": -2,
+     "trust_streak": -1,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -5.36,
+     "yoy": 74.58
+    }
+   },
+   {
+    "code": "2471",
+    "name": "資通",
+    "market": "市",
+    "price": 66.1,
+    "change_pct": -0.75,
+    "value_yi": 14.1,
+    "value_rank": 99,
+    "turnover_pct": 45.41,
+    "turnover_rank": 2,
+    "group": "資安/軟體",
+    "theme": "企業軟體/系統整合",
+    "news": [
+     {
+      "title": "資通拓展業務機會，明年再推新產品",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6a7d3555-0d31-409f-86c7-923f31a31919",
+      "source": "MoneyDJ",
+      "time": "11/25 11:15"
+     },
+     {
+      "title": "台股殺聲隆隆、資安股卻開趴！華經、資通逆勢漲停",
+      "url": "https://news.wearn.com/c2151143.html",
+      "source": "聚財網",
+      "time": "11/21 12:00"
+     },
+     {
+      "title": "台股暴跌2393點！資安資服股成避風港 華經、資通領軍10檔強勢股突圍",
+      "url": "https://news.wearn.com/c2150832.html",
+      "source": "聚財網",
+      "time": "11/20 19:00"
+     }
+    ],
+    "inst": {
+     "foreign_streak": -1,
+     "trust_streak": 0,
+     "foreign_turn": false,
+     "trust_turn": false
+    },
+    "revenue": {
+     "ym": "2026-10",
+     "mom": -0.95,
+     "yoy": 5.31
+    }
+   }
+  ]
  },
  "inst_lookback": 10,
- "light": "green",
+ "revenue_month": "2026-10",
  "light_history": [
-  {
-   "date": "2026-11-12",
-   "light": "green"
-  },
   {
    "date": "2026-11-13",
    "light": "green"
@@ -1293,3240 +3103,1284 @@
   {
    "date": "2026-11-25",
    "light": "green"
-  }
- ],
- "light_reason": "櫃買275.97跌破5MA、20MA與60MA，均線全面下彎，趨勢向下轉防禦",
- "otc_change": -17.26,
- "otc_change_pct": -5.89,
- "otc_index": 275.97,
- "otc_ma20": 322.03,
- "otc_ma5": 277.75,
- "otc_ma60": 378.7,
- "revenue_month": "2026-10",
- "rumors": {
-  "sources": [
-   "@QQ_Timmy",
-   "@BlueJay87476298",
-   "@mingchikuo",
-   "@Leoskie_L"
-  ],
-  "window": [
-   "2026-11-24",
-   "2026-11-25"
-  ],
-  "status": "ok",
-  "updated_at": "2026-11-25 23:26",
-  "groups": [
-   {
-    "industry": "銅箔基板/PCB材料",
-    "items": [
-     {
-      "date": "11/25",
-      "summary": "美系大行重申台光電正向：Substrate CCL 月產能由30萬張擴至明年底120萬張；HVLP 超低粗糙度銅箔仍最缺、薄型 E-glass 玻纖布明年仍短缺，Low Dk 與 Q-glass 已備足。高階 M9/M10 放量，預期明年毛利率逾4成。",
-      "metrics": [
-       {
-        "label": "毛利率",
-        "value": "2027年預估4成以上（M9/M10放量）"
-       },
-       {
-        "label": "Substrate CCL",
-        "value": "月產能30萬張→明年底120萬張"
-       }
-      ],
-      "reply_note": "作者補充台光電官方說法：10/29法說只稱M10的Q布有多家供應商不缺料，11/24企業參訪稱已確保2027年Q布與low Dk布供應，均未點名供應商。",
-      "post_url": "https://x.com/QQ_Timmy/status/2125381728986604025",
-      "tw_stocks": [
-       {
-        "code": "2383",
-        "name": "台光電"
-       },
-       {
-        "code": "1303",
-        "name": "南亞"
-       },
-       {
-        "code": "1802",
-        "name": "台玻"
-       }
-      ],
-      "tw_note": "台光電為美系重申正向對象；薄型E-glass玻纖布明年仍短缺，對做電子玻纖布的南亞、台玻供需有利。",
-      "sentiment": "利多",
-      "is_new": true
-     },
-     {
-      "date": "11/24",
-      "summary": "台灣CCL三雄比較：預估2026年營收台光電2,110億、台燿640億、聯茂550億元，2025–2030年營收CAGR分別49%、48%、33%；台光電 M7 以上占比最高，AI 相關約占營收6成。月產能至2030年擴增69%–209%，同業生益、松下、斗山、建滔也同步擴產。",
-      "metrics": [
-       {
-        "label": "毛利率",
-        "value": "2026預估 台光電35.7%、台燿33.5%、聯茂28.7%"
-       },
-       {
-        "label": "M7以上占比",
-        "value": "2026 台光電65-70%、台燿30-40%、聯茂10-15%"
-       }
-      ],
-      "reply_note": "作者接續：VR200/VR300每櫃CCL含量約1.5–2萬/3–4萬美元，單片交換器板CCL由150美元升至500–1,500美元；玻纖布交期由2週拉長至4週、銅箔至3–3.5週；一般伺服器改款轉M7（均價較M6高30–50%），聯茂為主要供應商、台光電居次。",
-      "post_url": "https://x.com/QQ_Timmy/status/2125257269873082837",
-      "tw_stocks": [
-       {
-        "code": "2383",
-        "name": "台光電"
-       },
-       {
-        "code": "6274",
-        "name": "台燿"
-       },
-       {
-        "code": "6213",
-        "name": "聯茂"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "生益科技",
-        "ticker": "600183.SS"
-       },
-       {
-        "name": "Panasonic",
-        "ticker": "6752.T"
-       },
-       {
-        "name": "斗山",
-        "ticker": "000150.KS"
-       },
-       {
-        "name": "建滔積層板",
-        "ticker": "1888.HK"
-       }
-      ],
-      "tw_note": "生益、松下（MEGTRON）、斗山、建滔皆為CCL同業，2027–2028年擴產與台光電、台燿、聯茂直接競爭；但報告預估三雄營收與毛利率仍持續上升。",
-      "sentiment": "利多",
-      "is_new": true
-     },
-     {
-      "date": "11/25",
-      "summary": "TrendForce：AI運算與高速載板搶占電子玻纖布產能，大廠優先供應高階板材、其他板材配貨收緊且交期拉長；4Q26一般4層板成本季增10–15%，玻纖布擴產週期長、庫存維持低檔，1Q27高階板預計續漲但漲幅收斂。",
-      "metrics": [
-       {
-        "label": "4層板成本",
-        "value": "4Q26季增10–15%"
-       }
-      ],
-      "post_url": "https://x.com/QQ_Timmy/status/2125568605882589569",
-      "tw_stocks": [
-       {
-        "code": "1303",
-        "name": "南亞"
-       },
-       {
-        "code": "1802",
-        "name": "台玻"
-       }
-      ],
-      "tw_note": "南亞、台玻為台灣電子玻纖布供應商，玻纖布供給吃緊、PCB板材漲價有利報價。",
-      "sentiment": "利多",
-      "is_new": true
-     },
-     {
-      "date": "11/24",
-      "summary": "野村歐美投資人調查：投資人對PCB/CCL信心疲弱，擔心GPU/ASIC升級放緩造成供過於求，對CCL與玻纖布、銅箔漲價的持續性存疑，資金可能由CCL輪動至PCB。",
-      "post_url": "https://x.com/BlueJay87476298/status/2125171312700338496",
-      "tw_stocks": [
-       {
-        "code": "2383",
-        "name": "台光電"
-       },
-       {
-        "code": "6274",
-        "name": "台燿"
-       },
-       {
-        "code": "6213",
-        "name": "聯茂"
-       }
-      ],
-      "tw_note": "報告點出投資人偏好PCB勝於CCL，對台光電、台燿、聯茂等CCL股評價形成壓力。",
-      "sentiment": "利空",
-      "is_new": true
-     }
-    ]
-   },
-   {
-    "industry": "PCB/載板",
-    "items": [
-     {
-      "date": "11/25",
-      "summary": "大摩轉述三星電機：客戶要求載板產能每年翻倍，但產業一年僅能增加約20%，關鍵設備交期36–48個月；板子由70×70mm放大至100–120mm、層數再增約20%，大尺寸ABF缺口將拖得比市場預期久。",
-      "post_url": "https://x.com/Leoskie_L/status/2125514839263224091",
-      "tw_stocks": [
-       {
-        "code": "3037",
-        "name": "欣興"
-       },
-       {
-        "code": "3189",
-        "name": "景碩"
-       },
-       {
-        "code": "8046",
-        "name": "南電"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "Samsung Electro-Mechanics",
-        "ticker": "009150.KS"
-       }
-      ],
-      "tw_note": "三星電機為全球ABF載板大廠，與欣興、景碩、南電同屬大尺寸ABF供應商，同業點出設備交期瓶頸，代表台廠供給吃緊、議價有利。",
-      "sentiment": "利多",
-      "is_new": true
-     },
-     {
-      "date": "11/24",
-      "summary": "野村調查：IC載板供需關係改善，仍是投資人青睞的領域，領導廠商可憑技術門檻維持地位；報告點名深南電路受惠中國AI晶片與記憶體需求。",
-      "post_url": "https://x.com/BlueJay87476298/status/2125171312700338496",
-      "tw_stocks": [
-       {
-        "code": "3037",
-        "name": "欣興"
-       },
-       {
-        "code": "3189",
-        "name": "景碩"
-       },
-       {
-        "code": "8046",
-        "name": "南電"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "深南電路",
-        "ticker": "002916.SZ"
-       }
-      ],
-      "tw_note": "深南電路上半年IC載板營收年增約110%並擴建廣州載板廠，與欣興、景碩、南電同為ABF/BT載板供應商；載板供需轉佳對台廠有利。",
-      "sentiment": "利多",
-      "is_new": true
-     },
-     {
-      "date": "11/24",
-      "summary": "CCL報告接續：800G以上光模組PCB改採mSAP，關鍵設備交期逾12個月、短缺恐延續至2027年底；臻鼎光模組營收預估由2026年100億元增至2027年200–300億元，欣興規劃光模組產能2026年增50%、2027年再增40%。",
-      "metrics": [
-       {
-        "label": "光模組",
-        "value": "臻鼎2026年100億→2027年200-300億元"
-       }
-      ],
-      "post_url": "https://x.com/QQ_Timmy/status/2125257269873082837",
-      "tw_stocks": [
-       {
-        "code": "4958",
-        "name": "臻鼎-KY"
-       },
-       {
-        "code": "3037",
-        "name": "欣興"
-       }
-      ],
-      "tw_note": "臻鼎、欣興為光模組mSAP板主要供應商，1.6T/3.2T升級帶動層數與單價提升。",
-      "sentiment": "利多",
-      "is_new": true
-     }
-    ]
-   },
-   {
-    "industry": "AI伺服器ODM",
-    "items": [
-     {
-      "date": "11/24",
-      "summary": "大摩峰會紀要：鴻海重申2027年AI需求成長逾30%、近期未見轉弱，ASIC約占雲端營收20%，VR200機櫃單價較高，並預期新增一家超大型雲端與一家新興雲端客戶以提高機櫃組裝市占。",
-      "post_url": "https://x.com/QQ_Timmy/status/2125221193305469046",
-      "tw_stocks": [
-       {
-        "code": "2317",
-        "name": "鴻海"
-       }
-      ],
-      "tw_note": "鴻海為輝達GB/VR機櫃主要組裝廠，新增客戶有助市占提升。",
-      "sentiment": "利多",
-      "is_new": true
-     },
-     {
-      "date": "11/24",
-      "summary": "郭明錤：黃仁勳復職移除公司策略與供應鏈管理的不確定性，科技股隨即大漲；但美國收緊AI GPU出口、循環融資合規與調查訴訟仍待觀察，且資料中心供電、CSP資本支出2027–2028年見頂、先進封裝良率等瓶頸無法改變。",
-      "post_url": "https://x.com/mingchikuo/status/2125047199667278075",
-      "tw_stocks": [
-       {
-        "code": "2317",
-        "name": "鴻海"
-       },
-       {
-        "code": "2330",
-        "name": "台積電"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "NVIDIA",
-        "ticker": "NVDA"
-       }
-      ],
-      "tw_note": "鴻海為輝達機櫃組裝、台積電負責GPU製造與CoWoS先進封裝，輝達營運不確定性直接牽動兩者。",
-      "sentiment": "中性",
-      "is_new": true
-     }
-    ]
-   },
-   {
-    "industry": "連接器/線材",
-    "items": [
-     {
-      "date": "11/24",
-      "summary": "大摩峰會紀要：貿聯認為4Q26營收季增逾20%可達成（本業與Interplex），次世代GPU平台電源互連單機價值量可能倍增並提升市占；光學布局含光纖跳線、2027下半年起的主動光纜與CPO。",
-      "metrics": [
-       {
-        "label": "4Q26營收",
-        "value": "季增逾20%（公司看法）"
-       }
-      ],
-      "post_url": "https://x.com/QQ_Timmy/status/2125221193305469046",
-      "tw_stocks": [
-       {
-        "code": "3665",
-        "name": "貿聯-KY"
-       }
-      ],
-      "tw_note": "貿聯供應GPU機櫃電源互連線材，次世代平台單機價值量提升。",
-      "sentiment": "利多",
-      "is_new": true
-     }
-    ]
-   },
-   {
-    "industry": "伺服器電源",
-    "items": [
-     {
-      "date": "11/24",
-      "summary": "美系大行重申台達電正向：零組件供應改善，4Q26與1Q27營收均可望雙位數季增；明年新一代GPU機櫃耗電大增，液冷散熱與DC/DC模組也將貢獻。",
-      "metrics": [
-       {
-        "label": "營收展望",
-        "value": "4Q26–1Q27皆雙位數季增"
-       }
-      ],
-      "post_url": "https://x.com/QQ_Timmy/status/2125020363822440952",
-      "tw_stocks": [
-       {
-        "code": "2308",
-        "name": "台達電"
-       }
-      ],
-      "tw_note": "大摩峰會紀要中台達電管理層亦稱高壓直流電源櫃4Q26開始出貨、元件短缺預計2Q27緩解。",
-      "sentiment": "利多",
-      "is_new": true
-     }
-    ]
-   },
-   {
-    "industry": "晶圓代工",
-    "items": [
-     {
-      "date": "11/24",
-      "summary": "德州審計長公開資料：台積電亞利桑那公司申請JETI稅務優惠，評估在德州大學城興建2奈米以下先進邏輯園區，總投資約226億美元，預計2027年開工、2031年營運；申請書載明仍在評估，替代方案為擴建亞利桑那。",
-      "post_url": "https://x.com/QQ_Timmy/status/2125212522068562314",
-      "tw_stocks": [
-       {
-        "code": "2330",
-        "name": "台積電"
-       }
-      ],
-      "tw_note": "為台積電美國第二座先進製程園區候選地，屬擴產規劃，尚未定案。",
-      "sentiment": "中性",
-      "is_new": true
-     }
-    ]
-   },
-   {
-    "industry": "記憶體",
-    "items": [
-     {
-      "date": "11/25",
-      "summary": "Altman受訪：DRAM廠過去投資200億只賺190億，如今每家一年自由現金流可能達千億美元，但記取過度擴產教訓而對資本支出保守，作者認為不敢擴產本身就是供給瓶頸（10/29訪談，未點名個別公司）。",
-      "post_url": "https://x.com/Leoskie_L/status/2125545036536328598",
-      "tw_stocks": [
-       {
-        "code": "2408",
-        "name": "南亞科"
-       }
-      ],
-      "foreign": [
-       {
-        "name": "Micron",
-        "ticker": "MU"
-       }
-      ],
-      "tw_note": "作者推測對應美光、南亞科；DRAM廠資本支出保守有利報價維持高檔，南亞科為台灣DRAM廠。",
-      "sentiment": "利多",
-      "is_new": true
-     }
-    ]
-   }
-  ]
- },
- "sector_flows": {
-  "last_week": [
-   {
-    "avg_pct": -29.07,
-    "count": 2,
-    "group": "散熱",
-    "net_yi": 78.8,
-    "stocks": [
-     {
-      "code": "3653",
-      "name": "健策",
-      "net_yi": 77.78,
-      "pct": -30.68
-     },
-     {
-      "code": "3017",
-      "name": "奇鋐",
-      "net_yi": 1.02,
-      "pct": -27.47
-     }
-    ]
-   },
-   {
-    "avg_pct": -24.68,
-    "count": 2,
-    "group": "記憶體",
-    "net_yi": 26.57,
-    "stocks": [
-     {
-      "code": "8299",
-      "name": "群聯",
-      "net_yi": 23.32,
-      "pct": -19.51
-     },
-     {
-      "code": "2408",
-      "name": "南亞科",
-      "net_yi": 3.25,
-      "pct": -29.84
-     }
-    ]
-   },
-   {
-    "avg_pct": -24.91,
-    "count": 2,
-    "group": "半導體封測",
-    "net_yi": -96.04,
-    "stocks": [
-     {
-      "code": "2449",
-      "name": "京元電子",
-      "net_yi": -13.33,
-      "pct": -26.23
-     },
-     {
-      "code": "3711",
-      "name": "日月光投控",
-      "net_yi": -82.71,
-      "pct": -23.58
-     }
-    ]
-   },
-   {
-    "avg_pct": -31.47,
-    "count": 5,
-    "group": "PCB/載板",
-    "net_yi": -101.91,
-    "stocks": [
-     {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "net_yi": 8.88,
-      "pct": -29.55
-     },
-     {
-      "code": "8046",
-      "name": "南電",
-      "net_yi": 5.61,
-      "pct": -35.62
-     },
-     {
-      "code": "2368",
-      "name": "金像電",
-      "net_yi": -7.98,
-      "pct": -30.97
-     },
-     {
-      "code": "3037",
-      "name": "欣興",
-      "net_yi": -54.15,
-      "pct": -31.59
-     },
-     {
-      "code": "3189",
-      "name": "景碩",
-      "net_yi": -54.27,
-      "pct": -29.64
-     }
-    ]
-   },
-   {
-    "avg_pct": -34.55,
-    "count": 5,
-    "group": "銅箔基板/PCB材料",
-    "net_yi": -127.51,
-    "stocks": [
-     {
-      "code": "2383",
-      "name": "台光電",
-      "net_yi": 32.43,
-      "pct": -33.33
-     },
-     {
-      "code": "6274",
-      "name": "台燿",
-      "net_yi": 26.85,
-      "pct": -36.04
-     },
-     {
-      "code": "6213",
-      "name": "聯茂",
-      "net_yi": 3.54,
-      "pct": -33.3
-     },
-     {
-      "code": "1802",
-      "name": "台玻",
-      "net_yi": -69.78,
-      "pct": -37.84
-     },
-     {
-      "code": "1303",
-      "name": "南亞",
-      "net_yi": -120.55,
-      "pct": -32.24
-     }
-    ]
-   },
-   {
-    "avg_pct": -19.05,
-    "count": 2,
-    "group": "IC設計",
-    "net_yi": -208.37,
-    "stocks": [
-     {
-      "code": "3661",
-      "name": "世芯-KY",
-      "net_yi": 12,
-      "pct": -19.4
-     },
-     {
-      "code": "2454",
-      "name": "聯發科",
-      "net_yi": -220.37,
-      "pct": -18.69
-     }
-    ]
-   },
-   {
-    "avg_pct": -17.89,
-    "count": 2,
-    "group": "晶圓代工",
-    "net_yi": -679.3,
-    "stocks": [
-     {
-      "code": "2303",
-      "name": "聯電",
-      "net_yi": 38.48,
-      "pct": -20.89
-     },
-     {
-      "code": "2330",
-      "name": "台積電",
-      "net_yi": -717.78,
-      "pct": -14.89
-     }
-    ]
-   }
-  ],
-  "this_week": [
-   {
-    "avg_pct": 8.89,
-    "count": 2,
-    "group": "記憶體",
-    "net_yi": 3.69,
-    "stocks": [
-     {
-      "code": "8299",
-      "name": "群聯",
-      "net_yi": 14.44,
-      "pct": 12.5
-     },
-     {
-      "code": "2408",
-      "name": "南亞科",
-      "net_yi": -10.75,
-      "pct": 5.29
-     }
-    ]
-   },
-   {
-    "avg_pct": 13.98,
-    "count": 2,
-    "group": "散熱",
-    "net_yi": -4.32,
-    "stocks": [
-     {
-      "code": "3653",
-      "name": "健策",
-      "net_yi": 1.8,
-      "pct": 12.55
-     },
-     {
-      "code": "3017",
-      "name": "奇鋐",
-      "net_yi": -6.12,
-      "pct": 15.42
-     }
-    ]
-   },
-   {
-    "avg_pct": 8.31,
-    "count": 2,
-    "group": "半導體封測",
-    "net_yi": -38.37,
-    "stocks": [
-     {
-      "code": "2449",
-      "name": "京元電子",
-      "net_yi": -0.16,
-      "pct": 9.84
-     },
-     {
-      "code": "3711",
-      "name": "日月光投控",
-      "net_yi": -38.21,
-      "pct": 6.78
-     }
-    ]
-   },
-   {
-    "avg_pct": 10.65,
-    "count": 5,
-    "group": "PCB/載板",
-    "net_yi": -43.44,
-    "stocks": [
-     {
-      "code": "2368",
-      "name": "金像電",
-      "net_yi": 0.51,
-      "pct": 27.29
-     },
-     {
-      "code": "8046",
-      "name": "南電",
-      "net_yi": -4.62,
-      "pct": 5.72
-     },
-     {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "net_yi": -12.05,
-      "pct": 5.97
-     },
-     {
-      "code": "3037",
-      "name": "欣興",
-      "net_yi": -12.62,
-      "pct": 8.94
-     },
-     {
-      "code": "3189",
-      "name": "景碩",
-      "net_yi": -14.66,
-      "pct": 5.32
-     }
-    ]
-   },
-   {
-    "avg_pct": 14.18,
-    "count": 5,
-    "group": "銅箔基板/PCB材料",
-    "net_yi": -99.61,
-    "stocks": [
-     {
-      "code": "1802",
-      "name": "台玻",
-      "net_yi": -2.68,
-      "pct": 13.23
-     },
-     {
-      "code": "6213",
-      "name": "聯茂",
-      "net_yi": -9.02,
-      "pct": 9.7
-     },
-     {
-      "code": "1303",
-      "name": "南亞",
-      "net_yi": -20.27,
-      "pct": 9.95
-     },
-     {
-      "code": "2383",
-      "name": "台光電",
-      "net_yi": -33.03,
-      "pct": 19.4
-     },
-     {
-      "code": "6274",
-      "name": "台燿",
-      "net_yi": -34.61,
-      "pct": 18.62
-     }
-    ]
-   },
-   {
-    "avg_pct": 10.04,
-    "count": 2,
-    "group": "IC設計",
-    "net_yi": -109.94,
-    "stocks": [
-     {
-      "code": "3661",
-      "name": "世芯-KY",
-      "net_yi": 17.4,
-      "pct": 11.27
-     },
-     {
-      "code": "2454",
-      "name": "聯發科",
-      "net_yi": -127.34,
-      "pct": 8.81
-     }
-    ]
-   },
-   {
-    "avg_pct": 8.17,
-    "count": 2,
-    "group": "晶圓代工",
-    "net_yi": -735.36,
-    "stocks": [
-     {
-      "code": "2303",
-      "name": "聯電",
-      "net_yi": -52.38,
-      "pct": 8.84
-     },
-     {
-      "code": "2330",
-      "name": "台積電",
-      "net_yi": -682.98,
-      "pct": 7.5
-     }
-    ]
-   }
-  ],
-  "today": [
-   {
-    "avg_pct": -3.81,
-    "count": 2,
-    "group": "半導體封測",
-    "net_yi": 7.69,
-    "stocks": [
-     {
-      "code": "2449",
-      "name": "京元電子",
-      "net_yi": 10.7,
-      "pct": 0.29
-     },
-     {
-      "code": "3711",
-      "name": "日月光投控",
-      "net_yi": -3.01,
-      "pct": -7.92
-     }
-    ]
-   },
-   {
-    "avg_pct": 0.42,
-    "count": 2,
-    "group": "散熱",
-    "net_yi": 4.96,
-    "stocks": [
-     {
-      "code": "3653",
-      "name": "健策",
-      "net_yi": 3.93,
-      "pct": 2.96
-     },
-     {
-      "code": "3017",
-      "name": "奇鋐",
-      "net_yi": 1.03,
-      "pct": -2.12
-     }
-    ]
-   },
-   {
-    "avg_pct": -8.38,
-    "count": 2,
-    "group": "記憶體",
-    "net_yi": -3.64,
-    "stocks": [
-     {
-      "code": "8299",
-      "name": "群聯",
-      "net_yi": 2.49,
-      "pct": -6.9
-     },
-     {
-      "code": "2408",
-      "name": "南亞科",
-      "net_yi": -6.13,
-      "pct": -9.87
-     }
-    ]
-   },
-   {
-    "avg_pct": -4.54,
-    "count": 5,
-    "group": "PCB/載板",
-    "net_yi": -8.95,
-    "stocks": [
-     {
-      "code": "3189",
-      "name": "景碩",
-      "net_yi": 12.46,
-      "pct": -3.7
-     },
-     {
-      "code": "3037",
-      "name": "欣興",
-      "net_yi": 2.56,
-      "pct": -4.57
-     },
-     {
-      "code": "8046",
-      "name": "南電",
-      "net_yi": -3.05,
-      "pct": -9.77
-     },
-     {
-      "code": "2368",
-      "name": "金像電",
-      "net_yi": -8.25,
-      "pct": 5.23
-     },
-     {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "net_yi": -12.67,
-      "pct": -9.88
-     }
-    ]
-   },
-   {
-    "avg_pct": -5.53,
-    "count": 5,
-    "group": "銅箔基板/PCB材料",
-    "net_yi": -48.7,
-    "stocks": [
-     {
-      "code": "1802",
-      "name": "台玻",
-      "net_yi": 14.67,
-      "pct": -6.26
-     },
-     {
-      "code": "6213",
-      "name": "聯茂",
-      "net_yi": -7.79,
-      "pct": -9.3
-     },
-     {
-      "code": "1303",
-      "name": "南亞",
-      "net_yi": -8.07,
-      "pct": -9.04
-     },
-     {
-      "code": "6274",
-      "name": "台燿",
-      "net_yi": -22.34,
-      "pct": -1.86
-     },
-     {
-      "code": "2383",
-      "name": "台光電",
-      "net_yi": -25.17,
-      "pct": -1.18
-     }
-    ]
-   },
-   {
-    "avg_pct": -8.96,
-    "count": 2,
-    "group": "IC設計",
-    "net_yi": -122.21,
-    "stocks": [
-     {
-      "code": "3661",
-      "name": "世芯-KY",
-      "net_yi": 2.94,
-      "pct": -7.92
-     },
-     {
-      "code": "2454",
-      "name": "聯發科",
-      "net_yi": -125.15,
-      "pct": -10
-     }
-    ]
-   },
-   {
-    "avg_pct": -6.79,
-    "count": 2,
-    "group": "晶圓代工",
-    "net_yi": -515.68,
-    "stocks": [
-     {
-      "code": "2303",
-      "name": "聯電",
-      "net_yi": -37.55,
-      "pct": -9.99
-     },
-     {
-      "code": "2330",
-      "name": "台積電",
-      "net_yi": -478.13,
-      "pct": -3.59
-     }
-    ]
-   }
-  ]
- },
- "sector_flows_range": {
-  "last_week": [
-   "2026-11-16",
-   "2026-11-20"
-  ],
-  "this_week": [
-   "2026-11-23",
-   "2026-11-25"
-  ],
-  "today": [
-   "2026-11-25",
-   "2026-11-25"
-  ]
- },
- "today_focus": [
-  {
-   "source": "鉅亨網",
-   "tag": "國際",
-   "text": "川普接受CNBC專訪再批台灣「拿走」美國晶片產業，預告兩年後對進口晶片課徵200%關稅，並稱台積電將在德州啟動大型投資。",
-   "url": "https://news.cnyes.com/news/id/6671603"
   },
   {
-   "source": "鉅亨網",
-   "tag": "總經",
-   "text": "外資單日賣超1236.54億元、連8日提款4216億元，新台幣重貶1.87角收33.126元，創近20個月新低，成交量63.62億美元為史上第三大。",
-   "url": "https://news.cnyes.com/news/id/6671713"
-  },
-  {
-   "source": "鉅亨網",
-   "tag": "總經",
-   "text": "紐約Fed總裁威廉斯稱通膨持續高檔仍需緊縮，FedWatch顯示交易員已完全反映12月升息1碼，黃金下挫逾2%。",
-   "url": "https://news.cnyes.com/news/id/6670959"
-  },
-  {
-   "source": "鉅亨網",
-   "tag": "美股",
-   "text": "美光24日重挫10.97%收630.07美元，較高點回落約48%；法巴降評至中立、目標價由1700砍至775美元，示警記憶體供過於求風險升高。",
-   "url": "https://news.cnyes.com/news/id/6671181"
-  },
-  {
-   "source": "鉅亨網",
-   "tag": "美股",
-   "text": "戴爾第三度上修全年營收展望，上季營收549.4億美元、AI伺服器營收220億美元年增291%，AI伺服器未完成訂單創1323億美元新高，盤後漲逾4%。",
-   "url": "https://news.cnyes.com/news/id/6671191"
-  },
-  {
-   "source": "鉅亨網",
-   "tag": "美股",
-   "text": "黃仁勳復職後首場輝達員工大會承認違反行為準則並道歉，承諾接受每月360度評估，否認因特權或政府支持復職。",
-   "url": "https://news.cnyes.com/news/id/6671182"
-  },
-  {
-   "source": "鉅亨網",
-   "tag": "國際",
-   "text": "伊朗議長稱七項條件落實前不與美國談判，荷姆茲海峽空載油輪較戰前減少40%，布蘭特原油24日漲1.42%至每桶88美元。",
-   "url": "https://news.cnyes.com/news/id/6671214"
-  },
-  {
-   "source": "鉅亨網",
-   "tag": "台股",
-   "text": "鴻海印度子公司傳遭宿舍租賃供應商聲請破產、追討約1530萬美元，鴻海回應係服務未符契約與品質要求，雙方已進入司法程序。",
-   "url": "https://news.cnyes.com/news/id/6671719"
-  }
- ],
- "top30": [
-  {
-   "change_pct": -3.59,
-   "code": "2330",
-   "high": 2170,
-   "inst": {
-    "foreign_streak": -10,
-    "foreign_turn": false,
-    "trust_streak": 3,
-    "trust_turn": false
-   },
-   "low": 2020,
-   "market": "市",
-   "market_cap": "55.75兆",
-   "name": "台積電",
-   "open": 2150,
-   "price": 2150,
-   "rank": 1,
-   "revenue": {
-    "mom": 14.65,
-    "ym": "2026-10",
-    "yoy": 59.7
-   },
-   "theme": "晶圓代工(先進製程)",
-   "turnover": "1794.9億"
-  },
-  {
-   "change_pct": -10,
-   "code": "2454",
-   "high": 3955,
-   "inst": {
-    "foreign_streak": -8,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "low": 3645,
-   "market": "市",
-   "market_cap": "5.85兆",
-   "name": "聯發科",
-   "open": 3855,
-   "price": 3645,
-   "rank": 2,
-   "rank_up": 9,
-   "revenue": {
-    "mom": -0.67,
-    "ym": "2026-10",
-    "yoy": 5.76
-   },
-   "theme": "IC設計/AI ASIC",
-   "turnover": "882.3億"
-  },
-  {
-   "change_pct": -2.76,
-   "code": "2308",
-   "high": 1115,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 989,
-   "market": "市",
-   "market_cap": "2.74兆",
-   "name": "台達電",
-   "open": 1095,
-   "price": 1055,
-   "rank": 3,
-   "revenue": {
-    "mom": 14.16,
-    "ym": "2026-10",
-    "yoy": 30.11
-   },
-   "theme": "AI伺服器電源",
-   "turnover": "419.2億"
-  },
-  {
-   "change_pct": -9.04,
-   "code": "1303",
-   "high": 250.5,
-   "inst": {
-    "foreign_streak": -3,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 224.5,
-   "market": "市",
-   "market_cap": "1.80兆",
-   "name": "南亞",
-   "open": 235,
-   "price": 226.5,
-   "rank": 4,
-   "revenue": {
-    "mom": 1.5,
-    "ym": "2026-10",
-    "yoy": 64.59
-   },
-   "theme": "電子材料(CCL/玻纖布)",
-   "turnover": "298.2億"
-  },
-  {
-   "change_pct": -1.18,
-   "code": "2383",
-   "high": 3590,
-   "inst": {
-    "foreign_streak": -3,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 3100,
-   "market": "市",
-   "market_cap": "1.20兆",
-   "name": "台光電",
-   "open": 3235,
-   "price": 3355,
-   "rank": 5,
-   "revenue": {
-    "mom": 13.65,
-    "ym": "2026-10",
-    "yoy": 203.07
-   },
-   "theme": "CCL銅箔基板",
-   "turnover": "297.7億"
-  },
-  {
-   "change_pct": -4.57,
-   "code": "3037",
-   "high": 640,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 555,
-   "market": "市",
-   "market_cap": "9601.6億",
-   "name": "欣興",
-   "open": 570,
-   "price": 585,
-   "rank": 6,
-   "revenue": {
-    "mom": 1.79,
-    "ym": "2026-10",
-    "yoy": 67.61
-   },
-   "theme": "ABF載板",
-   "turnover": "276.6億"
-  },
-  {
-   "change_pct": -3.7,
-   "code": "3189",
-   "high": 549,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 463,
-   "market": "市",
-   "market_cap": "2608.2億",
-   "name": "景碩",
-   "open": 485.5,
-   "price": 495,
-   "rank": 7,
-   "revenue": {
-    "mom": 3.59,
-    "ym": "2026-10",
-    "yoy": 49.04
-   },
-   "theme": "ABF載板",
-   "turnover": "249.7億"
-  },
-  {
-   "change_pct": 5.23,
-   "code": "2368",
-   "high": 921,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 827,
-   "market": "市",
-   "market_cap": "4801.9億",
-   "name": "金像電",
-   "open": 846,
-   "price": 905,
-   "rank": 8,
-   "revenue": {
-    "mom": 6.36,
-    "ym": "2026-10",
-    "yoy": 76.17
-   },
-   "theme": "伺服器PCB",
-   "turnover": "243.3億"
-  },
-  {
-   "change_pct": -6.26,
-   "code": "1802",
-   "high": 69.6,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": -1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 58.2,
-   "market": "市",
-   "market_cap": "1741.9億",
-   "name": "台玻",
-   "open": 61.6,
-   "price": 59.9,
-   "rank": 9,
-   "revenue": {
-    "mom": 12.04,
-    "ym": "2026-10",
-    "yoy": 56.48
-   },
-   "theme": "玻纖布/平板玻璃",
-   "turnover": "225.6億"
-  },
-  {
-   "change_pct": -2.12,
-   "code": "3017",
-   "high": 2705,
-   "inst": {
-    "foreign_streak": -4,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 2360,
-   "market": "市",
-   "market_cap": "9993.5億",
-   "name": "奇鋐",
-   "open": 2475,
-   "price": 2545,
-   "rank": 10,
-   "revenue": {
-    "mom": 5.16,
-    "ym": "2026-10",
-    "yoy": 34.35
-   },
-   "theme": "散熱模組(液冷)",
-   "turnover": "220.1億"
-  },
-  {
-   "change_pct": -1.86,
-   "code": "6274",
-   "high": 801,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 685,
-   "market": "櫃",
-   "market_cap": "2213.3億",
-   "name": "台燿",
-   "open": 740,
-   "price": 739,
-   "rank": 11,
-   "revenue": {
-    "mom": 5.76,
-    "ym": "2026-10",
-    "yoy": 126.99
-   },
-   "theme": "CCL銅箔基板",
-   "turnover": "210.3億"
-  },
-  {
-   "change_pct": 1.13,
-   "code": "3008",
-   "high": 4280,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": 3,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 3790,
-   "market": "市",
-   "market_cap": "5264.6億",
-   "name": "大立光",
-   "open": 3850,
-   "price": 4025,
-   "rank": 12,
-   "revenue": {
-    "mom": 1.14,
-    "ym": "2026-10",
-    "yoy": -7.04
-   },
-   "theme": "CPO光學(FAU)",
-   "turnover": "203.4億"
-  },
-  {
-   "change_pct": -8.83,
-   "code": "2317",
-   "high": 214,
-   "inst": {
-    "foreign_streak": -4,
-    "foreign_turn": false,
-    "trust_streak": 7,
-    "trust_turn": false
-   },
-   "low": 204,
-   "market": "市",
-   "market_cap": "2.91兆",
-   "name": "鴻海",
-   "open": 211,
-   "price": 206.5,
-   "rank": 13,
-   "rank_up": 4,
-   "revenue": {
-    "mom": 12.66,
-    "ym": "2026-10",
-    "yoy": 45.73
-   },
-   "theme": "AI伺服器ODM",
-   "turnover": "197.5億"
-  },
-  {
-   "change_pct": -7.92,
-   "code": "3661",
-   "high": 3970,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 3530,
-   "market": "市",
-   "market_cap": "3114.1億",
-   "name": "世芯-KY",
-   "open": 3855,
-   "price": 3605,
-   "rank": 14,
-   "revenue": {
-    "mom": 2.82,
-    "ym": "2026-10",
-    "yoy": 515.8
-   },
-   "theme": "AI ASIC設計",
-   "turnover": "187.8億"
-  },
-  {
-   "change_pct": 3.82,
-   "code": "3665",
-   "high": 1710,
-   "inst": {
-    "foreign_streak": -6,
-    "foreign_turn": false,
-    "trust_streak": 10,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 1540,
-   "market": "市",
-   "market_cap": "3253.1億",
-   "name": "貿聯-KY",
-   "open": 1580,
-   "price": 1630,
-   "rank": 15,
-   "revenue": {
-    "mom": 26.93,
-    "ym": "2026-10",
-    "yoy": 79.99
-   },
-   "theme": "連接器/線束",
-   "turnover": "184.3億"
-  },
-  {
-   "change_pct": -7.92,
-   "code": "3711",
-   "high": 521,
-   "inst": {
-    "foreign_streak": -10,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "low": 477,
-   "market": "市",
-   "market_cap": "2.19兆",
-   "name": "日月光投控",
-   "open": 500,
-   "price": 488,
-   "rank": 16,
-   "rank_up": 6,
-   "revenue": {
-    "mom": 0.55,
-    "ym": "2026-10",
-    "yoy": 47.12
-   },
-   "theme": "半導體封測/先進封裝",
-   "turnover": "184.3億"
-  },
-  {
-   "change_pct": -9.99,
-   "code": "2303",
-   "high": 91,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "low": 87.4,
-   "market": "市",
-   "market_cap": "1.10兆",
-   "name": "聯電",
-   "open": 89.5,
-   "price": 87.4,
-   "rank": 17,
-   "rank_up": 2,
-   "revenue": {
-    "mom": -0.6,
-    "ym": "2026-10",
-    "yoy": 18.32
-   },
-   "theme": "成熟製程晶圓代工",
-   "turnover": "176.4億"
-  },
-  {
-   "change_pct": -0.67,
-   "code": "2345",
-   "high": 1545,
-   "inst": {
-    "foreign_streak": -7,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 1355,
-   "market": "市",
-   "market_cap": "8276.5億",
-   "name": "智邦",
-   "open": 1485,
-   "price": 1475,
-   "rank": 18,
-   "revenue": {
-    "mom": 10.55,
-    "ym": "2026-10",
-    "yoy": 91.15
-   },
-   "theme": "AI網通交換器",
-   "turnover": "152.1億"
-  },
-  {
-   "change_pct": -9.38,
-   "code": "2327",
-   "high": 338,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": -10,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 307,
-   "market": "市",
-   "market_cap": "6375.1億",
-   "name": "國巨*",
-   "open": 320,
-   "price": 309,
-   "rank": 19,
-   "revenue": {
-    "mom": 3.1,
-    "ym": "2026-10",
-    "yoy": 55
-   },
-   "theme": "MLCC被動元件",
-   "turnover": "150.9億"
-  },
-  {
-   "change_pct": -9.77,
-   "code": "8046",
-   "high": 755,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": -8,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 664,
-   "market": "市",
-   "market_cap": "4297.0億",
-   "name": "南電",
-   "open": 690,
-   "price": 665,
-   "rank": 20,
-   "revenue": {
-    "mom": 12.58,
-    "ym": "2026-10",
-    "yoy": 69.67
-   },
-   "theme": "ABF載板",
-   "turnover": "143.8億"
-  },
-  {
-   "change_pct": -9.3,
-   "code": "6213",
-   "high": 439,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 387,
-   "market": "市",
-   "market_cap": "1418.1億",
-   "name": "聯茂",
-   "open": 411.5,
-   "price": 390,
-   "rank": 21,
-   "revenue": {
-    "mom": 3.63,
-    "ym": "2026-10",
-    "yoy": 119.53
-   },
-   "theme": "CCL銅箔基板",
-   "turnover": "130.7億"
-  },
-  {
-   "change_pct": -9.87,
-   "code": "2408",
-   "high": 294.5,
-   "inst": {
-    "foreign_streak": -3,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 278.5,
-   "market": "市",
-   "market_cap": "9608.8億",
-   "name": "南亞科",
-   "open": 290,
-   "price": 278.5,
-   "rank": 22,
-   "revenue": {
-    "mom": 3.07,
-    "ym": "2026-10",
-    "yoy": 487.72
-   },
-   "theme": "記憶體(DRAM)",
-   "turnover": "127.5億"
-  },
-  {
-   "change_pct": -6.9,
-   "code": "8299",
-   "high": 1575,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 1470,
-   "market": "櫃",
-   "market_cap": "3288.4億",
-   "name": "群聯",
-   "open": 1510,
-   "price": 1485,
-   "rank": 23,
-   "revenue": {
-    "mom": 2.9,
-    "ym": "2026-10",
-    "yoy": 346.26
-   },
-   "theme": "記憶體控制IC",
-   "turnover": "127.0億"
-  },
-  {
-   "change_pct": -9.91,
-   "code": "3105",
-   "high": 465,
-   "inst": {
-    "foreign_streak": -3,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 404.5,
-   "market": "櫃",
-   "market_cap": "1714.8億",
-   "name": "穩懋",
-   "open": 422.5,
-   "price": 404.5,
-   "rank": 24,
-   "revenue": {
-    "mom": 1.32,
-    "ym": "2026-10",
-    "yoy": 31.87
-   },
-   "theme": "砷化鎵晶圓代工",
-   "turnover": "125.6億"
-  },
-  {
-   "change_pct": 0.29,
-   "code": "2449",
-   "high": 179.5,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "low": 161.5,
-   "market": "市",
-   "market_cap": "2221.1億",
-   "name": "京元電子",
-   "open": 166,
-   "price": 173,
-   "rank": 25,
-   "rank_up": 3,
-   "revenue": {
-    "mom": 8.71,
-    "ym": "2026-10",
-    "yoy": 29.46
-   },
-   "theme": "半導體測試",
-   "turnover": "116.6億"
-  },
-  {
-   "change_pct": 4.92,
-   "code": "2059",
-   "high": 6740,
-   "inst": {
-    "foreign_streak": -3,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": false
-   },
-   "is_new": true,
-   "low": 6015,
-   "market": "市",
-   "market_cap": "6199.1億",
-   "name": "川湖",
-   "open": 6235,
-   "price": 6505,
-   "rank": 26,
-   "revenue": {
-    "mom": 2.18,
-    "ym": "2026-10",
-    "yoy": 191.06
-   },
-   "theme": "伺服器滑軌",
-   "turnover": "101.6億"
-  },
-  {
-   "change_pct": -0.61,
-   "code": "2412",
-   "high": 167,
-   "inst": {
-    "foreign_streak": -4,
-    "foreign_turn": false,
-    "trust_streak": 6,
-    "trust_turn": false
-   },
-   "low": 163,
-   "market": "市",
-   "market_cap": "1.27兆",
-   "name": "中華電",
-   "open": 163.5,
-   "price": 163.5,
-   "rank": 27,
-   "revenue": {
-    "mom": -2.66,
-    "ym": "2026-10",
-    "yoy": 13.44
-   },
-   "theme": "電信服務",
-   "turnover": "94.4億"
-  },
-  {
-   "change_pct": -9.88,
-   "code": "4958",
-   "high": 367.5,
-   "inst": {
-    "foreign_streak": -2,
-    "foreign_turn": false,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 328.5,
-   "market": "市",
-   "market_cap": "3730.2億",
-   "name": "臻鼎-KY",
-   "open": 341.5,
-   "price": 328.5,
-   "rank": 28,
-   "revenue": {
-    "mom": 3.18,
-    "ym": "2026-10",
-    "yoy": 39.98
-   },
-   "theme": "軟板FPC",
-   "turnover": "94.4億"
-  },
-  {
-   "change_pct": 2.96,
-   "code": "3653",
-   "high": 4455,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 3845,
-   "market": "市",
-   "market_cap": "6138.4億",
-   "name": "健策",
-   "open": 4180,
-   "price": 4170,
-   "rank": 29,
-   "revenue": {
-    "mom": 0.62,
-    "ym": "2026-10",
-    "yoy": 80.68
-   },
-   "theme": "均熱片(IHS)",
-   "turnover": "80.9億"
-  },
-  {
-   "change_pct": -0.49,
-   "code": "2360",
-   "high": 1115,
-   "inst": {
-    "foreign_streak": 1,
-    "foreign_turn": true,
-    "trust_streak": 1,
-    "trust_turn": true
-   },
-   "is_new": true,
-   "low": 963,
-   "market": "市",
-   "market_cap": "4295.0億",
-   "name": "致茂",
-   "open": 1090,
-   "price": 1010,
-   "rank": 30,
-   "revenue": {
-    "mom": -8.82,
-    "ym": "2026-10",
-    "yoy": 163.25
-   },
-   "theme": "半導體測試設備",
-   "turnover": "80.1億"
-  }
- ],
- "top5": [
-  {
-   "buy_strategy": "保守守城：綠燈防禦期不追高，僅在大盤重挫3%以上且量能放大時分3筆小量布局，載板主流題材抱緊觀察。",
-   "chips_signal": "外資買超約2,266張（由賣超轉買超）、投信買超約408張（由賣超轉買超），外資投信同買；今日量為5日均量1.99倍",
-   "code": "3189",
-   "fundamentals": "2026-10營收 MoM +3.59%、YoY +49.04%（累計YoY +35.36%）",
-   "name": "景碩",
-   "news": [
-    {
-     "source": "MoneyDJ",
-     "time": "11/25 19:07",
-     "title": "景碩4/28~11/25訂購機器設備一批，計約5.47億元",
-     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21e9e102-790b-414c-87d8-26187a5c1971"
-    },
-    {
-     "source": "MoneyDJ",
-     "time": "11/25 11:42",
-     "title": "明年營收年增逾三成？景碩：媒體預測",
-     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5dbf0018-6368-4f3e-b7e9-9833d737bc91"
-    },
-    {
-     "source": "經濟日報",
-     "time": "11/25 09:48",
-     "title": "景碩積極擴產 法人估今年 EPS 上看12元",
-     "url": "https://money.udn.com/money/story/5710/9900297"
-    }
-   ],
-   "rank": 1,
-   "score": 58,
-   "sector": "ABF載板",
-   "streak": 1,
-   "theme_reason": "題材26分：PCB/載板主流族群（前20名含欣興、景碩、金像電、南電）；產業機遇15：〈景碩積極擴產 法人估今年 EPS 上看12元〉(經濟日報 11/25)；需求側6：〈明年營收年增逾三成？景碩：媒體預測〉(MoneyDJ 11/25)；供給側0；獲利上修5：〈鉅亨速報 - Factset 最新調查：景碩(3189-TW)EPS…〉(鉅亨網 11/17)；本益比53.34不低於同族群7檔中位數27.14 0。"
-  },
-  {
-   "buy_strategy": "保守守城：綠燈防禦期，待大盤急殺爆量時分批低接伺服器PCB龍頭，不追價、嚴控部位。",
-   "chips_signal": "外資賣超約2,861張（連2日賣超）、投信買超約2,011張（由賣超轉買超）；今日量為5日均量2.55倍",
-   "code": "2368",
-   "fundamentals": "2026-10營收 MoM +6.36%、YoY +76.17%（累計YoY +69.88%）",
-   "name": "金像電",
-   "news": [
-    {
-     "source": "經濟日報",
-     "time": "11/23 20:23",
-     "title": "今日最夯股／金像電強攻漲停 三大法人齊買超",
-     "url": "https://money.udn.com/money/story/5607/9897049"
-    }
-   ],
-   "rank": 2,
-   "score": 58,
-   "sector": "伺服器PCB",
-   "streak": 1,
-   "theme_reason": "題材25分：PCB/載板主流族群（前20名含欣興、景碩、金像電、南電）；產業機遇10（近7日無新催化）；需求側10：〈金像電(2368) 漲價轉嫁原物料成本！第 3 季毛利率 38.7%…〉(鉅亨網 11/13)；供給側0；獲利上修0；本益比27.14低於同族群7檔中位數30.28 5。"
-  },
-  {
-   "buy_strategy": "保守守城：綠燈期僅在大盤重挫且主力站賣方時分3筆承接，銅箔基板材料題材抱緊。",
-   "chips_signal": "外資賣超約11,818張（連3日賣超）、投信買超約6,566張；今日量為5日均量1.72倍",
-   "code": "1303",
-   "fundamentals": "2026-10營收 MoM +1.50%、YoY +64.59%（累計YoY +30.51%）",
-   "name": "南亞",
-   "news": [
-    {
-     "source": "鉅亨網",
-     "time": "11/24 13:40",
-     "title": "〈焦點股〉黃仁勳回歸AI供應鏈爆漲 玻纖布廠南亞、台玻聯袂亮燈攻漲停",
-     "url": "https://news.cnyes.com/news/id/6670934"
-    },
-    {
-     "source": "聚財網",
-     "time": "11/23 20:30",
-     "title": "玻纖布這次不當韭菜！南亞殺破200元又漲停 台玻爆量衝",
-     "url": "https://news.wearn.com/c2152322.html"
-    }
-   ],
-   "rank": 3,
-   "score": 56,
-   "sector": "電子材料(CCL/玻纖布)",
-   "streak": 1,
-   "theme_reason": "題材25分：銅箔基板/PCB材料主流族群（前20名含南亞、台光電、台玻、台燿）；產業機遇10（近7日無新催化）；需求側10：〈電子材料供不應求 南亞擴大高階材料比重、第4季營收看增〉(經濟日報 11/06)；供給側0；獲利上修0；本益比21.19低於同族群11檔中位數31.41 5。"
-  },
-  {
-   "buy_strategy": "保守守城：綠燈防禦期，CCL族群隨大盤修正，重挫爆量時分批布局，不追高。",
-   "chips_signal": "外資賣超約2,947張（連2日賣超）、投信買超約63張；今日量為5日均量2.42倍",
-   "code": "6274",
-   "fundamentals": "2026-10營收 MoM +5.76%、YoY +126.99%（累計YoY +102.67%）",
-   "name": "台燿",
-   "news": [],
-   "rank": 4,
-   "score": 56,
-   "sector": "CCL銅箔基板",
-   "streak": 1,
-   "theme_reason": "題材30分：銅箔基板/PCB材料主流族群（前20名含南亞、台光電、台玻、台燿）；產業機遇10（近7日無新催化）；需求側10：〈台燿(6274)第三季毛利率衝上36.9%！四年產能近乎倍增，漲價與…〉(優分析 10/29)；供給側0；獲利上修5：〈鉅亨速報 - Factset 最新調查：台燿(6274-TW)EPS…〉(鉅亨網 11/17)；本益比25.91低於同族群11檔中位數31.41 5。"
-  },
-  {
-   "buy_strategy": "保守守城：綠燈期ASIC龍頭僅於大盤重挫3%以上時分3筆低接，不做追價。",
-   "chips_signal": "外資賣超約279張（連2日賣超）、投信買超約404張；今日量為5日均量1.36倍",
-   "code": "3661",
-   "fundamentals": "2026-10營收 MoM +2.82%、YoY +515.80%（累計YoY +72.61%）",
-   "name": "世芯-KY",
-   "news": [
-    {
-     "source": "聚財網",
-     "time": "11/23 16:46",
-     "title": "IC設計大洗牌！世芯、聯發科雙漲停 創意重挫5%失守股后",
-     "url": "https://news.wearn.com/c2152142.html"
-    },
-    {
-     "source": "鉅亨網",
-     "time": "11/23 12:10",
-     "title": "鉅亨速報 - Factset 最新調查：世芯-KY(3661-TW)EPS預估下修至122.91元，預估目標價為5630元",
-     "url": "https://news.cnyes.com/news/id/6670093"
-    },
-    {
-     "source": "經濟日報",
-     "time": "11/21 21:35",
-     "title": "朱成志：少了老黃「ASIC >GPU」，4萬點築底模式，世芯股價該大於聯發科嗎？",
-     "url": "https://money.udn.com/money/story/5607/9891488"
-    }
-   ],
-   "rank": 5,
-   "score": 55,
-   "sector": "AI ASIC設計",
-   "streak": 1,
-   "theme_reason": "題材31分：IC設計主流族群（前20名含聯發科、世芯-KY）；產業機遇10（近7日無新催化）；需求側6：〈創意10月獲利年增1.56倍 世芯成長66%〉(經濟日報 11/16)；供給側5：〈AI晶片搶單大戰開打！聯發科、世芯目標價喊上天 ASIC供應鏈全面升…〉(聚財網 11/10)；獲利上修5：〈CSP 客戶訂單續旺 法人調高世芯獲利預估值及目標價〉(經濟日報 11/09)；本益比39.90低於同族群9檔中位數53.14 5。"
-  }
- ],
- "top50_sectors": [
-  {
-   "count": 2,
-   "sector": "晶圓代工",
-   "stocks": [
-    {
-     "code": "2330",
-     "name": "台積電"
-    },
-    {
-     "code": "2303",
-     "name": "聯電"
-    }
-   ]
-  },
-  {
-   "count": 2,
-   "sector": "IC設計",
-   "stocks": [
-    {
-     "code": "2454",
-     "name": "聯發科"
-    },
-    {
-     "code": "3661",
-     "name": "世芯-KY"
-    }
-   ]
-  },
-  {
-   "count": 4,
-   "sector": "銅箔基板/PCB材料",
-   "stocks": [
-    {
-     "code": "1303",
-     "name": "南亞"
-    },
-    {
-     "code": "2383",
-     "name": "台光電"
-    },
-    {
-     "code": "1802",
-     "name": "台玻"
-    },
-    {
-     "code": "6274",
-     "name": "台燿"
-    }
-   ]
-  },
-  {
-   "count": 4,
-   "sector": "PCB/載板",
-   "stocks": [
-    {
-     "code": "3037",
-     "name": "欣興"
-    },
-    {
-     "code": "3189",
-     "name": "景碩"
-    },
-    {
-     "code": "2368",
-     "name": "金像電"
-    },
-    {
-     "code": "8046",
-     "name": "南電"
-    }
-   ]
+   "date": "2026-11-26",
+   "light": "green"
   }
  ],
  "track_record": {
   "months": [
    {
-    "avg_return": 5.92,
+    "month": "2026-09",
+    "status": "settled",
+    "settle_date": "2026-09-30",
     "count": 24,
     "counted": 24,
-    "month": "2026-09",
+    "win_rate": 70.8,
+    "avg_return": 5.92,
     "picks": [
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "1303",
-      "days": 2,
-      "entry": 247,
-      "entry_date": "2026-09-29",
-      "exit": 255.5,
-      "listed": false,
-      "month_end": false,
       "name": "南亞",
-      "relist": [],
+      "start": "2026-09-29",
+      "entry_date": "2026-09-29",
+      "entry": 247.0,
+      "exit": 255.5,
       "ret": 3.44,
-      "start": "2026-09-29"
-     },
-     {
+      "relist": [],
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "3016",
-      "days": 1,
-      "entry": 172.5,
-      "entry_date": "2026-09-29",
-      "exit": 169,
       "listed": false,
-      "month_end": false,
-      "name": "嘉晶",
-      "relist": [],
-      "ret": -2.03,
-      "start": "2026-09-29"
+      "month_end": false
      },
      {
+      "code": "3016",
+      "name": "嘉晶",
+      "start": "2026-09-29",
+      "entry_date": "2026-09-29",
+      "entry": 172.5,
+      "exit": 169.0,
+      "ret": -2.03,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3189",
+      "name": "景碩",
+      "start": "2026-09-24",
+      "entry_date": "2026-09-24",
+      "entry": 962.0,
+      "exit": 970.0,
+      "ret": 0.83,
+      "relist": [],
+      "days": 3,
       "carried_in": false,
       "carried_out": true,
-      "code": "3189",
-      "days": 3,
-      "entry": 962,
-      "entry_date": "2026-09-24",
-      "exit": 970,
       "listed": false,
-      "month_end": false,
-      "name": "景碩",
-      "relist": [],
-      "ret": 0.83,
-      "start": "2026-09-24"
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "8046",
-      "days": 2,
-      "entry": 1165,
-      "entry_date": "2026-09-22",
-      "exit": 1340,
-      "listed": false,
-      "month_end": false,
       "name": "南電",
-      "relist": [],
+      "start": "2026-09-22",
+      "entry_date": "2026-09-22",
+      "entry": 1165.0,
+      "exit": 1340.0,
       "ret": 15.02,
-      "start": "2026-09-22"
-     },
-     {
+      "relist": [],
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2409",
-      "days": 2,
-      "entry": 36.65,
-      "entry_date": "2026-09-22",
-      "exit": 38.55,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2409",
       "name": "友達",
+      "start": "2026-09-22",
+      "entry_date": "2026-09-22",
+      "entry": 36.65,
+      "exit": 38.55,
+      "ret": 5.18,
       "relist": [
        "2026-09-30"
       ],
-      "ret": 5.18,
-      "start": "2026-09-22"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2449",
-      "days": 1,
-      "entry": 317,
-      "entry_date": "2026-09-22",
-      "exit": 294.5,
-      "listed": false,
-      "month_end": false,
-      "name": "京元電子",
-      "relist": [],
-      "ret": -7.1,
-      "start": "2026-09-22"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3443",
       "days": 2,
-      "entry": 7615,
-      "entry_date": "2026-09-21",
-      "exit": 8040,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2449",
+      "name": "京元電子",
+      "start": "2026-09-22",
+      "entry_date": "2026-09-22",
+      "entry": 317.0,
+      "exit": 294.5,
+      "ret": -7.1,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3443",
       "name": "創意",
+      "start": "2026-09-21",
+      "entry_date": "2026-09-21",
+      "entry": 7615.0,
+      "exit": 8040.0,
+      "ret": 5.58,
       "relist": [
        "2026-09-23"
       ],
-      "ret": 5.58,
-      "start": "2026-09-21"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3711",
-      "days": 1,
-      "entry": 638,
-      "entry_date": "2026-09-18",
-      "exit": 703,
-      "listed": false,
-      "month_end": false,
-      "name": "日月光投控",
-      "relist": [],
-      "ret": 10.19,
-      "start": "2026-09-18"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2344",
-      "days": 1,
-      "entry": 179.5,
-      "entry_date": "2026-09-18",
-      "exit": 179.5,
-      "listed": false,
-      "month_end": false,
-      "name": "華邦電",
-      "relist": [],
-      "ret": 0,
-      "start": "2026-09-18"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2408",
-      "days": 1,
-      "entry": 525,
-      "entry_date": "2026-09-18",
-      "exit": 519,
-      "listed": false,
-      "month_end": false,
-      "name": "南亞科",
-      "relist": [],
-      "ret": -1.14,
-      "start": "2026-09-18"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3105",
       "days": 2,
-      "entry": 471,
-      "entry_date": "2026-09-17",
-      "exit": 542,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3711",
+      "name": "日月光投控",
+      "start": "2026-09-18",
+      "entry_date": "2026-09-18",
+      "entry": 638.0,
+      "exit": 703.0,
+      "ret": 10.19,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2344",
+      "name": "華邦電",
+      "start": "2026-09-18",
+      "entry_date": "2026-09-18",
+      "entry": 179.5,
+      "exit": 179.5,
+      "ret": 0.0,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "start": "2026-09-18",
+      "entry_date": "2026-09-18",
+      "entry": 525.0,
+      "exit": 519.0,
+      "ret": -1.14,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3105",
       "name": "穩懋",
+      "start": "2026-09-17",
+      "entry_date": "2026-09-17",
+      "entry": 471.0,
+      "exit": 542.0,
+      "ret": 15.07,
       "relist": [
        "2026-09-30"
       ],
-      "ret": 15.07,
-      "start": "2026-09-17"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2455",
-      "days": 1,
-      "entry": 534,
-      "entry_date": "2026-09-17",
-      "exit": 552,
       "listed": false,
-      "month_end": false,
-      "name": "全新",
-      "relist": [],
-      "ret": 3.37,
-      "start": "2026-09-17"
+      "month_end": false
      },
      {
+      "code": "2455",
+      "name": "全新",
+      "start": "2026-09-17",
+      "entry_date": "2026-09-17",
+      "entry": 534.0,
+      "exit": 552.0,
+      "ret": 3.37,
+      "relist": [],
+      "days": 1,
       "carried_in": false,
-      "carried_out": true,
-      "code": "6213",
-      "days": 3,
-      "entry": 550,
-      "entry_date": "2026-09-16",
-      "exit": 623,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6213",
       "name": "聯茂",
+      "start": "2026-09-16",
+      "entry_date": "2026-09-16",
+      "entry": 550.0,
+      "exit": 623.0,
+      "ret": 13.27,
       "relist": [
        "2026-09-29"
       ],
-      "ret": 13.27,
-      "start": "2026-09-16"
+      "days": 3,
+      "carried_in": false,
+      "carried_out": true,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "3081",
-      "days": 1,
-      "entry": 2805,
-      "entry_date": "2026-09-16",
-      "exit": 2695,
-      "listed": false,
-      "month_end": false,
       "name": "聯亞",
-      "relist": [],
+      "start": "2026-09-16",
+      "entry_date": "2026-09-16",
+      "entry": 2805.0,
+      "exit": 2695.0,
       "ret": -3.92,
-      "start": "2026-09-16"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "3653",
-      "days": 2,
-      "entry": 5310,
-      "entry_date": "2026-09-15",
-      "exit": 6800,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3653",
       "name": "健策",
+      "start": "2026-09-15",
+      "entry_date": "2026-09-15",
+      "entry": 5310.0,
+      "exit": 6800.0,
+      "ret": 28.06,
       "relist": [
        "2026-09-24"
       ],
-      "ret": 28.06,
-      "start": "2026-09-15"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2308",
-      "days": 2,
-      "entry": 1670,
-      "entry_date": "2026-09-15",
-      "exit": 1890,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2308",
       "name": "台達電",
+      "start": "2026-09-15",
+      "entry_date": "2026-09-15",
+      "entry": 1670.0,
+      "exit": 1890.0,
+      "ret": 13.17,
       "relist": [
        "2026-09-21"
       ],
-      "ret": 13.17,
-      "start": "2026-09-15"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "3037",
-      "days": 4,
-      "entry": 970,
-      "entry_date": "2026-09-14",
-      "exit": 1175,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3037",
       "name": "欣興",
+      "start": "2026-09-14",
+      "entry_date": "2026-09-14",
+      "entry": 970.0,
+      "exit": 1175.0,
+      "ret": 21.13,
       "relist": [
        "2026-09-23"
       ],
-      "ret": 21.13,
-      "start": "2026-09-14"
-     },
-     {
+      "days": 4,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2327",
-      "days": 1,
-      "entry": 545,
-      "entry_date": "2026-09-14",
-      "exit": 548,
-      "listed": false,
-      "month_end": false,
       "name": "國巨",
-      "relist": [],
-      "ret": 0.55,
-      "start": "2026-09-14"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "8358",
-      "days": 3,
-      "entry": 518,
+      "start": "2026-09-14",
       "entry_date": "2026-09-14",
-      "exit": 495,
-      "listed": false,
-      "month_end": false,
-      "name": "金居",
+      "entry": 545.0,
+      "exit": 548.0,
+      "ret": 0.55,
       "relist": [],
-      "ret": -4.44,
-      "start": "2026-09-14"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "2303",
-      "days": 7,
-      "entry": 140.5,
-      "entry_date": "2026-09-11",
-      "exit": 154.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "8358",
+      "name": "金居",
+      "start": "2026-09-14",
+      "entry_date": "2026-09-14",
+      "entry": 518.0,
+      "exit": 495.0,
+      "ret": -4.44,
+      "relist": [],
+      "days": 3,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2303",
       "name": "聯電",
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 140.5,
+      "exit": 154.5,
+      "ret": 9.96,
       "relist": [
        "2026-09-16"
       ],
-      "ret": 9.96,
-      "start": "2026-09-11"
-     },
-     {
+      "days": 7,
       "carried_in": false,
       "carried_out": false,
-      "code": "2454",
-      "days": 7,
-      "entry": 4585,
-      "entry_date": "2026-09-11",
-      "exit": 4920,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2454",
       "name": "聯發科",
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 4585.0,
+      "exit": 4920.0,
+      "ret": 7.31,
       "relist": [
        "2026-09-15",
        "2026-09-17",
        "2026-09-21"
       ],
-      "ret": 7.31,
-      "start": "2026-09-11"
-     },
-     {
+      "days": 7,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "3026",
-      "days": 1,
-      "entry": 744,
-      "entry_date": "2026-09-11",
-      "exit": 791,
-      "listed": false,
-      "month_end": false,
       "name": "禾伸堂",
-      "relist": [],
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 744.0,
+      "exit": 791.0,
       "ret": 6.32,
-      "start": "2026-09-11"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "2330",
-      "days": 9,
-      "entry": 2410,
-      "entry_date": "2026-09-11",
-      "exit": 2480,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2330",
       "name": "台積電",
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 2410.0,
+      "exit": 2480.0,
+      "ret": 2.9,
       "relist": [
        "2026-09-23"
       ],
-      "ret": 2.9,
-      "start": "2026-09-11"
-     },
-     {
+      "days": 9,
       "carried_in": false,
       "carried_out": false,
-      "code": "6173",
-      "days": 1,
-      "entry": 290,
-      "entry_date": "2026-09-11",
-      "exit": 288.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6173",
       "name": "信昌電",
-      "relist": [],
+      "start": "2026-09-11",
+      "entry_date": "2026-09-11",
+      "entry": 290.0,
+      "exit": 288.5,
       "ret": -0.52,
-      "start": "2026-09-11"
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      }
-    ],
-    "settle_date": "2026-09-30",
-    "status": "settled",
-    "win_rate": 70.8
+    ]
    },
    {
-    "avg_return": -11.84,
+    "month": "2026-10",
+    "status": "settled",
+    "settle_date": "2026-10-30",
     "count": 26,
     "counted": 26,
-    "month": "2026-10",
+    "win_rate": 11.5,
+    "avg_return": -11.84,
     "picks": [
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "2344",
-      "days": 2,
-      "entry": 172,
-      "entry_date": "2026-10-28",
-      "exit": 164.5,
-      "listed": false,
-      "month_end": false,
       "name": "華邦電",
-      "relist": [],
-      "ret": -4.36,
-      "start": "2026-10-28"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "6770",
-      "days": 1,
-      "entry": 71.3,
+      "start": "2026-10-28",
       "entry_date": "2026-10-28",
-      "exit": 66.6,
+      "entry": 172.0,
+      "exit": 164.5,
+      "ret": -4.36,
+      "relist": [],
+      "days": 2,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6770",
       "name": "力積電",
-      "relist": [],
+      "start": "2026-10-28",
+      "entry_date": "2026-10-28",
+      "entry": 71.3,
+      "exit": 66.6,
       "ret": -6.59,
-      "start": "2026-10-28"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "3231",
-      "days": 1,
-      "entry": 195,
-      "entry_date": "2026-10-21",
-      "exit": 183.5,
-      "listed": false,
-      "month_end": false,
       "name": "緯創",
-      "relist": [],
+      "start": "2026-10-21",
+      "entry_date": "2026-10-21",
+      "entry": 195.0,
+      "exit": 183.5,
       "ret": -5.9,
-      "start": "2026-10-21"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "6269",
-      "days": 1,
-      "entry": 80.3,
-      "entry_date": "2026-10-19",
-      "exit": 69,
-      "listed": false,
-      "month_end": false,
       "name": "台郡",
-      "relist": [],
+      "start": "2026-10-19",
+      "entry_date": "2026-10-19",
+      "entry": 80.3,
+      "exit": 69.0,
       "ret": -14.07,
-      "start": "2026-10-19"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "8046",
-      "days": 1,
-      "entry": 1345,
-      "entry_date": "2026-10-15",
-      "exit": 1190,
-      "listed": false,
-      "month_end": false,
       "name": "南電",
-      "relist": [],
-      "ret": -11.52,
-      "start": "2026-10-15"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "6278",
-      "days": 1,
-      "entry": 303,
+      "start": "2026-10-15",
       "entry_date": "2026-10-15",
-      "exit": 252.5,
-      "listed": false,
-      "month_end": false,
-      "name": "台表科",
+      "entry": 1345.0,
+      "exit": 1190.0,
+      "ret": -11.52,
       "relist": [],
-      "ret": -16.67,
-      "start": "2026-10-15"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "1802",
-      "days": 4,
-      "entry": 67,
-      "entry_date": "2026-10-14",
-      "exit": 62.3,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "6278",
+      "name": "台表科",
+      "start": "2026-10-15",
+      "entry_date": "2026-10-15",
+      "entry": 303.0,
+      "exit": 252.5,
+      "ret": -16.67,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "1802",
       "name": "台玻",
+      "start": "2026-10-14",
+      "entry_date": "2026-10-14",
+      "entry": 67.0,
+      "exit": 62.3,
+      "ret": -7.01,
       "relist": [
        "2026-10-19",
        "2026-10-22"
       ],
-      "ret": -7.01,
-      "start": "2026-10-14"
-     },
-     {
+      "days": 4,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2368",
-      "days": 5,
-      "entry": 1170,
-      "entry_date": "2026-10-13",
-      "exit": 1020,
-      "listed": false,
-      "month_end": false,
       "name": "金像電",
-      "relist": [],
+      "start": "2026-10-13",
+      "entry_date": "2026-10-13",
+      "entry": 1170.0,
+      "exit": 1020.0,
       "ret": -12.82,
-      "start": "2026-10-13"
-     },
-     {
+      "relist": [],
+      "days": 5,
       "carried_in": false,
       "carried_out": false,
-      "code": "3711",
-      "days": 2,
-      "entry": 762,
-      "entry_date": "2026-10-12",
-      "exit": 668,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3711",
       "name": "日月光投控",
+      "start": "2026-10-12",
+      "entry_date": "2026-10-12",
+      "entry": 762.0,
+      "exit": 668.0,
+      "ret": -12.34,
       "relist": [
        "2026-10-30"
       ],
-      "ret": -12.34,
-      "start": "2026-10-12"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "7769",
-      "days": 1,
-      "entry": 6490,
-      "entry_date": "2026-10-12",
-      "exit": 4950,
-      "listed": false,
-      "month_end": false,
       "name": "鴻勁",
-      "relist": [],
+      "start": "2026-10-12",
+      "entry_date": "2026-10-12",
+      "entry": 6490.0,
+      "exit": 4950.0,
       "ret": -23.73,
-      "start": "2026-10-12"
-     },
-     {
+      "relist": [],
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
-      "code": "2383",
-      "days": 3,
-      "entry": 6150,
-      "entry_date": "2026-10-12",
-      "exit": 4675,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2383",
       "name": "台光電",
+      "start": "2026-10-12",
+      "entry_date": "2026-10-12",
+      "entry": 6150.0,
+      "exit": 4675.0,
+      "ret": -23.98,
       "relist": [
        "2026-10-22"
       ],
-      "ret": -23.98,
-      "start": "2026-10-12"
-     },
-     {
+      "days": 3,
       "carried_in": false,
       "carried_out": false,
-      "code": "2408",
-      "days": 2,
-      "entry": 532,
-      "entry_date": "2026-10-08",
-      "exit": 454.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2408",
       "name": "南亞科",
+      "start": "2026-10-08",
+      "entry_date": "2026-10-08",
+      "entry": 532.0,
+      "exit": 454.5,
+      "ret": -14.57,
       "relist": [
        "2026-10-29"
       ],
-      "ret": -14.57,
-      "start": "2026-10-08"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "4958",
-      "days": 7,
-      "entry": 592,
-      "entry_date": "2026-10-08",
-      "exit": 486,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "4958",
       "name": "臻鼎-KY",
+      "start": "2026-10-08",
+      "entry_date": "2026-10-08",
+      "entry": 592.0,
+      "exit": 486.0,
+      "ret": -17.91,
       "relist": [
        "2026-10-13",
        "2026-10-16",
        "2026-10-20"
       ],
-      "ret": -17.91,
-      "start": "2026-10-08"
-     },
-     {
+      "days": 7,
       "carried_in": false,
       "carried_out": false,
-      "code": "1815",
-      "days": 7,
-      "entry": 132.5,
-      "entry_date": "2026-10-07",
-      "exit": 126.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "1815",
       "name": "富喬",
+      "start": "2026-10-07",
+      "entry_date": "2026-10-07",
+      "entry": 132.5,
+      "exit": 126.5,
+      "ret": -4.53,
       "relist": [
        "2026-10-14",
        "2026-10-16"
       ],
-      "ret": -4.53,
-      "start": "2026-10-07"
-     },
-     {
+      "days": 7,
       "carried_in": false,
       "carried_out": false,
-      "code": "2327",
-      "days": 2,
-      "entry": 647,
-      "entry_date": "2026-10-07",
-      "exit": 502,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2327",
       "name": "國巨*",
+      "start": "2026-10-07",
+      "entry_date": "2026-10-07",
+      "entry": 647.0,
+      "exit": 502.0,
+      "ret": -22.41,
       "relist": [
        "2026-10-30"
       ],
-      "ret": -22.41,
-      "start": "2026-10-07"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "1303",
-      "days": 14,
-      "entry": 293,
-      "entry_date": "2026-10-06",
-      "exit": 296,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "1303",
       "name": "南亞",
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 293.0,
+      "exit": 296.0,
+      "ret": 1.02,
       "relist": [
        "2026-10-13",
        "2026-10-27"
       ],
-      "ret": 1.02,
-      "start": "2026-10-06"
-     },
-     {
+      "days": 14,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "3661",
-      "days": 5,
-      "entry": 4180,
-      "entry_date": "2026-10-06",
-      "exit": 3425,
-      "listed": false,
-      "month_end": false,
       "name": "世芯-KY",
-      "relist": [],
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 4180.0,
+      "exit": 3425.0,
       "ret": -18.06,
-      "start": "2026-10-06"
-     },
-     {
+      "relist": [],
+      "days": 5,
       "carried_in": false,
       "carried_out": false,
-      "code": "2313",
-      "days": 2,
-      "entry": 252,
-      "entry_date": "2026-10-06",
-      "exit": 202,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2313",
       "name": "華通",
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 252.0,
+      "exit": 202.0,
+      "ret": -19.84,
       "relist": [
        "2026-10-12"
       ],
-      "ret": -19.84,
-      "start": "2026-10-06"
+      "days": 2,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": true,
       "code": "6274",
-      "days": 6,
-      "entry": 1755,
-      "entry_date": "2026-10-06",
-      "exit": 1265,
-      "listed": false,
-      "month_end": false,
       "name": "台燿",
+      "start": "2026-10-06",
+      "entry_date": "2026-10-06",
+      "entry": 1755.0,
+      "exit": 1265.0,
+      "ret": -27.92,
       "relist": [
        "2026-10-13",
        "2026-10-30"
       ],
-      "ret": -27.92,
-      "start": "2026-10-06"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "8358",
-      "days": 1,
-      "entry": 570,
-      "entry_date": "2026-10-05",
-      "exit": 405,
-      "listed": false,
-      "month_end": false,
-      "name": "金居",
-      "relist": [],
-      "ret": -28.95,
-      "start": "2026-10-05"
-     },
-     {
+      "days": 6,
       "carried_in": false,
       "carried_out": true,
-      "code": "3105",
-      "days": 4,
-      "entry": 591,
-      "entry_date": "2026-10-02",
-      "exit": 578,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "8358",
+      "name": "金居",
+      "start": "2026-10-05",
+      "entry_date": "2026-10-05",
+      "entry": 570.0,
+      "exit": 405.0,
+      "ret": -28.95,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3105",
       "name": "穩懋",
+      "start": "2026-10-02",
+      "entry_date": "2026-10-02",
+      "entry": 591.0,
+      "exit": 578.0,
+      "ret": -2.2,
       "relist": [
        "2026-10-29"
       ],
-      "ret": -2.2,
-      "start": "2026-10-02"
+      "days": 4,
+      "carried_in": false,
+      "carried_out": true,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "2492",
-      "days": 4,
-      "entry": 329,
-      "entry_date": "2026-10-01",
-      "exit": 381,
-      "listed": false,
-      "month_end": false,
       "name": "華新科",
+      "start": "2026-10-01",
+      "entry_date": "2026-10-01",
+      "entry": 329.0,
+      "exit": 381.0,
+      "ret": 15.81,
       "relist": [
        "2026-10-07",
        "2026-10-29"
       ],
-      "ret": 15.81,
-      "start": "2026-10-01"
-     },
-     {
+      "days": 4,
       "carried_in": false,
       "carried_out": false,
-      "code": "3026",
-      "days": 2,
-      "entry": 852,
-      "entry_date": "2026-10-01",
-      "exit": 707,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3026",
       "name": "禾伸堂",
+      "start": "2026-10-01",
+      "entry_date": "2026-10-01",
+      "entry": 852.0,
+      "exit": 707.0,
+      "ret": -17.02,
       "relist": [
        "2026-10-08"
       ],
-      "ret": -17.02,
-      "start": "2026-10-01"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "3037",
-      "days": 5,
-      "entry": 1215,
-      "entry_date": "2026-10-01",
-      "exit": 989,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3037",
       "name": "欣興",
+      "start": "2026-10-01",
+      "entry_date": "2026-10-01",
+      "entry": 1215.0,
+      "exit": 989.0,
+      "ret": -18.6,
       "relist": [
        "2026-10-27"
       ],
-      "ret": -18.6,
-      "start": "2026-10-01"
+      "days": 5,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": true,
-      "carried_out": false,
       "code": "6213",
-      "days": 9,
-      "entry": 623,
-      "entry_date": "2026-09-30",
-      "exit": 687,
-      "listed": false,
-      "month_end": false,
       "name": "聯茂",
+      "start": "2026-09-29",
+      "entry_date": "2026-09-30",
+      "entry": 623.0,
+      "exit": 687.0,
+      "ret": 10.27,
       "relist": [
        "2026-10-20",
        "2026-10-22"
       ],
-      "ret": 10.27,
-      "start": "2026-09-29"
-     },
-     {
+      "days": 9,
       "carried_in": true,
       "carried_out": false,
-      "code": "3189",
-      "days": 8,
-      "entry": 970,
-      "entry_date": "2026-09-30",
-      "exit": 932,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3189",
       "name": "景碩",
+      "start": "2026-09-24",
+      "entry_date": "2026-09-30",
+      "entry": 970.0,
+      "exit": 932.0,
+      "ret": -3.92,
       "relist": [
        "2026-10-21",
        "2026-10-28"
       ],
-      "ret": -3.92,
-      "start": "2026-09-24"
+      "days": 8,
+      "carried_in": true,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      }
-    ],
-    "settle_date": "2026-10-30",
-    "status": "settled",
-    "win_rate": 11.5
+    ]
    },
    {
-    "avg_return": -13.77,
-    "count": 24,
-    "counted": 24,
     "month": "2026-11",
+    "status": "open",
+    "settle_date": "2026-11-26",
+    "count": 26,
+    "counted": 26,
+    "win_rate": 30.8,
+    "avg_return": -7.54,
     "picks": [
      {
+      "code": "2368",
+      "name": "金像電",
+      "start": "2026-11-25",
+      "entry_date": "2026-11-25",
+      "entry": 905.0,
+      "exit": 995.0,
+      "ret": 9.94,
+      "relist": [],
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
+      "listed": true,
+      "month_end": false
+     },
+     {
+      "code": "3189",
+      "name": "景碩",
+      "start": "2026-11-25",
+      "entry_date": "2026-11-25",
+      "entry": 495.0,
+      "exit": 530.0,
+      "ret": 7.07,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2379",
-      "days": 1,
-      "entry": 694,
-      "entry_date": "2026-11-24",
-      "exit": 699,
-      "listed": false,
-      "month_end": false,
       "name": "瑞昱",
+      "start": "2026-11-24",
+      "entry_date": "2026-11-24",
+      "entry": 694.0,
+      "exit": 730.0,
+      "ret": 5.19,
       "relist": [],
-      "ret": 0.72,
-      "start": "2026-11-24"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2412",
-      "days": 1,
-      "entry": 164.5,
-      "entry_date": "2026-11-24",
-      "exit": 163.5,
-      "listed": false,
-      "month_end": false,
       "name": "中華電",
+      "start": "2026-11-24",
+      "entry_date": "2026-11-24",
+      "entry": 164.5,
+      "exit": 166.5,
+      "ret": 1.22,
       "relist": [],
-      "ret": -0.61,
-      "start": "2026-11-24"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2603",
-      "days": 1,
-      "entry": 257,
-      "entry_date": "2026-11-24",
-      "exit": 252.5,
-      "listed": false,
-      "month_end": false,
       "name": "長榮",
-      "relist": [],
-      "ret": -1.75,
-      "start": "2026-11-24"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2618",
-      "days": 1,
-      "entry": 48.6,
+      "start": "2026-11-24",
       "entry_date": "2026-11-24",
-      "exit": 45.7,
+      "entry": 257.0,
+      "exit": 254.0,
+      "ret": -1.17,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2618",
       "name": "長榮航",
+      "start": "2026-11-24",
+      "entry_date": "2026-11-24",
+      "entry": 48.6,
+      "exit": 46.05,
+      "ret": -5.25,
       "relist": [],
-      "ret": -5.97,
-      "start": "2026-11-24"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2344",
-      "days": 1,
-      "entry": 89.2,
-      "entry_date": "2026-11-20",
-      "exit": 94.5,
-      "listed": false,
-      "month_end": false,
       "name": "華邦電",
+      "start": "2026-11-20",
+      "entry_date": "2026-11-20",
+      "entry": 89.2,
+      "exit": 103.5,
+      "ret": 16.03,
       "relist": [],
-      "ret": 5.94,
-      "start": "2026-11-20"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "3665",
-      "days": 1,
-      "entry": 1440,
-      "entry_date": "2026-11-19",
-      "exit": 1630,
-      "listed": false,
-      "month_end": false,
       "name": "貿聯-KY",
+      "start": "2026-11-19",
+      "entry_date": "2026-11-19",
+      "entry": 1440.0,
+      "exit": 1790.0,
+      "ret": 24.31,
       "relist": [],
-      "ret": 13.19,
-      "start": "2026-11-19"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3653",
       "days": 1,
-      "entry": 4570,
-      "entry_date": "2026-11-18",
-      "exit": 4170,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "3653",
       "name": "健策",
+      "start": "2026-11-18",
+      "entry_date": "2026-11-18",
+      "entry": 4570.0,
+      "exit": 4585.0,
+      "ret": 0.33,
       "relist": [],
-      "ret": -8.75,
-      "start": "2026-11-18"
-     },
-     {
+      "days": 1,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "3661",
-      "days": 10,
-      "entry": 3420,
-      "entry_date": "2026-11-10",
-      "exit": 3605,
-      "listed": false,
-      "month_end": false,
       "name": "世芯-KY",
-      "relist": [],
-      "ret": 5.41,
-      "start": "2026-11-10"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "8299",
-      "days": 3,
-      "entry": 1675,
+      "start": "2026-11-10",
       "entry_date": "2026-11-10",
-      "exit": 1485,
-      "listed": false,
-      "month_end": false,
+      "entry": 3420.0,
+      "exit": 3735.0,
+      "ret": 9.21,
+      "relist": [
+       "2026-11-25"
+      ],
+      "days": 12,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": true,
+      "month_end": false
+     },
+     {
+      "code": "8299",
       "name": "群聯",
+      "start": "2026-11-10",
+      "entry_date": "2026-11-10",
+      "entry": 1675.0,
+      "exit": 1630.0,
+      "ret": -2.69,
       "relist": [
        "2026-11-19"
       ],
-      "ret": -11.34,
-      "start": "2026-11-10"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2330",
       "days": 3,
-      "entry": 2235,
-      "entry_date": "2026-11-09",
-      "exit": 2150,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2330",
       "name": "台積電",
+      "start": "2026-11-09",
+      "entry_date": "2026-11-09",
+      "entry": 2235.0,
+      "exit": 2145.0,
+      "ret": -4.03,
       "relist": [
        "2026-11-19"
       ],
-      "ret": -3.8,
-      "start": "2026-11-09"
-     },
-     {
+      "days": 3,
       "carried_in": false,
       "carried_out": false,
-      "code": "2303",
-      "days": 6,
-      "entry": 96.7,
-      "entry_date": "2026-11-09",
-      "exit": 87.4,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2303",
       "name": "聯電",
+      "start": "2026-11-09",
+      "entry_date": "2026-11-09",
+      "entry": 96.7,
+      "exit": 88.8,
+      "ret": -8.17,
       "relist": [
        "2026-11-17",
        "2026-11-19"
       ],
-      "ret": -9.62,
-      "start": "2026-11-09"
-     },
-     {
+      "days": 6,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "2408",
-      "days": 1,
-      "entry": 343.5,
-      "entry_date": "2026-11-06",
-      "exit": 278.5,
-      "listed": false,
-      "month_end": false,
       "name": "南亞科",
+      "start": "2026-11-06",
+      "entry_date": "2026-11-06",
+      "entry": 343.5,
+      "exit": 306.0,
+      "ret": -10.92,
       "relist": [],
-      "ret": -18.92,
-      "start": "2026-11-06"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "4958",
       "days": 1,
-      "entry": 394,
-      "entry_date": "2026-11-05",
-      "exit": 328.5,
-      "listed": false,
-      "month_end": false,
-      "name": "臻鼎-KY",
-      "relist": [],
-      "ret": -16.62,
-      "start": "2026-11-05"
-     },
-     {
       "carried_in": false,
       "carried_out": false,
-      "code": "1815",
-      "days": 4,
-      "entry": 135,
-      "entry_date": "2026-11-04",
-      "exit": 101.5,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "start": "2026-11-05",
+      "entry_date": "2026-11-05",
+      "entry": 394.0,
+      "exit": 355.5,
+      "ret": -9.77,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "2383",
+      "name": "台光電",
+      "start": "2026-11-04",
+      "entry_date": "2026-11-04",
+      "entry": 4555.0,
+      "exit": 3660.0,
+      "ret": -19.65,
+      "relist": [],
+      "days": 3,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "1815",
       "name": "富喬",
+      "start": "2026-11-04",
+      "entry_date": "2026-11-04",
+      "entry": 135.0,
+      "exit": 107.5,
+      "ret": -20.37,
       "relist": [
        "2026-11-10"
       ],
-      "ret": -24.81,
-      "start": "2026-11-04"
-     },
-     {
+      "days": 4,
       "carried_in": false,
       "carried_out": false,
-      "code": "2383",
-      "days": 3,
-      "entry": 4555,
-      "entry_date": "2026-11-04",
-      "exit": 3355,
       "listed": false,
-      "month_end": false,
-      "name": "台光電",
-      "relist": [],
-      "ret": -26.34,
-      "start": "2026-11-04"
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "1802",
-      "days": 5,
-      "entry": 67.7,
+      "code": "1303",
+      "name": "南亞",
+      "start": "2026-11-03",
       "entry_date": "2026-11-03",
-      "exit": 59.9,
+      "entry": 271.0,
+      "exit": 244.0,
+      "ret": -9.96,
+      "relist": [
+       "2026-11-05",
+       "2026-11-25"
+      ],
+      "days": 12,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "1802",
       "name": "台玻",
+      "start": "2026-11-03",
+      "entry_date": "2026-11-03",
+      "entry": 67.7,
+      "exit": 59.7,
+      "ret": -11.82,
       "relist": [
        "2026-11-11"
       ],
-      "ret": -11.52,
-      "start": "2026-11-03"
-     },
-     {
+      "days": 5,
       "carried_in": false,
       "carried_out": false,
-      "code": "1303",
-      "days": 11,
-      "entry": 271,
-      "entry_date": "2026-11-03",
-      "exit": 226.5,
       "listed": false,
-      "month_end": false,
-      "name": "南亞",
-      "relist": [
-       "2026-11-05"
-      ],
-      "ret": -16.42,
-      "start": "2026-11-03"
+      "month_end": false
      },
      {
-      "carried_in": false,
-      "carried_out": false,
       "code": "3443",
-      "days": 9,
-      "entry": 6795,
-      "entry_date": "2026-11-03",
-      "exit": 5070,
-      "listed": false,
-      "month_end": false,
       "name": "創意",
+      "start": "2026-11-03",
+      "entry_date": "2026-11-03",
+      "entry": 6795.0,
+      "exit": 5390.0,
+      "ret": -20.68,
       "relist": [
        "2026-11-11",
        "2026-11-16",
        "2026-11-23"
       ],
-      "ret": -25.39,
-      "start": "2026-11-03"
-     },
-     {
+      "days": 9,
       "carried_in": false,
       "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
       "code": "6213",
-      "days": 2,
-      "entry": 600,
-      "entry_date": "2026-11-03",
-      "exit": 390,
-      "listed": false,
-      "month_end": false,
       "name": "聯茂",
+      "start": "2026-11-03",
+      "entry_date": "2026-11-03",
+      "entry": 600.0,
+      "exit": 429.0,
+      "ret": -28.5,
       "relist": [],
-      "ret": -35,
-      "start": "2026-11-03"
-     },
-     {
+      "days": 2,
       "carried_in": false,
       "carried_out": false,
-      "code": "2454",
-      "days": 5,
-      "entry": 3970,
-      "entry_date": "2026-11-02",
-      "exit": 3645,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2454",
       "name": "聯發科",
+      "start": "2026-11-02",
+      "entry_date": "2026-11-02",
+      "entry": 3970.0,
+      "exit": 3705.0,
+      "ret": -6.68,
       "relist": [
        "2026-11-10",
        "2026-11-13",
        "2026-11-18"
       ],
-      "ret": -8.19,
-      "start": "2026-11-02"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "2317",
-      "days": 1,
-      "entry": 251,
-      "entry_date": "2026-11-02",
-      "exit": 206.5,
-      "listed": false,
-      "month_end": false,
-      "name": "鴻海",
-      "relist": [],
-      "ret": -17.73,
-      "start": "2026-11-02"
-     },
-     {
-      "carried_in": false,
-      "carried_out": false,
-      "code": "3037",
       "days": 5,
-      "entry": 997,
-      "entry_date": "2026-11-02",
-      "exit": 585,
+      "carried_in": false,
+      "carried_out": false,
       "listed": false,
-      "month_end": false,
+      "month_end": false
+     },
+     {
+      "code": "2317",
+      "name": "鴻海",
+      "start": "2026-11-02",
+      "entry_date": "2026-11-02",
+      "entry": 251.0,
+      "exit": 216.5,
+      "ret": -13.75,
+      "relist": [],
+      "days": 1,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
+     },
+     {
+      "code": "3037",
       "name": "欣興",
+      "start": "2026-11-02",
+      "entry_date": "2026-11-02",
+      "entry": 997.0,
+      "exit": 643.0,
+      "ret": -35.51,
       "relist": [
        "2026-11-05",
        "2026-11-23"
       ],
-      "ret": -41.32,
-      "start": "2026-11-02"
+      "days": 5,
+      "carried_in": false,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      },
      {
-      "carried_in": true,
-      "carried_out": false,
       "code": "6274",
-      "days": 6,
-      "entry": 1265,
-      "entry_date": "2026-10-30",
-      "exit": 739,
-      "listed": false,
-      "month_end": false,
       "name": "台燿",
+      "start": "2026-10-30",
+      "entry_date": "2026-10-30",
+      "entry": 1265.0,
+      "exit": 794.0,
+      "ret": -37.23,
       "relist": [
        "2026-11-09",
        "2026-11-18",
-       "2026-11-23"
+       "2026-11-23",
+       "2026-11-25"
       ],
-      "ret": -41.58,
-      "start": "2026-10-30"
-     },
-     {
+      "days": 8,
       "carried_in": true,
       "carried_out": false,
+      "listed": true,
+      "month_end": false
+     },
+     {
       "code": "3105",
-      "days": 6,
-      "entry": 578,
-      "entry_date": "2026-10-30",
-      "exit": 404.5,
-      "listed": false,
-      "month_end": false,
       "name": "穩懋",
+      "start": "2026-10-29",
+      "entry_date": "2026-10-30",
+      "entry": 578.0,
+      "exit": 444.5,
+      "ret": -23.1,
       "relist": [
        "2026-11-13"
       ],
-      "ret": -30.02,
-      "start": "2026-10-29"
+      "days": 6,
+      "carried_in": true,
+      "carried_out": false,
+      "listed": false,
+      "month_end": false
      }
-    ],
-    "settle_date": "2026-11-25",
-    "status": "open",
-    "win_rate": 16.7
+    ]
    }
   ]
- },
- "upcoming_events": [
-  {
-   "date": "11/30",
-   "event": "MSCI 11月半年度調整生效（11/30盤後），台股在新興市場指數權重由28.86%調升至29.01%，南電、景碩、台燿新納入台灣指數"
-  },
-  {
-   "date": "12/10",
-   "event": "Broadcom第四季財報（官方公布美東12/9盤後，台北12/10清晨），牽動ASIC與網通供應鏈"
-  },
-  {
-   "date": "12/10",
-   "event": "聯準會FOMC利率決議（美東12/8-9會議，台北12/10凌晨公布），市場幾乎完全反映升息1碼，含最新經濟預測與點陣圖"
-  },
-  {
-   "date": "12/10",
-   "event": "台積電11月營收公布（依慣例每月10日前後，日期未正式公布）"
-  },
-  {
-   "date": "12/16",
-   "event": "台指期貨/選擇權12月結算（每月第三個星期三）"
-  },
-  {
-   "date": "12月中下旬",
-   "event": "美光第一季財報（依慣例12月中下旬，日期未正式公布），牽動記憶體供應鏈"
-  },
-  {
-   "date": "12/18",
-   "event": "美股四巫日（12月第三個星期五，指數與個股期貨/選擇權同日到期），當日與前後常見爆量波動並外溢台股"
-  },
-  {
-   "date": "12/21",
-   "event": "富時FTSE全球指數(GEIS)12月季度調整生效（FTSE官方時程12/21生效，即12/18盤後），公布日未確認"
-  }
- ]
+ }
 }
